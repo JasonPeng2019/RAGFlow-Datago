@@ -1,0 +1,3 @@
+[submodule "datago"]
+	path = datago
+	url = https://github.com/JasonPeng2019/RAG-MCTS-AlphaGo.git
