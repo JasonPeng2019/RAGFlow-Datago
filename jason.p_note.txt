@@ -1,1 +1,6 @@
 https://katagotraining.org/ ~> for models
+
+NOTE: Emperically test results for models. Note: Consider using pUCT, or augmented pUCT without epxloration bias,
+or multi point entropy + one of the above options for RAG database choice pull.
+
+NOTE: Is there a way to analyze games visually from game state? If so, find tool for it - would be very useful!
