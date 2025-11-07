@@ -1,0 +1,55 @@
+# ======================================
+# KataGo / C++ build & training ignore
+# ======================================
+
+# Build directories
+build/
+build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+
+# Compiled KataGo binaries
+KataGo/cpp/build-*/katago
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.bak
+
+# Python caches and virtualenvs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env/
+
+# Data & training artifacts
+data/
+training_data/
+*.sgf
+*.sgf.gz
+*.npz
+*.npy
+*.hdf5
+*.pt
+*.ckpt
+*.bin
+*.bin.gz
+
+# System files
+.DS_Store
+Thumbs.db
+
+KataGo/cpp/build-*/katago
+KataGo/cpp/build-*/
