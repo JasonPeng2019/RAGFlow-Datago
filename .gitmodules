@@ -1,0 +1,3 @@
+[submodule "datago"]
+	path = datago
+	url = ./datago
