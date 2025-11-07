@@ -1,0 +1,143 @@
+2025-10-29 20:48:27-0400: Running with following config:
+allowResignation = true
+lagBuffer = 1.0
+logAllGTPCommunication = true
+logDir = gtp_logs
+logSearchInfo = true
+logSearchInfoForChosenMove = false
+logToStderr = false
+maxTimePondering = 60.0
+maxVisits = 500
+numSearchThreads = 24
+ponderingEnabled = false
+resignConsecTurns = 3
+resignThreshold = -0.90
+rules = tromp-taylor
+searchFactorAfterOnePass = 0.50
+searchFactorAfterTwoPass = 0.25
+searchFactorWhenWinning = 0.40
+searchFactorWhenWinningThreshold = 0.95
+
+2025-10-29 20:48:27-0400: Engine starting...
+2025-10-29 20:48:27-0400: No max visits specified on cmdline, using defaults in default_gtp.cfg
+2025-10-29 20:48:27-0400: No num threads specified on cmdline, using defaults in default_gtp.cfg
+2025-10-29 20:48:27-0400: nnRandSeed0 = 11730839894421479997
+2025-10-29 20:48:27-0400: After dedups: nnModelFile0 = default_model.bin.gz useFP16 auto useNHWC auto
+2025-10-29 20:48:27-0400: Initializing neural net buffer to be size 19 * 19 exactly
+2025-10-29 20:48:30-0400: Found OpenCL Platform 0: NVIDIA CUDA (NVIDIA Corporation) (OpenCL 3.0 CUDA 12.8.98)
+2025-10-29 20:48:30-0400: Found 8 device(s) on platform 0 with type CPU or GPU or Accelerator
+2025-10-29 20:48:30-0400: Found OpenCL Device 0: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:48:30-0400: Found OpenCL Device 1: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:48:30-0400: Found OpenCL Device 2: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:48:30-0400: Found OpenCL Device 3: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:48:30-0400: Found OpenCL Device 4: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:48:30-0400: Found OpenCL Device 5: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:48:30-0400: Found OpenCL Device 6: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:48:30-0400: Found OpenCL Device 7: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:48:30-0400: Creating context for OpenCL Platform: NVIDIA CUDA (NVIDIA Corporation) (OpenCL 3.0 CUDA 12.8.98)
+2025-10-29 20:48:32-0400: Using OpenCL Device 0: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) OpenCL 3.0 CUDA (Extensions: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_copy_opts cl_khr_gl_event cl_nv_create_buffer cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_nv_kernel_attribute cl_khr_device_uuid cl_khr_pci_bus_info cl_khr_external_semaphore cl_khr_external_memory cl_khr_external_semaphore_opaque_fd cl_khr_external_memory_opaque_fd cl_khr_semaphore)
+2025-10-29 20:48:32-0400: Loaded tuning parameters from: /thayerfs/home/f004h1v/.katago/opencltuning/tune11_gpuNVIDIARTX6000AdaGeneration_x19_y19_c512_mv15.txt
+2025-10-29 20:48:32-0400: OpenCL backend thread 0: Model version 15
+2025-10-29 20:48:32-0400: OpenCL backend thread 0: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-10-29 20:48:35-0400: OpenCL backend thread 0: FP16Storage true FP16Compute false FP16TensorCores true FP16TensorCoresFor1x1 false
+2025-10-29 20:48:35-0400: Loaded neural net
+2025-10-29 20:48:35-0400: --------------
+2025-10-29 20:48:35-0400: WARNING: Config had unused keys! You may have a typo, an option you specified is being unused from default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'allowResignation' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'logAllGTPCommunication' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'logSearchInfo' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'logSearchInfoForChosenMove' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'ponderingEnabled' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'resignConsecTurns' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'resignThreshold' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'rules' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'searchFactorWhenWinning' in default_gtp.cfg
+2025-10-29 20:48:35-0400: WARNING: Unused key 'searchFactorWhenWinningThreshold' in default_gtp.cfg
+2025-10-29 20:48:35-0400: --------------
+2025-10-29 20:48:35-0400: Rules: koPOSITIONALscoreAREAtaxNONEsui0komi6.5
+Encore phase 0
+MoveNum: 50 HASH: 7A86707CE6081E4F2FEB02D3A88002A7
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . X X O . . . . . . . . O3. . . . .
+17 . . X O . X . . . . . O . . . X . . .
+16 . . X O . . . . . . . . . X . . . . .
+15 . . X O . . . . . . . O1. . . . O . .
+14 . X O O . . . . . . . . . . X2. . . .
+13 . . X . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . O . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . X X . .
+ 6 . . . . . . . . . . . . . . O X O . .
+ 5 . . . . . . . . . . . O O O O . X . .
+ 4 . . . O . . . . . . O X X X O X . . .
+ 3 . . . . . . . . . . O . O X O O X . .
+ 2 . . . . . . . . . . . X X . X . . . .
+ 1 . . . . . . . . . . . . . X . . . . .
+
+
+
+2025-10-29 20:48:38-0400: Rules: koPOSITIONALscoreAREAtaxNONEsui0komi6.5
+Encore phase 0
+MoveNum: 50 HASH: 7A86707CE6081E4F2FEB02D3A88002A7
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . X X O . . . . . . . . O3. . . . .
+17 . . X O . X . . . . . O . . . X . . .
+16 . . X O . . . . . . . . . X . . . . .
+15 . . X O . . . . . . . O1. . . . O . .
+14 . X O O . . . . . . . . . . X2. . . .
+13 . . X . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . O . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . X X . .
+ 6 . . . . . . . . . . . . . . O X O . .
+ 5 . . . . . . . . . . . O O O O . X . .
+ 4 . . . O . . . . . . O X X X O X . . .
+ 3 . . . . . . . . . . O . O X O O X . .
+ 2 . . . . . . . . . . . X X . X . . . .
+ 1 . . . . . . . . . . . . . X . . . . .
+
+
+Time taken: 2.79528
+Root visits: 523
+NN rows: 475
+NN batches: 41
+NN avg batch size: 11.5854
+True number of tree nodes: 475
+PV: R13 Q13 Q14 R14 S13 R17 R16 Q16 S16 Q15
+Tree:
+: T   8.53c W   9.88c S  -0.48c ( +0.1 L  -0.0) N     523  --  R13 Q13 Q14 R14 S13 R17 R16
+---Black(^)---
+R13 : T  16.44c W  15.25c S  -0.07c ( +0.5 L  +0.2) LCB    8.98c P 12.02% WF 109.9 PSV     476 N      90  --  R13 Q13 Q14 R14 S13 R17 R16 Q16
+Q13 : T   9.65c W  11.96c S  -0.30c ( +0.3 L  +0.1) LCB    3.50c P 53.47% WF 185.8 PSV     185 N     172  --  Q13 Q15 S13 P16 P17 O17 N16 R17
+Q15 : T   7.36c W   7.55c S  -0.69c ( -0.1 L  -0.1) LCB    1.06c P  7.28% WF  43.5 PSV      16 N      35  --  Q15 R16 R14 S14 R13 S13 R12 R17
+M14 : T  12.44c W  11.50c S  -0.39c ( +0.2 L  +0.0) LCB    6.78c P  1.38% WF  56.0 PSV      12 N      37  --  M14 R13 L15 N15 N14 O15 P15 P16
+L16 : T   6.87c W  10.15c S  -0.45c ( +0.1 L  -0.0) LCB   -2.87c P  4.09% WF  55.7 PSV       8 N      52  --  L16 M16 Q13 Q15 P15 R13 P18 O17
+J16 : T   1.41c W   2.78c S  -0.98c ( -0.3 L  -0.4) LCB   -7.00c P  4.45% WF  16.6 PSV       5 N      11  --  J16 R13 R16 Q15 P17
+R16 : T   3.29c W   4.26c S  -0.95c ( -0.3 L  -0.3) LCB   -4.39c P  2.82% WF  17.1 PSV       4 N      12  --  R16 Q15 S15 S14 S16 Q13 P16
+R14 : T   1.07c W   3.71c S  -0.97c ( -0.3 L  -0.1) LCB  -19.21c P  3.65% WF  11.7 PSV       4 N      10  --  R14 S14 R13 Q15 S13 P15 O15
+D13 : T   2.03c W   5.01c S  -0.86c ( -0.2 L  -0.2) LCB  -12.03c P  0.96% WF  11.8 PSV       1 N       9  --  D13 Q13 R16 Q15
+S16 : T  -1.66c W   0.04c S  -1.18c ( -0.5 L  -0.4) LCB  -78.38c P  1.22% WF   4.3 PSV       1 N       3  --  S16 R13
+Q2  : T  -8.03c W  -1.68c S  -1.35c ( -0.7 L  -0.5) LCB -158.69c P  1.82% WF   3.1 PSV       1 N       2  --  Q2 Q13
+C3  : T   5.76c W   7.15c S  -0.65c ( -0.0 L  -0.1) LCB   -1.22c P  0.41% WF  38.1 PSV       0 N      29  --  C3 D3 C4 D5 B6 R13 R16 Q15
+M18 : T   3.60c W   5.34c S  -0.80c ( -0.2 L  -0.2) LCB   -5.31c P  0.07% WF  17.7 PSV       0 N      19  --  M18 N17 Q13 Q16 P17 R17 R18 S18
+G14 : T  -0.17c W   2.88c S  -0.98c ( -0.3 L  -0.4) LCB  -14.79c P  0.64% WF  10.1 PSV       0 N       9  --  G14 Q13 S16 R16
+F15 : T  -0.01c W   2.40c S  -1.06c ( -0.4 L  -0.4) LCB  -16.68c P  0.66% WF   8.8 PSV       0 N       7  --  F15 Q13 R16 Q15
+J3  : T  -0.65c W   2.10c S  -1.07c ( -0.4 L  -0.4) LCB  -17.37c P  0.46% WF   7.7 PSV       0 N       7  --  J3 R13 R16 Q15
+L5  : T -12.38c W  -1.79c S  -1.28c ( -0.7 L  -0.7) LCB  -65.63c P  0.74% WF   4.2 PSV       0 N       5  --  L5 M3 O2
+K17 : T  -3.63c W   0.07c S  -1.18c ( -0.5 L  -0.4) LCB -152.90c P  1.09% WF   3.2 PSV       0 N       2  --  K17 R13
+K16 : T  -2.88c W   1.81c S  -1.06c ( -0.4 L  -0.4) LCB -152.54c P  0.81% WF   3.1 PSV       0 N       2  --  K16 R13
+J17 : T  -8.63c W  -2.97c S  -1.41c ( -0.7 L  -0.6) LCB -158.49c P  0.17% WF   2.2 PSV       0 N       2  --  J17 R13
+S15 : T -11.16c W  -3.49c S  -1.41c ( -0.8 L  -0.6) LCB -163.66c P  0.10% WF   1.4 PSV       0 N       2  --  S15 S16
+K14 : T  -6.01c W  -2.12c S  -1.43c ( -0.8 L  -0.7) LCB -155.48c P  0.08% WF   1.7 PSV       0 N       2  --  K14 R13
+N14 : T  -0.26c W   1.05c S  -1.31c ( -0.7 L  -0.5) LCB -350.26c P  0.10% WF   1.4 PSV       0 N       1  --  N14
+C6  : T   1.49c W   2.57c S  -1.08c ( -0.4 L  -0.5) LCB -348.51c P  0.08% WF   1.3 PSV       0 N       1  --  C6
+
+2025-10-29 20:48:39-0400: GPU -1 finishing, processed 475 rows 41 batches

@@ -1,0 +1,2 @@
+[console_scripts]
+katrain = katrain.__main__:run_app

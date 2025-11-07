@@ -1,0 +1,3 @@
+/scratch2/f004h1v/alphago_project/build/CMakeFiles/katago.dir
+/scratch2/f004h1v/alphago_project/build/CMakeFiles/edit_cache.dir
+/scratch2/f004h1v/alphago_project/build/CMakeFiles/rebuild_cache.dir

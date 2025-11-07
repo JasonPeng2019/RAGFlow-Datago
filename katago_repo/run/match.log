@@ -1,0 +1,348 @@
+2025-10-29 20:45:50-0400: Running with following config:
+allowResignation = true
+bSizeRelProbs = 1
+bSizes = 19
+botName0 = Black
+botName1 = White
+chosenMoveTemperature = 0.20
+chosenMoveTemperatureEarly = 0.60
+komiAuto = True
+logGamesEvery = 1
+logMoves = true
+logSearchInfo = false
+logToStdout = true
+maxMovesPerGame = 1200
+maxVisits = 500
+nnCacheSizePowerOfTwo = 21
+nnMaxBatchSize = 64
+nnModelFile0 = default_model.bin.gz
+nnModelFile1 = default_model.bin.gz
+nnMutexPoolSizePowerOfTwo = 17
+nnRandomize = true
+numBots = 2
+numGameThreads = 1
+numGamesTotal = 1
+numSearchThreads = 24
+openclGpuToUse = 0
+resignConsecTurns = 6
+resignThreshold = -0.95
+
+2025-10-29 20:45:50-0400: Match Engine starting...
+2025-10-29 20:45:50-0400: Git revision: 4b8de63bea2bd8790db96cd6f8daf86dc87be6f7
+2025-10-29 20:46:10-0400: Running with following config:
+allowResignation = true
+bSizeRelProbs = 1
+bSizes = 19
+botName0 = Black
+botName1 = White
+chosenMoveTemperature = 0.20
+chosenMoveTemperatureEarly = 0.60
+hasButtons = false
+koRules = POSITIONAL
+komiAuto = True
+logGamesEvery = 1
+logMoves = true
+logSearchInfo = false
+logToStdout = true
+maxMovesPerGame = 1200
+maxVisits = 500
+multiStoneSuicideLegals = false
+nnCacheSizePowerOfTwo = 21
+nnMaxBatchSize = 64
+nnModelFile0 = default_model.bin.gz
+nnModelFile1 = default_model.bin.gz
+nnMutexPoolSizePowerOfTwo = 17
+nnRandomize = true
+numBots = 2
+numGameThreads = 1
+numGamesTotal = 1
+numSearchThreads = 24
+openclGpuToUse = 0
+resignConsecTurns = 6
+resignThreshold = -0.95
+scoringRules = AREA
+taxRules = NONE
+
+2025-10-29 20:46:10-0400: Match Engine starting...
+2025-10-29 20:46:10-0400: Git revision: 4b8de63bea2bd8790db96cd6f8daf86dc87be6f7
+2025-10-29 20:46:10-0400: nnRandSeed0 = 10245184734345437958
+2025-10-29 20:46:10-0400: After dedups: nnModelFile0 = default_model.bin.gz useFP16 auto useNHWC auto
+2025-10-29 20:46:10-0400: Initializing neural net buffer to be size 19 * 19 exactly
+2025-10-29 20:46:13-0400: Found OpenCL Platform 0: NVIDIA CUDA (NVIDIA Corporation) (OpenCL 3.0 CUDA 12.8.98)
+2025-10-29 20:46:13-0400: Found 8 device(s) on platform 0 with type CPU or GPU or Accelerator
+2025-10-29 20:46:13-0400: Found OpenCL Device 0: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:46:13-0400: Found OpenCL Device 1: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:46:13-0400: Found OpenCL Device 2: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:46:13-0400: Found OpenCL Device 3: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:46:13-0400: Found OpenCL Device 4: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:46:13-0400: Found OpenCL Device 5: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:46:13-0400: Found OpenCL Device 6: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:46:13-0400: Found OpenCL Device 7: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-10-29 20:46:13-0400: Creating context for OpenCL Platform: NVIDIA CUDA (NVIDIA Corporation) (OpenCL 3.0 CUDA 12.8.98)
+2025-10-29 20:46:14-0400: Using OpenCL Device 0: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) OpenCL 3.0 CUDA (Extensions: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_copy_opts cl_khr_gl_event cl_nv_create_buffer cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_nv_kernel_attribute cl_khr_device_uuid cl_khr_pci_bus_info cl_khr_external_semaphore cl_khr_external_memory cl_khr_external_semaphore_opaque_fd cl_khr_external_memory_opaque_fd cl_khr_semaphore)
+2025-10-29 20:46:14-0400: Loaded tuning parameters from: /thayerfs/home/f004h1v/.katago/opencltuning/tune11_gpuNVIDIARTX6000AdaGeneration_x19_y19_c512_mv15.txt
+2025-10-29 20:46:14-0400: OpenCL backend thread 0: Device 0 Model version 15
+2025-10-29 20:46:14-0400: OpenCL backend thread 0: Device 0 Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-10-29 20:46:18-0400: OpenCL backend thread 0: Device 0 FP16Storage true FP16Compute false FP16TensorCores true FP16TensorCoresFor1x1 false
+2025-10-29 20:46:18-0400: Loaded neural net
+2025-10-29 20:46:18-0400: Loaded all config stuff, starting matches
+2025-10-29 20:46:18-0400: Started 1 games
+2025-10-29 20:46:21-0400: Move 0 made: Q4
+2025-10-29 20:46:22-0400: Move 1 made: D16
+2025-10-29 20:46:22-0400: Move 2 made: Q17
+2025-10-29 20:46:23-0400: Move 3 made: D4
+2025-10-29 20:46:23-0400: Move 4 made: O3
+2025-10-29 20:46:23-0400: Move 5 made: R15
+2025-10-29 20:46:24-0400: Move 6 made: O16
+2025-10-29 20:46:24-0400: Move 7 made: R6
+2025-10-29 20:46:25-0400: Move 8 made: R5
+2025-10-29 20:46:25-0400: Move 9 made: Q11
+2025-10-29 20:46:26-0400: Move 10 made: Q6
+2025-10-29 20:46:26-0400: Move 11 made: O2
+2025-10-29 20:46:26-0400: Move 12 made: N2
+2025-10-29 20:46:27-0400: Move 13 made: N3
+2025-10-29 20:46:27-0400: Move 14 made: M2
+2025-10-29 20:46:27-0400: Move 15 made: P6
+2025-10-29 20:46:27-0400: Move 16 made: Q7
+2025-10-29 20:46:27-0400: Move 17 made: P3
+2025-10-29 20:46:27-0400: Move 18 made: O4
+2025-10-29 20:46:27-0400: Move 19 made: P4
+2025-10-29 20:46:27-0400: Move 20 made: P2
+2025-10-29 20:46:27-0400: Move 21 made: O5
+2025-10-29 20:46:28-0400: Move 22 made: N4
+2025-10-29 20:46:28-0400: Move 23 made: N5
+2025-10-29 20:46:28-0400: Move 24 made: M4
+2025-10-29 20:46:28-0400: Move 25 made: P5
+2025-10-29 20:46:28-0400: Move 26 made: R7
+2025-10-29 20:46:28-0400: Move 27 made: M5
+2025-10-29 20:46:28-0400: Move 28 made: C17
+2025-10-29 20:46:28-0400: Move 29 made: L4
+2025-10-29 20:46:28-0400: Move 30 made: O1
+2025-10-29 20:46:28-0400: Move 31 made: D17
+2025-10-29 20:46:28-0400: Move 32 made: C16
+2025-10-29 20:46:28-0400: Move 33 made: C14
+2025-10-29 20:46:28-0400: Move 34 made: C15
+2025-10-29 20:46:28-0400: Move 35 made: D15
+2025-10-29 20:46:28-0400: Move 36 made: B14
+2025-10-29 20:46:28-0400: Move 37 made: Q3
+2025-10-29 20:46:28-0400: Move 38 made: R3
+2025-10-29 20:46:28-0400: Move 39 made: L3
+2025-10-29 20:46:29-0400: Move 40 made: C13
+2025-10-29 20:46:29-0400: Move 41 made: D14
+2025-10-29 20:46:29-0400: Move 42 made: D18
+2025-10-29 20:46:29-0400: Move 43 made: E18
+2025-10-29 20:46:29-0400: Move 44 made: C18
+2025-10-29 20:46:29-0400: Move 45 made: M17
+2025-10-29 20:46:29-0400: Move 46 made: F17
+2025-10-29 20:46:29-0400: Move 47 made: M15
+2025-10-29 20:46:30-0400: Move 48 made: P14
+2025-10-29 20:46:30-0400: Move 49 made: O18
+2025-10-29 20:46:30-0400: Move 50 made: R13
+2025-10-29 20:46:31-0400: Move 51 made: Q13
+2025-10-29 20:46:31-0400: Move 52 made: Q14
+2025-10-29 20:46:31-0400: Move 53 made: R14
+2025-10-29 20:46:31-0400: Move 54 made: S13
+2025-10-29 20:46:31-0400: Move 55 made: R17
+2025-10-29 20:46:32-0400: Move 56 made: R18
+2025-10-29 20:46:32-0400: Move 57 made: Q16
+2025-10-29 20:46:32-0400: Move 58 made: S17
+2025-10-29 20:46:32-0400: Move 59 made: R16
+2025-10-29 20:46:32-0400: Move 60 made: P17
+2025-10-29 20:46:32-0400: Move 61 made: P13
+2025-10-29 20:46:32-0400: Move 62 made: O14
+2025-10-29 20:46:33-0400: Move 63 made: R12
+2025-10-29 20:46:33-0400: Move 64 made: L16
+2025-10-29 20:46:33-0400: Move 65 made: M16
+2025-10-29 20:46:34-0400: Move 66 made: J16
+2025-10-29 20:46:34-0400: Move 67 made: H16
+2025-10-29 20:46:34-0400: Move 68 made: J17
+2025-10-29 20:46:35-0400: Move 69 made: G17
+2025-10-29 20:46:35-0400: Move 70 made: P18
+2025-10-29 20:46:36-0400: Move 71 made: F18
+2025-10-29 20:46:36-0400: Move 72 made: H15
+2025-10-29 20:46:37-0400: Move 73 made: G15
+2025-10-29 20:46:37-0400: Move 74 made: J14
+2025-10-29 20:46:37-0400: Move 75 made: H14
+2025-10-29 20:46:37-0400: Move 76 made: J15
+2025-10-29 20:46:37-0400: Move 77 made: H18
+2025-10-29 20:46:38-0400: Move 78 made: C3
+2025-10-29 20:46:38-0400: Move 79 made: D3
+2025-10-29 20:46:39-0400: Move 80 made: C4
+2025-10-29 20:46:39-0400: Move 81 made: D5
+2025-10-29 20:46:39-0400: Move 82 made: B6
+2025-10-29 20:46:39-0400: Move 83 made: H13
+2025-10-29 20:46:39-0400: Move 84 made: J13
+2025-10-29 20:46:40-0400: Move 85 made: K18
+2025-10-29 20:46:40-0400: Move 86 made: J3
+2025-10-29 20:46:40-0400: Move 87 made: S18
+2025-10-29 20:46:41-0400: Move 88 made: S19
+2025-10-29 20:46:42-0400: Move 89 made: C6
+2025-10-29 20:46:42-0400: Move 90 made: B7
+2025-10-29 20:46:42-0400: Move 91 made: L2
+2025-10-29 20:46:43-0400: Move 92 made: C2
+2025-10-29 20:46:43-0400: Move 93 made: G3
+2025-10-29 20:46:43-0400: Move 94 made: L5
+2025-10-29 20:46:44-0400: Move 95 made: J4
+2025-10-29 20:46:44-0400: Move 96 made: Q2
+2025-10-29 20:46:44-0400: Move 97 made: L6
+2025-10-29 20:46:45-0400: Move 98 made: K5
+2025-10-29 20:46:45-0400: Move 99 made: K6
+2025-10-29 20:46:45-0400: Move 100 made: J11
+2025-10-29 20:46:46-0400: Move 101 made: J9
+2025-10-29 20:46:46-0400: Move 102 made: H12
+2025-10-29 20:46:47-0400: Move 103 made: C7
+2025-10-29 20:46:47-0400: Move 104 made: C8
+2025-10-29 20:46:48-0400: Move 105 made: D8
+2025-10-29 20:46:48-0400: Move 106 made: C9
+2025-10-29 20:46:48-0400: Move 107 made: D9
+2025-10-29 20:46:49-0400: Move 108 made: F10
+2025-10-29 20:46:49-0400: Move 109 made: K12
+2025-10-29 20:46:50-0400: Move 110 made: L13
+2025-10-29 20:46:50-0400: Move 111 made: J12
+2025-10-29 20:46:51-0400: Move 112 made: G12
+2025-10-29 20:46:51-0400: Move 113 made: F13
+2025-10-29 20:46:51-0400: Move 114 made: L10
+2025-10-29 20:46:51-0400: Move 115 made: H11
+2025-10-29 20:46:51-0400: Move 116 made: R10
+2025-10-29 20:46:52-0400: Move 117 made: S12
+2025-10-29 20:46:52-0400: Move 118 made: K11
+2025-10-29 20:46:52-0400: Move 119 made: G11
+2025-10-29 20:46:52-0400: Move 120 made: S11
+2025-10-29 20:46:52-0400: Move 121 made: Q10
+2025-10-29 20:46:53-0400: Move 122 made: L12
+2025-10-29 20:46:53-0400: Move 123 made: C10
+2025-10-29 20:46:54-0400: Move 124 made: H10
+2025-10-29 20:46:54-0400: Move 125 made: F12
+2025-10-29 20:46:54-0400: Move 126 made: Q9
+2025-10-29 20:46:55-0400: Move 127 made: S14
+2025-10-29 20:46:56-0400: Move 128 made: H9
+2025-10-29 20:46:56-0400: Move 129 made: G13
+2025-10-29 20:46:56-0400: Move 130 made: J7
+2025-10-29 20:46:56-0400: Move 131 made: M11
+2025-10-29 20:46:57-0400: Move 132 made: M10
+2025-10-29 20:46:58-0400: Move 133 made: O17
+2025-10-29 20:46:58-0400: Move 134 made: P16
+2025-10-29 20:46:58-0400: Move 135 made: H6
+2025-10-29 20:46:59-0400: Move 136 made: H7
+2025-10-29 20:46:59-0400: Move 137 made: K8
+2025-10-29 20:47:00-0400: Move 138 made: K7
+2025-10-29 20:47:00-0400: Move 139 made: L7
+2025-10-29 20:47:00-0400: Move 140 made: L8
+2025-10-29 20:47:00-0400: Move 141 made: G7
+2025-10-29 20:47:00-0400: Move 142 made: H8
+2025-10-29 20:47:00-0400: Move 143 made: M8
+2025-10-29 20:47:00-0400: Move 144 made: L9
+2025-10-29 20:47:00-0400: Move 145 made: B10
+2025-10-29 20:47:01-0400: Move 146 made: B8
+2025-10-29 20:47:01-0400: Move 147 made: F8
+2025-10-29 20:47:01-0400: Move 148 made: E2
+2025-10-29 20:47:01-0400: Move 149 made: D2
+2025-10-29 20:47:01-0400: Move 150 made: D1
+2025-10-29 20:47:01-0400: Move 151 made: E3
+2025-10-29 20:47:01-0400: Move 152 made: J6
+2025-10-29 20:47:01-0400: Move 153 made: J5
+2025-10-29 20:47:01-0400: Move 154 made: F9
+2025-10-29 20:47:02-0400: Move 155 made: E8
+2025-10-29 20:47:02-0400: Move 156 made: M7
+2025-10-29 20:47:02-0400: Move 157 made: M6
+2025-10-29 20:47:03-0400: Move 158 made: F2
+2025-10-29 20:47:03-0400: Move 159 made: G2
+2025-10-29 20:47:03-0400: Move 160 made: N7
+2025-10-29 20:47:03-0400: Move 161 made: M3
+2025-10-29 20:47:03-0400: Move 162 made: O2
+2025-10-29 20:47:03-0400: Move 163 made: P9
+2025-10-29 20:47:04-0400: Move 164 made: N9
+2025-10-29 20:47:04-0400: Move 165 made: R9
+2025-10-29 20:47:04-0400: Move 166 made: S9
+2025-10-29 20:47:04-0400: Move 167 made: S16
+2025-10-29 20:47:04-0400: Move 168 made: T18
+2025-10-29 20:47:05-0400: Move 169 made: Q8
+2025-10-29 20:47:05-0400: Move 170 made: R8
+2025-10-29 20:47:05-0400: Move 171 made: B12
+2025-10-29 20:47:05-0400: Move 172 made: B13
+2025-10-29 20:47:05-0400: Move 173 made: E1
+2025-10-29 20:47:06-0400: Move 174 made: C1
+2025-10-29 20:47:06-0400: Move 175 made: G1
+2025-10-29 20:47:06-0400: Move 176 made: C12
+2025-10-29 20:47:06-0400: Move 177 made: N12
+2025-10-29 20:47:07-0400: Move 178 made: F1
+2025-10-29 20:47:07-0400: Move 179 made: F3
+2025-10-29 20:47:08-0400: Move 180 made: C11
+2025-10-29 20:47:08-0400: Move 181 made: G10
+2025-10-29 20:47:08-0400: Move 182 made: G9
+2025-10-29 20:47:09-0400: Move 183 made: D11
+2025-10-29 20:47:09-0400: Move 184 made: O19
+2025-10-29 20:47:09-0400: Move 185 made: N18
+2025-10-29 20:47:09-0400: Move 186 made: B11
+2025-10-29 20:47:10-0400: Move 187 made: E1
+2025-10-29 20:47:10-0400: Move 188 made: M19
+2025-10-29 20:47:10-0400: Move 189 made: M18
+2025-10-29 20:47:10-0400: Move 190 made: Q9
+2025-10-29 20:47:10-0400: Move 191 made: P8
+2025-10-29 20:47:11-0400: Move 192 made: O13
+2025-10-29 20:47:11-0400: Move 193 made: O12
+2025-10-29 20:47:11-0400: Move 194 made: O10
+2025-10-29 20:47:11-0400: Move 195 made: N13
+2025-10-29 20:47:11-0400: Move 196 made: L11
+2025-10-29 20:47:11-0400: Move 197 made: K13
+2025-10-29 20:47:11-0400: Move 198 made: L14
+2025-10-29 20:47:12-0400: Move 199 made: B5
+2025-10-29 20:47:12-0400: Move 200 made: C5
+2025-10-29 20:47:13-0400: Move 201 made: A8
+2025-10-29 20:47:13-0400: Move 202 made: P10
+2025-10-29 20:47:13-0400: Move 203 made: A6
+2025-10-29 20:47:13-0400: Move 204 made: B4
+2025-10-29 20:47:13-0400: Move 205 made: A9
+2025-10-29 20:47:13-0400: Move 206 made: A5
+2025-10-29 20:47:14-0400: Move 207 made: A7
+2025-10-29 20:47:14-0400: Move 208 made: A3
+2025-10-29 20:47:14-0400: Move 209 made: O7
+2025-10-29 20:47:14-0400: Move 210 made: P12
+2025-10-29 20:47:14-0400: Move 211 made: Q12
+2025-10-29 20:47:14-0400: Move 212 made: P11
+2025-10-29 20:47:14-0400: Move 213 made: N14
+2025-10-29 20:47:14-0400: Move 214 made: T11
+2025-10-29 20:47:14-0400: Move 215 made: R9
+2025-10-29 20:47:15-0400: Move 216 made: J18
+2025-10-29 20:47:15-0400: Move 217 made: J19
+2025-10-29 20:47:15-0400: Move 218 made: Q9
+2025-10-29 20:47:15-0400: Move 219 made: T12
+2025-10-29 20:47:16-0400: Move 220 made: O8
+2025-10-29 20:47:16-0400: Move 221 made: P7
+2025-10-29 20:47:16-0400: Move 222 made: N19
+2025-10-29 20:47:16-0400: Move 223 made: L19
+2025-10-29 20:47:16-0400: Move 224 made: P19
+2025-10-29 20:47:16-0400: Move 225 made: N16
+2025-10-29 20:47:16-0400: Move 226 made: E10
+2025-10-29 20:47:16-0400: Move 227 made: D10
+2025-10-29 20:47:16-0400: Move 228 made: E13
+2025-10-29 20:47:17-0400: Move 229 made: D13
+2025-10-29 20:47:17-0400: Move 230 made: E12
+2025-10-29 20:47:17-0400: Move 231 made: E14
+2025-10-29 20:47:18-0400: Move 232 made: L17
+2025-10-29 20:47:18-0400: Move 233 made: L18
+2025-10-29 20:47:18-0400: Move 234 made: R9
+2025-10-29 20:47:18-0400: Move 235 made: D12
+2025-10-29 20:47:19-0400: Move 236 made: E11
+2025-10-29 20:47:19-0400: Move 237 made: M1
+2025-10-29 20:47:20-0400: Move 238 made: J10
+2025-10-29 20:47:20-0400: Move 239 made: N11
+2025-10-29 20:47:21-0400: Move 240 made: N10
+2025-10-29 20:47:21-0400: Move 241 made: N6
+2025-10-29 20:47:22-0400: Move 242 made: N8
+2025-10-29 20:47:22-0400: Move 243 made: Q5
+2025-10-29 20:47:23-0400: Move 244 made: R4
+2025-10-29 20:47:23-0400: Move 245 made: E19
+2025-10-29 20:47:23-0400: Move 246 made: K14
+2025-10-29 20:47:24-0400: Move 247 made: H12
+2025-10-29 20:47:24-0400: Move 248 made: G8
+2025-10-29 20:47:25-0400: Move 249 made: G6
+2025-10-29 20:47:25-0400: Avg move time used by Black 0.257304 125 moves
+2025-10-29 20:47:25-0400: Avg move time used by White 0.254975 125 moves
+2025-10-29 20:47:25-0400: Match loop thread terminating
+2025-10-29 20:47:25-0400: default_model.bin.gz
+2025-10-29 20:47:25-0400: NN rows: 35509
+2025-10-29 20:47:25-0400: NN batches: 3254
+2025-10-29 20:47:25-0400: NN avg batch size: 10.9124
+2025-10-29 20:47:26-0400: GPU 0 finishing, processed 35509 rows 3254 batches
+2025-10-29 20:47:26-0400: All cleaned up, quitting
