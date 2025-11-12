@@ -131,3 +131,18 @@ chaos_score = (
     w4 * normalize(nn_divergence, min=0, max=0.3) +        # NN vs search disagreement
     w5 * normalize(raw_score_stdev, min=5, max=50)         # Raw NN uncertainty
 )
+
+
+KataGo RAG implementation:
+add to database: vector embeddings 
+FIRST THINGS TO LOSE:
+- value / policy lineup but high entropy
+- value confidence / policy inconfidence
+Potential entropy mid-late scaling factor:
+e^entropy / # legal moves available
+SHOULD KEEP:
+- value / policy both unconfident 
+-> High entropy on both
+------------------------------------------------------------------------
+
+note: does katago MCTS search as BFS or DFS?

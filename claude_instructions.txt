@@ -1,15 +1,56 @@
-KataGo RAG implementation:
+# storing to RAG
+1. Run through self-play games, and store the following information:
+'state_hash': self.state_hash,
+            'sym_hash': self.sym_hash,
+            'policy': self.policy,
+            'ownership': self.ownership,
+            'winrate': self.winrate,
+            'score_lead': self.score_lead,
+            'move_infos': self.move_infos,
+            'komi': self.komi,
+            'query_id': self.query_id
 
-add to database: vector embeddings 
+2. For positions we have high uncertainty about, due to either A: lack of sufficient training data
+on that game state, or B: many good options so high difficulty in distinguishing the true "best" winning move,
+we would like to store these. The RAG will compute high uncertainty based on a function of two weights 
+(which we know are for certain indicators of uncertainty, and do not risk overfitting): 1. High policy cross-entropy, defined as E. 
+2. High value distribution - when katago calculates the value estimates for each position and updates them after 
+backpropogation, after finishing the MCTS search, stores all the updated values for every searched game state.
+These values are summed and compared, and function K of value / total measures distribution. Values with sparse distribution
+are assigned a high value for K.
 
-FIRST THINGS TO LOSE:
-- value / policy lineup but high entropy
-- value confidence / policy inconfidence
+3. weights are assigned to E and K, and a total function (w1*E + w2*K)*phase <where phase is a function of how many pieces are left on the board to determine sparseness 
+to correlate to late / early game> is learned via play against the baseline
+katago to determine the best thresholds for these parameters. This cutoff will then be used to determine the storage threshold for what 
+game states go into the RAG and what doesn't go into the RAG, as well as when to look at the RAG.
 
-Potential entropy mid-late scaling factor:
-e^entropy / # legal moves available
+#playing with RAG - retrieving
+4. The game will then start. When the model runs into a complex game state in MCTS search (any node) with high uncertainty, the model
+will do a 1-Nearest Neighbors search through the RAG database first to see if the complex position has already been stored in the RAG.
+However, to ensure forever recursion doesn't occur, forcing MCTS over and over, only allow a complex-node depth of N (hand-tuned parameter / 2nd stage tuning / 
+based on our real-world limitations).
+However, let's assume at first the position wasn't found (i.e., positions 
+that showed up in the original MCTS tree). We will do a deep level MCTS search (that looks for convergence) to more accurately determine value and policy than the baseline model. The theory for this is that
+a deeper level MCTS will always yield better results than a shallow MCTS search. IF the deeper level does not converge after N tree depth, it will stop searching.
+It will store these updated results in the form of storing a dict:
+{Game Hash: 
+ (2 best moves based on value from here, the actual policy function at this snapshot
+of the game state, the actual value function at this snapshot of the game,
+the policy distribution for those, and the info we pulled in step 1.) }
+When the model runs into this exact same complex position again, when it does the ANN, it will find this position amongst the RAG database.
+
+5. Upon finding this position, it will do a relevancy comparison (threshold 90% - hand tune after fixing the weights) by comparing 
+the other features of the vector with the current complex state vector. The comparison weights of the various features will also be learned.
+If relevance is high, directly blend that stored policy and value function into the current. Otherwise,
+if the relevance is not high, force the best children moves stored in the RAG to be pathways to explore in MCTS; 
+either add them at the end of the RAG as a separate MCTS search, or depending on how BFS/DFS dynamic works with MCTS, force them as 
+first search.
 
 
-SHOULD KEEP:
-- value / policy both unconfident 
--> High entropy on both
+
+
+
+
+
+
+
