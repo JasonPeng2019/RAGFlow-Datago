@@ -611,6 +611,14 @@ void Search::runWholeSearch(
     recursivelyRecordEvalCache(*rootNode);
   }
 
+  /* DATAGO IMPLEMENTATION
+  */
+  #include "defines.h"
+
+  #ifdef DATAGO_IMPLEMENT
+  datago_collect_search_states(this, rootNode);
+  #endif
+
   //Relaxed load is fine since numPlayoutsShared should be synchronized already due to the joins
   lastSearchNumPlayouts = numPlayoutsShared.load(std::memory_order_relaxed);
   effectiveSearchTimeCarriedOver += timer.getSeconds() - actualSearchStartTime;

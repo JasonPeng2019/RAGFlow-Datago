@@ -1,0 +1,1 @@
+#define DATAGO_IMPLEMENT
