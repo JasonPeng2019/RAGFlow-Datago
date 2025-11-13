@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "description": "Ground truth database for uncertainty tuning",
+    "total_positions": 10000,
+    "collection_date": "2025-11-12",
+    "shallow_visits": 800,
+    "deep_visits": 5000,
+    "games_analyzed": 200,
+    "positions_per_game": 50
+  },
+  "positions": [
+    {
+      "id": "game_0_pos_0",
+      "game_id": "game_0",
+      "move_number": 45,
+      "stones_on_board": 45,
+      "shallow_mcts": {
+        "policy": [0.25, 0.18, 0.15, 0.12, 0.08, 0.22],
+        "value": 0.62,
+        "value_distribution": [0.05, 0.15, 0.30, 0.35, 0.10, 0.05],
+        "visits": 800
+      },
+      "deep_mcts": {
+        "policy": [0.30, 0.20, 0.12, 0.10, 0.05, 0.23],
+        "value": 0.58,
+        "value_distribution": [0.08, 0.18, 0.28, 0.32, 0.09, 0.05],
+        "visits": 5000
+      },
+      "features": {
+        "policy_entropy": 2.45,
+        "value_entropy": 1.82,
+        "policy_cross_entropy": 0.35,
+        "value_sparseness": 0.42
+      },
+      "errors": {
+        "policy_kl_divergence": 0.048,
+        "value_absolute_error": 0.04,
+        "policy_l2_error": 0.125,
+        "combined_error": 0.044
+      }
+    },
+    {
+      "id": "game_0_pos_1",
+      "game_id": "game_0",
+      "move_number": 87,
+      "stones_on_board": 87,
+      "shallow_mcts": {
+        "policy": [0.45, 0.22, 0.15, 0.10, 0.05, 0.03],
+        "value": 0.75,
+        "value_distribution": [0.02, 0.08, 0.15, 0.45, 0.22, 0.08],
+        "visits": 800
+      },
+      "deep_mcts": {
+        "policy": [0.52, 0.18, 0.13, 0.09, 0.05, 0.03],
+        "value": 0.78,
+        "value_distribution": [0.01, 0.06, 0.12, 0.50, 0.23, 0.08],
+        "visits": 5000
+      },
+      "features": {
+        "policy_entropy": 1.98,
+        "value_entropy": 1.45,
+        "policy_cross_entropy": 0.22,
+        "value_sparseness": 0.28
+      },
+      "errors": {
+        "policy_kl_divergence": 0.025,
+        "value_absolute_error": 0.03,
+        "policy_l2_error": 0.089,
+        "combined_error": 0.027
+      }
+    },
+    {
+      "id": "game_0_pos_2",
+      "game_id": "game_0",
+      "move_number": 134,
+      "stones_on_board": 134,
+      "shallow_mcts": {
+        "policy": [0.18, 0.16, 0.14, 0.13, 0.12, 0.27],
+        "value": 0.48,
+        "value_distribution": [0.12, 0.18, 0.22, 0.20, 0.15, 0.13],
+        "visits": 800
+      },
+      "deep_mcts": {
+        "policy": [0.15, 0.12, 0.10, 0.08, 0.08, 0.47],
+        "value": 0.39,
+        "value_distribution": [0.15, 0.22, 0.25, 0.18, 0.12, 0.08],
+        "visits": 5000
+      },
+      "features": {
+        "policy_entropy": 3.15,
+        "value_entropy": 2.28,
+        "policy_cross_entropy": 0.58,
+        "value_sparseness": 0.65
+      },
+      "errors": {
+        "policy_kl_divergence": 0.142,
+        "value_absolute_error": 0.09,
+        "policy_l2_error": 0.285,
+        "combined_error": 0.121
+      }
+    },
+    {
+      "id": "game_1_pos_0",
+      "game_id": "game_1",
+      "move_number": 23,
+      "stones_on_board": 23,
+      "shallow_mcts": {
+        "policy": [0.32, 0.25, 0.18, 0.12, 0.08, 0.05],
+        "value": 0.55,
+        "value_distribution": [0.08, 0.15, 0.25, 0.28, 0.15, 0.09],
+        "visits": 800
+      },
+      "deep_mcts": {
+        "policy": [0.35, 0.24, 0.17, 0.11, 0.08, 0.05],
+        "value": 0.54,
+        "value_distribution": [0.09, 0.16, 0.24, 0.27, 0.15, 0.09],
+        "visits": 5000
+      },
+      "features": {
+        "policy_entropy": 2.28,
+        "value_entropy": 1.95,
+        "policy_cross_entropy": 0.28,
+        "value_sparseness": 0.38
+      },
+      "errors": {
+        "policy_kl_divergence": 0.015,
+        "value_absolute_error": 0.01,
+        "policy_l2_error": 0.042,
+        "combined_error": 0.013
+      }
+    },
+    {
+      "id": "game_1_pos_1",
+      "game_id": "game_1",
+      "move_number": 156,
+      "stones_on_board": 156,
+      "shallow_mcts": {
+        "policy": [0.65, 0.15, 0.08, 0.05, 0.04, 0.03],
+        "value": 0.82,
+        "value_distribution": [0.01, 0.04, 0.08, 0.22, 0.42, 0.23],
+        "visits": 800
+      },
+      "deep_mcts": {
+        "policy": [0.68, 0.14, 0.07, 0.05, 0.04, 0.02],
+        "value": 0.83,
+        "value_distribution": [0.01, 0.03, 0.07, 0.20, 0.45, 0.24],
+        "visits": 5000
+      },
+      "features": {
+        "policy_entropy": 1.42,
+        "value_entropy": 1.28,
+        "policy_cross_entropy": 0.15,
+        "value_sparseness": 0.18
+      },
+      "errors": {
+        "policy_kl_divergence": 0.012,
+        "value_absolute_error": 0.01,
+        "policy_l2_error": 0.038,
+        "combined_error": 0.011
+      }
+    }
+  ]
+}
