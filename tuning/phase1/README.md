@@ -17,9 +17,15 @@ Main script for tuning uncertainty detection parameters.
 
 **Parameters tuned:**
 - `w1`: Weight for policy cross-entropy (E)
-- `w2`: Weight for value distribution sparseness (K) 
-- `phase_early_multiplier`: Game phase multiplier for early game
-- `phase_late_multiplier`: Game phase multiplier for late game
+- `w2`: Weight for value distribution sparseness (K)
+- `phase_function_type`: Type of phase function (linear, exponential, piecewise)
+- `phase_coefficients`: Coefficients for the phase function based on stones_on_board
+
+**Phase Function:**
+The phase function takes stones_on_board as input and outputs a multiplier:
+- **Linear**: `phase(s) = a*(s/361) + b` where s = stones_on_board
+- **Exponential**: `phase(s) = a*exp(b*s/361) + c`
+- **Piecewise**: Different multipliers for early (<120), mid (120-240), late (≥240) game
 
 **Usage:**
 ```bash

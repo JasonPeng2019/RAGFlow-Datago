@@ -19,9 +19,23 @@ These parameters jointly define what constitutes an "uncertain" position worthy 
 **Parameters:**
 - `w1`: Weight for policy cross-entropy (E)
 - `w2`: Weight for value distribution sparseness (K)
-- `phase_function_coefficients`: Coefficients for the game phase function
+- `phase_function_type`: Type of phase function (linear, exponential, piecewise)
+- `phase_function_coefficients`: Coefficients for the phase function based on stones_on_board
 
-**Combined Function:** `(w1*E + w2*K) * phase`
+**Combined Function:** `(w1*E + w2*K) * phase(stones_on_board)`
+
+**Phase Function Options:**
+- **Linear**: `phase(s) = a*s/361 + b` where s = stones_on_board
+  - Parameters: [a, b] control slope and intercept
+  - Example: [0.5, 0.75] gives phase from 0.75 (opening) to 1.25 (endgame)
+- **Exponential**: `phase(s) = a*exp(b*s/361) + c`
+  - Parameters: [a, b, c] control exponential growth
+  - Example: [0.5, 0.5, 0.5] emphasizes late game uncertainty
+- **Piecewise**: Different multipliers for early/mid/late
+  - Early (s < 120): multiplier = a
+  - Mid (120 ≤ s < 240): multiplier = b  
+  - Late (s ≥ 240): multiplier = c
+  - Example: [0.8, 1.0, 1.2] increases emphasis as game progresses
 
 **Tuning Strategy:**
 1. **Method:** Coarse grid search with early stopping (4-day constraint)
@@ -30,48 +44,120 @@ These parameters jointly define what constitutes an "uncertain" position worthy 
    - w1: [0.3, 0.5, 0.7] (3 values instead of 5)
    - w2: [0.3, 0.5, 0.7] (3 values instead of 5)
    - Constraint: w1 + w2 = 1.0 (normalized weights)
-   - Total combinations: 9 (reduced from 25)
+   - Phase function: Start with Linear only
+   - Linear coefficients: Test 3 combinations
+     - [0.0, 1.0] - constant phase (no game phase effect)
+     - [0.5, 0.75] - increases from early to late game
+     - [-0.5, 1.25] - decreases from early to late game
+   - Total combinations: 3 (w1/w2) × 3 (phase configs) = 9
 4. **Phase Function Tuning:**
-   - Test only linear function initially (simplest)
-   - If time permits, test one exponential variant
-   - Variables: stones_on_board, total_possible_stones
-   - Test ranges: early game bonus [0.9-1.1], late game bonus [0.9-1.1]
+   - Test linear function initially (simplest, most interpretable)
+   - If time permits after Phase 1, test exponential or piecewise
+   - Function takes stones_on_board as input, outputs phase multiplier
 5. **Validation (A100 OPTIMIZED):**
    - Run 150-200 games per configuration (reduced from 500+)
    - Use A100 batch parallelization: 32-64 games simultaneously
    - Early stopping: if a config is clearly worse after 100 games, abort
-   - Track: win rate, average game length, GPU memory usage
+   - Track: win rate, average game length, GPU memory usage, phase distribution
 6. **Dependencies:** Must tune together because they define the threshold jointly
 
-**Output:** Optimal (w1, w2, phase_coefficients) tuple
-**Time Budget:** 18-20 hours on A100
+**Output:** Optimal (w1, w2, phase_function_type, phase_coefficients) tuple
+**Time Budget:** 4-8 hours on A100 (supervised learning on ground truth database)
 
 ---
 
-### CATEGORY 2: Storage Threshold (DEPENDS ON CATEGORY 1)
-This parameter determines when a position is stored in the RAG.
+### CATEGORY 1b: Relevance Comparison Weights (MUST BE TUNED BEFORE CATEGORY 2)
+These weights determine how we compute similarity between a query position and RAG database entries.
 
-**Parameters:**
-- `storage_threshold`: Cutoff value for (w1*E + w2*K)*phase
+**Parameters (from claude_instructions.txt):**
+- `policy_weight`: Weight for policy distribution similarity (baseline: 0.40)
+- `winrate_weight`: Weight for winrate similarity (baseline: 0.25)
+- `score_lead_weight`: Weight for score lead similarity (baseline: 0.10)
+- `visit_distribution_weight`: Weight for visit/child node overlap (baseline: 0.15)
+- `stone_count_weight`: Weight for phase matching (baseline: 0.05)
+- `komi_weight`: Weight for komi matching (baseline: 0.05)
+- Constraint: All weights sum to 1.0
+
+**Combined Relevance Score:** 
+```
+relevance = policy_weight * policy_sim + 
+            winrate_weight * winrate_sim + 
+            score_lead_weight * score_lead_sim +
+            visit_distribution_weight * visit_sim +
+            stone_count_weight * stone_sim +
+            komi_weight * komi_sim
+```
+
+**Why This Must Be Tuned First:**
+- Phase 1b (uncertainty threshold tuning) relies on relevance scores to decide:
+  - Relevance >= 90%: Blend policy/value
+  - Relevance < 90%: Force exploration of best moves
+- Poor relevance weights → incorrect blending decisions → bad win rate measurements
+- Cannot properly evaluate uncertainty thresholds without accurate relevance scoring
 
 **Tuning Strategy:**
-1. **Method:** Binary search after Category 1 is optimized
-2. **Pre-requisite:** Fixed w1, w2, phase_function from Category 1
-3. **Search Space (REDUCED):** Start with percentile-based approach
-   - Test storing top 5%, 10%, 15%, 20% (4 values instead of 5)
+1. **Method:** Supervised learning on ground truth database pairs
+2. **Ground Truth Creation:**
+   - Take pairs of positions from database where we KNOW they should match
+   - Compute relevance score with different weight combinations
+   - Also include negative examples (positions that should NOT match)
+   - Label pairs: 1.0 = perfect match, 0.0 = no match
+3. **Search Space (REDUCED):**
+   - Start with baseline weights from claude_instructions
+   - Test variations around baseline (±0.05, ±0.10)
+   - Grid search: ~20-30 weight combinations
+   - Focus on policy_weight (most important) and winrate_weight
 4. **Evaluation Metrics:**
-   - Database size growth rate
-   - Memory retrieval efficiency
-   - Win rate improvement
-   - Storage I/O overhead
-5. **Constraints (A100):**
-   - Database should not exceed 20GB (reasonable for fast SSD access)
-   - Storage latency should not exceed 5ms per position
-   - GPU VRAM: Monitor that embeddings fit in 80GB limit
-6. **Validation (REDUCED):**
-   - Monitor database size over 2,000-5,000 games (reduced from 10,000+)
-   - Ensure retrieval speed remains acceptable
+   - **ROC-AUC:** How well do relevance scores separate matches from non-matches?
+   - **Precision@90%:** Among pairs with relevance >= 90%, what % are true matches?
+   - **Recall@90%:** Among true matches, what % have relevance >= 90%?
+   - **Calibration:** Do relevance scores reflect actual similarity probability?
+5. **Validation:**
+   - Hold out 20% of position pairs for validation
+   - Test on different game phases (opening, mid-game, end-game)
+   - Ensure weights work across different uncertainty levels
+6. **Dependencies:** 
+   - Requires Phase 1a database (or separate labeled dataset)
+   - Must be done before Phase 1b (uncertainty threshold tuning)
+
+**Output:** Optimal relevance comparison weights
+**Time Budget:** 2-4 hours on A100 (fast, no game execution needed)
+
+---
+
+### CATEGORY 2: Uncertainty Threshold (DEPENDS ON CATEGORY 1 AND 1b)
+This parameter determines when to query the RAG database during gameplay.
+
+**Parameters:**
+- `uncertainty_threshold`: Cutoff value for (w1*E + w2*K)*phase
+- When uncertainty > threshold: Query RAG and potentially augment MCTS
+
+**Tuning Strategy:**
+1. **Method:** Game-based evaluation with static RAG database
+2. **Pre-requisite:** 
+   - Fixed w1, w2, phase_function from Category 1
+   - Fixed relevance weights from Category 1b
+3. **Search Space (REDUCED):** Percentile-based approach
+   - Test querying for top 5%, 10%, 15%, 20%, 25% uncertain positions
+   - Map percentiles to absolute thresholds using ground truth database
+4. **Evaluation Metrics:**
+   - **Win rate** vs baseline KataGo (primary metric)
+   - **RAG query rate** (% of positions that trigger lookup)
+   - **High relevance hit rate** (% of queries with relevance >= 90%)
+   - **Retrieval efficiency** (avg time per query)
+   - **RAG effectiveness** (win rate improvement per query)
+5. **Mode:** READ-ONLY database
+   - Use pre-populated RAG database from offline deep analysis
+   - Do NOT store new positions during tuning
+   - Focus purely on finding optimal query threshold
+6. **Constraints (A100):**
+   - Retrieval latency should not exceed 5ms per query
+   - Query overhead should not slow down overall gameplay
+   - Target: 10-15% query rate (sweet spot)
+7. **Validation (REDUCED):**
    - 100 games per threshold value
+   - Parallel execution: 32-64 games simultaneously
+   - Early stopping if win rate clearly worse
 
 **Output:** Optimal storage_threshold value
 **Time Budget:** 8-10 hours on A100
@@ -265,8 +351,6 @@ Controls the ANN search in the RAG database.
    - Test if k=3 helps (unlikely but quick to test)
 3. **Distance Metrics (REDUCED):**
    - Cosine similarity (recommended for normalized vectors) - TEST THIS
-   - Skip: Euclidean, Manhattan (save time)
-   - Manhattan distance
 4. **Evaluation Metrics:**
    - Retrieval speed (ms per query)
    - Retrieval accuracy (true positive rate)
@@ -297,26 +381,48 @@ Controls the ANN search in the RAG database.
 **Time Constraint:** 4 days (96 hours total)
 **Strategy:** Aggressive parallelization and reduced validation games per configuration
 
-### Phase 1: Core Uncertainty Detection (Day 1: 0-24 hours)
-1. **Tune Category 1** (w1, w2, phase_function) - REQUIRED FIRST
-   - Most critical parameters
-   - Defines entire system behavior
-   - Estimated time: 18-20 hours
-   - **A100 Optimization:** Run 8-12 configurations in parallel, 150-200 games each
-   - Coarse grid search: 5x5 = 25 combinations (reduced from exhaustive)
-   - Use early stopping if clear winner emerges
+### Phase 1: Core Uncertainty Detection (Day 1: 0-12 hours)
+**Substep 1a: Uncertainty Function Tuning (4-8 hours)**
+- **Tune Category 1** (w1, w2, phase_function) - REQUIRED FIRST
+  - Most critical parameters
+  - Uses supervised learning on ground truth database (no games needed)
+  - Estimated time: 4-8 hours
+  - **A100 Optimization:** Grid search over 35 configurations (7 w1 × 5 phase)
+  - Optimize for correlation with actual model errors
+  - Output: Optimal uncertainty function parameters
 
-### Phase 2: Storage and Retrieval Setup (Day 1-2: 20-36 hours)
-2. **Tune Category 2** (storage_threshold) - DEPENDS ON PHASE 1
-   - Determines database growth
-   - Estimated time: 8-10 hours
-   - **A100 Optimization:** Test 5-6 threshold values, 100 games each
-3. **Tune Category 8** (ANN parameters) - INDEPENDENT (PARALLEL with Phase 1)
-   - Can be done in parallel with Phase 1/2
+**Substep 1b: Relevance Weight Tuning (2-4 hours)**
+- **Tune Category 1b** (relevance comparison weights) - MUST BE DONE BEFORE 1c
+  - Determines similarity scoring between positions
+  - Uses supervised learning on labeled position pairs
+  - Estimated time: 2-4 hours
+  - **A100 Optimization:** Test ~20-30 weight combinations on labeled data
+  - Evaluate with ROC-AUC, Precision@90%, Recall@90%
+  - Output: Optimal relevance weights for similarity scoring
+
+**Substep 1c: Uncertainty Threshold Tuning (8-10 hours)**
+- **Tune Category 2** (uncertainty_threshold) - DEPENDS ON 1a AND 1b
+  - When to query RAG database during gameplay
+  - Requires actual game execution with RAG augmentation
+  - Estimated time: 8-10 hours
+  - **A100 Optimization:** Test 5 threshold values (5%, 10%, 15%, 20%, 25%)
+  - 100 games per threshold, 32-64 games in parallel
+  - Uses READ-ONLY static RAG database (no storage during tuning)
+  - Output: Optimal uncertainty threshold for RAG queries
+
+**Phase 1 Total Time:** 14-22 hours (optimistic: 14h, conservative: 22h)
+
+---
+
+### Phase 2: Storage and Retrieval Setup (Day 1-2: 12-24 hours)
+2. **Tune Category 8** (ANN parameters) - INDEPENDENT (can run in parallel)
+   - Can be done in parallel with Phase 1
    - Estimated time: 4-6 hours
    - **A100 Optimization:** Benchmark on synthetic data, minimal game testing
 
-### Phase 3: Search Quality (Day 2: 36-48 hours)
+---
+
+### Phase 3: Search Quality (Day 2: 24-36 hours)
 4. **Tune Category 3** (deep MCTS parameters) - INDEPENDENT
    - Affects quality of stored positions
    - Estimated time: 8-10 hours
@@ -326,21 +432,21 @@ Controls the ANN search in the RAG database.
    - Estimated time: 3-4 hours
    - **A100 Optimization:** Quick tests with 30-50 games per value
 
-### Phase 4: Usage Optimization (Day 3: 48-72 hours)
-6. **Tune Category 5** (relevancy comparison) - INDEPENDENT
-   - Critical for retrieval quality
-   - Estimated time: 10-12 hours
-   - **A100 Optimization:** Use supervised learning on cached positions (faster than full games)
-7. **Tune Category 6** (blending strategy) - DEPENDS ON PHASE 4
-   - Fine-tunes how RAG is used
+---
+
+### Phase 4: Usage Optimization (Day 3: 36-60 hours)
+6. **Tune Category 6** (blending strategy) - DEPENDS ON PHASE 1
+   - Fine-tunes how RAG is used (blend factors, interpolation)
    - Estimated time: 8-10 hours
    - **A100 Optimization:** 5x5 grid, 75-100 games per configuration
-8. **Tune Category 7** (forced exploration) - INDEPENDENT (PARALLEL with Category 6)
+7. **Tune Category 7** (forced exploration) - INDEPENDENT (PARALLEL with Category 6)
    - Fallback strategy
    - Estimated time: 4-5 hours
    - **A100 Optimization:** 3 strategies, 50 games each
 
-### Phase 5: Final Optimization (Day 4: 72-96 hours)
+---
+
+### Phase 5: Final Optimization (Day 4: 60-96 hours)
 9. **Joint Fine-tuning** - DEPENDS ON ALL
    - Small adjustments to all parameters together
    - Estimated time: 12-16 hours
@@ -448,7 +554,8 @@ Controls the ANN search in the RAG database.
 | Parameter | Category | Tuning Order | Dependencies | Expected Range |
 |-----------|----------|--------------|--------------|----------------|
 | w1, w2 | 1 | 1st | None | [0.1-0.9], sum=1 |
-| phase_function | 1 | 1st | None | [0.8-1.2] multipliers |
+| phase_function_type | 1 | 1st | None | linear, exponential, piecewise |
+| phase_coefficients | 1 | 1st | None | Function-dependent |
 | storage_threshold | 2 | 2nd | Category 1 | Percentile-based |
 | deep_mcts_max_depth | 3 | 4th | None | [500-10000] visits |
 | convergence_threshold | 3 | 4th | None | [0.01-0.1] |
@@ -469,7 +576,8 @@ Controls the ANN search in the RAG database.
 ### Quick Start Recommendations (Day 1, Hour 0)
 Start tuning from these baseline values:
 - w1=0.5, w2=0.5 (equal weighting)
-- phase_function: linear (early=1.0, late=1.0)
+- phase_function_type: 'linear'
+- phase_coefficients: [0.0, 1.0] (constant phase multiplier of 1.0)
 - storage_threshold: top 10% uncertainty
 - deep_mcts_max_depth: 2000 visits
 - convergence_threshold: 0.02
