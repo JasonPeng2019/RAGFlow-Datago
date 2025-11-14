@@ -7,6 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TUNING_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 ROOT_DIR="$(cd "${TUNING_DIR}/.." && pwd)"
 cd "${TUNING_DIR}"
+export PYTHONPATH="${TUNING_DIR}:${PYTHONPATH:-}"
 
 echo "=========================================="
 echo "RAG-AlphaGo Phase 2 Tuning Launcher"
@@ -34,7 +35,8 @@ fi
 
 if [ ! -d "${POSITIONS_JSON_DIR}" ]; then
     echo "Error: offline positions directory not found at ${POSITIONS_JSON_DIR}"
-    echo "Populate it with JSON logs from Phase 1 offline analysis."
+    echo "Populate it with JSON logs from Phase 1 offline analysis"
+    echo "or run python phase2/make_dummy_offline_positions.py to create dummy data."
     exit 1
 fi
 

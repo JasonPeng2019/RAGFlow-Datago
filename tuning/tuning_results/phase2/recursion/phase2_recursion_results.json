@@ -1,0 +1,81 @@
+{
+  "results": [
+    {
+      "recursion_depth_N": 1,
+      "score": -0.301724604601099,
+      "metrics": {
+        "avg_move_time_ms": 2213.1684876975146,
+        "avg_value_error": 0.02639573018639679,
+        "avg_policy_error": 0.05637907919386957,
+        "avg_deep_time_ms": 2203.120413168578,
+        "avg_recursion_depth": 1,
+        "deep_search_total": 640,
+        "deep_converged_total": 605
+      }
+    },
+    {
+      "recursion_depth_N": 2,
+      "score": -0.501724604601099,
+      "metrics": {
+        "avg_move_time_ms": 2213.1684876975146,
+        "avg_value_error": 0.02639573018639679,
+        "avg_policy_error": 0.05637907919386957,
+        "avg_deep_time_ms": 2203.120413168578,
+        "avg_recursion_depth": 2,
+        "deep_search_total": 640,
+        "deep_converged_total": 605
+      }
+    },
+    {
+      "recursion_depth_N": 3,
+      "score": -0.7017246046010991,
+      "metrics": {
+        "avg_move_time_ms": 2213.1684876975146,
+        "avg_value_error": 0.02639573018639679,
+        "avg_policy_error": 0.05637907919386957,
+        "avg_deep_time_ms": 2203.120413168578,
+        "avg_recursion_depth": 3,
+        "deep_search_total": 640,
+        "deep_converged_total": 605
+      }
+    },
+    {
+      "recursion_depth_N": 5,
+      "score": -0.7017246046010991,
+      "metrics": {
+        "avg_move_time_ms": 2213.1684876975146,
+        "avg_value_error": 0.02639573018639679,
+        "avg_policy_error": 0.05637907919386957,
+        "avg_deep_time_ms": 2203.120413168578,
+        "avg_recursion_depth": 3,
+        "deep_search_total": 640,
+        "deep_converged_total": 605
+      }
+    }
+  ],
+  "best": {
+    "recursion_depth_N": 1,
+    "score": -0.301724604601099,
+    "metrics": {
+      "avg_move_time_ms": 2213.1684876975146,
+      "avg_value_error": 0.02639573018639679,
+      "avg_policy_error": 0.05637907919386957,
+      "avg_deep_time_ms": 2203.120413168578,
+      "avg_recursion_depth": 1,
+      "deep_search_total": 640,
+      "deep_converged_total": 605
+    }
+  },
+  "scoring": {
+    "lambda_time": 0.1,
+    "lambda_depth": 0.2,
+    "lambda_error": 0.5,
+    "target_move_time_ms": 2500.0,
+    "num_samples": 20
+  },
+  "dependent_deep_config": {
+    "deep_mcts_max_depth": 10000,
+    "policy_delta": 0.1,
+    "value_delta": 0.05
+  }
+}

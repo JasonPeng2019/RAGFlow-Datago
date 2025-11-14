@@ -1,0 +1,24 @@
+{
+  "config": {
+    "deep_mcts_max_depth": 5000,
+    "policy_delta": 0.02,
+    "value_delta": 0.05
+  },
+  "config_id": "d5000_p0.02_v0.05",
+  "score": -0.6111013870967534,
+  "metrics": {
+    "avg_value_error": 0.03732919961834324,
+    "avg_policy_error": 0.07973205843007714,
+    "avg_deep_time_ms": 1101.560206584289,
+    "deep_search_total": 640,
+    "deep_converged_total": 13,
+    "avg_move_time_ms": 2213.1684876975146,
+    "rag_hits_total": 90,
+    "rag_misses_total": 550,
+    "avg_recursion_depth": 2
+  },
+  "extras": {
+    "non_converged_rate": 0.9796875,
+    "time_ratio": 0.4406240826337156
+  }
+}

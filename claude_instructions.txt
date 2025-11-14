@@ -48,20 +48,19 @@ game states go into the RAG and what doesn't go into the RAG, as well as when to
 will do a 1-Nearest Neighbors search through the RAG database first to see if the complex position has already been stored in the RAG.
 However, to ensure forever recursion doesn't occur, forcing MCTS over and over, only allow a complex-node depth of N (hand-tuned parameter / 2nd stage tuning / 
 based on our real-world limitations).
-However, let's assume at first the position wasn't found (i.e., positions 
-that showed up in the original MCTS tree). We will do a deep level MCTS search (that looks for convergence) to more accurately determine value and policy than the baseline model. The theory for this is that
+However, let's assume at first the position wasn't found (i.e., positions  that showed up in the original MCTS tree). 
+We will do a deep level MCTS search (that looks for convergence) to more accurately determine value and policy than the baseline model. The theory for this is that
 a deeper level MCTS will always yield better results than a shallow MCTS search. IF the deeper level does not converge after N tree depth, it will stop searching.
 It will store these updated results in the form of storing a dict:
 {Game Hash: 
- (2 best moves based on value from here, the actual policy function at this snapshot
-of the game state, the actual value function at this snapshot of the game,
+ (2 best moves based on value from here, the actual policy function at this snapshot of the game state, the actual value function at this snapshot of the game,
 the policy distribution + the list of child nodes that the policy is assigned to, and the info we pulled in step 1.) }
 When the model runs into this exact same complex position again, when it does the ANN, it will find this position amongst the RAG database.
 To compare value similarity and policy similarity, we first compare how many child node hashes overlap.
 Then for each game state node comparison, we calculate the overlap between the children; for each overlapping child,
 we compare its policy function (val of a vector) and value (val) at that child's assigned vector dimensional position (to clarify:
-since the policy vector matches with the list of children in its feasible reach, so the policy means nothing unless
-its assigned to the same child).
+since the policy vector matches with the list of children in its feasible reach, so the policy means nothing unless its assigned to the same child).
+
 
 5. Upon finding this position, it will do a relevancy comparison (threshold 90% - hand tune after fixing the weights) by comparing 
 the other features of the vector with the current complex state vector. The comparison weights of the various features will also be learned.
@@ -73,7 +72,7 @@ first search.
 6. The RAG will populated in two ways: offline (for training), and online (in game).
 For offline, the process is as follows:
 Self-play (fast, 800 visits):
-    -Collect all MCTS tree data: child node hashes, values, policies
+    -Collect all MCTS tree data : child node hashes, values, policies
     -Calculate E (policy entropy) and K (value variance) per position
     -Flag positions where (w1*E + w2*K) * phase > threshold
     -Write to JSON after each game

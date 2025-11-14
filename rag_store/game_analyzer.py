@@ -71,6 +71,16 @@ class GoStateEmbedding:
         self.move_infos = katago_response.get('moveInfos', None)
         self.komi = query_info['komi']
         self.query_id = katago_response['id']
+        self.stone_count = (
+            katago_response.get('rootInfo', {}).get('stonesOnBoard')
+            or query_info.get('stone_count')
+            or 0
+        )
+        self.child_nodes = (
+            katago_response.get('child_nodes')
+            or katago_response.get('moveInfos')
+            or []
+        )
 
         # Temporary fields for storage decision (not saved to DB)
         self.score_stdev = katago_response['rootInfo']['scoreStdev']
@@ -88,6 +98,8 @@ class GoStateEmbedding:
             'move_infos': self.move_infos,
             'komi': self.komi,
             'query_id': self.query_id,
+            'stone_count': self.stone_count,
+            'child_nodes': self.child_nodes,
         }
 
 class KataGoAnalyzer:

@@ -45,6 +45,20 @@ Usage
 phase2/run_phase2.sh
 ```
 
+### Dummy Offline Test
+
+To smoke-test Phase 2 without Phase 1 logs:
+
+```bash
+cd datago/tuning
+python phase2/make_dummy_offline_positions.py --output-dir ./tuning_results/offline_positions
+python phase2/smoke_test.py  # optional quick check
+phase2/run_phase2.sh
+```
+
+The generator creates synthetic offline JSON files so `GameRunner` and the Phase 2
+pipelines can run end-to-end without real data.
+
 Key outputs
 -----------
 
