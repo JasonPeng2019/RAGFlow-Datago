@@ -3,6 +3,12 @@
 #include "../../dataio/trainingwrite.h"
 #include <fstream>
 
+// Thread-local storage for current game's RAG data
+thread_local GameRAGData currentGameRAGData;
+
+// Forward declarations
+double calculateCombinedUncertainty(double E, double K, double phase);
+
 int countStones(const Board& board) {
     int total = 0;
     for (int y = 0; y < board.y_size; y++) {
@@ -103,15 +109,21 @@ bool if_uncertain(double combined) {
     //const double UNCERTAINTY_THRESHOLD = 0.7; // Example threshold
     //return combined > UNCERTAINTY_THRESHOLD;
     
+    // Thread-safe counter: flag every 5th position (1 in 5)
+    static thread_local int counter = 0;
+    counter++;
+    return (counter % 5) == 0;
+}
 
-    //if a random number between 1 and 5 = 2, then return true. 
-    //make sure the rand number is different each time by seeding it with current time
-    static bool seeded = false;
-    if (!seeded) {
-        srand(time(nullptr));
-        seeded = true;
-    }
-    return (rand() % 5 + 1) == 2;
+
+void datago_record_move(Loc moveLoc, Player pla, const Board& board) {
+    std::string moveStr = Location::toString(moveLoc, board);
+    std::string plaStr = (pla == P_BLACK) ? "B" : "W";
+    currentGameRAGData.moves_history.push_back(std::make_pair(plaStr, moveStr));
+}
+
+GameRAGData* datago_get_current_game_data() {
+    return new GameRAGData(currentGameRAGData);
 }
 
 
@@ -186,7 +198,7 @@ void datago_collect_search_states(Search* search, SearchNode* rootNode,
 
             // Populate prior (NN policy probability)
             if (hasPolicyData) {
-                int pos = NNPos::locToPos(moveLoc, board.x_size, NNPos::MAX_BOARD_LEN);
+                int pos = NNPos::locToPos(moveLoc, board.x_size, NNPos::MAX_BOARD_LEN, NNPos::MAX_BOARD_LEN);
                 info.prior = policyProbs[pos];
             } else {
                 info.prior = 0.0;
@@ -238,7 +250,7 @@ double calculateCombinedUncertainty(double E, double K, double phase)
 //implement later
 
 
-void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rules, const FinishedGameData* gameData) {
+void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rules, const GameRAGData* ragData, const FinishedGameData* gameData) {
     // Generate game_id from gameHash
     std::string game_id = "game_" + Global::uint64ToHexString(gameData->gameHash.hash1) +
                           Global::uint64ToHexString(gameData->gameHash.hash0);
@@ -268,8 +280,8 @@ void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rul
     outfile << "  \"flagged_positions\": [\n";
 
     // Iterate through all flagged positions
-    for (size_t i = 0; i < currentGameRAGData.flagged_positions.size(); i++) {
-        const PerMoveRAGData& moveData = currentGameRAGData.flagged_positions[i];
+    for (size_t i = 0; i < ragData->flagged_positions.size(); i++) {
+        const PerMoveRAGData& moveData = ragData->flagged_positions[i];
 
         outfile << "    {\n";
         outfile << "      \"move_number\": " << moveData.move_number << ",\n";
@@ -317,15 +329,15 @@ void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rul
         outfile << "      ]\n";
 
         outfile << "    }";
-        if (i < currentGameRAGData.flagged_positions.size() - 1) outfile << ",";
+        if (i < ragData->flagged_positions.size() - 1) outfile << ",";
         outfile << "\n";
     }
 
     outfile << "  ],\n";
 
     // Write summary
-    int total_flagged = currentGameRAGData.flagged_positions.size();
-    int total_moves = currentGameRAGData.moves_history.size();
+    int total_flagged = ragData->flagged_positions.size();
+    int total_moves = ragData->moves_history.size();
     double flagging_rate = (total_moves > 0) ? ((double)total_flagged / total_moves) : 0.0;
 
     outfile << "  \"summary\": {\n";

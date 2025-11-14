@@ -636,24 +636,66 @@ CMakeFiles/katago.dir/neuralnet/desc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/katago.dir/neuralnet/desc.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/desc.cpp -o CMakeFiles/katago.dir/neuralnet/desc.cpp.s
 
-CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o: CMakeFiles/katago.dir/flags.make
-CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/dummybackend.cpp
-CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o -MF CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o.d -o CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/dummybackend.cpp
+CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o: CMakeFiles/katago.dir/flags.make
+CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclbackend.cpp
+CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o -MF CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o.d -o CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclbackend.cpp
 
-CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/dummybackend.cpp > CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.i
+CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclbackend.cpp > CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.i
 
-CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/dummybackend.cpp -o CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.s
+CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclbackend.cpp -o CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.s
+
+CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o: CMakeFiles/katago.dir/flags.make
+CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclkernels.cpp
+CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o -MF CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o.d -o CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclkernels.cpp
+
+CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclkernels.cpp > CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.i
+
+CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclkernels.cpp -o CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.s
+
+CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o: CMakeFiles/katago.dir/flags.make
+CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclhelpers.cpp
+CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o -MF CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o.d -o CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclhelpers.cpp
+
+CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclhelpers.cpp > CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.i
+
+CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/openclhelpers.cpp -o CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.s
+
+CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o: CMakeFiles/katago.dir/flags.make
+CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/opencltuner.cpp
+CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o -MF CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o.d -o CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/opencltuner.cpp
+
+CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/opencltuner.cpp > CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.i
+
+CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/neuralnet/opencltuner.cpp -o CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.s
 
 CMakeFiles/katago.dir/book/book.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/book/book.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/book/book.cpp
 CMakeFiles/katago.dir/book/book.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/katago.dir/book/book.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/katago.dir/book/book.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/book/book.cpp.o -MF CMakeFiles/katago.dir/book/book.cpp.o.d -o CMakeFiles/katago.dir/book/book.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/book/book.cpp
 
 CMakeFiles/katago.dir/book/book.cpp.i: cmake_force
@@ -667,7 +709,7 @@ CMakeFiles/katago.dir/book/book.cpp.s: cmake_force
 CMakeFiles/katago.dir/book/bookcssjs.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/book/bookcssjs.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/book/bookcssjs.cpp
 CMakeFiles/katago.dir/book/bookcssjs.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/katago.dir/book/bookcssjs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/katago.dir/book/bookcssjs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/book/bookcssjs.cpp.o -MF CMakeFiles/katago.dir/book/bookcssjs.cpp.o.d -o CMakeFiles/katago.dir/book/bookcssjs.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/book/bookcssjs.cpp
 
 CMakeFiles/katago.dir/book/bookcssjs.cpp.i: cmake_force
@@ -681,7 +723,7 @@ CMakeFiles/katago.dir/book/bookcssjs.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/timecontrols.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/timecontrols.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/timecontrols.cpp
 CMakeFiles/katago.dir/search/timecontrols.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/katago.dir/search/timecontrols.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/katago.dir/search/timecontrols.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/timecontrols.cpp.o -MF CMakeFiles/katago.dir/search/timecontrols.cpp.o.d -o CMakeFiles/katago.dir/search/timecontrols.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/timecontrols.cpp
 
 CMakeFiles/katago.dir/search/timecontrols.cpp.i: cmake_force
@@ -695,7 +737,7 @@ CMakeFiles/katago.dir/search/timecontrols.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchparams.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchparams.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchparams.cpp
 CMakeFiles/katago.dir/search/searchparams.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/katago.dir/search/searchparams.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/katago.dir/search/searchparams.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchparams.cpp.o -MF CMakeFiles/katago.dir/search/searchparams.cpp.o.d -o CMakeFiles/katago.dir/search/searchparams.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchparams.cpp
 
 CMakeFiles/katago.dir/search/searchparams.cpp.i: cmake_force
@@ -709,7 +751,7 @@ CMakeFiles/katago.dir/search/searchparams.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/mutexpool.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/mutexpool.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/mutexpool.cpp
 CMakeFiles/katago.dir/search/mutexpool.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/katago.dir/search/mutexpool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/katago.dir/search/mutexpool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/mutexpool.cpp.o -MF CMakeFiles/katago.dir/search/mutexpool.cpp.o.d -o CMakeFiles/katago.dir/search/mutexpool.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/mutexpool.cpp
 
 CMakeFiles/katago.dir/search/mutexpool.cpp.i: cmake_force
@@ -723,7 +765,7 @@ CMakeFiles/katago.dir/search/mutexpool.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/search.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/search.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/search.cpp
 CMakeFiles/katago.dir/search/search.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/katago.dir/search/search.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/katago.dir/search/search.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/search.cpp.o -MF CMakeFiles/katago.dir/search/search.cpp.o.d -o CMakeFiles/katago.dir/search/search.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/search.cpp
 
 CMakeFiles/katago.dir/search/search.cpp.i: cmake_force
@@ -737,7 +779,7 @@ CMakeFiles/katago.dir/search/search.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchnode.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchnode.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchnode.cpp
 CMakeFiles/katago.dir/search/searchnode.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/katago.dir/search/searchnode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/katago.dir/search/searchnode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchnode.cpp.o -MF CMakeFiles/katago.dir/search/searchnode.cpp.o.d -o CMakeFiles/katago.dir/search/searchnode.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchnode.cpp
 
 CMakeFiles/katago.dir/search/searchnode.cpp.i: cmake_force
@@ -751,7 +793,7 @@ CMakeFiles/katago.dir/search/searchnode.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchresults.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchresults.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchresults.cpp
 CMakeFiles/katago.dir/search/searchresults.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/katago.dir/search/searchresults.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/katago.dir/search/searchresults.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchresults.cpp.o -MF CMakeFiles/katago.dir/search/searchresults.cpp.o.d -o CMakeFiles/katago.dir/search/searchresults.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchresults.cpp
 
 CMakeFiles/katago.dir/search/searchresults.cpp.i: cmake_force
@@ -765,7 +807,7 @@ CMakeFiles/katago.dir/search/searchresults.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchhelpers.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchhelpers.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchhelpers.cpp
 CMakeFiles/katago.dir/search/searchhelpers.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/katago.dir/search/searchhelpers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/katago.dir/search/searchhelpers.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchhelpers.cpp.o -MF CMakeFiles/katago.dir/search/searchhelpers.cpp.o.d -o CMakeFiles/katago.dir/search/searchhelpers.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchhelpers.cpp
 
 CMakeFiles/katago.dir/search/searchhelpers.cpp.i: cmake_force
@@ -779,7 +821,7 @@ CMakeFiles/katago.dir/search/searchhelpers.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchexplorehelpers.cpp
 CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.o -MF CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.o.d -o CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchexplorehelpers.cpp
 
 CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.i: cmake_force
@@ -793,7 +835,7 @@ CMakeFiles/katago.dir/search/searchexplorehelpers.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchmirror.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchmirror.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchmirror.cpp
 CMakeFiles/katago.dir/search/searchmirror.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/katago.dir/search/searchmirror.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/katago.dir/search/searchmirror.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchmirror.cpp.o -MF CMakeFiles/katago.dir/search/searchmirror.cpp.o.d -o CMakeFiles/katago.dir/search/searchmirror.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchmirror.cpp
 
 CMakeFiles/katago.dir/search/searchmirror.cpp.i: cmake_force
@@ -807,7 +849,7 @@ CMakeFiles/katago.dir/search/searchmirror.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchmultithreadhelpers.cpp
 CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.o -MF CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.o.d -o CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchmultithreadhelpers.cpp
 
 CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.i: cmake_force
@@ -821,7 +863,7 @@ CMakeFiles/katago.dir/search/searchmultithreadhelpers.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchnnhelpers.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchnnhelpers.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchnnhelpers.cpp
 CMakeFiles/katago.dir/search/searchnnhelpers.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/katago.dir/search/searchnnhelpers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/katago.dir/search/searchnnhelpers.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchnnhelpers.cpp.o -MF CMakeFiles/katago.dir/search/searchnnhelpers.cpp.o.d -o CMakeFiles/katago.dir/search/searchnnhelpers.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchnnhelpers.cpp
 
 CMakeFiles/katago.dir/search/searchnnhelpers.cpp.i: cmake_force
@@ -835,7 +877,7 @@ CMakeFiles/katago.dir/search/searchnnhelpers.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchtimehelpers.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchtimehelpers.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchtimehelpers.cpp
 CMakeFiles/katago.dir/search/searchtimehelpers.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/katago.dir/search/searchtimehelpers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/katago.dir/search/searchtimehelpers.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchtimehelpers.cpp.o -MF CMakeFiles/katago.dir/search/searchtimehelpers.cpp.o.d -o CMakeFiles/katago.dir/search/searchtimehelpers.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchtimehelpers.cpp
 
 CMakeFiles/katago.dir/search/searchtimehelpers.cpp.i: cmake_force
@@ -849,7 +891,7 @@ CMakeFiles/katago.dir/search/searchtimehelpers.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchupdatehelpers.cpp
 CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.o -MF CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.o.d -o CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchupdatehelpers.cpp
 
 CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.i: cmake_force
@@ -863,7 +905,7 @@ CMakeFiles/katago.dir/search/searchupdatehelpers.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/asyncbot.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/asyncbot.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/asyncbot.cpp
 CMakeFiles/katago.dir/search/asyncbot.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/katago.dir/search/asyncbot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/katago.dir/search/asyncbot.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/asyncbot.cpp.o -MF CMakeFiles/katago.dir/search/asyncbot.cpp.o.d -o CMakeFiles/katago.dir/search/asyncbot.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/asyncbot.cpp
 
 CMakeFiles/katago.dir/search/asyncbot.cpp.i: cmake_force
@@ -877,7 +919,7 @@ CMakeFiles/katago.dir/search/asyncbot.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/distributiontable.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/distributiontable.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/distributiontable.cpp
 CMakeFiles/katago.dir/search/distributiontable.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/katago.dir/search/distributiontable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/katago.dir/search/distributiontable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/distributiontable.cpp.o -MF CMakeFiles/katago.dir/search/distributiontable.cpp.o.d -o CMakeFiles/katago.dir/search/distributiontable.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/distributiontable.cpp
 
 CMakeFiles/katago.dir/search/distributiontable.cpp.i: cmake_force
@@ -891,7 +933,7 @@ CMakeFiles/katago.dir/search/distributiontable.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/localpattern.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/localpattern.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/localpattern.cpp
 CMakeFiles/katago.dir/search/localpattern.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/katago.dir/search/localpattern.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/katago.dir/search/localpattern.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/localpattern.cpp.o -MF CMakeFiles/katago.dir/search/localpattern.cpp.o.d -o CMakeFiles/katago.dir/search/localpattern.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/localpattern.cpp
 
 CMakeFiles/katago.dir/search/localpattern.cpp.i: cmake_force
@@ -905,7 +947,7 @@ CMakeFiles/katago.dir/search/localpattern.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/searchnodetable.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/searchnodetable.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchnodetable.cpp
 CMakeFiles/katago.dir/search/searchnodetable.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/katago.dir/search/searchnodetable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/katago.dir/search/searchnodetable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/searchnodetable.cpp.o -MF CMakeFiles/katago.dir/search/searchnodetable.cpp.o.d -o CMakeFiles/katago.dir/search/searchnodetable.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/searchnodetable.cpp
 
 CMakeFiles/katago.dir/search/searchnodetable.cpp.i: cmake_force
@@ -919,7 +961,7 @@ CMakeFiles/katago.dir/search/searchnodetable.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/subtreevaluebiastable.cpp
 CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.o -MF CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.o.d -o CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/subtreevaluebiastable.cpp
 
 CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.i: cmake_force
@@ -933,7 +975,7 @@ CMakeFiles/katago.dir/search/subtreevaluebiastable.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/evalcache.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/evalcache.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/evalcache.cpp
 CMakeFiles/katago.dir/search/evalcache.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/katago.dir/search/evalcache.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/katago.dir/search/evalcache.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/evalcache.cpp.o -MF CMakeFiles/katago.dir/search/evalcache.cpp.o.d -o CMakeFiles/katago.dir/search/evalcache.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/evalcache.cpp
 
 CMakeFiles/katago.dir/search/evalcache.cpp.i: cmake_force
@@ -947,7 +989,7 @@ CMakeFiles/katago.dir/search/evalcache.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/patternbonustable.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/patternbonustable.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/patternbonustable.cpp
 CMakeFiles/katago.dir/search/patternbonustable.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/katago.dir/search/patternbonustable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/katago.dir/search/patternbonustable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/patternbonustable.cpp.o -MF CMakeFiles/katago.dir/search/patternbonustable.cpp.o.d -o CMakeFiles/katago.dir/search/patternbonustable.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/patternbonustable.cpp
 
 CMakeFiles/katago.dir/search/patternbonustable.cpp.i: cmake_force
@@ -961,7 +1003,7 @@ CMakeFiles/katago.dir/search/patternbonustable.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/analysisdata.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/analysisdata.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/analysisdata.cpp
 CMakeFiles/katago.dir/search/analysisdata.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/katago.dir/search/analysisdata.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/katago.dir/search/analysisdata.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/analysisdata.cpp.o -MF CMakeFiles/katago.dir/search/analysisdata.cpp.o.d -o CMakeFiles/katago.dir/search/analysisdata.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/analysisdata.cpp
 
 CMakeFiles/katago.dir/search/analysisdata.cpp.i: cmake_force
@@ -975,7 +1017,7 @@ CMakeFiles/katago.dir/search/analysisdata.cpp.s: cmake_force
 CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/reportedsearchvalues.cpp
 CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.o -MF CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.o.d -o CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/search/reportedsearchvalues.cpp
 
 CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.i: cmake_force
@@ -989,7 +1031,7 @@ CMakeFiles/katago.dir/search/reportedsearchvalues.cpp.s: cmake_force
 CMakeFiles/katago.dir/program/gtpconfig.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/program/gtpconfig.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/gtpconfig.cpp
 CMakeFiles/katago.dir/program/gtpconfig.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/katago.dir/program/gtpconfig.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/katago.dir/program/gtpconfig.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/program/gtpconfig.cpp.o -MF CMakeFiles/katago.dir/program/gtpconfig.cpp.o.d -o CMakeFiles/katago.dir/program/gtpconfig.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/gtpconfig.cpp
 
 CMakeFiles/katago.dir/program/gtpconfig.cpp.i: cmake_force
@@ -1003,7 +1045,7 @@ CMakeFiles/katago.dir/program/gtpconfig.cpp.s: cmake_force
 CMakeFiles/katago.dir/program/setup.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/program/setup.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/setup.cpp
 CMakeFiles/katago.dir/program/setup.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/katago.dir/program/setup.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/katago.dir/program/setup.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/program/setup.cpp.o -MF CMakeFiles/katago.dir/program/setup.cpp.o.d -o CMakeFiles/katago.dir/program/setup.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/setup.cpp
 
 CMakeFiles/katago.dir/program/setup.cpp.i: cmake_force
@@ -1017,7 +1059,7 @@ CMakeFiles/katago.dir/program/setup.cpp.s: cmake_force
 CMakeFiles/katago.dir/program/playutils.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/program/playutils.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/playutils.cpp
 CMakeFiles/katago.dir/program/playutils.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/katago.dir/program/playutils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/katago.dir/program/playutils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/program/playutils.cpp.o -MF CMakeFiles/katago.dir/program/playutils.cpp.o.d -o CMakeFiles/katago.dir/program/playutils.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/playutils.cpp
 
 CMakeFiles/katago.dir/program/playutils.cpp.i: cmake_force
@@ -1031,7 +1073,7 @@ CMakeFiles/katago.dir/program/playutils.cpp.s: cmake_force
 CMakeFiles/katago.dir/program/playsettings.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/program/playsettings.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/playsettings.cpp
 CMakeFiles/katago.dir/program/playsettings.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/katago.dir/program/playsettings.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/katago.dir/program/playsettings.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/program/playsettings.cpp.o -MF CMakeFiles/katago.dir/program/playsettings.cpp.o.d -o CMakeFiles/katago.dir/program/playsettings.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/playsettings.cpp
 
 CMakeFiles/katago.dir/program/playsettings.cpp.i: cmake_force
@@ -1045,7 +1087,7 @@ CMakeFiles/katago.dir/program/playsettings.cpp.s: cmake_force
 CMakeFiles/katago.dir/program/play.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/program/play.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/play.cpp
 CMakeFiles/katago.dir/program/play.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/katago.dir/program/play.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/katago.dir/program/play.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/program/play.cpp.o -MF CMakeFiles/katago.dir/program/play.cpp.o.d -o CMakeFiles/katago.dir/program/play.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/play.cpp
 
 CMakeFiles/katago.dir/program/play.cpp.i: cmake_force
@@ -1059,7 +1101,7 @@ CMakeFiles/katago.dir/program/play.cpp.s: cmake_force
 CMakeFiles/katago.dir/program/selfplaymanager.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/program/selfplaymanager.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/selfplaymanager.cpp
 CMakeFiles/katago.dir/program/selfplaymanager.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/katago.dir/program/selfplaymanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/katago.dir/program/selfplaymanager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/program/selfplaymanager.cpp.o -MF CMakeFiles/katago.dir/program/selfplaymanager.cpp.o.d -o CMakeFiles/katago.dir/program/selfplaymanager.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/program/selfplaymanager.cpp
 
 CMakeFiles/katago.dir/program/selfplaymanager.cpp.i: cmake_force
@@ -1073,7 +1115,7 @@ CMakeFiles/katago.dir/program/selfplaymanager.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testboardarea.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testboardarea.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testboardarea.cpp
 CMakeFiles/katago.dir/tests/testboardarea.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/katago.dir/tests/testboardarea.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/katago.dir/tests/testboardarea.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testboardarea.cpp.o -MF CMakeFiles/katago.dir/tests/testboardarea.cpp.o.d -o CMakeFiles/katago.dir/tests/testboardarea.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testboardarea.cpp
 
 CMakeFiles/katago.dir/tests/testboardarea.cpp.i: cmake_force
@@ -1087,7 +1129,7 @@ CMakeFiles/katago.dir/tests/testboardarea.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testboardbasic.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testboardbasic.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testboardbasic.cpp
 CMakeFiles/katago.dir/tests/testboardbasic.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/katago.dir/tests/testboardbasic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/katago.dir/tests/testboardbasic.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testboardbasic.cpp.o -MF CMakeFiles/katago.dir/tests/testboardbasic.cpp.o.d -o CMakeFiles/katago.dir/tests/testboardbasic.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testboardbasic.cpp
 
 CMakeFiles/katago.dir/tests/testboardbasic.cpp.i: cmake_force
@@ -1101,7 +1143,7 @@ CMakeFiles/katago.dir/tests/testboardbasic.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testbook.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testbook.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testbook.cpp
 CMakeFiles/katago.dir/tests/testbook.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/katago.dir/tests/testbook.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/katago.dir/tests/testbook.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testbook.cpp.o -MF CMakeFiles/katago.dir/tests/testbook.cpp.o.d -o CMakeFiles/katago.dir/tests/testbook.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testbook.cpp
 
 CMakeFiles/katago.dir/tests/testbook.cpp.i: cmake_force
@@ -1115,7 +1157,7 @@ CMakeFiles/katago.dir/tests/testbook.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testcommon.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testcommon.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testcommon.cpp
 CMakeFiles/katago.dir/tests/testcommon.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/katago.dir/tests/testcommon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/katago.dir/tests/testcommon.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testcommon.cpp.o -MF CMakeFiles/katago.dir/tests/testcommon.cpp.o.d -o CMakeFiles/katago.dir/tests/testcommon.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testcommon.cpp
 
 CMakeFiles/katago.dir/tests/testcommon.cpp.i: cmake_force
@@ -1129,7 +1171,7 @@ CMakeFiles/katago.dir/tests/testcommon.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testconfig.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testconfig.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testconfig.cpp
 CMakeFiles/katago.dir/tests/testconfig.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/katago.dir/tests/testconfig.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/katago.dir/tests/testconfig.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testconfig.cpp.o -MF CMakeFiles/katago.dir/tests/testconfig.cpp.o.d -o CMakeFiles/katago.dir/tests/testconfig.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testconfig.cpp
 
 CMakeFiles/katago.dir/tests/testconfig.cpp.i: cmake_force
@@ -1143,7 +1185,7 @@ CMakeFiles/katago.dir/tests/testconfig.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testmisc.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testmisc.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testmisc.cpp
 CMakeFiles/katago.dir/tests/testmisc.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/katago.dir/tests/testmisc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/katago.dir/tests/testmisc.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testmisc.cpp.o -MF CMakeFiles/katago.dir/tests/testmisc.cpp.o.d -o CMakeFiles/katago.dir/tests/testmisc.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testmisc.cpp
 
 CMakeFiles/katago.dir/tests/testmisc.cpp.i: cmake_force
@@ -1157,7 +1199,7 @@ CMakeFiles/katago.dir/tests/testmisc.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testnnevalcanary.cpp
 CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.o -MF CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.o.d -o CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testnnevalcanary.cpp
 
 CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.i: cmake_force
@@ -1171,7 +1213,7 @@ CMakeFiles/katago.dir/tests/testnnevalcanary.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testrules.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testrules.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testrules.cpp
 CMakeFiles/katago.dir/tests/testrules.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/katago.dir/tests/testrules.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/katago.dir/tests/testrules.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testrules.cpp.o -MF CMakeFiles/katago.dir/tests/testrules.cpp.o.d -o CMakeFiles/katago.dir/tests/testrules.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testrules.cpp
 
 CMakeFiles/katago.dir/tests/testrules.cpp.i: cmake_force
@@ -1185,7 +1227,7 @@ CMakeFiles/katago.dir/tests/testrules.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testscore.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testscore.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testscore.cpp
 CMakeFiles/katago.dir/tests/testscore.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/katago.dir/tests/testscore.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/katago.dir/tests/testscore.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testscore.cpp.o -MF CMakeFiles/katago.dir/tests/testscore.cpp.o.d -o CMakeFiles/katago.dir/tests/testscore.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testscore.cpp
 
 CMakeFiles/katago.dir/tests/testscore.cpp.i: cmake_force
@@ -1199,7 +1241,7 @@ CMakeFiles/katago.dir/tests/testscore.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsgf.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsgf.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsgf.cpp
 CMakeFiles/katago.dir/tests/testsgf.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/katago.dir/tests/testsgf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/katago.dir/tests/testsgf.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsgf.cpp.o -MF CMakeFiles/katago.dir/tests/testsgf.cpp.o.d -o CMakeFiles/katago.dir/tests/testsgf.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsgf.cpp
 
 CMakeFiles/katago.dir/tests/testsgf.cpp.i: cmake_force
@@ -1213,7 +1255,7 @@ CMakeFiles/katago.dir/tests/testsgf.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsymmetries.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsymmetries.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsymmetries.cpp
 CMakeFiles/katago.dir/tests/testsymmetries.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/katago.dir/tests/testsymmetries.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/katago.dir/tests/testsymmetries.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsymmetries.cpp.o -MF CMakeFiles/katago.dir/tests/testsymmetries.cpp.o.d -o CMakeFiles/katago.dir/tests/testsymmetries.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsymmetries.cpp
 
 CMakeFiles/katago.dir/tests/testsymmetries.cpp.i: cmake_force
@@ -1227,7 +1269,7 @@ CMakeFiles/katago.dir/tests/testsymmetries.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testnninputs.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testnninputs.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testnninputs.cpp
 CMakeFiles/katago.dir/tests/testnninputs.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/katago.dir/tests/testnninputs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/katago.dir/tests/testnninputs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testnninputs.cpp.o -MF CMakeFiles/katago.dir/tests/testnninputs.cpp.o.d -o CMakeFiles/katago.dir/tests/testnninputs.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testnninputs.cpp
 
 CMakeFiles/katago.dir/tests/testnninputs.cpp.i: cmake_force
@@ -1241,7 +1283,7 @@ CMakeFiles/katago.dir/tests/testnninputs.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testownership.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testownership.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testownership.cpp
 CMakeFiles/katago.dir/tests/testownership.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/katago.dir/tests/testownership.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/katago.dir/tests/testownership.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testownership.cpp.o -MF CMakeFiles/katago.dir/tests/testownership.cpp.o.d -o CMakeFiles/katago.dir/tests/testownership.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testownership.cpp
 
 CMakeFiles/katago.dir/tests/testownership.cpp.i: cmake_force
@@ -1255,7 +1297,7 @@ CMakeFiles/katago.dir/tests/testownership.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsearchcommon.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsearchcommon.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchcommon.cpp
 CMakeFiles/katago.dir/tests/testsearchcommon.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/katago.dir/tests/testsearchcommon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/katago.dir/tests/testsearchcommon.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsearchcommon.cpp.o -MF CMakeFiles/katago.dir/tests/testsearchcommon.cpp.o.d -o CMakeFiles/katago.dir/tests/testsearchcommon.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchcommon.cpp
 
 CMakeFiles/katago.dir/tests/testsearchcommon.cpp.i: cmake_force
@@ -1269,7 +1311,7 @@ CMakeFiles/katago.dir/tests/testsearchcommon.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsearchnonn.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsearchnonn.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchnonn.cpp
 CMakeFiles/katago.dir/tests/testsearchnonn.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/katago.dir/tests/testsearchnonn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/katago.dir/tests/testsearchnonn.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsearchnonn.cpp.o -MF CMakeFiles/katago.dir/tests/testsearchnonn.cpp.o.d -o CMakeFiles/katago.dir/tests/testsearchnonn.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchnonn.cpp
 
 CMakeFiles/katago.dir/tests/testsearchnonn.cpp.i: cmake_force
@@ -1283,7 +1325,7 @@ CMakeFiles/katago.dir/tests/testsearchnonn.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsearch.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsearch.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearch.cpp
 CMakeFiles/katago.dir/tests/testsearch.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/katago.dir/tests/testsearch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/katago.dir/tests/testsearch.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsearch.cpp.o -MF CMakeFiles/katago.dir/tests/testsearch.cpp.o.d -o CMakeFiles/katago.dir/tests/testsearch.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearch.cpp
 
 CMakeFiles/katago.dir/tests/testsearch.cpp.i: cmake_force
@@ -1297,7 +1339,7 @@ CMakeFiles/katago.dir/tests/testsearch.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsearchv3.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsearchv3.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchv3.cpp
 CMakeFiles/katago.dir/tests/testsearchv3.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/katago.dir/tests/testsearchv3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/katago.dir/tests/testsearchv3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsearchv3.cpp.o -MF CMakeFiles/katago.dir/tests/testsearchv3.cpp.o.d -o CMakeFiles/katago.dir/tests/testsearchv3.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchv3.cpp
 
 CMakeFiles/katago.dir/tests/testsearchv3.cpp.i: cmake_force
@@ -1311,7 +1353,7 @@ CMakeFiles/katago.dir/tests/testsearchv3.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsearchv8.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsearchv8.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchv8.cpp
 CMakeFiles/katago.dir/tests/testsearchv8.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/katago.dir/tests/testsearchv8.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/katago.dir/tests/testsearchv8.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsearchv8.cpp.o -MF CMakeFiles/katago.dir/tests/testsearchv8.cpp.o.d -o CMakeFiles/katago.dir/tests/testsearchv8.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchv8.cpp
 
 CMakeFiles/katago.dir/tests/testsearchv8.cpp.i: cmake_force
@@ -1325,7 +1367,7 @@ CMakeFiles/katago.dir/tests/testsearchv8.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsearchv9.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsearchv9.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchv9.cpp
 CMakeFiles/katago.dir/tests/testsearchv9.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/katago.dir/tests/testsearchv9.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/katago.dir/tests/testsearchv9.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsearchv9.cpp.o -MF CMakeFiles/katago.dir/tests/testsearchv9.cpp.o.d -o CMakeFiles/katago.dir/tests/testsearchv9.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchv9.cpp
 
 CMakeFiles/katago.dir/tests/testsearchv9.cpp.i: cmake_force
@@ -1339,7 +1381,7 @@ CMakeFiles/katago.dir/tests/testsearchv9.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testsearchmisc.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testsearchmisc.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchmisc.cpp
 CMakeFiles/katago.dir/tests/testsearchmisc.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/katago.dir/tests/testsearchmisc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/katago.dir/tests/testsearchmisc.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testsearchmisc.cpp.o -MF CMakeFiles/katago.dir/tests/testsearchmisc.cpp.o.d -o CMakeFiles/katago.dir/tests/testsearchmisc.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testsearchmisc.cpp
 
 CMakeFiles/katago.dir/tests/testsearchmisc.cpp.i: cmake_force
@@ -1353,7 +1395,7 @@ CMakeFiles/katago.dir/tests/testsearchmisc.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testtime.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testtime.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testtime.cpp
 CMakeFiles/katago.dir/tests/testtime.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/katago.dir/tests/testtime.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/katago.dir/tests/testtime.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testtime.cpp.o -MF CMakeFiles/katago.dir/tests/testtime.cpp.o.d -o CMakeFiles/katago.dir/tests/testtime.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testtime.cpp
 
 CMakeFiles/katago.dir/tests/testtime.cpp.i: cmake_force
@@ -1367,7 +1409,7 @@ CMakeFiles/katago.dir/tests/testtime.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testtrainingwrite.cpp
 CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.o -MF CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.o.d -o CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testtrainingwrite.cpp
 
 CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.i: cmake_force
@@ -1381,7 +1423,7 @@ CMakeFiles/katago.dir/tests/testtrainingwrite.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/testnn.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/testnn.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testnn.cpp
 CMakeFiles/katago.dir/tests/testnn.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/katago.dir/tests/testnn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/katago.dir/tests/testnn.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/testnn.cpp.o -MF CMakeFiles/katago.dir/tests/testnn.cpp.o.d -o CMakeFiles/katago.dir/tests/testnn.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/testnn.cpp
 
 CMakeFiles/katago.dir/tests/testnn.cpp.i: cmake_force
@@ -1395,7 +1437,7 @@ CMakeFiles/katago.dir/tests/testnn.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/tinymodel.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/tinymodel.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/tinymodel.cpp
 CMakeFiles/katago.dir/tests/tinymodel.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/katago.dir/tests/tinymodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/katago.dir/tests/tinymodel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/tinymodel.cpp.o -MF CMakeFiles/katago.dir/tests/tinymodel.cpp.o.d -o CMakeFiles/katago.dir/tests/tinymodel.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/tinymodel.cpp
 
 CMakeFiles/katago.dir/tests/tinymodel.cpp.i: cmake_force
@@ -1409,7 +1451,7 @@ CMakeFiles/katago.dir/tests/tinymodel.cpp.s: cmake_force
 CMakeFiles/katago.dir/tests/tinymodeldata.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/tests/tinymodeldata.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/tinymodeldata.cpp
 CMakeFiles/katago.dir/tests/tinymodeldata.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/katago.dir/tests/tinymodeldata.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/katago.dir/tests/tinymodeldata.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/tests/tinymodeldata.cpp.o -MF CMakeFiles/katago.dir/tests/tinymodeldata.cpp.o.d -o CMakeFiles/katago.dir/tests/tinymodeldata.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/tests/tinymodeldata.cpp
 
 CMakeFiles/katago.dir/tests/tinymodeldata.cpp.i: cmake_force
@@ -1423,7 +1465,7 @@ CMakeFiles/katago.dir/tests/tinymodeldata.cpp.s: cmake_force
 CMakeFiles/katago.dir/distributed/client.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/distributed/client.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/distributed/client.cpp
 CMakeFiles/katago.dir/distributed/client.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/katago.dir/distributed/client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/katago.dir/distributed/client.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/distributed/client.cpp.o -MF CMakeFiles/katago.dir/distributed/client.cpp.o.d -o CMakeFiles/katago.dir/distributed/client.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/distributed/client.cpp
 
 CMakeFiles/katago.dir/distributed/client.cpp.i: cmake_force
@@ -1437,7 +1479,7 @@ CMakeFiles/katago.dir/distributed/client.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/commandline.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/commandline.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/commandline.cpp
 CMakeFiles/katago.dir/command/commandline.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/katago.dir/command/commandline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/katago.dir/command/commandline.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/commandline.cpp.o -MF CMakeFiles/katago.dir/command/commandline.cpp.o.d -o CMakeFiles/katago.dir/command/commandline.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/commandline.cpp
 
 CMakeFiles/katago.dir/command/commandline.cpp.i: cmake_force
@@ -1451,7 +1493,7 @@ CMakeFiles/katago.dir/command/commandline.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/analysis.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/analysis.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/analysis.cpp
 CMakeFiles/katago.dir/command/analysis.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/katago.dir/command/analysis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/katago.dir/command/analysis.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/analysis.cpp.o -MF CMakeFiles/katago.dir/command/analysis.cpp.o.d -o CMakeFiles/katago.dir/command/analysis.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/analysis.cpp
 
 CMakeFiles/katago.dir/command/analysis.cpp.i: cmake_force
@@ -1465,7 +1507,7 @@ CMakeFiles/katago.dir/command/analysis.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/benchmark.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/benchmark.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/benchmark.cpp
 CMakeFiles/katago.dir/command/benchmark.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/katago.dir/command/benchmark.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/katago.dir/command/benchmark.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/benchmark.cpp.o -MF CMakeFiles/katago.dir/command/benchmark.cpp.o.d -o CMakeFiles/katago.dir/command/benchmark.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/benchmark.cpp
 
 CMakeFiles/katago.dir/command/benchmark.cpp.i: cmake_force
@@ -1479,7 +1521,7 @@ CMakeFiles/katago.dir/command/benchmark.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/contribute.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/contribute.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/contribute.cpp
 CMakeFiles/katago.dir/command/contribute.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/katago.dir/command/contribute.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/katago.dir/command/contribute.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/contribute.cpp.o -MF CMakeFiles/katago.dir/command/contribute.cpp.o.d -o CMakeFiles/katago.dir/command/contribute.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/contribute.cpp
 
 CMakeFiles/katago.dir/command/contribute.cpp.i: cmake_force
@@ -1493,7 +1535,7 @@ CMakeFiles/katago.dir/command/contribute.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/demoplay.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/demoplay.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/demoplay.cpp
 CMakeFiles/katago.dir/command/demoplay.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/katago.dir/command/demoplay.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/katago.dir/command/demoplay.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/demoplay.cpp.o -MF CMakeFiles/katago.dir/command/demoplay.cpp.o.d -o CMakeFiles/katago.dir/command/demoplay.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/demoplay.cpp
 
 CMakeFiles/katago.dir/command/demoplay.cpp.i: cmake_force
@@ -1507,7 +1549,7 @@ CMakeFiles/katago.dir/command/demoplay.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/evalsgf.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/evalsgf.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/evalsgf.cpp
 CMakeFiles/katago.dir/command/evalsgf.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/katago.dir/command/evalsgf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/katago.dir/command/evalsgf.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/evalsgf.cpp.o -MF CMakeFiles/katago.dir/command/evalsgf.cpp.o.d -o CMakeFiles/katago.dir/command/evalsgf.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/evalsgf.cpp
 
 CMakeFiles/katago.dir/command/evalsgf.cpp.i: cmake_force
@@ -1521,7 +1563,7 @@ CMakeFiles/katago.dir/command/evalsgf.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/gatekeeper.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/gatekeeper.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/gatekeeper.cpp
 CMakeFiles/katago.dir/command/gatekeeper.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/katago.dir/command/gatekeeper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/katago.dir/command/gatekeeper.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/gatekeeper.cpp.o -MF CMakeFiles/katago.dir/command/gatekeeper.cpp.o.d -o CMakeFiles/katago.dir/command/gatekeeper.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/gatekeeper.cpp
 
 CMakeFiles/katago.dir/command/gatekeeper.cpp.i: cmake_force
@@ -1535,7 +1577,7 @@ CMakeFiles/katago.dir/command/gatekeeper.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/genbook.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/genbook.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/genbook.cpp
 CMakeFiles/katago.dir/command/genbook.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/katago.dir/command/genbook.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/katago.dir/command/genbook.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/genbook.cpp.o -MF CMakeFiles/katago.dir/command/genbook.cpp.o.d -o CMakeFiles/katago.dir/command/genbook.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/genbook.cpp
 
 CMakeFiles/katago.dir/command/genbook.cpp.i: cmake_force
@@ -1549,7 +1591,7 @@ CMakeFiles/katago.dir/command/genbook.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/gputest.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/gputest.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/gputest.cpp
 CMakeFiles/katago.dir/command/gputest.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/katago.dir/command/gputest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/katago.dir/command/gputest.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/gputest.cpp.o -MF CMakeFiles/katago.dir/command/gputest.cpp.o.d -o CMakeFiles/katago.dir/command/gputest.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/gputest.cpp
 
 CMakeFiles/katago.dir/command/gputest.cpp.i: cmake_force
@@ -1563,7 +1605,7 @@ CMakeFiles/katago.dir/command/gputest.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/gtp.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/gtp.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/gtp.cpp
 CMakeFiles/katago.dir/command/gtp.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/katago.dir/command/gtp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/katago.dir/command/gtp.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/gtp.cpp.o -MF CMakeFiles/katago.dir/command/gtp.cpp.o.d -o CMakeFiles/katago.dir/command/gtp.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/gtp.cpp
 
 CMakeFiles/katago.dir/command/gtp.cpp.i: cmake_force
@@ -1577,7 +1619,7 @@ CMakeFiles/katago.dir/command/gtp.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/match.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/match.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/match.cpp
 CMakeFiles/katago.dir/command/match.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/katago.dir/command/match.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/katago.dir/command/match.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/match.cpp.o -MF CMakeFiles/katago.dir/command/match.cpp.o.d -o CMakeFiles/katago.dir/command/match.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/match.cpp
 
 CMakeFiles/katago.dir/command/match.cpp.i: cmake_force
@@ -1591,7 +1633,7 @@ CMakeFiles/katago.dir/command/match.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/misc.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/misc.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/misc.cpp
 CMakeFiles/katago.dir/command/misc.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/katago.dir/command/misc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/katago.dir/command/misc.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/misc.cpp.o -MF CMakeFiles/katago.dir/command/misc.cpp.o.d -o CMakeFiles/katago.dir/command/misc.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/misc.cpp
 
 CMakeFiles/katago.dir/command/misc.cpp.i: cmake_force
@@ -1605,7 +1647,7 @@ CMakeFiles/katago.dir/command/misc.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/runtests.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/runtests.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/runtests.cpp
 CMakeFiles/katago.dir/command/runtests.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/katago.dir/command/runtests.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/katago.dir/command/runtests.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/runtests.cpp.o -MF CMakeFiles/katago.dir/command/runtests.cpp.o.d -o CMakeFiles/katago.dir/command/runtests.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/runtests.cpp
 
 CMakeFiles/katago.dir/command/runtests.cpp.i: cmake_force
@@ -1619,7 +1661,7 @@ CMakeFiles/katago.dir/command/runtests.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/sandbox.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/sandbox.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/sandbox.cpp
 CMakeFiles/katago.dir/command/sandbox.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/katago.dir/command/sandbox.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/katago.dir/command/sandbox.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/sandbox.cpp.o -MF CMakeFiles/katago.dir/command/sandbox.cpp.o.d -o CMakeFiles/katago.dir/command/sandbox.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/sandbox.cpp
 
 CMakeFiles/katago.dir/command/sandbox.cpp.i: cmake_force
@@ -1633,7 +1675,7 @@ CMakeFiles/katago.dir/command/sandbox.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/selfplay.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/selfplay.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/selfplay.cpp
 CMakeFiles/katago.dir/command/selfplay.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/katago.dir/command/selfplay.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/katago.dir/command/selfplay.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/selfplay.cpp.o -MF CMakeFiles/katago.dir/command/selfplay.cpp.o.d -o CMakeFiles/katago.dir/command/selfplay.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/selfplay.cpp
 
 CMakeFiles/katago.dir/command/selfplay.cpp.i: cmake_force
@@ -1647,7 +1689,7 @@ CMakeFiles/katago.dir/command/selfplay.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/startposes.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/startposes.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/startposes.cpp
 CMakeFiles/katago.dir/command/startposes.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/katago.dir/command/startposes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/katago.dir/command/startposes.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/startposes.cpp.o -MF CMakeFiles/katago.dir/command/startposes.cpp.o.d -o CMakeFiles/katago.dir/command/startposes.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/startposes.cpp
 
 CMakeFiles/katago.dir/command/startposes.cpp.i: cmake_force
@@ -1661,7 +1703,7 @@ CMakeFiles/katago.dir/command/startposes.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/tune.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/tune.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/tune.cpp
 CMakeFiles/katago.dir/command/tune.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/katago.dir/command/tune.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/katago.dir/command/tune.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/tune.cpp.o -MF CMakeFiles/katago.dir/command/tune.cpp.o.d -o CMakeFiles/katago.dir/command/tune.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/tune.cpp
 
 CMakeFiles/katago.dir/command/tune.cpp.i: cmake_force
@@ -1675,7 +1717,7 @@ CMakeFiles/katago.dir/command/tune.cpp.s: cmake_force
 CMakeFiles/katago.dir/command/writetrainingdata.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/command/writetrainingdata.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/writetrainingdata.cpp
 CMakeFiles/katago.dir/command/writetrainingdata.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/katago.dir/command/writetrainingdata.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/katago.dir/command/writetrainingdata.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/command/writetrainingdata.cpp.o -MF CMakeFiles/katago.dir/command/writetrainingdata.cpp.o.d -o CMakeFiles/katago.dir/command/writetrainingdata.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/writetrainingdata.cpp
 
 CMakeFiles/katago.dir/command/writetrainingdata.cpp.i: cmake_force
@@ -1686,10 +1728,24 @@ CMakeFiles/katago.dir/command/writetrainingdata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/katago.dir/command/writetrainingdata.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/command/writetrainingdata.cpp -o CMakeFiles/katago.dir/command/writetrainingdata.cpp.s
 
+CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o: CMakeFiles/katago.dir/flags.make
+CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/datago_implement/stats_search/stats_search.cpp
+CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o -MF CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o.d -o CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/datago_implement/stats_search/stats_search.cpp
+
+CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/datago_implement/stats_search/stats_search.cpp > CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.i
+
+CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/datago_implement/stats_search/stats_search.cpp -o CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.s
+
 CMakeFiles/katago.dir/main.cpp.o: CMakeFiles/katago.dir/flags.make
 CMakeFiles/katago.dir/main.cpp.o: /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/main.cpp
 CMakeFiles/katago.dir/main.cpp.o: CMakeFiles/katago.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/katago.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/katago.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/katago.dir/main.cpp.o -MF CMakeFiles/katago.dir/main.cpp.o.d -o CMakeFiles/katago.dir/main.cpp.o -c /scratch2/f004h1v/alphago_project/katago_repo/KataGo/cpp/main.cpp
 
 CMakeFiles/katago.dir/main.cpp.i: cmake_force
@@ -1742,7 +1798,10 @@ katago_OBJECTS = \
 "CMakeFiles/katago.dir/neuralnet/modelversion.cpp.o" \
 "CMakeFiles/katago.dir/neuralnet/nneval.cpp.o" \
 "CMakeFiles/katago.dir/neuralnet/desc.cpp.o" \
-"CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o" \
+"CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o" \
+"CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o" \
+"CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o" \
+"CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o" \
 "CMakeFiles/katago.dir/book/book.cpp.o" \
 "CMakeFiles/katago.dir/book/bookcssjs.cpp.o" \
 "CMakeFiles/katago.dir/search/timecontrols.cpp.o" \
@@ -1817,6 +1876,7 @@ katago_OBJECTS = \
 "CMakeFiles/katago.dir/command/startposes.cpp.o" \
 "CMakeFiles/katago.dir/command/tune.cpp.o" \
 "CMakeFiles/katago.dir/command/writetrainingdata.cpp.o" \
+"CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o" \
 "CMakeFiles/katago.dir/main.cpp.o"
 
 # External object files for target katago
@@ -1862,7 +1922,10 @@ katago: CMakeFiles/katago.dir/neuralnet/sgfmetadata.cpp.o
 katago: CMakeFiles/katago.dir/neuralnet/modelversion.cpp.o
 katago: CMakeFiles/katago.dir/neuralnet/nneval.cpp.o
 katago: CMakeFiles/katago.dir/neuralnet/desc.cpp.o
-katago: CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o
+katago: CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o
+katago: CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o
+katago: CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o
+katago: CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o
 katago: CMakeFiles/katago.dir/book/book.cpp.o
 katago: CMakeFiles/katago.dir/book/bookcssjs.cpp.o
 katago: CMakeFiles/katago.dir/search/timecontrols.cpp.o
@@ -1937,11 +2000,13 @@ katago: CMakeFiles/katago.dir/command/selfplay.cpp.o
 katago: CMakeFiles/katago.dir/command/startposes.cpp.o
 katago: CMakeFiles/katago.dir/command/tune.cpp.o
 katago: CMakeFiles/katago.dir/command/writetrainingdata.cpp.o
+katago: CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o
 katago: CMakeFiles/katago.dir/main.cpp.o
 katago: CMakeFiles/katago.dir/build.make
+katago: /usr/lib/x86_64-linux-gnu/libOpenCL.so
 katago: /usr/lib/x86_64-linux-gnu/libz.so
 katago: CMakeFiles/katago.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Linking CXX executable katago"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/scratch2/f004h1v/alphago_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Linking CXX executable katago"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/katago.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

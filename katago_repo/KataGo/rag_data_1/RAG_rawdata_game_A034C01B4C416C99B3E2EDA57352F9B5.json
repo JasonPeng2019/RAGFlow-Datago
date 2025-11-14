@@ -1,0 +1,2731 @@
+{
+  "game_id": "game_A034C01B4C416C99B3E2EDA57352F9B5",
+  "settings": {
+    "komi": 6.5,
+    "rules": "koSITUATIONALscoreTERRITORYtaxSEKIsui1",
+    "board_size": 11,
+    "uncertainty_threshold": 0.9,
+    "w1_policy_entropy": 0,
+    "w2_value_variance": 0
+  },
+  "flagged_positions": [
+    {
+      "move_number": 3,
+      "sym_hash": "299035E468135844036F2BE5A0A0696B",
+      "state_hash": "AC1F455216AE9E7CC04735FC9287612A",
+      "player_to_move": "W",
+      "moves_history": [
+      ],
+      "stone_count": {
+        "black": 2,
+        "white": 1,
+        "total": 3
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 0.782143,
+        "value_variance": 0.00116804,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "H4",
+          "child_sym_hash": "FE79F6C3CDDA30493C603808F8E6E2EB",
+          "value": 0.260115,
+          "prior": 0.846446,
+          "visits": 96
+        },
+        {
+          "move": "J4",
+          "child_sym_hash": "847C2C38B1390FB69AF06641000343B5",
+          "value": 0.191762,
+          "prior": 0.0543764,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "move_number": 8,
+      "sym_hash": "053530348C9184E6E6F4DE2548B45E2A",
+      "state_hash": "0D1565AF05438AEA52C1A438C0C5177E",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"]
+      ],
+      "stone_count": {
+        "black": 4,
+        "white": 4,
+        "total": 8
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.44054,
+        "value_variance": 0.000879476,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "G5",
+          "child_sym_hash": "B8FB47DA37A112863BEDAB9A05B51D0E",
+          "value": 0.245511,
+          "prior": 0.499798,
+          "visits": 53
+        },
+        {
+          "move": "B4",
+          "child_sym_hash": "A5C11D97C8DF149E984FF04C693C7F9F",
+          "value": 0.268077,
+          "prior": 0.277095,
+          "visits": 24
+        },
+        {
+          "move": "G3",
+          "child_sym_hash": "46998CFE0E8AAA487BE5D9B7EAF59829",
+          "value": 0.21714,
+          "prior": 0.113942,
+          "visits": 18
+        },
+        {
+          "move": "E5",
+          "child_sym_hash": "95ABF4A64AF381D434FE4A120FC00621",
+          "value": 0.297921,
+          "prior": 0.0458124,
+          "visits": 4
+        }
+      ]
+    },
+    {
+      "move_number": 13,
+      "sym_hash": "5F0E4E774F7CF37553372314D264A2E2",
+      "state_hash": "63A08BDC2C1278CB2120C85C9A7C9810",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"]
+      ],
+      "stone_count": {
+        "black": 7,
+        "white": 6,
+        "total": 13
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.61752,
+        "value_variance": 0.155488,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E3",
+          "child_sym_hash": "BE8DF4279AB7D4679DBBD332751B7BD3",
+          "value": 0.161866,
+          "prior": 0.95547,
+          "visits": 512
+        },
+        {
+          "move": "L11",
+          "child_sym_hash": "89758B7AC2C7C0D6B256DA438B7925F4",
+          "value": -0.996075,
+          "prior": 7.87063e-06,
+          "visits": 7
+        },
+        {
+          "move": "D5",
+          "child_sym_hash": "528E64DBC4EF59F7DCCF09C66A662ED2",
+          "value": 0.025934,
+          "prior": 0.0187085,
+          "visits": 7
+        },
+        {
+          "move": "K8",
+          "child_sym_hash": "B7842D559CF1387B64F79DAE830C1BEA",
+          "value": -0.863316,
+          "prior": 2.1347e-05,
+          "visits": 6
+        },
+        {
+          "move": "D2",
+          "child_sym_hash": "CD43450AD6D329775FF3C3E22E045918",
+          "value": 0.057732,
+          "prior": 0.0145065,
+          "visits": 6
+        },
+        {
+          "move": "C1",
+          "child_sym_hash": "350CDE9271F9E08E69AD258EEAA3A589",
+          "value": -0.992013,
+          "prior": 8.30071e-06,
+          "visits": 6
+        },
+        {
+          "move": "H10",
+          "child_sym_hash": "BAD89FE417219356542CBE49E807945D",
+          "value": -0.75583,
+          "prior": 0.000125307,
+          "visits": 5
+        },
+        {
+          "move": "A4",
+          "child_sym_hash": "2640367AA724109344423E439F392A5A",
+          "value": -0.988321,
+          "prior": 9.85262e-06,
+          "visits": 5
+        },
+        {
+          "move": "J9",
+          "child_sym_hash": "3083A6776D4C6FABA97E51DBACAD219E",
+          "value": -0.438807,
+          "prior": 0.000203209,
+          "visits": 4
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "F29E678206D1D054E265E3AA66007D60",
+          "value": -0.13775,
+          "prior": 0.00367944,
+          "visits": 4
+        },
+        {
+          "move": "B3",
+          "child_sym_hash": "1A0CBE957FED62BB412959AAADD022EE",
+          "value": -0.239392,
+          "prior": 0.000439952,
+          "visits": 4
+        },
+        {
+          "move": "L8",
+          "child_sym_hash": "897AB3F102F0AA30019C53686A9C9A82",
+          "value": -0.990611,
+          "prior": 1.08112e-05,
+          "visits": 4
+        },
+        {
+          "move": "F9",
+          "child_sym_hash": "81CD2B2CC0E88E38339548985899FE6C",
+          "value": -0.568815,
+          "prior": 0.000168987,
+          "visits": 4
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "4A23923605B6B0A487D30DE018517F1F",
+          "value": -0.548859,
+          "prior": 0.000217616,
+          "visits": 4
+        },
+        {
+          "move": "K2",
+          "child_sym_hash": "A820A51BF35147738F32DBFE325470DC",
+          "value": -0.993714,
+          "prior": 7.50169e-06,
+          "visits": 4
+        },
+        {
+          "move": "E8",
+          "child_sym_hash": "9C3224F8FB5D46945B5A2B254114A431",
+          "value": -0.780255,
+          "prior": 7.71897e-05,
+          "visits": 4
+        },
+        {
+          "move": "A3",
+          "child_sym_hash": "2F4C15B31B7C29FAA708CAE89F0993C8",
+          "value": -0.990219,
+          "prior": 9.20141e-06,
+          "visits": 4
+        },
+        {
+          "move": "D7",
+          "child_sym_hash": "A520BBCF5CA4524F8E2E712F48BDC560",
+          "value": -0.491025,
+          "prior": 0.000677814,
+          "visits": 3
+        },
+        {
+          "move": "F1",
+          "child_sym_hash": "A84572C52B9A96DBF6431F792868114E",
+          "value": -0.993248,
+          "prior": 6.66782e-06,
+          "visits": 3
+        },
+        {
+          "move": "K10",
+          "child_sym_hash": "37ECF2D930BE3A115839C88EF852B6EB",
+          "value": -0.959783,
+          "prior": 1.13922e-05,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "move_number": 18,
+      "sym_hash": "3DF729B60672B2F9109C54509D66935A",
+      "state_hash": "7D4AE6B1FC9F7F8549A8E7EAB818428B",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"]
+      ],
+      "stone_count": {
+        "black": 9,
+        "white": 9,
+        "total": 18
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 0.822118,
+        "value_variance": 0.0108618,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "D5",
+          "child_sym_hash": "50D88FB70D8AB9DBDDCE36C3BC5B75B4",
+          "value": 0.170124,
+          "prior": 0.750965,
+          "visits": 278
+        },
+        {
+          "move": "J7",
+          "child_sym_hash": "B73104A8034DF9EA38C6C01A608D4C59",
+          "value": 0.220991,
+          "prior": 0.149909,
+          "visits": 24
+        },
+        {
+          "move": "H7",
+          "child_sym_hash": "BC651F1C4A8243691D6677A5450897FB",
+          "value": 0.413385,
+          "prior": 0.0682326,
+          "visits": 4
+        },
+        {
+          "move": "J9",
+          "child_sym_hash": "5252675F2FAADA0951B472A1492CB8DB",
+          "value": 0.386605,
+          "prior": 0.0254718,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "move_number": 23,
+      "sym_hash": "15F9DC268D136A5F420D632757087262",
+      "state_hash": "704F0A22ACBC19342734E5519A6D449D",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"]
+      ],
+      "stone_count": {
+        "black": 11,
+        "white": 11,
+        "total": 22
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 2.27934,
+        "value_variance": 0.184625,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "D9",
+          "child_sym_hash": "1C34ECD0B0186571DD7AD6E11751D35C",
+          "value": -0.100859,
+          "prior": 0.410461,
+          "visits": 80
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "49A21284BB6AC168819E69FF2115F866",
+          "value": 0.00404385,
+          "prior": 0.205184,
+          "visits": 242
+        },
+        {
+          "move": "K8",
+          "child_sym_hash": "A46BACAB1C5F598462E3B0A3831DC767",
+          "value": -0.134336,
+          "prior": 0.117456,
+          "visits": 21
+        },
+        {
+          "move": "G9",
+          "child_sym_hash": "1D88B5FC3EA821085ACE18D1D647CF2B",
+          "value": -0.0240209,
+          "prior": 0.10191,
+          "visits": 95
+        },
+        {
+          "move": "G8",
+          "child_sym_hash": "3DA6122C3717680BFA729F742F0825EC",
+          "value": -0.122767,
+          "prior": 0.073303,
+          "visits": 16
+        },
+        {
+          "move": "D10",
+          "child_sym_hash": "7423A9A46ADB4855E7920732B65F6805",
+          "value": -0.0616256,
+          "prior": 0.0744258,
+          "visits": 31
+        },
+        {
+          "move": "B1",
+          "child_sym_hash": "FE9129C5DF25DDEA6577113E248217AE",
+          "value": -0.983345,
+          "prior": 9.8466e-06,
+          "visits": 7
+        },
+        {
+          "move": "B4",
+          "child_sym_hash": "A9C8AE569DC6BA6DD8AED06F5D6EBAAB",
+          "value": -0.574329,
+          "prior": 0.000767617,
+          "visits": 6
+        },
+        {
+          "move": "H5",
+          "child_sym_hash": "FA89AF458F7F1F8D126E31271EE06C8D",
+          "value": -0.965041,
+          "prior": 1.46189e-05,
+          "visits": 4
+        },
+        {
+          "move": "A11",
+          "child_sym_hash": "410539090C1A1642D7542B7DF4EBAFF1",
+          "value": -0.990955,
+          "prior": 7.51175e-06,
+          "visits": 4
+        },
+        {
+          "move": "F7",
+          "child_sym_hash": "4EF78A11A353CB40AA5E853BD4D913EF",
+          "value": -0.121286,
+          "prior": 0.000150043,
+          "visits": 7
+        },
+        {
+          "move": "E2",
+          "child_sym_hash": "14F64124648114039E390AE57FEB84BA",
+          "value": -0.992372,
+          "prior": 9.46769e-06,
+          "visits": 4
+        },
+        {
+          "move": "E6",
+          "child_sym_hash": "0DF94474B6E16F8B0FCAF51198A14807",
+          "value": -0.0500483,
+          "prior": 0.0055209,
+          "visits": 4
+        },
+        {
+          "move": "F6",
+          "child_sym_hash": "519717823DFA2F026EB8BDAAA0EDC244",
+          "value": -0.166519,
+          "prior": 0.00548537,
+          "visits": 3
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "59CC13C88518D15B81C720ED1840A392",
+          "value": -0.919403,
+          "prior": 1.44889e-05,
+          "visits": 3
+        },
+        {
+          "move": "G2",
+          "child_sym_hash": "D3CFC125630D202C3F514A252FF3623E",
+          "value": -0.991005,
+          "prior": 9.99888e-06,
+          "visits": 3
+        },
+        {
+          "move": "D1",
+          "child_sym_hash": "DDA5B93E936210188C515A175DFEE795",
+          "value": -0.99131,
+          "prior": 8.89127e-06,
+          "visits": 3
+        },
+        {
+          "move": "F11",
+          "child_sym_hash": "B147DE709B96A5F0FA648B72FBB6EA2C",
+          "value": -0.980903,
+          "prior": 9.70522e-06,
+          "visits": 2
+        },
+        {
+          "move": "B10",
+          "child_sym_hash": "E46F723BDBC0B77F7A16DC6BFDC1040B",
+          "value": -0.112107,
+          "prior": 0.0016894,
+          "visits": 5
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "E171E67C867FB1ABE471CEA76611A1ED",
+          "value": -0.989993,
+          "prior": 9.26229e-06,
+          "visits": 2
+        },
+        {
+          "move": "F10",
+          "child_sym_hash": "FFB4AAF019B63DE794F9CD38D51E9E92",
+          "value": -0.0409843,
+          "prior": 0.000935186,
+          "visits": 53
+        },
+        {
+          "move": "B5",
+          "child_sym_hash": "5759EF6662CACDC286B301AA682FA8C7",
+          "value": -0.654249,
+          "prior": 9.11652e-05,
+          "visits": 2
+        },
+        {
+          "move": "K3",
+          "child_sym_hash": "B59B7CFA1EBF772EF6C07C36E4119240",
+          "value": -0.986221,
+          "prior": 9.09481e-06,
+          "visits": 2
+        }
+      ]
+    },
+    {
+      "move_number": 28,
+      "sym_hash": "0B10C449819DBFCE4E1A3EC54EEE4FDC",
+      "state_hash": "22E1D03395A730133CF4115A49EE56B1",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"]
+      ],
+      "stone_count": {
+        "black": 13,
+        "white": 14,
+        "total": 27
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.4046,
+        "value_variance": 0.326111,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "A8",
+          "child_sym_hash": "35FC3E86C7445EC11D9B55AF4B8C09A7",
+          "value": -0.732287,
+          "prior": 0.963988,
+          "visits": 556
+        },
+        {
+          "move": "J4",
+          "child_sym_hash": "42D5483FE0004A6899BA82A6938BC10B",
+          "value": 0.98423,
+          "prior": 0.023069,
+          "visits": 11
+        },
+        {
+          "move": "E2",
+          "child_sym_hash": "0140E4F67A346D4B4C3DBEC528746BBD",
+          "value": 0.999369,
+          "prior": 4.15854e-05,
+          "visits": 7
+        },
+        {
+          "move": "K5",
+          "child_sym_hash": "0FAB9D9FFD45643AF715D41A3E2D8F32",
+          "value": 0.998355,
+          "prior": 0.000139584,
+          "visits": 6
+        },
+        {
+          "move": "A9",
+          "child_sym_hash": "9A15F1CF81E033B79C7DFEA6FAF493D4",
+          "value": 0.99463,
+          "prior": 0.000370314,
+          "visits": 5
+        },
+        {
+          "move": "K9",
+          "child_sym_hash": "E6F9D089D42FF6F3E32E1D19076A400C",
+          "value": 0.998807,
+          "prior": 3.22673e-05,
+          "visits": 5
+        },
+        {
+          "move": "J3",
+          "child_sym_hash": "CC6DE51EA32F8FD5BB289C07F5841092",
+          "value": 0.987045,
+          "prior": 0.00745931,
+          "visits": 5
+        },
+        {
+          "move": "F7",
+          "child_sym_hash": "41D5B5AF8B41D3D78EB2D85798173E87",
+          "value": 0.998105,
+          "prior": 4.08758e-05,
+          "visits": 4
+        }
+      ]
+    },
+    {
+      "move_number": 33,
+      "sym_hash": "5B7E550CA185193139730BB64485119E",
+      "state_hash": "DA47EEF2DC6313B11F7C0C2E7737B6F8",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"]
+      ],
+      "stone_count": {
+        "black": 16,
+        "white": 15,
+        "total": 31
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 0.402572,
+        "value_variance": 0.0054301,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "D9",
+          "child_sym_hash": "B63C0800C0C76FF4E5323F9EFA0B2139",
+          "value": -0.798416,
+          "prior": 0.920818,
+          "visits": 104
+        },
+        {
+          "move": "K8",
+          "child_sym_hash": "0E63487B6C8053015AAB59DC6E473502",
+          "value": -0.977577,
+          "prior": 0.0371263,
+          "visits": 1
+        },
+        {
+          "move": "H10",
+          "child_sym_hash": "033FFACAE750F82C6A707A3B054CBAB5",
+          "value": -0.907005,
+          "prior": 0.028258,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "move_number": 38,
+      "sym_hash": "0B920C9AF470CB42A11081222ECE1581",
+      "state_hash": "0B920C9AF470CB42A11081222ECE1581",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"]
+      ],
+      "stone_count": {
+        "black": 18,
+        "white": 17,
+        "total": 35
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 2.00946,
+        "value_variance": 0.401916,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "K8",
+          "child_sym_hash": "92A3C9F984E2862A2B81D56001F2978B",
+          "value": -0.639708,
+          "prior": 0.534563,
+          "visits": 93
+        },
+        {
+          "move": "H10",
+          "child_sym_hash": "FB95FFBC0372F2F998CD878E262BEC8C",
+          "value": -0.926332,
+          "prior": 0.243789,
+          "visits": 437
+        },
+        {
+          "move": "D11",
+          "child_sym_hash": "34265D7C3EB864D871E746F337F27748",
+          "value": 0.370732,
+          "prior": 0.131326,
+          "visits": 13
+        },
+        {
+          "move": "G8",
+          "child_sym_hash": "EAF9E8445925E56390AB03681887AD0B",
+          "value": 0.172263,
+          "prior": 0.0884724,
+          "visits": 12
+        },
+        {
+          "move": "E2",
+          "child_sym_hash": "2833385F1BE3961AD1D92EBD4F54288D",
+          "value": 0.997988,
+          "prior": 1.10224e-05,
+          "visits": 7
+        },
+        {
+          "move": "F2",
+          "child_sym_hash": "2A12D6BA2D4B614688879FABB9A421D0",
+          "value": 0.997491,
+          "prior": 1.03445e-05,
+          "visits": 6
+        },
+        {
+          "move": "H11",
+          "child_sym_hash": "5E99C236E12FC818BC6FCDD9560CB0E9",
+          "value": 0.995354,
+          "prior": 1.92486e-05,
+          "visits": 5
+        },
+        {
+          "move": "G2",
+          "child_sym_hash": "860C88979073B44457AD9B896B88CF62",
+          "value": 0.995973,
+          "prior": 1.09368e-05,
+          "visits": 4
+        },
+        {
+          "move": "L10",
+          "child_sym_hash": "BF839FF1307CF0AF7143155631D82100",
+          "value": 0.99794,
+          "prior": 1.42579e-05,
+          "visits": 4
+        },
+        {
+          "move": "E4",
+          "child_sym_hash": "4C8266751685D185F8EDDD00B3ED15CF",
+          "value": 0.996947,
+          "prior": 1.45153e-05,
+          "visits": 4
+        },
+        {
+          "move": "C11",
+          "child_sym_hash": "1C817B62B7C68E57B2674A46EABBC874",
+          "value": 0.983604,
+          "prior": 8.78399e-05,
+          "visits": 4
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "7AF5CF0B4ED911E96AE9C1ACF55A8415",
+          "value": 0.994983,
+          "prior": 1.39182e-05,
+          "visits": 4
+        },
+        {
+          "move": "J4",
+          "child_sym_hash": "6BA6949681D7B139045E12DEF4AB823B",
+          "value": 0.969943,
+          "prior": 0.00030324,
+          "visits": 3
+        },
+        {
+          "move": "F3",
+          "child_sym_hash": "A8F8B5669D22803C88F81C9CCBD091D5",
+          "value": 0.996783,
+          "prior": 1.13768e-05,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "move_number": 43,
+      "sym_hash": "112B167D3836AF13593531339E1D3001",
+      "state_hash": "89A0F5B7C5A447A890745D552BC1CE1A",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"]
+      ],
+      "stone_count": {
+        "black": 20,
+        "white": 18,
+        "total": 38
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.87194,
+        "value_variance": 0.000510415,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "F7",
+          "child_sym_hash": "B7187584CA4B95DC1D1E3D3F65759968",
+          "value": -0.927001,
+          "prior": 0.263342,
+          "visits": 28
+        },
+        {
+          "move": "K8",
+          "child_sym_hash": "5D84533E75470718D5A308A732B14DE0",
+          "value": -0.979408,
+          "prior": 0.236058,
+          "visits": 16
+        },
+        {
+          "move": "J5",
+          "child_sym_hash": "0CE3E01566901F6B9325680EDC9DBA04",
+          "value": -0.985475,
+          "prior": 0.194176,
+          "visits": 29
+        },
+        {
+          "move": "H5",
+          "child_sym_hash": "036650D0E6674111A52E8923AF4CE60A",
+          "value": -0.989288,
+          "prior": 0.169363,
+          "visits": 20
+        },
+        {
+          "move": "F6",
+          "child_sym_hash": "A878E81754E2719ED9F805AE114148C3",
+          "value": -0.972372,
+          "prior": 0.0581885,
+          "visits": 6
+        }
+      ]
+    },
+    {
+      "move_number": 48,
+      "sym_hash": "50291BB17AAB16E489317855DA162526",
+      "state_hash": "8808AAC343C78E438B5F418884A09A84",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"]
+      ],
+      "stone_count": {
+        "black": 22,
+        "white": 20,
+        "total": 42
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.73269,
+        "value_variance": 1.43892e-07,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "B5",
+          "child_sym_hash": "7A38506DDB0A53B645F06FB427AB694D",
+          "value": -0.99625,
+          "prior": 0.270039,
+          "visits": 29
+        },
+        {
+          "move": "F6",
+          "child_sym_hash": "387D7D4BC66C143C433DA5E3AF825EB7",
+          "value": -0.996209,
+          "prior": 0.224308,
+          "visits": 21
+        },
+        {
+          "move": "C5",
+          "child_sym_hash": "1E2F7ED9434D92909890B331829A7A0E",
+          "value": -0.995872,
+          "prior": 0.184151,
+          "visits": 17
+        },
+        {
+          "move": "J5",
+          "child_sym_hash": "D6DF11780739D4087B682FA73BAD8B41",
+          "value": -0.996639,
+          "prior": 0.151478,
+          "visits": 18
+        },
+        {
+          "move": "E5",
+          "child_sym_hash": "10B63BCA0C77857DED60AFA24BA58BDB",
+          "value": -0.99697,
+          "prior": 0.139004,
+          "visits": 14
+        }
+      ]
+    },
+    {
+      "move_number": 51,
+      "sym_hash": "036C98F0F3946CD68D3127CF7E43D6DF",
+      "state_hash": "40299CFA268BCC37DF522D425CAEFE86",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"]
+      ],
+      "stone_count": {
+        "black": 24,
+        "white": 21,
+        "total": 45
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.4098,
+        "value_variance": 4.33627e-06,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "C5",
+          "child_sym_hash": "347AF0D8EB58751126173166E45E0919",
+          "value": -0.992539,
+          "prior": 0.505101,
+          "visits": 56
+        },
+        {
+          "move": "E5",
+          "child_sym_hash": "D09F61E1148920FBACEB737E26C00E60",
+          "value": -0.992677,
+          "prior": 0.343777,
+          "visits": 40
+        },
+        {
+          "move": "E6",
+          "child_sym_hash": "3D9FD2AC3CD6BA88F7AC3D025E62F21C",
+          "value": -0.997024,
+          "prior": 0.0451819,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "move_number": 56,
+      "sym_hash": "048D041478FBF0F50C779FD61E250EBF",
+      "state_hash": "110C154E75B698B703166F0305739284",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"]
+      ],
+      "stone_count": {
+        "black": 25,
+        "white": 23,
+        "total": 48
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 2.358,
+        "value_variance": 1.80991e-05,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "C5",
+          "child_sym_hash": "872BC154753C846410D99DBA0349720E",
+          "value": -0.996939,
+          "prior": 0.274489,
+          "visits": 2
+        },
+        {
+          "move": "A4",
+          "child_sym_hash": "D2715D23EBE700C1900D8FA7A2D56304",
+          "value": -0.990761,
+          "prior": 0.198171,
+          "visits": 2
+        },
+        {
+          "move": "D6",
+          "child_sym_hash": "23639C4C251354A40C647AA851BCEFA6",
+          "value": -0.995524,
+          "prior": 0.159587,
+          "visits": 2
+        },
+        {
+          "move": "E6",
+          "child_sym_hash": "B2CB2FA6F37D21B9EE978CDAA974E7C2",
+          "value": -0.99168,
+          "prior": 0.0546912,
+          "visits": 2
+        },
+        {
+          "move": "G7",
+          "child_sym_hash": "77B3EF18E21273C0FFB3728AEF8ABD48",
+          "value": -0.984785,
+          "prior": 0.0724364,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "move_number": 60,
+      "sym_hash": "1AF82BC030C41591490B7043A06033C2",
+      "state_hash": "2F2766D01C587EBBEEB49FEAA66B3601",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"]
+      ],
+      "stone_count": {
+        "black": 27,
+        "white": 25,
+        "total": 52
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.15941,
+        "value_variance": 4.16663e-07,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "A4",
+          "child_sym_hash": "D3BF1171D885B49582E3AFE2C8301D58",
+          "value": -0.996949,
+          "prior": 0.636127,
+          "visits": 78
+        },
+        {
+          "move": "E6",
+          "child_sym_hash": "8CE05C389A93C7B503357C330A6C4347",
+          "value": -0.995455,
+          "prior": 0.229044,
+          "visits": 18
+        },
+        {
+          "move": "K7",
+          "child_sym_hash": "AAA9CC1E6CC3341490A37C48CD3702A6",
+          "value": -0.995753,
+          "prior": 0.045991,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "move_number": 65,
+      "sym_hash": "0959BC533D80839F07ADDE0F926FD90A",
+      "state_hash": "7C00599ADE18B2B28A38EC187F5E1706",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"]
+      ],
+      "stone_count": {
+        "black": 30,
+        "white": 26,
+        "total": 56
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.63245,
+        "value_variance": 9.2819e-06,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "G7",
+          "child_sym_hash": "F2633144FC685ABA5867E88A6811D9AD",
+          "value": -0.997478,
+          "prior": 0.559442,
+          "visits": 68
+        },
+        {
+          "move": "D7",
+          "child_sym_hash": "2FAA382F6D668CBAC02A132325C241C2",
+          "value": -0.998366,
+          "prior": 0.192584,
+          "visits": 18
+        },
+        {
+          "move": "L8",
+          "child_sym_hash": "96DA61B7F0FA6049AA84772C8FBE1594",
+          "value": -0.99507,
+          "prior": 0.055609,
+          "visits": 5
+        },
+        {
+          "move": "A2",
+          "child_sym_hash": "4348AED73F4F187F3173879064C2E201",
+          "value": -0.998437,
+          "prior": 0.0434354,
+          "visits": 3
+        },
+        {
+          "move": "G11",
+          "child_sym_hash": "9610C5B087BB4BE09F925AA4F0E63DF0",
+          "value": -0.991339,
+          "prior": 0.0377373,
+          "visits": 3
+        },
+        {
+          "move": "B11",
+          "child_sym_hash": "E47D6CA4DF4F151653D9355EB7097123",
+          "value": -0.991304,
+          "prior": 0.028195,
+          "visits": 2
+        }
+      ]
+    },
+    {
+      "move_number": 70,
+      "sym_hash": "314FC96CEE6E1CC73A47CA18A128E06C",
+      "state_hash": "F61DC3656315191FEA2E745185D75E22",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"],
+        ["W", "G7"],
+        ["B", "A2"],
+        ["W", "B1"],
+        ["B", "D6"],
+        ["W", "L8"]
+      ],
+      "stone_count": {
+        "black": 32,
+        "white": 29,
+        "total": 61
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 1.49348,
+        "value_variance": 0.987374,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "L9",
+          "child_sym_hash": "7E6A58273EB680D5E1661D3796FEF6DD",
+          "value": -0.999205,
+          "prior": 0.902756,
+          "visits": 8
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "9EB8A3877DD108979FB4FCE7BAA6170C",
+          "value": 0.988129,
+          "prior": 3.07214e-06,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "move_number": 73,
+      "sym_hash": "38DD2F6DB7E310AEAB7627FC920A5937",
+      "state_hash": "3B8D86A3949EDE93DEC1375A238E4243",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"],
+        ["W", "G7"],
+        ["B", "A2"],
+        ["W", "B1"],
+        ["B", "D6"],
+        ["W", "L8"],
+        ["B", "L9"],
+        ["W", "L7"],
+        ["B", "G8"]
+      ],
+      "stone_count": {
+        "black": 34,
+        "white": 30,
+        "total": 64
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 2.40457,
+        "value_variance": 3.58634e-06,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "A1",
+          "child_sym_hash": "3E0A82842517CF6B95E41D3789155C3F",
+          "value": -0.997698,
+          "prior": 0.467087,
+          "visits": 139
+        },
+        {
+          "move": "pass",
+          "child_sym_hash": "CAB2BD1C028CF495F87524AC44DE471E",
+          "value": -0.998941,
+          "prior": 0.103754,
+          "visits": 31
+        },
+        {
+          "move": "G11",
+          "child_sym_hash": "CACCDB1377D2337EE4318FB61DAB43D9",
+          "value": -0.99038,
+          "prior": 0.0354076,
+          "visits": 13
+        },
+        {
+          "move": "K10",
+          "child_sym_hash": "68F1C03032C7A806C09E4557B31547DC",
+          "value": -0.996263,
+          "prior": 0.0256029,
+          "visits": 7
+        },
+        {
+          "move": "K11",
+          "child_sym_hash": "9FA4854DD4189C5103ACF476508FB164",
+          "value": -0.996373,
+          "prior": 0.0243412,
+          "visits": 5
+        },
+        {
+          "move": "K9",
+          "child_sym_hash": "FB3AA8DE1D582D633A505E2FFE283F1C",
+          "value": -0.996446,
+          "prior": 0.0238529,
+          "visits": 7
+        },
+        {
+          "move": "E8",
+          "child_sym_hash": "BD4EEA10EE66EC89BD81E1F36A5B5986",
+          "value": -0.996761,
+          "prior": 0.0236211,
+          "visits": 7
+        },
+        {
+          "move": "D7",
+          "child_sym_hash": "F63D773A8EBDFFD48A959BF962C3FA57",
+          "value": -0.996549,
+          "prior": 0.0226,
+          "visits": 5
+        },
+        {
+          "move": "J11",
+          "child_sym_hash": "A6582591026E96229572A83F219CE1DE",
+          "value": -0.99671,
+          "prior": 0.0223367,
+          "visits": 5
+        },
+        {
+          "move": "L10",
+          "child_sym_hash": "FD3C7290F787D235AF6691D7ECE19C33",
+          "value": -0.995579,
+          "prior": 0.021878,
+          "visits": 6
+        },
+        {
+          "move": "A5",
+          "child_sym_hash": "A43640D63EE7DFC5B5EB5F18A0CEAD55",
+          "value": -0.998162,
+          "prior": 0.0214496,
+          "visits": 5
+        },
+        {
+          "move": "B11",
+          "child_sym_hash": "220E035014A6587004E2BAB4D3AB07B6",
+          "value": -0.997598,
+          "prior": 0.0209476,
+          "visits": 6
+        },
+        {
+          "move": "J10",
+          "child_sym_hash": "8AE068B588D376962B273984B9A39C9F",
+          "value": -0.996594,
+          "prior": 0.0200813,
+          "visits": 4
+        },
+        {
+          "move": "H11",
+          "child_sym_hash": "566D92F2FE20771BDE0FB64889075A31",
+          "value": -0.995851,
+          "prior": 0.018588,
+          "visits": 4
+        }
+      ]
+    },
+    {
+      "move_number": 77,
+      "sym_hash": "00AC6B6112CE74D35A341A8D8A433AB2",
+      "state_hash": "1B05A4BCC37843D07F211706DF87A9E0",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"],
+        ["W", "G7"],
+        ["B", "A2"],
+        ["W", "B1"],
+        ["B", "D6"],
+        ["W", "L8"],
+        ["B", "L9"],
+        ["W", "L7"],
+        ["B", "G8"],
+        ["W", "A1"],
+        ["B", "A3"],
+        ["W", "pass"],
+        ["B", "pass"]
+      ],
+      "stone_count": {
+        "black": 35,
+        "white": 31,
+        "total": 66
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 3.14618,
+        "value_variance": 1.33601e-05,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "pass",
+          "child_sym_hash": "2404C946EAA5754604DE5FBEC1F68E87",
+          "value": -0.99993,
+          "prior": 0.355898,
+          "visits": 4
+        },
+        {
+          "move": "A5",
+          "child_sym_hash": "FDA77141A6E7B76CC3D49A5715E67546",
+          "value": -0.995659,
+          "prior": 0.038557,
+          "visits": 2
+        },
+        {
+          "move": "E8",
+          "child_sym_hash": "56A11A7BF3668B28EC5B1D2CE76B2113",
+          "value": -0.993371,
+          "prior": 0.036595,
+          "visits": 2
+        },
+        {
+          "move": "G11",
+          "child_sym_hash": "6422E77E6E4B4433118B4AE792BB0FC2",
+          "value": -0.989863,
+          "prior": 0.0642855,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "move_number": 80,
+      "sym_hash": "059CC252D7DA00D905B03AD35A4BF7F6",
+      "state_hash": "35B2384790347D9340A765F83510AB7A",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"],
+        ["W", "G7"],
+        ["B", "A2"],
+        ["W", "B1"],
+        ["B", "D6"],
+        ["W", "L8"],
+        ["B", "L9"],
+        ["W", "L7"],
+        ["B", "G8"],
+        ["W", "A1"],
+        ["B", "A3"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "C2"]
+      ],
+      "stone_count": {
+        "black": 35,
+        "white": 32,
+        "total": 67
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 3.18269,
+        "value_variance": 2.31092e-09,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E10",
+          "child_sym_hash": "B5905AE4F1FF970481702C8702885515",
+          "value": -0.999974,
+          "prior": 0.148077,
+          "visits": 20
+        },
+        {
+          "move": "B11",
+          "child_sym_hash": "0ECF7214051388CF8BA7FDC7FA601BDA",
+          "value": -0.999975,
+          "prior": 0.128651,
+          "visits": 16
+        },
+        {
+          "move": "G11",
+          "child_sym_hash": "D9D2BECB3CAB9B67BF2D4512A07F8E6F",
+          "value": -0.999955,
+          "prior": 0.0783363,
+          "visits": 11
+        },
+        {
+          "move": "A9",
+          "child_sym_hash": "80D128C297E98C4E037EC131DE5406DF",
+          "value": -0.999945,
+          "prior": 0.0531605,
+          "visits": 6
+        },
+        {
+          "move": "K9",
+          "child_sym_hash": "A17791B25D5D97AE5E12F72343779459",
+          "value": -0.999965,
+          "prior": 0.0499885,
+          "visits": 6
+        },
+        {
+          "move": "A5",
+          "child_sym_hash": "67AD14C92504F32A5BCE63E4D81D2C6E",
+          "value": -0.999921,
+          "prior": 0.0425076,
+          "visits": 5
+        },
+        {
+          "move": "E8",
+          "child_sym_hash": "07211241E6A40723A8BF6AF5C6D56B2B",
+          "value": -0.999967,
+          "prior": 0.0416854,
+          "visits": 5
+        },
+        {
+          "move": "A7",
+          "child_sym_hash": "73940BA69284DA57F895BABD9183E1AA",
+          "value": -0.999884,
+          "prior": 0.0356903,
+          "visits": 4
+        },
+        {
+          "move": "C10",
+          "child_sym_hash": "2169107D60C87CC04316181CE6EA68E0",
+          "value": -0.999963,
+          "prior": 0.0353434,
+          "visits": 4
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "8402BAC197C0823DD59B6ACDDF3C4D18",
+          "value": -0.9999,
+          "prior": 0.0351713,
+          "visits": 4
+        },
+        {
+          "move": "B4",
+          "child_sym_hash": "CDBBE930D149CF3A4B46AF14A40AEA05",
+          "value": -0.999922,
+          "prior": 0.033332,
+          "visits": 4
+        },
+        {
+          "move": "D11",
+          "child_sym_hash": "10330BB940D046A66F99D243DFE56AC9",
+          "value": -0.999949,
+          "prior": 0.0329437,
+          "visits": 4
+        },
+        {
+          "move": "D7",
+          "child_sym_hash": "E671521A0B310888699EF44B68E79E36",
+          "value": -0.999917,
+          "prior": 0.0309477,
+          "visits": 4
+        },
+        {
+          "move": "B6",
+          "child_sym_hash": "D07A68BEB784EDCC4B894099FC7FB119",
+          "value": -0.999818,
+          "prior": 0.0299663,
+          "visits": 3
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "0DCAF1EA021140C6F45273D63282CBCA",
+          "value": -0.999829,
+          "prior": 0.0295594,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "move_number": 83,
+      "sym_hash": "352E656B67B2A8F0F1CE1AED29FF9FB0",
+      "state_hash": "F605FF0A757596781D5A6F59B011B144",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"],
+        ["W", "G7"],
+        ["B", "A2"],
+        ["W", "B1"],
+        ["B", "D6"],
+        ["W", "L8"],
+        ["B", "L9"],
+        ["W", "L7"],
+        ["B", "G8"],
+        ["W", "A1"],
+        ["B", "A3"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "C2"],
+        ["B", "E10"],
+        ["W", "D3"],
+        ["B", "D11"]
+      ],
+      "stone_count": {
+        "black": 37,
+        "white": 31,
+        "total": 68
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 3.09448,
+        "value_variance": 8.49573e-11,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E4",
+          "child_sym_hash": "DEAF1A5166EA0B52F3088B2670EC6190",
+          "value": -0.999959,
+          "prior": 0.196571,
+          "visits": 31
+        },
+        {
+          "move": "H3",
+          "child_sym_hash": "4259B2B4C1C1CA05B8087FC7E89637C6",
+          "value": -0.999963,
+          "prior": 0.107083,
+          "visits": 17
+        },
+        {
+          "move": "F5",
+          "child_sym_hash": "4FD5C58328544B516D1E4F46749525D6",
+          "value": -0.999984,
+          "prior": 0.0842147,
+          "visits": 12
+        },
+        {
+          "move": "K3",
+          "child_sym_hash": "79CEC688FC2276E3DFD54BDC64A28953",
+          "value": -0.99997,
+          "prior": 0.0783436,
+          "visits": 12
+        },
+        {
+          "move": "pass",
+          "child_sym_hash": "31462396EBEF31798BAE52D4E32FD269",
+          "value": -0.999951,
+          "prior": 0.0510048,
+          "visits": 7
+        },
+        {
+          "move": "F3",
+          "child_sym_hash": "5BEF1BF754C1A9179E1C9D483FF6F1F2",
+          "value": -0.999968,
+          "prior": 0.0462361,
+          "visits": 7
+        },
+        {
+          "move": "G6",
+          "child_sym_hash": "CD4500EF60BBB12B04B5E3E8F3305744",
+          "value": -0.999972,
+          "prior": 0.0453861,
+          "visits": 7
+        },
+        {
+          "move": "F6",
+          "child_sym_hash": "9DC2ADF0DF672ECF47AD8A40205ED957",
+          "value": -0.99996,
+          "prior": 0.0421807,
+          "visits": 6
+        }
+      ]
+    },
+    {
+      "move_number": 87,
+      "sym_hash": "0BB9C6A450548AFF903B37EE7E82168C",
+      "state_hash": "6A02E82AC0A34ECDD77D1BB4EC779DC5",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"],
+        ["W", "G7"],
+        ["B", "A2"],
+        ["W", "B1"],
+        ["B", "D6"],
+        ["W", "L8"],
+        ["B", "L9"],
+        ["W", "L7"],
+        ["B", "G8"],
+        ["W", "A1"],
+        ["B", "A3"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "C2"],
+        ["B", "E10"],
+        ["W", "D3"],
+        ["B", "D11"],
+        ["W", "E4"],
+        ["B", "C10"],
+        ["W", "H3"],
+        ["B", "E8"]
+      ],
+      "stone_count": {
+        "black": 39,
+        "white": 29,
+        "total": 68
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 2.77805,
+        "value_variance": 2.36249e-06,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "F5",
+          "child_sym_hash": "D3D2D2A39D8293E4A7393BAB28F30957",
+          "value": -0.998206,
+          "prior": 0.255611,
+          "visits": 40
+        },
+        {
+          "move": "K3",
+          "child_sym_hash": "E5C9D1A849F4AE5615F23F3138C4A5D2",
+          "value": -0.995659,
+          "prior": 0.161843,
+          "visits": 25
+        },
+        {
+          "move": "G6",
+          "child_sym_hash": "514217CFD56D699ECE929705AF567BC5",
+          "value": -0.997363,
+          "prior": 0.157785,
+          "visits": 25
+        },
+        {
+          "move": "pass",
+          "child_sym_hash": "04E2E6C380383E6B1DBDD4473DD6C31E",
+          "value": -0.999924,
+          "prior": 0.057992,
+          "visits": 9
+        }
+      ]
+    },
+    {
+      "move_number": 91,
+      "sym_hash": "02F2BE3B29C86763E24900851898601F",
+      "state_hash": "21C887DFCF4D6DB4A2ACCE4210F65FC6",
+      "player_to_move": "W",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"],
+        ["W", "G7"],
+        ["B", "A2"],
+        ["W", "B1"],
+        ["B", "D6"],
+        ["W", "L8"],
+        ["B", "L9"],
+        ["W", "L7"],
+        ["B", "G8"],
+        ["W", "A1"],
+        ["B", "A3"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "C2"],
+        ["B", "E10"],
+        ["W", "D3"],
+        ["B", "D11"],
+        ["W", "E4"],
+        ["B", "C10"],
+        ["W", "H3"],
+        ["B", "E8"],
+        ["W", "F5"],
+        ["B", "B11"],
+        ["W", "G6"],
+        ["B", "pass"]
+      ],
+      "stone_count": {
+        "black": 39,
+        "white": 30,
+        "total": 69
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 2.4809,
+        "value_variance": 5.20352e-12,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "K3",
+          "child_sym_hash": "AE03BE5D461A8D2F6023EAC7C44567D1",
+          "value": -0.999995,
+          "prior": 0.488218,
+          "visits": 6
+        },
+        {
+          "move": "pass",
+          "child_sym_hash": "9E8E53B9AE31E97CBE79254DBDD6D0F5",
+          "value": -1,
+          "prior": 0.312781,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "move_number": 94,
+      "sym_hash": "681935BAD0D2FD656290D49C5B815D10",
+      "state_hash": "D90A53D24C89DA9B2FFAC17ABD21F75B",
+      "player_to_move": "B",
+      "moves_history": [
+        ["W", "H4"],
+        ["B", "C6"],
+        ["W", "F4"],
+        ["B", "J6"],
+        ["W", "K4"],
+        ["B", "G5"],
+        ["W", "G4"],
+        ["B", "C4"],
+        ["W", "C3"],
+        ["B", "D3"],
+        ["W", "E3"],
+        ["B", "G10"],
+        ["W", "C9"],
+        ["B", "C8"],
+        ["W", "J8"],
+        ["B", "D5"],
+        ["W", "D2"],
+        ["B", "J7"],
+        ["W", "H9"],
+        ["B", "J9"],
+        ["W", "B8"],
+        ["B", "B7"],
+        ["W", "D10"],
+        ["B", "B9"],
+        ["W", "B10"],
+        ["B", "A8"],
+        ["W", "F10"],
+        ["B", "F9"],
+        ["W", "E9"],
+        ["B", "G9"],
+        ["W", "D9"],
+        ["B", "F11"],
+        ["W", "E11"],
+        ["B", "E10"],
+        ["W", "H7"],
+        ["B", "H10"],
+        ["W", "F10"],
+        ["B", "A10"],
+        ["W", "H6"],
+        ["B", "C11"],
+        ["W", "H5"],
+        ["B", "K8"],
+        ["W", "F7"],
+        ["B", "E7"],
+        ["W", "B4"],
+        ["B", "J5"],
+        ["W", "K5"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "J4"],
+        ["W", "J3"],
+        ["B", "C4"],
+        ["W", "E5"],
+        ["B", "C5"],
+        ["W", "K6"],
+        ["B", "B3"],
+        ["W", "B2"],
+        ["B", "A4"],
+        ["W", "E6"],
+        ["B", "F8"],
+        ["W", "K7"],
+        ["B", "J8"],
+        ["W", "G7"],
+        ["B", "A2"],
+        ["W", "B1"],
+        ["B", "D6"],
+        ["W", "L8"],
+        ["B", "L9"],
+        ["W", "L7"],
+        ["B", "G8"],
+        ["W", "A1"],
+        ["B", "A3"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "C2"],
+        ["B", "E10"],
+        ["W", "D3"],
+        ["B", "D11"],
+        ["W", "E4"],
+        ["B", "C10"],
+        ["W", "H3"],
+        ["B", "E8"],
+        ["W", "F5"],
+        ["B", "B11"],
+        ["W", "G6"],
+        ["B", "pass"],
+        ["W", "K3"],
+        ["B", "K9"],
+        ["W", "pass"]
+      ],
+      "stone_count": {
+        "black": 40,
+        "white": 31,
+        "total": 71
+      },
+      "uncertainty_metrics": {
+        "policy_entropy": 2.9681,
+        "value_variance": 1.39666e-11,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "pass",
+          "child_sym_hash": "E635594B13C65165E8205A82BE5591D7",
+          "value": -1,
+          "prior": 0.260352,
+          "visits": 34
+        },
+        {
+          "move": "A11",
+          "child_sym_hash": "A091C6FFABBB43B071770F5BF442382F",
+          "value": -0.999993,
+          "prior": 0.127953,
+          "visits": 15
+        },
+        {
+          "move": "A5",
+          "child_sym_hash": "0A3EAA9E5F1C00430A5DD85E8356D404",
+          "value": -0.999992,
+          "prior": 0.0457568,
+          "visits": 5
+        },
+        {
+          "move": "D7",
+          "child_sym_hash": "8BE2EC4D7129FBE1380D4FF133AC665C",
+          "value": -0.999991,
+          "prior": 0.0376753,
+          "visits": 4
+        },
+        {
+          "move": "G11",
+          "child_sym_hash": "B441009C46B3680EEEBEFEA8FB347605",
+          "value": -0.999989,
+          "prior": 0.0374186,
+          "visits": 4
+        },
+        {
+          "move": "B4",
+          "child_sym_hash": "A0285767AB513C531AD514AEFF41126F",
+          "value": -0.999991,
+          "prior": 0.034844,
+          "visits": 4
+        },
+        {
+          "move": "E9",
+          "child_sym_hash": "9C4ED3F015F990A6E3512C3077248531",
+          "value": -0.999989,
+          "prior": 0.03057,
+          "visits": 3
+        },
+        {
+          "move": "D10",
+          "child_sym_hash": "D2BDEF3655F7209FCF2363D8710275B3",
+          "value": -0.999991,
+          "prior": 0.0299934,
+          "visits": 3
+        },
+        {
+          "move": "B6",
+          "child_sym_hash": "BDE9D6E9CD9C1EA51A1AFB23A7344973",
+          "value": -0.999985,
+          "prior": 0.0299641,
+          "visits": 3
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "60594FBD7809B3AFA5C1C86C69C933A0",
+          "value": -0.999989,
+          "prior": 0.029644,
+          "visits": 3
+        },
+        {
+          "move": "A7",
+          "child_sym_hash": "EE6770592C278ED8444E437034AECCCA",
+          "value": -0.999983,
+          "prior": 0.0290281,
+          "visits": 3
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "E9910496EDD871548408D1778477B572",
+          "value": -0.99999,
+          "prior": 0.0285083,
+          "visits": 3
+        },
+        {
+          "move": "F10",
+          "child_sym_hash": "5DEB567EA634AF04BDFB9E8D5078EAF1",
+          "value": -0.999987,
+          "prior": 0.0283556,
+          "visits": 3
+        },
+        {
+          "move": "E11",
+          "child_sym_hash": "7846245A6BDFE8CA285B2C6C0831354B",
+          "value": -0.999988,
+          "prior": 0.028039,
+          "visits": 3
+        },
+        {
+          "move": "A9",
+          "child_sym_hash": "B0080EA3728AA18370D2AF26E5A2BFEB",
+          "value": -0.999986,
+          "prior": 0.0272826,
+          "visits": 3
+        },
+        {
+          "move": "B10",
+          "child_sym_hash": "66FDF1A76078F0D3BB78FDF9E672D84D",
+          "value": -0.999987,
+          "prior": 0.0272294,
+          "visits": 3
+        },
+        {
+          "move": "C9",
+          "child_sym_hash": "AE12AD9AAC7FB6BE6A384BAE7ED26278",
+          "value": -0.999991,
+          "prior": 0.026768,
+          "visits": 3
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_moves": 92,
+    "flagged_count": 22,
+    "flagging_rate": 0.23913
+  }
+}

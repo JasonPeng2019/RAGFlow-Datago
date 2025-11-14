@@ -623,7 +623,7 @@ void Search::runWholeSearch(
   */
 
   #ifdef DATAGO_IMPLEMENT
-  datago_collect_search_states(this, rootNode);
+  datago_collect_search_states(this, rootNode, rootBoard, rootPla, (int)rootHistory.moveHistory.size());
   #endif
 
   /* FINISH DATAGO IMPLEMENTATION

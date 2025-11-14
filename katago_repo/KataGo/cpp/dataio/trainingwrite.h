@@ -92,6 +92,10 @@ struct FinishedGameData {
   //whole +1 thing, skipping 1H.
   int handicapForSgf;
 
+  #ifdef DATAGO_IMPLEMENT
+  void* ragData; //Pointer to GameRAGData for RAG JSON writing
+  #endif
+
   //If false, then we don't have these below vectors and ownership information
   bool hasFullData;
   std::vector<float> targetWeightByTurn;

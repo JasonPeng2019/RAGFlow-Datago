@@ -364,14 +364,21 @@ void SelfplayManager::runDataWriteLoopImpl(ModelData* modelData) {
     
     /* DATAGO IMPLEMENTATION
     */
-    //extract game settings to the json
+    #ifdef DATAGO_IMPLEMENT
+    if (gameData->ragData != nullptr) {
+      //extract game settings to the json
+      float komi = gameData->endHist.rules.komi;
+      int board_size = gameData->endHist.initialBoard.x_size;
+      std::string rules = gameData->endHist.rules.toStringNoKomi();
 
-    float komi = gameData->endHist.rules.komi;
-    int board_size = gameData->endHist.initialBoard.x_size;
-    std::string rules = gameData->endHist.rules.toStringNoKomi();
-
-    //make JSON with complete RAG data
-    writeCompleteRAGDataJSON(komi, board_size, rules, gameData);
+      //make JSON with complete RAG data
+      writeCompleteRAGDataJSON(komi, board_size, rules, (const GameRAGData*)gameData->ragData, gameData);
+      
+      //cleanup
+      delete (GameRAGData*)gameData->ragData;
+      gameData->ragData = nullptr;
+    }
+    #endif
 
     /* FINISH DATAGO IMPLEMENTATION
     */

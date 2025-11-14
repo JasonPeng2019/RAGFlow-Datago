@@ -12,9 +12,14 @@ extern "C" {
 void datago_collect_search_states(Search* search, SearchNode* rootNode, 
                                    Board& board, Player pla, int moveNumber) ;
 
+void datago_record_move(Loc moveLoc, Player pla, const Board& board);
+
 #ifdef __cplusplus
 }
 #include <string>
+
+// Forward declarations
+struct FinishedGameData;
 
 #define W1 0.00
 #define W2 0.00
@@ -62,10 +67,11 @@ struct GameRAGData {
 
 
 
-thread_local GameRAGData currentGameRAGData;
+extern thread_local GameRAGData currentGameRAGData;
 
+void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rules, const GameRAGData* ragData, const FinishedGameData* gameData);
 
+GameRAGData* datago_get_current_game_data();
 
-void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rules, const FinishedGameData* gameData);
 #endif
 #endif  // DATAGO_STATS_SEARCH_H

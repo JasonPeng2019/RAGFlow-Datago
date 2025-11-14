@@ -232,11 +232,17 @@ LIBZIP_LIBRARY:FILEPATH=LIBZIP_LIBRARY-NOTFOUND
 //Disable embedding the git revision into the compiled exe
 NO_GIT_REVISION:BOOL=0
 
+//Path to a file.
+OpenCL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+OpenCL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenCL.so
+
 //Compile with AVX2
 USE_AVX2:BOOL=0
 
 //Neural net backend
-USE_BACKEND:STRING=
+USE_BACKEND:STRING=OPENCL
 
 //Allow boards up to size 50. Compiling with this will use more
 // memory and slow down KataGo, even when playing on boards of
@@ -422,6 +428,8 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.43.0()]
+//Details about finding OpenCL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenCL.so][/usr/include][v3.0()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
@@ -434,6 +442,12 @@ LIBZIP_INCLUDE_DIR_ZIP-ADVANCED:INTERNAL=0
 LIBZIP_INCLUDE_DIR_ZIPCONF-ADVANCED:INTERNAL=0
 //ADVANCED property for variable: LIBZIP_LIBRARY
 LIBZIP_LIBRARY-ADVANCED:INTERNAL=0
+//Have symbol CL_VERSION_3_0
+OPENCL_VERSION_3_0:INTERNAL=1
+//ADVANCED property for variable: OpenCL_INCLUDE_DIR
+OpenCL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCL_LIBRARY
+OpenCL_LIBRARY-ADVANCED:INTERNAL=1
 //STRINGS property for variable: USE_BACKEND
 USE_BACKEND-STRINGS:INTERNAL=;CUDA;TENSORRT;OPENCL;EIGEN
 //ADVANCED property for variable: USE_CACHE_TENSORRT_PLAN

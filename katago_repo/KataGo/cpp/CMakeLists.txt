@@ -319,8 +319,12 @@ add_executable(katago
   command/startposes.cpp
   command/tune.cpp
   command/writetrainingdata.cpp
+  datago_implement/stats_search/stats_search.cpp
   main.cpp
   )
+
+# Enable DATAGO implementation
+target_compile_definitions(katago PRIVATE DATAGO_IMPLEMENT)
 
 if(USE_BACKEND STREQUAL "CUDA")
   target_compile_definitions(katago PRIVATE USE_CUDA_BACKEND)

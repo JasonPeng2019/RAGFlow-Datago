@@ -1185,6 +1185,30 @@ core/timer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/core/timer.cpp.s
 .PHONY : core/timer.cpp.s
 
+datago_implement/stats_search/stats_search.o: datago_implement/stats_search/stats_search.cpp.o
+.PHONY : datago_implement/stats_search/stats_search.o
+
+# target to build an object file
+datago_implement/stats_search/stats_search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.o
+.PHONY : datago_implement/stats_search/stats_search.cpp.o
+
+datago_implement/stats_search/stats_search.i: datago_implement/stats_search/stats_search.cpp.i
+.PHONY : datago_implement/stats_search/stats_search.i
+
+# target to preprocess a source file
+datago_implement/stats_search/stats_search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.i
+.PHONY : datago_implement/stats_search/stats_search.cpp.i
+
+datago_implement/stats_search/stats_search.s: datago_implement/stats_search/stats_search.cpp.s
+.PHONY : datago_implement/stats_search/stats_search.s
+
+# target to generate assembly for a file
+datago_implement/stats_search/stats_search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/datago_implement/stats_search/stats_search.cpp.s
+.PHONY : datago_implement/stats_search/stats_search.cpp.s
+
 dataio/files.o: dataio/files.cpp.o
 .PHONY : dataio/files.o
 
@@ -1521,30 +1545,6 @@ neuralnet/desc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/desc.cpp.s
 .PHONY : neuralnet/desc.cpp.s
 
-neuralnet/dummybackend.o: neuralnet/dummybackend.cpp.o
-.PHONY : neuralnet/dummybackend.o
-
-# target to build an object file
-neuralnet/dummybackend.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.o
-.PHONY : neuralnet/dummybackend.cpp.o
-
-neuralnet/dummybackend.i: neuralnet/dummybackend.cpp.i
-.PHONY : neuralnet/dummybackend.i
-
-# target to preprocess a source file
-neuralnet/dummybackend.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.i
-.PHONY : neuralnet/dummybackend.cpp.i
-
-neuralnet/dummybackend.s: neuralnet/dummybackend.cpp.s
-.PHONY : neuralnet/dummybackend.s
-
-# target to generate assembly for a file
-neuralnet/dummybackend.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/dummybackend.cpp.s
-.PHONY : neuralnet/dummybackend.cpp.s
-
 neuralnet/modelversion.o: neuralnet/modelversion.cpp.o
 .PHONY : neuralnet/modelversion.o
 
@@ -1616,6 +1616,102 @@ neuralnet/nninputs.s: neuralnet/nninputs.cpp.s
 neuralnet/nninputs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/nninputs.cpp.s
 .PHONY : neuralnet/nninputs.cpp.s
+
+neuralnet/openclbackend.o: neuralnet/openclbackend.cpp.o
+.PHONY : neuralnet/openclbackend.o
+
+# target to build an object file
+neuralnet/openclbackend.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.o
+.PHONY : neuralnet/openclbackend.cpp.o
+
+neuralnet/openclbackend.i: neuralnet/openclbackend.cpp.i
+.PHONY : neuralnet/openclbackend.i
+
+# target to preprocess a source file
+neuralnet/openclbackend.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.i
+.PHONY : neuralnet/openclbackend.cpp.i
+
+neuralnet/openclbackend.s: neuralnet/openclbackend.cpp.s
+.PHONY : neuralnet/openclbackend.s
+
+# target to generate assembly for a file
+neuralnet/openclbackend.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclbackend.cpp.s
+.PHONY : neuralnet/openclbackend.cpp.s
+
+neuralnet/openclhelpers.o: neuralnet/openclhelpers.cpp.o
+.PHONY : neuralnet/openclhelpers.o
+
+# target to build an object file
+neuralnet/openclhelpers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.o
+.PHONY : neuralnet/openclhelpers.cpp.o
+
+neuralnet/openclhelpers.i: neuralnet/openclhelpers.cpp.i
+.PHONY : neuralnet/openclhelpers.i
+
+# target to preprocess a source file
+neuralnet/openclhelpers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.i
+.PHONY : neuralnet/openclhelpers.cpp.i
+
+neuralnet/openclhelpers.s: neuralnet/openclhelpers.cpp.s
+.PHONY : neuralnet/openclhelpers.s
+
+# target to generate assembly for a file
+neuralnet/openclhelpers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclhelpers.cpp.s
+.PHONY : neuralnet/openclhelpers.cpp.s
+
+neuralnet/openclkernels.o: neuralnet/openclkernels.cpp.o
+.PHONY : neuralnet/openclkernels.o
+
+# target to build an object file
+neuralnet/openclkernels.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.o
+.PHONY : neuralnet/openclkernels.cpp.o
+
+neuralnet/openclkernels.i: neuralnet/openclkernels.cpp.i
+.PHONY : neuralnet/openclkernels.i
+
+# target to preprocess a source file
+neuralnet/openclkernels.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.i
+.PHONY : neuralnet/openclkernels.cpp.i
+
+neuralnet/openclkernels.s: neuralnet/openclkernels.cpp.s
+.PHONY : neuralnet/openclkernels.s
+
+# target to generate assembly for a file
+neuralnet/openclkernels.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/openclkernels.cpp.s
+.PHONY : neuralnet/openclkernels.cpp.s
+
+neuralnet/opencltuner.o: neuralnet/opencltuner.cpp.o
+.PHONY : neuralnet/opencltuner.o
+
+# target to build an object file
+neuralnet/opencltuner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.o
+.PHONY : neuralnet/opencltuner.cpp.o
+
+neuralnet/opencltuner.i: neuralnet/opencltuner.cpp.i
+.PHONY : neuralnet/opencltuner.i
+
+# target to preprocess a source file
+neuralnet/opencltuner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.i
+.PHONY : neuralnet/opencltuner.cpp.i
+
+neuralnet/opencltuner.s: neuralnet/opencltuner.cpp.s
+.PHONY : neuralnet/opencltuner.s
+
+# target to generate assembly for a file
+neuralnet/opencltuner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/katago.dir/build.make CMakeFiles/katago.dir/neuralnet/opencltuner.cpp.s
+.PHONY : neuralnet/opencltuner.cpp.s
 
 neuralnet/sgfmetadata.o: neuralnet/sgfmetadata.cpp.o
 .PHONY : neuralnet/sgfmetadata.o
@@ -3054,6 +3150,9 @@ help:
 	@echo "... core/timer.o"
 	@echo "... core/timer.i"
 	@echo "... core/timer.s"
+	@echo "... datago_implement/stats_search/stats_search.o"
+	@echo "... datago_implement/stats_search/stats_search.i"
+	@echo "... datago_implement/stats_search/stats_search.s"
 	@echo "... dataio/files.o"
 	@echo "... dataio/files.i"
 	@echo "... dataio/files.s"
@@ -3096,9 +3195,6 @@ help:
 	@echo "... neuralnet/desc.o"
 	@echo "... neuralnet/desc.i"
 	@echo "... neuralnet/desc.s"
-	@echo "... neuralnet/dummybackend.o"
-	@echo "... neuralnet/dummybackend.i"
-	@echo "... neuralnet/dummybackend.s"
 	@echo "... neuralnet/modelversion.o"
 	@echo "... neuralnet/modelversion.i"
 	@echo "... neuralnet/modelversion.s"
@@ -3108,6 +3204,18 @@ help:
 	@echo "... neuralnet/nninputs.o"
 	@echo "... neuralnet/nninputs.i"
 	@echo "... neuralnet/nninputs.s"
+	@echo "... neuralnet/openclbackend.o"
+	@echo "... neuralnet/openclbackend.i"
+	@echo "... neuralnet/openclbackend.s"
+	@echo "... neuralnet/openclhelpers.o"
+	@echo "... neuralnet/openclhelpers.i"
+	@echo "... neuralnet/openclhelpers.s"
+	@echo "... neuralnet/openclkernels.o"
+	@echo "... neuralnet/openclkernels.i"
+	@echo "... neuralnet/openclkernels.s"
+	@echo "... neuralnet/opencltuner.o"
+	@echo "... neuralnet/opencltuner.i"
+	@echo "... neuralnet/opencltuner.s"
 	@echo "... neuralnet/sgfmetadata.o"
 	@echo "... neuralnet/sgfmetadata.i"
 	@echo "... neuralnet/sgfmetadata.s"

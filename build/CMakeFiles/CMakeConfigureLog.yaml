@@ -1693,3 +1693,46 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenCL.cmake:59 (CHECK_SYMBOL_EXISTS)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenCL.cmake:100 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:411 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_3_0"
+    directories:
+      source: "/scratch2/f004h1v/alphago_project/build/CMakeFiles/CMakeScratch/TryCompile-8aYfFN"
+      binary: "/scratch2/f004h1v/alphago_project/build/CMakeFiles/CMakeScratch/TryCompile-8aYfFN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_3_0"
+      cached: true
+      stdout: |
+        Change Dir: '/scratch2/f004h1v/alphago_project/build/CMakeFiles/CMakeScratch/TryCompile-8aYfFN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_01470/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_01470.dir/build.make CMakeFiles/cmTC_01470.dir/build
+        gmake[1]: Entering directory '/scratch2/f004h1v/alphago_project/build/CMakeFiles/CMakeScratch/TryCompile-8aYfFN'
+        Building C object CMakeFiles/cmTC_01470.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_01470.dir/CheckSymbolExists.c.o -c /scratch2/f004h1v/alphago_project/build/CMakeFiles/CMakeScratch/TryCompile-8aYfFN/CheckSymbolExists.c
+        In file included from /usr/include/CL/cl.h:20,
+                         from /scratch2/f004h1v/alphago_project/build/CMakeFiles/CMakeScratch/TryCompile-8aYfFN/CheckSymbolExists.c:2:
+        /usr/include/CL/cl_version.h:22:9: note: ‘#pragma message: cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 300 (OpenCL 3.0)’
+           22 | #pragma message("cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 300 (OpenCL 3.0)")
+              |         ^~~~~~~
+        Linking C executable cmTC_01470
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01470.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_01470.dir/CheckSymbolExists.c.o -o cmTC_01470 
+        gmake[1]: Leaving directory '/scratch2/f004h1v/alphago_project/build/CMakeFiles/CMakeScratch/TryCompile-8aYfFN'
+        
+      exitCode: 0
+...

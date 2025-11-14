@@ -9,6 +9,10 @@
 #include "../search/searchnode.h"
 #include "../dataio/files.h"
 
+#ifdef DATAGO_IMPLEMENT
+#include "../datago_implement/stats_search.h"
+#endif
+
 #include "../core/test.h"
 
 using namespace std;
@@ -1293,6 +1297,10 @@ FinishedGameData* Play::runGame(
     delete botW;
   delete botB;
 
+  #ifdef DATAGO_IMPLEMENT
+  gameData->ragData = (void*)datago_get_current_game_data();
+  #endif
+
   return gameData;
 }
 
@@ -1310,6 +1318,9 @@ FinishedGameData* Play::runGame(
   std::function<void(const Board&, const BoardHistory&, Player, Loc, const std::vector<double>&, const std::vector<double>&, const std::vector<double>&, const Search*)> onEachMove
 ) {
   FinishedGameData* gameData = new FinishedGameData();
+  #ifdef DATAGO_IMPLEMENT
+  gameData->ragData = nullptr; // Initialize ragData
+  #endif
 
   Board board(startBoard);
   BoardHistory hist(startHist);
@@ -1654,6 +1665,10 @@ FinishedGameData* Play::runGame(
     //And make the move on our copy of the board
     testAssert(hist.isLegal(board,loc,pla));
     hist.makeBoardMoveAssumeLegal(board,loc,pla,NULL);
+
+    #ifdef DATAGO_IMPLEMENT
+    datago_record_move(loc, pla, board);
+    #endif
 
     //Check for resignation
     if(playSettings.allowResignation && historicalMctsWinLossValues.size() >= playSettings.resignConsecTurns) {
@@ -2073,6 +2088,11 @@ FinishedGameData* Play::runGame(
   }
 
   gameData->trainingWeight = otherGameProps.trainingWeight;
+  
+  #ifdef DATAGO_IMPLEMENT
+  gameData->ragData = (void*)datago_get_current_game_data();
+  #endif
+
   return gameData;
 }
 
