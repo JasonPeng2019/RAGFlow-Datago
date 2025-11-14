@@ -2,65 +2,70 @@
 #define DATAGO_STATS_SEARCH_H
 
 #include "../search/search.h"
-/*pseudocode:
-void collectRAGData(Search* search, SearchNode* rootNode) {
-    // 1. Get all nodes in the search tree
-    std::vector<SearchNode*> allNodes = search->enumerateTreePostOrder();
+#include "../program/selfplaymanager.h"
+#include <stddef.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void datago_collect_search_states(Search* search, SearchNode* rootNode, 
+                                   Board& board, Player pla, int moveNumber) ;
+
+#ifdef __cplusplus
+}
+#include <string>
+
+#define W1 0.00
+#define W2 0.00
+#define W3 0.00
+#define UNCERTAINTY_THRESHOLD 0.9
+#define RAG_OUTPUT_DIR "./rag_data"
+
+struct ChildNodeInfo {
+    std::string move;
+    std::string child_sym_hash;
+    double value;
+    double pUCT;
+    double prior;
+    int visits;
+};
+
+struct PerMoveRAGData {
+    int move_number;
+    std::string sym_hash;
+    std::string state_hash;
+    std::string player_to_move;
     
-    // 2. For each node, extract the data you need
-    for (SearchNode* node : allNodes) {
-        // Get the node's hash (game state identifier)
-        Hash128 stateHash = node->hash;  // From searchnode.h line 220
-        
-        // Get final values
-        NodeStats stats;
-        node->stats.copyInto(stats);  // Thread-safe copy of atomic values
-        
-        double utility = stats.utilityAvg;
-        double winrate = stats.winLossValueAvg;
-        double scoreMean = stats.scoreMeanAvg;
-        int64_t visits = stats.visits;
-        
-        // Get children and their edges
-        const SearchChildPointer* children = node->getChildren();
-        int numChildren = node->numChildren;
-        
-        // 3. Extract policy distribution for children
-        std::vector<double> policyValues;
-        std::vector<Hash128> childHashes;
-        std::vector<double> childUtilities;
-        
-        for (int i = 0; i < numChildren; i++) {
-            const SearchChildPointer& child = children[i];
-            
-            // Policy prior for this child
-            double prior = child.nnPolicyProb;  // searchnode.h line 143
-            
-            // Edge visits
-            int64_t edgeVisits = child.getEdgeVisits();  // searchnode.h line 158
-            
-            // Child node (if expanded)
-            SearchNode* childNode = child.getIfAllocated();
-            if (childNode != nullptr) {
-                Hash128 childHash = childNode->hash;
-                
-                NodeStats childStats;
-                childNode->stats.copyInto(childStats);
-                double childUtility = childStats.utilityAvg;
-                
-                childHashes.push_back(childHash);
-                childUtilities.push_back(childUtility);
-            }
-            
-            policyValues.push_back(prior);
-        }
-        
-        // 4. Store to RAG (your storage logic here)
-        storeToRAG(stateHash, utility, winrate, scoreMean, 
-                   policyValues, childHashes, childUtilities, visits);
-    }
-}*/
+    // Moves history UP TO THIS POINT (for reconstruction)
+    std::vector<std::pair<std::string, std::string>> moves_history;
+    
+    std::vector<ChildNodeInfo> children;
+    double policy_entropy;
+    double value_score;
+    double value_variance;
+    double combined_score;
+    int black_stones;
+    int white_stones;
+};
 
-void datago_collect_search_states(struct Search* search, struct SearchNode* rootNode);
+struct GameRAGData {
+    std::string game_id;
+    //float komi; -> can copy from finishedgamedata
+    //std::string rules; -> ^
+    //int board_size; -> ^
+    std::vector<std::pair<std::string, std::string>> moves_history;  // Full move list
 
+    // Only flagged complex positions (each with its own moves_history)
+    std::vector<PerMoveRAGData> flagged_positions;
+};
+
+
+
+thread_local GameRAGData currentGameRAGData;
+
+
+
+void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rules, const FinishedGameData* gameData);
+#endif
 #endif  // DATAGO_STATS_SEARCH_H

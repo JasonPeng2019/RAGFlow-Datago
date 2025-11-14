@@ -335,6 +335,14 @@ void SelfplayManager::runDataWriteLoop(ModelData* modelData) {
   Logger::logThreadUncaught("data write loop", logger, [&](){ runDataWriteLoopImpl(modelData); });
 }
 
+/* DATAGO IMPLEMENTATION */
+   
+#include "../defines.h"
+#include "../datago_implement/datago_includes.h"
+
+/* FINISH DATAGO IMPLEMENTATION
+*/
+
 void SelfplayManager::runDataWriteLoopImpl(ModelData* modelData) {
   if(logger != NULL)
     logger->write("Data write loop starting for neural net: " + modelData->modelName);
@@ -353,6 +361,20 @@ void SelfplayManager::runDataWriteLoopImpl(ModelData* modelData) {
     assert(gameData != NULL);
 
     modelData->tdataWriter->writeGame(*gameData);
+    
+    /* DATAGO IMPLEMENTATION
+    */
+    //extract game settings to the json
+
+    float komi = gameData->endHist.rules.komi;
+    int board_size = gameData->endHist.initialBoard.x_size;
+    std::string rules = gameData->endHist.rules.toStringNoKomi();
+
+    //make JSON with complete RAG data
+    writeCompleteRAGDataJSON(komi, board_size, rules, gameData);
+
+    /* FINISH DATAGO IMPLEMENTATION
+    */
 
     if(modelData->sgfOut != NULL) {
       assert(gameData->startHist.moveHistory.size() <= gameData->endHist.moveHistory.size());

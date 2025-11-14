@@ -445,6 +445,14 @@ void Search::runWholeSearch(std::atomic<bool>& shouldStopNow, bool pondering) {
   runWholeSearch(shouldStopNow,searchBegun,pondering,TimeControls(),1.0);
 }
 
+/* DATAGO IMPLEMENTATION */
+
+#include "../defines.h"
+#include "../datago_implement/datago_includes.h"
+
+/* FINISH DATAGO IMPLEMENTATION
+*/
+
 void Search::runWholeSearch(
   std::atomic<bool>& shouldStopNow,
   std::function<void()>* searchBegun,
@@ -613,11 +621,13 @@ void Search::runWholeSearch(
 
   /* DATAGO IMPLEMENTATION
   */
-  #include "defines.h"
 
   #ifdef DATAGO_IMPLEMENT
   datago_collect_search_states(this, rootNode);
   #endif
+
+  /* FINISH DATAGO IMPLEMENTATION
+  */
 
   //Relaxed load is fine since numPlayoutsShared should be synchronized already due to the joins
   lastSearchNumPlayouts = numPlayoutsShared.load(std::memory_order_relaxed);
