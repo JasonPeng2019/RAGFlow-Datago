@@ -1,0 +1,15 @@
+2025-11-13 22:37:30,644 INFO    MainThread:1179141 [wandb_setup.py:_flush():81] Current SDK version is 0.21.3
+2025-11-13 22:37:30,644 INFO    MainThread:1179141 [wandb_setup.py:_flush():81] Configure stats pid to 1179141
+2025-11-13 22:37:30,644 INFO    MainThread:1179141 [wandb_setup.py:_flush():81] Loading settings from /thayerfs/home/f004h1v/.config/wandb/settings
+2025-11-13 22:37:30,644 INFO    MainThread:1179141 [wandb_setup.py:_flush():81] Loading settings from /scratch2/f004h1v/alphago_project/datago/tuning/phase1/wandb/settings
+2025-11-13 22:37:30,644 INFO    MainThread:1179141 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-11-13 22:37:30,644 INFO    MainThread:1179141 [wandb_init.py:setup_run_log_directory():686] Logging user logs to /scratch2/f004h1v/alphago_project/datago/tuning/phase1/wandb/run-20251113_223730-q96r4n6z/logs/debug.log
+2025-11-13 22:37:30,645 INFO    MainThread:1179141 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to /scratch2/f004h1v/alphago_project/datago/tuning/phase1/wandb/run-20251113_223730-q96r4n6z/logs/debug-internal.log
+2025-11-13 22:37:30,645 INFO    MainThread:1179141 [wandb_init.py:init():813] calling init triggers
+2025-11-13 22:37:30,645 INFO    MainThread:1179141 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'train_size': 4, 'val_size': 1, 'train_split': 0.8, '_wandb': {}}
+2025-11-13 22:37:30,645 INFO    MainThread:1179141 [wandb_init.py:init():854] starting backend
+2025-11-13 22:37:30,862 INFO    MainThread:1179141 [wandb_init.py:init():857] sending inform_init request
+2025-11-13 22:37:30,870 INFO    MainThread:1179141 [wandb_init.py:init():865] backend started and connected
+2025-11-13 22:37:30,872 INFO    MainThread:1179141 [wandb_init.py:init():936] updated telemetry
+2025-11-13 22:37:30,887 INFO    MainThread:1179141 [wandb_init.py:init():960] communicating run to backend with 90.0 second timeout

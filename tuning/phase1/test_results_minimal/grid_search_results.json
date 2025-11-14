@@ -1,0 +1,70 @@
+[
+  {
+    "config": {
+      "w1": 0.4,
+      "w2": 0.6,
+      "phase_function_type": "linear",
+      "phase_coefficients": [
+        0.0,
+        1.0
+      ],
+      "config_id": "w1_0.40_w2_0.60_linear_0.00_1.00"
+    },
+    "train_metrics": {
+      "pearson_correlation": 0.9553663309535924,
+      "pearson_pvalue": 0.04463366904640775,
+      "spearman_correlation": 1.0,
+      "spearman_pvalue": 0.0,
+      "top_k_precision": 1.0,
+      "ndcg_score": 0.9999999999999999,
+      "mean_uncertainty": 2.463904390942168,
+      "std_uncertainty": 0.024521818412833022,
+      "mean_error": 0.7147293073913159,
+      "config": {
+        "w1": 0.4,
+        "w2": 0.6,
+        "phase_function_type": "linear",
+        "phase_coefficients": [
+          0.0,
+          1.0
+        ],
+        "config_id": "w1_0.40_w2_0.60_linear_0.00_1.00"
+      }
+    },
+    "score": 0.9553663309535924
+  },
+  {
+    "config": {
+      "w1": 0.6,
+      "w2": 0.4,
+      "phase_function_type": "linear",
+      "phase_coefficients": [
+        0.3,
+        0.85
+      ],
+      "config_id": "w1_0.60_w2_0.40_linear_0.30_0.85"
+    },
+    "train_metrics": {
+      "pearson_correlation": -0.9203460279161222,
+      "pearson_pvalue": 0.07965397208387781,
+      "spearman_correlation": -1.0,
+      "spearman_pvalue": 0.0,
+      "top_k_precision": 0.0,
+      "ndcg_score": 0.9387509947244683,
+      "mean_uncertainty": 3.3896909607712873,
+      "std_uncertainty": 0.10354822263533654,
+      "mean_error": 0.7147293073913159,
+      "config": {
+        "w1": 0.6,
+        "w2": 0.4,
+        "phase_function_type": "linear",
+        "phase_coefficients": [
+          0.3,
+          0.85
+        ],
+        "config_id": "w1_0.60_w2_0.40_linear_0.30_0.85"
+      }
+    },
+    "score": -0.9203460279161222
+  }
+]

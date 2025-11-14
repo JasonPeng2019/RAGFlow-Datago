@@ -200,8 +200,47 @@ class GameRunner:
         child_nodes = entry.get("child_nodes") or []
         max_possible_recursion = max(recursion_depth, len(child_nodes) // 2)
 
-        return {
+        state_hash = (
+            entry.get("state_hash")
+            or entry.get("game_hash")
+            or entry.get("hash")
+            or entry.get("position_hash")
+            or entry.get("positionHash")
+        )
+        sym_hash = entry.get("sym_hash") or state_hash
+        policy = (
+            entry.get("policy")
+            or _extract_policy(deep)
+            or _extract_policy(shallow)
+        )
+        ownership = entry.get("ownership") or deep.get("ownership")
+        winrate = (
+            entry.get("winrate")
+            or deep.get("winrate")
+            or deep.get("value")
+            or shallow.get("winrate")
+        )
+        score_lead = (
+            entry.get("score_lead")
+            or entry.get("scoreLead")
+            or deep.get("scoreLead")
+        )
+        move_infos = (
+            entry.get("move_infos")
+            or entry.get("moveInfos")
+            or deep.get("moveInfos")
+            or shallow.get("moveInfos")
+            or []
+        )
+
+        normalised = {
             "sym_hash": entry.get("sym_hash"),
+            "state_hash": state_hash,
+            "policy": policy,
+            "ownership": ownership,
+            "winrate": winrate,
+            "score_lead": score_lead,
+            "move_infos": move_infos,
             "value_error": float(value_error),
             "policy_error": float(policy_error),
             "deep_time_ms": float(deep_time_ms),
@@ -219,7 +258,9 @@ class GameRunner:
                 "source": entry.get("source"),
                 "game_id": entry.get("game_id"),
             },
+            "raw_entry": entry,
         }
+        return normalised
 
     # ------------------------------------------------------------------ #
     # Public API
@@ -296,6 +337,7 @@ class GameRunner:
         stored_count = 0
         recursion_depths: List[int] = []
         converged = 0
+        stored_samples: List[Dict[str, Any]] = []
 
         depth_ratio = max(1.0, deep_mcts_max_depth) / max(
             1.0, float(self.baseline_deep_visits)
@@ -317,6 +359,8 @@ class GameRunner:
 
             rag_hits += 1 if record["rag_hit"] else 0
             stored_count += 1 if record["stored"] else 0
+            if record["stored"]:
+                stored_samples.append(record)
 
             effective_recursion = min(
                 recursion_depth_N,
@@ -361,6 +405,16 @@ class GameRunner:
                 "depth_ratio": depth_ratio,
                 "error_scale": error_scale,
                 "positions_sampled": sample_size,
+                "rag_entries_example": [
+                    build_rag_entry_from_deep_eval(
+                        state_hash=rec.get("state_hash") or rec.get("sym_hash"),
+                        sym_hash=rec.get("sym_hash") or rec.get("state_hash"),
+                        deep_eval=_extract_raw_deep_eval(rec),
+                        metadata=rec.get("metadata"),
+                        similarity_weights=self.similarity_weights,
+                    )
+                    for rec in stored_samples[:2]
+                ],
             },
         )
         return metrics
@@ -411,3 +465,98 @@ def _kl_divergence(p: Sequence[float], q: Sequence[float], epsilon: float = 1e-1
         qi = max(float(q[i]), epsilon)
         divergence += pi * math.log(pi / qi)
     return max(divergence, 0.0)
+
+
+def _extract_raw_deep_eval(record: Dict[str, Any]) -> Dict[str, Any]:
+    raw = record.get("raw_entry") or {}
+    deep = raw.get("deep")
+    if isinstance(deep, dict):
+        return deep
+    return raw
+
+
+def build_rag_entry_from_deep_eval(
+    *,
+    state_hash: Optional[str],
+    sym_hash: Optional[str],
+    deep_eval: Dict[str, Any],
+    similarity_weights: Optional[Dict[str, float]] = None,
+    metadata: Optional[Dict[str, Any]] = None,
+    max_moves: int = 2,
+) -> Dict[str, Any]:
+    """
+    Construct a RAG entry dictionary using the schema outlined in
+    claude_instructions.txt (lines 55-63).
+    """
+
+    similarity_weights = similarity_weights or DEFAULT_SIMILARITY_WEIGHTS
+    metadata = metadata or {}
+
+    policy = (
+        deep_eval.get("policy")
+        or _extract_policy(deep_eval)
+        or []
+    )
+    ownership = deep_eval.get("ownership")
+    winrate = (
+        deep_eval.get("winrate")
+        or deep_eval.get("value")
+        or 0.0
+    )
+    score_lead = (
+        deep_eval.get("score_lead")
+        or deep_eval.get("scoreLead")
+    )
+    komi = deep_eval.get("komi")
+    move_infos = (
+        deep_eval.get("move_infos")
+        or deep_eval.get("moveInfos")
+        or []
+    )
+    child_nodes = deep_eval.get("child_nodes")
+
+    if not child_nodes:
+        child_nodes = []
+        for info in move_infos:
+            val = info.get("value")
+            if val is None:
+                val = info.get("winrate")
+            child_nodes.append(
+                {
+                    "hash": info.get("hash")
+                    or info.get("node_hash")
+                    or info.get("child_hash")
+                    or info.get("move"),
+                    "move": info.get("move"),
+                    "value": val,
+                    "pUCT": info.get("pUCT") or info.get("puct"),
+                    "policy": info.get("policy") or info.get("prior"),
+                }
+            )
+
+    def _node_value(node: Dict[str, Any]) -> float:
+        val = node.get("value")
+        if val is None:
+            val = node.get("winrate")
+        try:
+            return float(val)
+        except (TypeError, ValueError):
+            return 0.0
+
+    sorted_nodes = sorted(child_nodes, key=_node_value, reverse=True)
+    top_moves = sorted_nodes[:max_moves]
+
+    return {
+        "game_hash": state_hash or sym_hash,
+        "sym_hash": sym_hash or state_hash,
+        "policy": policy,
+        "ownership": ownership,
+        "winrate": winrate,
+        "score_lead": score_lead,
+        "move_infos": move_infos,
+        "komi": komi,
+        "child_nodes": child_nodes,
+        "top_moves": top_moves,
+        "similarity_weights": similarity_weights,
+        "metadata": metadata,
+    }

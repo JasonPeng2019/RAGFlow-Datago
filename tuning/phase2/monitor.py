@@ -46,6 +46,7 @@ class TuningMonitor:
             print(f"Warning: Could not get GPU stats: {e}")
         
         return {}
+        pass
     
     def get_cpu_stats(self) -> Dict:
         """Get CPU and RAM statistics"""

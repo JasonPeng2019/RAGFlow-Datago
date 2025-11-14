@@ -1,0 +1,20 @@
+{
+  "10": {
+    "threshold": 2.4305067756382908,
+    "num_stored": 1,
+    "storage_rate": 1.0,
+    "avg_error_stored": 0.5743611606324092,
+    "avg_error_not_stored": 0.0,
+    "benefit": 0.5743611606324092,
+    "coverage": 1.0
+  },
+  "20": {
+    "threshold": 2.4305067756382908,
+    "num_stored": 1,
+    "storage_rate": 1.0,
+    "avg_error_stored": 0.5743611606324092,
+    "avg_error_not_stored": 0.0,
+    "benefit": 0.5743611606324092,
+    "coverage": 1.0
+  }
+}
