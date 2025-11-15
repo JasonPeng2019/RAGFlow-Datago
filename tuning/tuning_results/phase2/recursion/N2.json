@@ -1,0 +1,13 @@
+{
+  "recursion_depth_N": 2,
+  "score": -0.501724604601099,
+  "metrics": {
+    "avg_move_time_ms": 2213.1684876975146,
+    "avg_value_error": 0.02639573018639679,
+    "avg_policy_error": 0.05637907919386957,
+    "avg_deep_time_ms": 2203.120413168578,
+    "avg_recursion_depth": 2,
+    "deep_search_total": 640,
+    "deep_converged_total": 605
+  }
+}

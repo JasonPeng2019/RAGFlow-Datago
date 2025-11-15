@@ -1,0 +1,9 @@
+[project]
+name = "datago"
+version = "0.0.0"
+description = "RAG-augmented MCTS helpers for KataGo"
+requires-python = ">=3.12"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
