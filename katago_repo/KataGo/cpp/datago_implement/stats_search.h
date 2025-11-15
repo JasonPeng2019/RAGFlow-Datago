@@ -52,6 +52,11 @@ struct PerMoveRAGData {
     double combined_score;
     int black_stones;
     int white_stones;
+    
+    // Neural network outputs for this position
+    std::vector<float> policy;      // Full policy vector (361 values for 19x19)
+    double winrate;                   // Winrate from NN
+    std::vector<float> ownership;   // Ownership map (361 values for 19x19)
 };
 
 struct GameRAGData {

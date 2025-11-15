@@ -169,15 +169,36 @@ void datago_collect_search_states(Search* search, SearchNode* rootNode,
         moveData.value_variance = K;
         moveData.combined_score = combined;
         
-        // 6. Get root stats for value_score
+        // 6. Get root stats for value_score and winrate
         NodeStats rootStats(rootNode->stats);
         moveData.value_score = rootStats.scoreMeanAvg;  // or utilityAvg depending on what you want
+        moveData.winrate = rootStats.winLossValueAvg;   // Winrate
         
         // 7. Count stones
         moveData.black_stones = countBlackStones(board);
         moveData.white_stones = countWhiteStones(board);
         
-        // 8. Extract ALL children
+        // 8. Extract policy vector and ownership from NN output
+        NNOutput* nnOutput = rootNode->getNNOutput();
+        if (nnOutput != nullptr) {
+            // Get policy vector
+            int policySize = NNPos::getPolicySize(board.x_size, board.y_size);
+            moveData.policy.resize(policySize);
+            for (int i = 0; i < policySize; i++) {
+                moveData.policy[i] = nnOutput->policyProbs[i];
+            }
+            
+            // Get ownership if available
+            if (nnOutput->whiteOwnerMap != nullptr) {
+                int ownershipSize = board.x_size * board.y_size;
+                moveData.ownership.resize(ownershipSize);
+                for (int i = 0; i < ownershipSize; i++) {
+                    moveData.ownership[i] = nnOutput->whiteOwnerMap[i];
+                }
+            }
+        }
+        
+        // 9. Extract ALL children
         SearchNodeChildrenReference children = rootNode->getChildren();
         int numChildren = children.iterateAndCountChildren();
 
@@ -235,7 +256,7 @@ void datago_collect_search_states(Search* search, SearchNode* rootNode,
         
         moveData.children = childrenInfo;
         
-        // 9. Store the completed PerMoveRAGData
+        // 10. Store the completed PerMoveRAGData
         currentGameRAGData.flagged_positions.push_back(moveData);
     }
 }
@@ -311,6 +332,25 @@ void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rul
         outfile << "        \"value_variance\": " << moveData.value_variance << ",\n";
         outfile << "        \"combined_score\": " << moveData.combined_score << "\n";
         outfile << "      },\n";
+        
+        // Write winrate
+        outfile << "      \"winrate\": " << moveData.winrate << ",\n";
+        
+        // Write policy vector
+        outfile << "      \"policy\": [";
+        for (size_t p = 0; p < moveData.policy.size(); p++) {
+            outfile << moveData.policy[p];
+            if (p < moveData.policy.size() - 1) outfile << ", ";
+        }
+        outfile << "],\n";
+        
+        // Write ownership vector
+        outfile << "      \"ownership\": [";
+        for (size_t o = 0; o < moveData.ownership.size(); o++) {
+            outfile << moveData.ownership[o];
+            if (o < moveData.ownership.size() - 1) outfile << ", ";
+        }
+        outfile << "],\n";
 
         // Write children array
         outfile << "      \"children\": [\n";
