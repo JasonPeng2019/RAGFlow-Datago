@@ -1,0 +1,64 @@
+GPT TODO - Deep/Shallow RAG Integration
+
+1. Capture data on every 5th move (already active)
+   - Current stats_search.* code already logs every 5th move via the modulo counter; leave as-is while collecting baseline data.
+   - When the RAG thresholds are ready, revisit this step to swap in the (w1*E + w2*K)*phase rule and make the stride configurable.
+
+2. Mark sampled nodes for deep analysis
+   - Extend PerMoveRAGData/currentGameRAGData so each sampled (every Nth) shallow position tags itself for the inline deep search and carries the board/history snapshot (clone the board/history/pla so we never mutate the live state).
+   - Store the exact root search params (rules, komi, search settings) with each sample so the inline deep pass can spin up a separate Search configured identically and recompute sym hashes the same way.
+
+3. Run deep search inline on every sampled node
+   - For each position that already passes the 1-in-5 sampling check, clone the board/history and spawn a dedicated Search instance configured with identical params/rules/komi; run a synchronous deep MCTS (e.g., 10k visits) so every shallow record has a matching deep record.
+   - Add config knobs for `inlineDeepSearchVisits`, max deep searches per move/game, and an emergency kill switch. Measure and subtract the deep-search wall time from the main move timer (or pause the timer) so we don’t blow time controls.
+   - Ensure the deep Search never shares `SearchNodeTable`, `MutexPool`, or worker threads with the live search; treat it as fully isolated to avoid clobbering node states or deadlocking `performTaskWithThreads`.
+   - Avoid polluting shared caches: either skip eval-cache updates for deep runs or give them low weight so they don’t evict the shallow tree’s data.
+   - Emit explicit logging around each deep pass (start/end, move number, visits, duration) so we can see the added latency in logs/metrics and correlate with `asyncbot` callbacks. 
+
+4. Capture and store the deep-search results
+   - Package the deep search output (policy/value/child stats/ownership) into a `DeepMoveRAGData` struct that aligns by sym_hash with the shallow entry, then stash it in `GameRAGData`.
+   - Handle failure paths gracefully: if a deep search times out or hits an illegal state, record an explicit status so `writeCompleteRAGDataJSON` can skip or mark the deep entry without breaking the JSON schema.
+
+5. Persist deep results next to shallow results
+   - Extend GameRAGData + writeCompleteRAGDataJSON so we emit paired shallow/deep entries (matching on sym_hash) in the per-game JSON files.
+   - Include metadata for relevancy thresholds (e.g., stored similarities, timestamps) so retrieval logic has what it needs later.
+
+6. Plumbing + observability
+   - Surface the new config knobs in selfplay cfg files and log them at startup.
+   - Add logging/metrics (e.g., per-game counts of deep jobs queued/completed) so we can verify the pipeline is running while tailing logs like test_output/log*.log.
+
+Potential vulnerabilities:
+
+Potential vulnerabilities:
+   - Board/History integrity: Play flow (Play::runGame, PlayUtils helpers) relies on BoardHistory::presumedNextMovePla and assumes the history only advances once per move. If you clone the board/history mid-loop, ensure you don’t accidentally call hist.makeBoardMoveAssumeLegal on the shared copy; always clone before running the deep search so the main game state stays untouched.
+   - Thread/Mutex sharing: SearchNodeTable and MutexPool are shared inside Search. A deep search instantiated from another thread can’t borrow these from the live search unless you guard them. Again, separate Search instances prevent deadlocks and contention.
+   - Time controls / visit caps: runWholeSearch enforces maxVisits, maxPlayouts, and tc limits. Inline deep search must not trip those counters for the main search; expose separate knobs (inlineDeepSearchVisits, max per move/game) and avoid reusing the same Search object’s timers. Also beware of TimeControls—if you run the deep search synchronously, the main move deadline might expire unless you pause or subtract the deep-search duration
+   - Graph hash & child sym hash consistency: stats_search currently pulls graphHash and recomputes child_sym_hash. If the deep search uses a separate Search, be sure to recompute these hashes the exact same way (same rules/komi/presumed player) so shallow/deep entries align.
+   - JSON writer assumption: writeCompleteRAGDataJSON currently writes only the shallow list. When you add deep results, ensure the writer handles cases where the deep search failed (timeout, illegal move) without breaking the JSON structure.
+   - Data-writing loop (runDataWriteLoopImpl) dequeues FinishedGameData and deletes it immediately. If deep search happens after that point (or in another thread), you’ll be using freed memory. If you ever offload it, make sure the lifetime of FinishedGameData covers the deep job.
+   - Concurrency traps: Search::performTaskWithThreads spawns worker threads once; calling it again inside the same search may not be safe. That’s another reason to avoid reusing the active Search instance for deep passes.
+   - Config propagation: Ensure new inline-deep-search parameters can be injected via the self-play configs; otherwise you might hardcode values and forget to update them when scaling.
+   - beginSearch side effects (search.cpp (lines 660-780)). Each call recomputes graph hashes, symmetry pruning, pattern bonus tables, and can clear the entire tree depending on params (playoutDoublingAdvantage, avoidRepeatedPatternUtility, etc.). A deep search that skips beginSearch leaves these derived fields stale; one that does call it on the live object might unexpectedly clear the main search tree. Another reason to isolate the deep search in a new Search.
+   - Board/history ownership (play.cpp (lines 1307-1700)). Play::runGame and PlayUtils assume only one Search::runWholeSearch per move and the board/history advance only after the move decision. Inline deep search must clone the board/history/pla before running so resignation checks, historicalMctsWinLossValues, and the actual bots’ makeMove calls continue using the original state.
+   - Time/visit throttles (search.cpp (lines 456-520)). The outer search enforces maxVisits, maxPlayouts, and time controls; it also carries an effectiveSearchTimeCarriedOver. If you block inside this call for 10k extra visits, you’ll blow the move deadline or distort lastSearchNumPlayouts. Add separate config knobs (inlineDeepSearchVisits, max deep searches per move/game) and deduct the wall time from the main timer if you must run inline.
+   - NN evaluator load (playutils.cpp, search.cpp:900+). Each Search shares an NNEvaluator. Inline deep searches double the request rate; make sure batch sizes/queues are large enough, and consider logging deep-search start/finish events so you can spot overload in test_output/log*.log.
+   - Tree structures assume single-owner access – searchnode.h (lines 17-200) and searchnodetable.cpp (lines 6-18) show that nodes/stats/child arrays and the node table rely on monotonic state transitions guarded only by lightweight atomics and shard mutexes. Sharing nodes or the node table between the shallow and deep passes would violate those assumptions (two searches would write state, edgeVisits, etc. concurrently). Allocate independent node tables/mutex pools for the deep run.
+   -Async bot / callback expectations – search/asyncbot.cpp (lines 430-498) wraps runWholeSearch with callback threads for pondering and live analysis. Blocking that call for an inline 10k-visit rerun would stall analyze callbacks and the queued onMove hook, confusing any client watching search progress. If you must run deep search inline, gate it with config knobs and emit clear logging so higher layers know the extra pause is intentional.
+   - Play loop invariants – program/play.cpp (lines 1601-1705) records policy entropy, forks side positions, drives resignation logic, and only then calls makeMove on each bot. Those steps assume the root stats come solely from the normal search. If the deep pass reuses the same Search, the resignation buffer (historicalMctsWinLossValues) and training captures will reflect the wrong visit totals. Keep the deep search completely separate, or explicitly exclude its stats from anything the play loop consumes.
+   - Eval cache pressure – The eval cache (search/evalcache.cpp (lines 30-136)) is shared across searches. Inline deep searches will hammer the cache with extra update() calls based on cloned roots. Without limits, this can flood the cache, evicting useful entries for the main search or bloating memory. Consider skipping cache writes for the deep pass or lowering its cache weight so it doesn’t dominate.
+
+
+
+Complete: Step 2 – Capture the full board/history/search-parameter snapshot for each sampled node so the deep pass can be re-run deterministically. Right now we only clone “board/history” inside runInlineDeepSearch; JTODO still wants those snapshots stored alongside the shallow data.
+
+Complete: Step 3 – Finish the guardrails: expose config knobs (sampling stride, inline-deep-search visits, per-move/game caps, kill switch) via the self-play configs, subtract deep-search wall time from the main timer or pause it, and add logging/metrics around each deep pass. Also consider whether to skip eval-cache updates for the deep run (currently still writing to the default cache).
+Optional: subtract complex move time from wall clock, in case of future time constraints
+
+Complete: Step 4 – Handle failure paths cleanly: if a deep search times out or errors, record that status so the JSON writer can omit or mark the deep data without breaking consumers.
+
+Complete: Step 5 – Update writeCompleteRAGDataJSON/GameRAGData to emit paired shallow/deep entries (and additional metadata) in a way that downstream retrieval code expects. We added a deep_analysis block, but we still need whatever “relevancy metadata” and schema coordination Jason specified.
+
+Complete: Step 6 – Plumbing/observability: surface the new knobs in the selfplay_gpu*.cfg files, log them at startup, and add metrics (e.g., counts of deep searches run/failed) so you can verify behavior while tailing logs.
+
+
+cd /thayerfs/home/f003x5w/alphago_prj/RAGFlow-Datago/test_output && /thayerfs/home/f003x5w/alphago_prj/RAGFlow-Datago/katago_repo/KataGo/cpp/build-opencl/katago selfplay   -config /thayerfs/home/f003x5w/alphago_prj/RAGFlow-Datago/selfplay_gpu7.cfg   -models-dir /thayerfs/home/f003x5w/alphago_prj/RAGFlow-Datago/katago_repo/run   -output-dir /thayerfs/home/f003x5w/alphago_prj/RAGFlow-Datago/test_output   -max-games-total 1   -override-config maxVisits=300   -override-config maxMovesPerGame=5
