@@ -1666,9 +1666,10 @@ FinishedGameData* Play::runGame(
     testAssert(hist.isLegal(board,loc,pla));
     hist.makeBoardMoveAssumeLegal(board,loc,pla,NULL);
 
-    #ifdef DATAGO_IMPLEMENT
-    datago_record_move(loc, pla, board);
-    #endif
+    // DEPRECATED: No longer needed - moves are extracted from rootHistory.moveHistory instead
+    // #ifdef DATAGO_IMPLEMENT
+    // datago_record_move(loc, pla, board);
+    // #endif
 
     //Check for resignation
     if(playSettings.allowResignation && historicalMctsWinLossValues.size() >= playSettings.resignConsecTurns) {

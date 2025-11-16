@@ -83,8 +83,8 @@ class GoStateEmbedding:
         )
 
         # Temporary fields for storage decision (not saved to DB)
-        self.score_stdev = katago_response['rootInfo']['scoreStdev']
-        self.lcb = katago_response['rootInfo']['lcb']
+        self.score_stdev = katago_response['rootInfo'].get('scoreStdev', 0)
+        self.lcb = katago_response['rootInfo'].get('lcb', 0)
 
     def to_dict(self):
         """Convert to dictionary for RAG storage."""
@@ -169,9 +169,9 @@ class KataGoAnalyzer:
 if __name__ == "__main__":
     # Initialize analyzer
     analyzer = KataGoAnalyzer(
-        katago_path="./katago",
-        config_path="cpp/configs/analysis_example.cfg",
-        model_path="cpp/tests/models/g170e-b10c128-s1141046784-d204142634.bin.gz"
+        katago_path="../katago_repo/KataGo/cpp/build-opencl/katago",
+        config_path="../katago_repo/KataGo/cpp/configs/analysis_example.cfg",
+        model_path="../katago_repo/KataGo/cpp/tests/models/g170e-b10c128-s1141046784-d204142634.bin.gz"
     )
     
     # Analyze a position

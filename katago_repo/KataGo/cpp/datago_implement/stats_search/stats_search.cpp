@@ -116,34 +116,35 @@ bool if_uncertain(double combined) {
 }
 
 
-void datago_record_move(Loc moveLoc, Player pla, const Board& board) {
-    std::string moveStr = Location::toString(moveLoc, board);
-    std::string plaStr = (pla == P_BLACK) ? "B" : "W";
-    currentGameRAGData.moves_history.push_back(std::make_pair(plaStr, moveStr));
-}
+// DEPRECATED: No longer needed - we now extract moves directly from rootHistory.moveHistory
+// void datago_record_move(Loc moveLoc, Player pla, const Board& board) {
+//     std::string moveStr = Location::toString(moveLoc, board);
+//     std::string plaStr = (pla == P_BLACK) ? "B" : "W";
+//     currentGameRAGData.moves_history.push_back(std::make_pair(plaStr, moveStr));
+// }
 
 GameRAGData* datago_get_current_game_data() {
     return new GameRAGData(currentGameRAGData);
 }
 
 
-void datago_collect_search_states(Search* search, SearchNode* rootNode, 
+void datago_collect_search_states(Search* search, SearchNode* rootNode,
                                    Board& board, Player pla, int moveNumber) {
-    
+
     // 1. Calculate complexity metrics for THIS position
     double surprise, searchEntropy, E;
-    search->getPolicySurpriseAndEntropy(surprise, searchEntropy, E); 
+    search->getPolicySurpriseAndEntropy(surprise, searchEntropy, E);
     double K = calculateValueVariance(rootNode);
     int totalStones = countStones(board);
     double phase = calculatePhaseWeight(totalStones);
     double combined = calculateCombinedUncertainty(E, K, phase);
-    
+
     // 2. Only proceed if complex
     bool is_uncertain = if_uncertain(combined);
     if (is_uncertain) {
-        
+
         PerMoveRAGData moveData;
-        
+
         // 3. Populate basic fields
         moveData.move_number = moveNumber;
 
@@ -160,9 +161,16 @@ void datago_collect_search_states(Search* search, SearchNode* rootNode,
         moveData.sym_hash = Global::uint64ToHexString(symHash.hash1) + Global::uint64ToHexString(symHash.hash0);
         moveData.state_hash = Global::uint64ToHexString(thisHash.hash1) + Global::uint64ToHexString(thisHash.hash0);
         moveData.player_to_move = (pla == P_BLACK) ? "B" : "W";
-        
-        // 4. Copy moves history from GameRAGData
-        moveData.moves_history = currentGameRAGData.moves_history;
+
+        // 4. Extract moves history from rootHistory.moveHistory (KataGo's BoardHistory)
+        const BoardHistory& rootHistory = search->getRootHist();
+        moveData.moves_history.clear();
+        for(size_t i = 0; i < rootHistory.moveHistory.size(); i++) {
+            const Move& move = rootHistory.moveHistory[i];
+            std::string plaStr = (move.pla == P_BLACK) ? "B" : "W";
+            std::string moveStr = Location::toString(move.loc, board);
+            moveData.moves_history.push_back(std::make_pair(plaStr, moveStr));
+        }
         
         // 5. Populate uncertainty metrics
         moveData.policy_entropy = E;
@@ -391,7 +399,8 @@ void writeCompleteRAGDataJSON(float komi, int board_size, const std::string& rul
 
     // Clear the thread-local data after writing
     currentGameRAGData.flagged_positions.clear();
-    currentGameRAGData.moves_history.clear();
+    // moves_history is no longer maintained in currentGameRAGData - it's extracted from rootHistory
+    // currentGameRAGData.moves_history.clear();
 }
 
 
