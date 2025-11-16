@@ -17,6 +17,12 @@
 #include "../search/searchnodetable.h"
 #include "../search/subtreevaluebiastable.h"
 
+#include "../defines.h"
+
+#ifdef DATAGO_IMPLEMENT
+#include "../datago_implement/stats_search.h"
+#endif
+
 using namespace std;
 
 //-----------------------------------------------------------------------------------------
@@ -611,13 +617,10 @@ void Search::runWholeSearch(
     recursivelyRecordEvalCache(*rootNode);
   }
 
-  /* DATAGO IMPLEMENTATION
-  */
-  #include "defines.h"
-
-  #ifdef DATAGO_IMPLEMENT
+  /* DATAGO IMPLEMENTATION */
+#ifdef DATAGO_IMPLEMENT
   datago_collect_search_states(this, rootNode);
-  #endif
+#endif
 
   //Relaxed load is fine since numPlayoutsShared should be synchronized already due to the joins
   lastSearchNumPlayouts = numPlayoutsShared.load(std::memory_order_relaxed);

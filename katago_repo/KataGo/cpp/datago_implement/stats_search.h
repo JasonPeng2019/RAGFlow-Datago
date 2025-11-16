@@ -1,7 +1,13 @@
 #ifndef DATAGO_STATS_SEARCH_H
 #define DATAGO_STATS_SEARCH_H
 
-#include "../search/search.h"
+struct Search;
+struct SearchNode;
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*pseudocode:
 void collectRAGData(Search* search, SearchNode* rootNode) {
     // 1. Get all nodes in the search tree
@@ -62,5 +68,9 @@ void collectRAGData(Search* search, SearchNode* rootNode) {
 }*/
 
 void datago_collect_search_states(struct Search* search, struct SearchNode* rootNode);
+
+#ifdef __cplusplus
+}  // extern "C"
+#endif
 
 #endif  // DATAGO_STATS_SEARCH_H
