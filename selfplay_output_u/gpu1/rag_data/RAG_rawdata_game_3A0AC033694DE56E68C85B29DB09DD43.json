@@ -1,0 +1,4179 @@
+{
+  "game_id": "game_3A0AC033694DE56E68C85B29DB09DD43",
+  "settings": {
+    "komi": 6.5,
+    "rules": "koSITUATIONALscoreTERRITORYtaxNONEsui1",
+    "board_size": 8,
+    "uncertainty_threshold": 0.9,
+    "w1_policy_entropy": 0,
+    "w2_value_variance": 0
+  },
+  "flagged_positions": [
+    {
+      "sym_hash": "0D4F311643CA16880B61860A7085E813",
+      "state_hash": "C8B5066F2B27C16BAEA350FB9F388F80",
+      "player_to_move": "B",
+      "symmetry_index": 1,
+      "winrate": -0.847214,
+      "score_lead": -2.09051,
+      "move_number": 2,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_2",
+      "stone_count": {
+        "black": 1,
+        "white": 1,
+        "total": 2
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 2,
+        "num_consec_valid_turns": 2,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":1125899906842624,"maxTime":1e+20,"maxVisits":300,"rootPolicyTemperature":1.1,"rootPolicyTemperatureEarly":1.25,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 7,
+        "hash": "22D22EF741E9A64A9A45F3D9C565A74E",
+        "move": "E4"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 300.611,
+        "sym_hash": "0D4F311643CA16880B61860A7085E813",
+        "state_hash": "C8B5066F2B27C16BAEA350FB9F388F80",
+        "player_to_move": "B",
+        "symmetry_index": 1,
+        "move_number": 2,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 1,
+          "white": 1,
+          "total": 2
+        },
+        "best_move": {
+          "symmetry_index": 7,
+          "hash": "1B4790384E0C2BF2A82E3A4304EFFFAB",
+          "move": "E4"
+        },
+        "winrate": -0.735871,
+        "score_lead": -3.59647,
+        "policy": [1.76141e-06, 1.51247e-06, 1.88261e-06, 1.75509e-06, 1.73786e-06, 1.5393e-06, 1.47673e-06, 1.19386e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.58892e-06, 1.74642e-06, 2.26089e-06, 8.0042e-06, 3.84837e-06, 2.74536e-06, 2.20155e-06, 1.5085e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.08353e-06, 1.68894e-06, 5.95014e-05, 4.64555e-05, 1.0506e-05, 1.40894e-05, 2.84425e-06, 1.5145e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.99692e-06, 2.17109e-06, 3.32255e-05, 0.515085, -1, 9.92486e-06, 4.08216e-06, 1.67421e-06],
+        "ownership": [-0.19704, -0.136865, -0.0920123, -0.135905, -0.0183831, 0.155383, 0.200436, 0.167341, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.210741, -0.182623, -0.271084, -0.144905, -0.0491937, 0.111635, 0.264716, 0.226031, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.270727, -0.311658, -0.177899, -0.348809, -0.0799937, 0.505709, 0.153192, 0.215506, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.407445, -0.353595, -0.577909, -0.3264, 0.707389, -0.0149437, 0.0431227],
+        "children": [
+          {
+            "move": "E4",
+            "child_sym_hash": "1B4790384E0C2BF2A82E3A4304EFFFAB",
+            "value": -0.746848,
+            "prior": 0.48446,
+            "visits": 3624
+          },
+          {
+            "move": "D5",
+            "child_sym_hash": "1B4790384E0C2BF2A82E3A4304EFFFAB",
+            "value": -0.736458,
+            "prior": 0.515085,
+            "visits": 990
+          },
+          {
+            "move": "pass",
+            "child_sym_hash": "54A4DA0B51B37155F7743A9068902B16",
+            "value": 0.999336,
+            "prior": 2.86987e-05,
+            "visits": 18
+          },
+          {
+            "move": "C3",
+            "child_sym_hash": "3D3DE1618F4FA487446FF76B291DD5F6",
+            "value": 0.991402,
+            "prior": 3.79284e-06,
+            "visits": 14
+          },
+          {
+            "move": "C5",
+            "child_sym_hash": "1B2B6869DE975F0573DB3F050DB04796",
+            "value": 0.988754,
+            "prior": 3.32255e-05,
+            "visits": 14
+          },
+          {
+            "move": "E3",
+            "child_sym_hash": "1B2B6869DE975F0573DB3F050DB04796",
+            "value": 0.990347,
+            "prior": 3.01013e-05,
+            "visits": 13
+          },
+          {
+            "move": "E6",
+            "child_sym_hash": "234CA6041431CFB708C6D68A057CF472",
+            "value": 0.992767,
+            "prior": 1.0506e-05,
+            "visits": 13
+          },
+          {
+            "move": "D7",
+            "child_sym_hash": "3CA5296D1835685C25FDDB907121C152",
+            "value": 0.990997,
+            "prior": 8.0042e-06,
+            "visits": 12
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "26E639AA4D392E1FAA80E63801C24F6F",
+            "value": 0.998593,
+            "prior": 1.44837e-06,
+            "visits": 10
+          },
+          {
+            "move": "A5",
+            "child_sym_hash": "0A8A389C48F521087A9E19B38B1F64F0",
+            "value": 0.997561,
+            "prior": 1.99692e-06,
+            "visits": 10
+          },
+          {
+            "move": "F6",
+            "child_sym_hash": "0E746FD52F0B6CCA9076A7DAC53D2030",
+            "value": 0.99235,
+            "prior": 1.40894e-05,
+            "visits": 9
+          },
+          {
+            "move": "E2",
+            "child_sym_hash": "220B91171E6F292B3E184102D0E80275",
+            "value": 0.995994,
+            "prior": 2.13656e-06,
+            "visits": 9
+          },
+          {
+            "move": "D3",
+            "child_sym_hash": "20E791863AAD993712F57BC0867572F8",
+            "value": 0.991944,
+            "prior": 4.27345e-06,
+            "visits": 9
+          },
+          {
+            "move": "C6",
+            "child_sym_hash": "18FB6F3B70E5341E3B02C3ED0DCE8CC1",
+            "value": 0.942571,
+            "prior": 5.95014e-05,
+            "visits": 8
+          },
+          {
+            "move": "H5",
+            "child_sym_hash": "4D54EE97ED0ABE0B8DD83C7BBD0633D8",
+            "value": 0.99737,
+            "prior": 1.67421e-06,
+            "visits": 7
+          },
+          {
+            "move": "G8",
+            "child_sym_hash": "0C0624BC0EBB34499D8DEAA194EFB94A",
+            "value": 0.998152,
+            "prior": 1.47673e-06,
+            "visits": 6
+          },
+          {
+            "move": "F4",
+            "child_sym_hash": "1817C985E47EDF970377CEB193649351",
+            "value": 0.970026,
+            "prior": 4.40231e-05,
+            "visits": 6
+          },
+          {
+            "move": "D6",
+            "child_sym_hash": "1817C985E47EDF970377CEB193649351",
+            "value": 0.966714,
+            "prior": 4.64555e-05,
+            "visits": 5
+          },
+          {
+            "move": "F3",
+            "child_sym_hash": "18FB6F3B70E5341E3B02C3ED0DCE8CC1",
+            "value": 0.8965,
+            "prior": 5.89459e-05,
+            "visits": 4
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "3F05B23BB8FC65D6270CE7356EA0FC5B",
+            "value": 0.996952,
+            "prior": 2.25832e-06,
+            "visits": 4
+          },
+          {
+            "move": "F2",
+            "child_sym_hash": "10D2AAB0E1E3F6E9318F789A0CB7228A",
+            "value": 0.994262,
+            "prior": 1.59636e-06,
+            "visits": 4
+          },
+          {
+            "move": "F5",
+            "child_sym_hash": "234CA6041431CFB708C6D68A057CF472",
+            "value": 0.990391,
+            "prior": 9.92486e-06,
+            "visits": 3
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "26E639AA4D392E1FAA80E63801C24F6F",
+            "value": 0.998658,
+            "prior": 1.51247e-06,
+            "visits": 3
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "0663C6757C32FE6558F438A0603D60A0",
+            "value": 0.998066,
+            "prior": 1.58892e-06,
+            "visits": 2
+          },
+          {
+            "move": "A6",
+            "child_sym_hash": "3BF4E0BDA94C264E8DD6F8AC0C0CFCF5",
+            "value": 0.997774,
+            "prior": 2.08353e-06,
+            "visits": 2
+          }
+        ]
+      },
+      "policy": [1.68715e-06, 1.45251e-06, 1.77828e-06, 1.66123e-06, 1.65777e-06, 1.48956e-06, 1.42324e-06, 1.14702e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.48459e-06, 1.65068e-06, 2.25555e-06, 8.0383e-06, 3.65651e-06, 2.68429e-06, 2.10469e-06, 1.45876e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.89593e-06, 1.57796e-06, 5.98606e-05, 4.10292e-05, 9.89583e-06, 1.28303e-05, 2.79637e-06, 1.45342e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.84848e-06, 1.97919e-06, 3.2814e-05, 0.496565, -1, 9.5504e-06, 3.92904e-06, 1.64004e-06],
+      "ownership": [-0.212273, -0.149593, -0.0976409, -0.135997, -0.0248478, 0.162441, 0.218763, 0.186037, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.23352, -0.188657, -0.280311, -0.14074, -0.0550075, 0.118031, 0.283431, 0.247999, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.2897, -0.322716, -0.175409, -0.345337, -0.0520119, 0.505027, 0.153925, 0.214939, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.437874, -0.358522, -0.551478, -0.321445, 0.715864, -0.00209674, 0.0375652],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.49771,
+        "value_variance": 0.522577,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E4",
+          "child_sym_hash": "22D22EF741E9A64A9A45F3D9C565A74E",
+          "value": -0.884748,
+          "prior": 0.503002,
+          "visits": 137
+        },
+        {
+          "move": "D5",
+          "child_sym_hash": "8A4EBFD9FCA5931072E12F47098D0A4E",
+          "value": -0.884137,
+          "prior": 0.496565,
+          "visits": 130
+        },
+        {
+          "move": "F4",
+          "child_sym_hash": "34FE0F5094A9F1753374866C10BDA399",
+          "value": 0.971805,
+          "prior": 3.99644e-05,
+          "visits": 8
+        },
+        {
+          "move": "G4",
+          "child_sym_hash": "9F76B2BEC64EC991E949E7C715DAE118",
+          "value": 0.99058,
+          "prior": 7.32812e-06,
+          "visits": 4
+        },
+        {
+          "move": "D3",
+          "child_sym_hash": "92021340EE7B746143DFFB46C388DBD9",
+          "value": 0.9901,
+          "prior": 4.10688e-06,
+          "visits": 4
+        },
+        {
+          "move": "pass",
+          "child_sym_hash": "B5B98879236DDF308206FA27AC5821D4",
+          "value": 0.999395,
+          "prior": 2.65641e-05,
+          "visits": 3
+        },
+        {
+          "move": "B6",
+          "child_sym_hash": "5C389988CCD8F8645D3934266BB3254A",
+          "value": 0.993083,
+          "prior": 1.57796e-06,
+          "visits": 3
+        },
+        {
+          "move": "E6",
+          "child_sym_hash": "18AE723D164E4549301A48E40269374D",
+          "value": 0.989885,
+          "prior": 9.89583e-06,
+          "visits": 3
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "5621EFB263B58A788403F78392AE9861",
+          "value": 0.998703,
+          "prior": 1.45251e-06,
+          "visits": 3
+        },
+        {
+          "move": "B5",
+          "child_sym_hash": "AF2CFE23FB4739687C89D4FC1CB74017",
+          "value": 0.992827,
+          "prior": 1.97919e-06,
+          "visits": 2
+        },
+        {
+          "move": "C5",
+          "child_sym_hash": "655187FB004E61A0747569003FC07044",
+          "value": 0.98118,
+          "prior": 3.2814e-05,
+          "visits": 2
+        }
+      ]
+    },
+    {
+      "sym_hash": "15ED56BB4F0FA7D14395A97B58B8B62F",
+      "state_hash": "DD9C0C357E3EE5E18F3DC4406EBF66C8",
+      "player_to_move": "B",
+      "symmetry_index": 4,
+      "winrate": -0.86627,
+      "score_lead": -2.40505,
+      "move_number": 6,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_6",
+      "stone_count": {
+        "black": 3,
+        "white": 3,
+        "total": 6
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1, -1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 6,
+        "num_consec_valid_turns": 6,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 0,
+        "hash": "70788DA15557452A55EBFDBBCE47990C",
+        "move": "C5"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 261.697,
+        "sym_hash": "15ED56BB4F0FA7D14395A97B58B8B62F",
+        "state_hash": "DD9C0C357E3EE5E18F3DC4406EBF66C8",
+        "player_to_move": "B",
+        "symmetry_index": 4,
+        "move_number": 6,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 3,
+          "white": 3,
+          "total": 6
+        },
+        "best_move": {
+          "symmetry_index": 0,
+          "hash": "0E95F45D9FFBAD9D38DAF740E1EAFC93",
+          "move": "C5"
+        },
+        "winrate": -0.826337,
+        "score_lead": -3.5958,
+        "policy": [1.9864e-06, 2.45287e-06, 2.57059e-06, 2.59075e-06, 2.34055e-06, 2.63155e-06, 2.35891e-06, 1.9864e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.51104e-06, 3.19915e-06, 3.32659e-06, 4.14001e-06, 4.84016e-06, 6.96035e-06, 3.62511e-06, 2.67299e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.27502e-06, 6.7199e-06, 7.82573e-06, 1.30545e-05, 8.34798e-05, -1, 0.000542234, 2.82324e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.63155e-06, 1.99837e-05, 0.988072, -1, -1, -1, 0.000159037, 2.23337e-06],
+        "ownership": [0.510191, 0.676036, 0.709527, 0.734297, 0.727933, 0.724935, 0.658154, 0.544031, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.559651, 0.631347, 0.665563, 0.799656, 0.807949, 0.783622, 0.640363, 0.54093, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.295596, 0.208331, 0.661738, 0.738098, 0.834901, 0.88395, 0.344663, 0.279022, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.120265, -0.128917, -0.740092, 0.904972, 0.958471, -0.854727, -0.109604],
+        "children": [
+          {
+            "move": "C5",
+            "child_sym_hash": "0E95F45D9FFBAD9D38DAF740E1EAFC93",
+            "value": -0.826505,
+            "prior": 0.988072,
+            "visits": 4797
+          },
+          {
+            "move": "F4",
+            "child_sym_hash": "0D3EC3DFB167FB1D22E95A0A62E37A19",
+            "value": -0.0857586,
+            "prior": 0.00755877,
+            "visits": 1
+          },
+          {
+            "move": "C4",
+            "child_sym_hash": "0CE90FBF8D351619D8F4CD6258CA2BF3",
+            "value": 0.145701,
+            "prior": 0.00322254,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [1.9864e-06, 2.45287e-06, 2.57059e-06, 2.59075e-06, 2.34055e-06, 2.63155e-06, 2.35891e-06, 1.9864e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.51104e-06, 3.19915e-06, 3.32659e-06, 4.14001e-06, 4.84016e-06, 6.96035e-06, 3.62511e-06, 2.67299e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.27502e-06, 6.7199e-06, 7.82573e-06, 1.30545e-05, 8.34798e-05, -1, 0.000542234, 2.82324e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.63155e-06, 1.99837e-05, 0.988072, -1, -1, -1, 0.000159037, 2.23337e-06],
+      "ownership": [0.510191, 0.676036, 0.709527, 0.734297, 0.727933, 0.724935, 0.658154, 0.544031, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.559651, 0.631347, 0.665563, 0.799656, 0.807949, 0.783622, 0.640363, 0.54093, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.295596, 0.208331, 0.661738, 0.738098, 0.834901, 0.88395, 0.344663, 0.279022, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.120265, -0.128917, -0.740092, 0.904972, 0.958471, -0.854727, -0.109604],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.0775425,
+        "value_variance": 0,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "C5",
+          "child_sym_hash": "70788DA15557452A55EBFDBBCE47990C",
+          "value": -0.86535,
+          "prior": 0.988072,
+          "visits": 115
+        }
+      ]
+    },
+    {
+      "sym_hash": "14416CA983FDDD886D346680546E074D",
+      "state_hash": "98B147D24D29835E4AB66E2427FACF55",
+      "player_to_move": "B",
+      "symmetry_index": 3,
+      "winrate": -0.6824,
+      "score_lead": -2.9818,
+      "move_number": 10,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_10",
+      "stone_count": {
+        "black": 5,
+        "white": 5,
+        "total": 10
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, -1, -1, 1, 1, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 10,
+        "num_consec_valid_turns": 10,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 7,
+        "hash": "982672CCE48E8444526BB2158A349BDC",
+        "move": "G6"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 191.942,
+        "sym_hash": "14416CA983FDDD886D346680546E074D",
+        "state_hash": "98B147D24D29835E4AB66E2427FACF55",
+        "player_to_move": "B",
+        "symmetry_index": 3,
+        "move_number": 10,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 5,
+          "white": 5,
+          "total": 10
+        },
+        "best_move": {
+          "symmetry_index": 7,
+          "hash": "2CEC41617E09B28466866686DC551083",
+          "move": "G6"
+        },
+        "winrate": -0.814394,
+        "score_lead": -5.20403,
+        "policy": [9.39372e-06, 1.11553e-05, 1.53671e-05, 1.50699e-05, 1.3883e-05, 1.1331e-05, 1.0317e-05, 7.5776e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.16451e-05, 1.51288e-05, 2.28e-05, 6.57167e-05, 0.00284112, 0.000108773, 4.12854e-05, 9.50444e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.30419e-05, 1.33512e-05, 0.000206414, 6.0305e-05, 0.000374498, -1, 0.994856, 9.88306e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.22039e-05, 1.24934e-05, -1, -1, -1, -1, -1, 9.43048e-06],
+        "ownership": [0.609426, 0.698945, 0.670967, 0.58877, 0.44054, 0.235948, -0.232486, -0.37882, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.708799, 0.698695, 0.684171, 0.638632, 0.61674, 0.0717151, -0.347242, -0.422862, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.65926, 0.653144, 0.674974, 0.767276, 0.640363, 0.662286, -0.72261, -0.514153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.615225, 0.555613, 0.19122, 0.920275, 0.881144, -0.751999, -0.808626],
+        "children": [
+          {
+            "move": "G6",
+            "child_sym_hash": "2CEC41617E09B28466866686DC551083",
+            "value": -0.814503,
+            "prior": 0.994856,
+            "visits": 4798
+          },
+          {
+            "move": "E7",
+            "child_sym_hash": "1EC449812B95BEC42E15154AEAF88826",
+            "value": 0.659415,
+            "prior": 0.00284112,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [9.39372e-06, 1.11553e-05, 1.53671e-05, 1.50699e-05, 1.3883e-05, 1.1331e-05, 1.0317e-05, 7.5776e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.16451e-05, 1.51288e-05, 2.28e-05, 6.57167e-05, 0.00284112, 0.000108773, 4.12854e-05, 9.50444e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.30419e-05, 1.33512e-05, 0.000206414, 6.0305e-05, 0.000374498, -1, 0.994856, 9.88306e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.22039e-05, 1.24934e-05, -1, -1, -1, -1, -1, 9.43048e-06],
+      "ownership": [0.609426, 0.698945, 0.670967, 0.58877, 0.44054, 0.235948, -0.232486, -0.37882, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.708799, 0.698695, 0.684171, 0.638632, 0.61674, 0.0717151, -0.347242, -0.422862, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.65926, 0.653144, 0.674974, 0.767276, 0.640363, 0.662286, -0.72261, -0.514153, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.615225, 0.555613, 0.19122, 0.920275, 0.881144, -0.751999, -0.808626],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.0430207,
+        "value_variance": 0,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "G6",
+          "child_sym_hash": "982672CCE48E8444526BB2158A349BDC",
+          "value": -0.681604,
+          "prior": 0.994856,
+          "visits": 178
+        }
+      ]
+    },
+    {
+      "sym_hash": "425840D834DD707858C5BE590AE5641D",
+      "state_hash": "832C33BD3F9CBC9FBC030EBE2C65CF1C",
+      "player_to_move": "B",
+      "symmetry_index": 3,
+      "winrate": -0.699842,
+      "score_lead": -3.18491,
+      "move_number": 14,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_14",
+      "stone_count": {
+        "black": 7,
+        "white": 7,
+        "total": 14
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, -1, -1, 1, 0, 0, 0, 1, -1, -1, 1, 1, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 14,
+        "num_consec_valid_turns": 14,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 2,
+        "hash": "3D09C69D86B724A72075F77D375DEEB4",
+        "move": "G7"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 103.137,
+        "sym_hash": "425840D834DD707858C5BE590AE5641D",
+        "state_hash": "832C33BD3F9CBC9FBC030EBE2C65CF1C",
+        "player_to_move": "B",
+        "symmetry_index": 3,
+        "move_number": 14,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 7,
+          "white": 7,
+          "total": 14
+        },
+        "best_move": {
+          "symmetry_index": 2,
+          "hash": "3146DB0861A5A0B1B4E7794EA93DEAE9",
+          "move": "G7"
+        },
+        "winrate": -0.851524,
+        "score_lead": -5.07858,
+        "policy": [5.98173e-06, 7.53214e-06, 7.38646e-06, 1.0376e-05, 0.000439477, 0.138891, 0.00205206, 9.0855e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.70337e-06, 7.21535e-06, 8.53503e-06, 0.00285737, -1, -1, 0.852474, 0.00101386, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.40271e-06, 8.08081e-06, 2.58822e-05, 1.02952e-05, -1, -1, -1, 8.17606e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6.72544e-06, 7.3004e-06, -1, -1, -1, -1, -1, 7.89362e-06],
+        "ownership": [0.773234, 0.820134, 0.783245, 0.680256, 0.213113, -0.160466, -0.701186, -0.759742, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.828887, 0.783622, 0.790313, 0.720269, 0.870693, -0.879385, -0.817236, -0.791045, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.831316, 0.820772, 0.860156, 0.826736, 0.882663, 0.881797, -0.914396, -0.819814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.791775, 0.767276, 0.528377, 0.947289, 0.912454, -0.905676, -0.910805],
+        "children": [
+          {
+            "move": "G7",
+            "child_sym_hash": "3146DB0861A5A0B1B4E7794EA93DEAE9",
+            "value": -0.852294,
+            "prior": 0.852474,
+            "visits": 4786
+          },
+          {
+            "move": "F8",
+            "child_sym_hash": "0AD3490DD9CC5D51C10C75B32396865F",
+            "value": -0.0565817,
+            "prior": 0.138891,
+            "visits": 12
+          },
+          {
+            "move": "D7",
+            "child_sym_hash": "0032B226E4E66D656ED554FAA3702A30",
+            "value": 0.936123,
+            "prior": 0.00285737,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [5.98173e-06, 7.53214e-06, 7.38646e-06, 1.0376e-05, 0.000439477, 0.138891, 0.00205206, 9.0855e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.70337e-06, 7.21535e-06, 8.53503e-06, 0.00285737, -1, -1, 0.852474, 0.00101386, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.40271e-06, 8.08081e-06, 2.58822e-05, 1.02952e-05, -1, -1, -1, 8.17606e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6.72544e-06, 7.3004e-06, -1, -1, -1, -1, -1, 7.89362e-06],
+      "ownership": [0.773234, 0.820134, 0.783245, 0.680256, 0.213113, -0.160466, -0.701186, -0.759742, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.828887, 0.783622, 0.790313, 0.720269, 0.870693, -0.879385, -0.817236, -0.791045, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.831316, 0.820772, 0.860156, 0.826736, 0.882663, 0.881797, -0.914396, -0.819814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.791775, 0.767276, 0.528377, 0.947289, 0.912454, -0.905676, -0.910805],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.469027,
+        "value_variance": 0.0299725,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "G7",
+          "child_sym_hash": "3D09C69D86B724A72075F77D375DEEB4",
+          "value": -0.704484,
+          "prior": 0.852474,
+          "visits": 116
+        },
+        {
+          "move": "F8",
+          "child_sym_hash": "1B4DA8026F7CCAEF1C97006BBA405C83",
+          "value": -0.358232,
+          "prior": 0.138891,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "sym_hash": "3067FD5F1837941C21CB2E9396134020",
+      "state_hash": "8A3B0AB807D7182295C5851896FA4EDE",
+      "player_to_move": "B",
+      "symmetry_index": 6,
+      "winrate": -0.716301,
+      "score_lead": -3.81517,
+      "move_number": 18,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_18",
+      "stone_count": {
+        "black": 9,
+        "white": 9,
+        "total": 18
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 0, -1, -1, 1, 0, 0, 0, 1, -1, -1, 1, 1, 0, 0, -1, -1, 1, 1, -1, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 18,
+        "num_consec_valid_turns": 18,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 5,
+        "hash": "D08C1F97C28BAD2878B92EA5CA4A1A87",
+        "move": "D3"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 35.2077,
+        "sym_hash": "3067FD5F1837941C21CB2E9396134020",
+        "state_hash": "8A3B0AB807D7182295C5851896FA4EDE",
+        "player_to_move": "B",
+        "symmetry_index": 6,
+        "move_number": 18,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 9,
+          "white": 9,
+          "total": 18
+        },
+        "best_move": {
+          "symmetry_index": 5,
+          "hash": "63D1A30B367F33834F43695141A96A24",
+          "move": "D3"
+        },
+        "winrate": -0.846643,
+        "score_lead": -5.00683,
+        "policy": [6.93046e-06, 7.67132e-06, 7.73149e-06, 6.84972e-06, 1.54965e-05, 8.19804e-06, 7.52295e-06, 8.45828e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.13425e-06, 8.69275e-06, 6.76992e-06, 8.76093e-06, -1, -1, -1, 9.2896e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7.79213e-06, 7.76175e-06, 6.04486e-06, 9.65966e-06, -1, -1, -1, 8.65886e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.59148e-06, 8.35974e-06, -1, -1, -1, -1, -1, 9.10992e-06],
+        "ownership": [0.834309, 0.873267, 0.860664, 0.82456, 0.330604, -0.140663, -0.889583, -0.908275, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.904262, 0.896117, 0.905852, 0.868311, 0.944197, -0.967445, -0.971326, -0.93445, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.903547, 0.917848, 0.911137, 0.926599, 0.921757, 0.934697, -0.975892, -0.940593, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.913106, 0.835197, 0.921167, 0.896117, 0.85811, -0.980955, -0.967068],
+        "children": [
+          {
+            "move": "D3",
+            "child_sym_hash": "63D1A30B367F33834F43695141A96A24",
+            "value": -0.848386,
+            "prior": 0.64019,
+            "visits": 4745
+          },
+          {
+            "move": "E2",
+            "child_sym_hash": "2B85D4CB0BEB04BF1932B2D482AD0CF4",
+            "value": -0.495041,
+            "prior": 0.348746,
+            "visits": 53
+          },
+          {
+            "move": "D2",
+            "child_sym_hash": "29907D99B83067F49D6C94E35F3C902B",
+            "value": 0.331148,
+            "prior": 0.0105946,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [6.93046e-06, 7.67132e-06, 7.73149e-06, 6.84972e-06, 1.54965e-05, 8.19804e-06, 7.52295e-06, 8.45828e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.13425e-06, 8.69275e-06, 6.76992e-06, 8.76093e-06, -1, -1, -1, 9.2896e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7.79213e-06, 7.76175e-06, 6.04486e-06, 9.65966e-06, -1, -1, -1, 8.65886e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.59148e-06, 8.35974e-06, -1, -1, -1, -1, -1, 9.10992e-06],
+      "ownership": [0.834309, 0.873267, 0.860664, 0.82456, 0.330604, -0.140663, -0.889583, -0.908275, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.904262, 0.896117, 0.905852, 0.868311, 0.944197, -0.967445, -0.971326, -0.93445, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.903547, 0.917848, 0.911137, 0.926599, 0.921757, 0.934697, -0.975892, -0.940593, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.913106, 0.835197, 0.921167, 0.896117, 0.85811, -0.980955, -0.967068],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.706368,
+        "value_variance": 0.0405828,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "D3",
+          "child_sym_hash": "D08C1F97C28BAD2878B92EA5CA4A1A87",
+          "value": -0.724296,
+          "prior": 0.64019,
+          "visits": 242
+        },
+        {
+          "move": "E2",
+          "child_sym_hash": "401EF0445011909CA1BE27D8E3787C9C",
+          "value": -0.321393,
+          "prior": 0.348746,
+          "visits": 10
+        }
+      ]
+    },
+    {
+      "sym_hash": "855AB15B3023277B1F8F84F024B8248A",
+      "state_hash": "855AB15B3023277B1F8F84F024B8248A",
+      "player_to_move": "B",
+      "symmetry_index": 0,
+      "winrate": -0.708539,
+      "score_lead": -4.00951,
+      "move_number": 22,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_22",
+      "stone_count": {
+        "black": 11,
+        "white": 11,
+        "total": 22
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 1, 0, 0, 0, -1, 0, -1, -1, 1, 0, 0, 0, 1, -1, -1, 1, 1, 0, 0, -1, -1, 1, 1, -1, -1, 0, 0, 1, 1, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 22,
+        "num_consec_valid_turns": 22,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 2,
+        "hash": "EC1E31432B89C544564D27EA670C2A77",
+        "move": "H4"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 23.1143,
+        "sym_hash": "855AB15B3023277B1F8F84F024B8248A",
+        "state_hash": "855AB15B3023277B1F8F84F024B8248A",
+        "player_to_move": "B",
+        "symmetry_index": 0,
+        "move_number": 22,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 11,
+          "white": 11,
+          "total": 22
+        },
+        "best_move": {
+          "symmetry_index": 2,
+          "hash": "386A4DACC0FC8E46198146A3E58D14A8",
+          "move": "H4"
+        },
+        "winrate": -0.848751,
+        "score_lead": -4.85516,
+        "policy": [7.93173e-06, 1.37584e-05, 1.29754e-05, 1.55296e-05, 0.0159361, 2.13929e-05, 8.08817e-06, 9.27313e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.13617e-05, 1.36514e-05, 1.27743e-05, 0.000118391, -1, -1, -1, 8.41037e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 9.8712e-06, 1.28243e-05, -1, 8.84849e-06, -1, -1, -1, 8.44328e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.57625e-06, 0.00437373, -1, -1, -1, -1, -1, 0.00115666],
+        "ownership": [0.720034, 0.731812, 0.697944, 0.685209, 0.264778, 0.0187203, -0.623352, -0.613096, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.731358, 0.744042, 0.825184, 0.759122, 0.961605, -0.910971, -0.947986, -0.729536, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.664473, 0.826736, 0.949642, 0.887527, 0.961679, 0.977856, -0.935799, -0.808964, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.568638, 0.523786, 0.395424, 0.957588, 0.960259, -0.91343, -0.929179],
+        "children": [
+          {
+            "move": "H4",
+            "child_sym_hash": "386A4DACC0FC8E46198146A3E58D14A8",
+            "value": -0.856607,
+            "prior": 0.525673,
+            "visits": 4498
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "10E36EC64C7ADA2323E4D528DE8ADD99",
+            "value": -0.661571,
+            "prior": 0.287483,
+            "visits": 280
+          },
+          {
+            "move": "G2",
+            "child_sym_hash": "0D9CEF014E680F8FA1A3DD95797DBE41",
+            "value": -0.254547,
+            "prior": 0.161894,
+            "visits": 17
+          },
+          {
+            "move": "E8",
+            "child_sym_hash": "201953DABC76355EEB5F4FC1F2443540",
+            "value": -0.505926,
+            "prior": 0.0159361,
+            "visits": 3
+          },
+          {
+            "move": "B5",
+            "child_sym_hash": "0B8105B508ADD786C690F1319A887249",
+            "value": 0.722012,
+            "prior": 0.00437373,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [7.93173e-06, 1.37584e-05, 1.29754e-05, 1.55296e-05, 0.0159361, 2.13929e-05, 8.08817e-06, 9.27313e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.13617e-05, 1.36514e-05, 1.27743e-05, 0.000118391, -1, -1, -1, 8.41037e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 9.8712e-06, 1.28243e-05, -1, 8.84849e-06, -1, -1, -1, 8.44328e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.57625e-06, 0.00437373, -1, -1, -1, -1, -1, 0.00115666],
+      "ownership": [0.720034, 0.731812, 0.697944, 0.685209, 0.264778, 0.0187203, -0.623352, -0.613096, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.731358, 0.744042, 0.825184, 0.759122, 0.961605, -0.910971, -0.947986, -0.729536, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.664473, 0.826736, 0.949642, 0.887527, 0.961679, 0.977856, -0.935799, -0.808964, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.568638, 0.523786, 0.395424, 0.957588, 0.960259, -0.91343, -0.929179],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.11403,
+        "value_variance": 0.0260564,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "H4",
+          "child_sym_hash": "EC1E31432B89C544564D27EA670C2A77",
+          "value": -0.710052,
+          "prior": 0.525673,
+          "visits": 141
+        },
+        {
+          "move": "H2",
+          "child_sym_hash": "30F1678C3303D2EA067D66415252311A",
+          "value": -0.71931,
+          "prior": 0.287483,
+          "visits": 98
+        },
+        {
+          "move": "G2",
+          "child_sym_hash": "0BDE18C4A163D986012D55DDC776F71F",
+          "value": -0.454322,
+          "prior": 0.161894,
+          "visits": 7
+        },
+        {
+          "move": "E8",
+          "child_sym_hash": "80A6D947B8918D0C57981C2D7B2C1D20",
+          "value": -0.347439,
+          "prior": 0.0159361,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "6F5F4FDB14F02A1730F5AACFDAAB81D3",
+      "state_hash": "A06E5131E86E7D55607D69D4278A0171",
+      "player_to_move": "B",
+      "symmetry_index": 6,
+      "winrate": -0.613847,
+      "score_lead": -3.62482,
+      "move_number": 26,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_26",
+      "stone_count": {
+        "black": 13,
+        "white": 13,
+        "total": 26
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 1, 0, 0, 0, -1, 0, -1, -1, 1, 0, 0, 0, 1, -1, -1, 1, 1, 0, 0, -1, -1, 1, 1, -1, -1, 1, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 26,
+        "num_consec_valid_turns": 26,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 5,
+        "hash": "2661B6BA8FC74D81E52CE3B5B6C2570D",
+        "move": "G3"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 245.068,
+        "sym_hash": "6F5F4FDB14F02A1730F5AACFDAAB81D3",
+        "state_hash": "A06E5131E86E7D55607D69D4278A0171",
+        "player_to_move": "B",
+        "symmetry_index": 6,
+        "move_number": 26,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 13,
+          "white": 13,
+          "total": 26
+        },
+        "best_move": {
+          "symmetry_index": 5,
+          "hash": "1EC14B3CE46B885FFC360863EEBCD18D",
+          "move": "G3"
+        },
+        "winrate": -0.930912,
+        "score_lead": -5.49344,
+        "policy": [3.48034e-05, 5.16374e-05, 5.99005e-05, 6.45153e-05, 0.00377163, 4.18173e-05, 3.32096e-05, 3.59082e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.33135e-05, 0.000162192, 0.000203434, 0.00212397, -1, -1, -1, 3.07139e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.31447e-05, 0.000455767, -1, 3.64737e-05, -1, -1, -1, 4.2642e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.59082e-05, 0.0156177, -1, -1, -1, -1, -1, 0.0127811],
+        "ownership": [0.471283, 0.52414, 0.528377, 0.53538, 0.283518, 0.0574927, -0.466713, -0.547459, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.446814, 0.479221, 0.657323, 0.63369, 0.88395, -0.825806, -0.891603, -0.631934, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.384452, 0.530485, 0.818851, 0.798597, 0.897074, 0.901373, -0.854199, -0.809638, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.219513, 0.228672, 0.0372447, 0.867588, 0.887941, -0.808626, -0.840723],
+        "children": [
+          {
+            "move": "G3",
+            "child_sym_hash": "1EC14B3CE46B885FFC360863EEBCD18D",
+            "value": -0.931259,
+            "prior": 0.963407,
+            "visits": 4796
+          },
+          {
+            "move": "B5",
+            "child_sym_hash": "281ECCDE2AFBC811AB0674FD34FDD855",
+            "value": 0.766676,
+            "prior": 0.0156177,
+            "visits": 1
+          },
+          {
+            "move": "H5",
+            "child_sym_hash": "109DFD19AD83A8860BD84DA0F435B416",
+            "value": 0.966505,
+            "prior": 0.0127811,
+            "visits": 1
+          },
+          {
+            "move": "E8",
+            "child_sym_hash": "00167B08998149A41A04AE0C584105D5",
+            "value": 0.56567,
+            "prior": 0.00377163,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [3.48034e-05, 5.16374e-05, 5.99005e-05, 6.45153e-05, 0.00377163, 4.18173e-05, 3.32096e-05, 3.59082e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.33135e-05, 0.000162192, 0.000203434, 0.00212397, -1, -1, -1, 3.07139e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.31447e-05, 0.000455767, -1, 3.64737e-05, -1, -1, -1, 4.2642e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.59082e-05, 0.0156177, -1, -1, -1, -1, -1, 0.0127811],
+      "ownership": [0.471283, 0.52414, 0.528377, 0.53538, 0.283518, 0.0574927, -0.466713, -0.547459, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.446814, 0.479221, 0.657323, 0.63369, 0.88395, -0.825806, -0.891603, -0.631934, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.384452, 0.530485, 0.818851, 0.798597, 0.897074, 0.901373, -0.854199, -0.809638, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.219513, 0.228672, 0.0372447, 0.867588, 0.887941, -0.808626, -0.840723],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.211897,
+        "value_variance": 0,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "G3",
+          "child_sym_hash": "2661B6BA8FC74D81E52CE3B5B6C2570D",
+          "value": -0.611771,
+          "prior": 0.963407,
+          "visits": 99
+        }
+      ]
+    },
+    {
+      "sym_hash": "2141FD62D427972414E55D69928A072C",
+      "state_hash": "25FB21DD4B5375EE681DD4C623EF7CF2",
+      "player_to_move": "B",
+      "symmetry_index": 2,
+      "winrate": -0.652202,
+      "score_lead": -8.09133,
+      "move_number": 30,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_30",
+      "stone_count": {
+        "black": 14,
+        "white": 13,
+        "total": 27
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 1, 0, 0, 0, -1, 0, -1, -1, 1, 1, 0, 0, 1, -1, -1, 1, 1, 0, 0, -1, -1, 1, 1, -1, -1, 1, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 30,
+        "num_consec_valid_turns": 30,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 0,
+        "hash": "3561E8DCF5C237B21DBFBAB330D77570",
+        "move": "B5"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 137.889,
+        "sym_hash": "2141FD62D427972414E55D69928A072C",
+        "state_hash": "25FB21DD4B5375EE681DD4C623EF7CF2",
+        "player_to_move": "B",
+        "symmetry_index": 2,
+        "move_number": 30,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 14,
+          "white": 13,
+          "total": 27
+        },
+        "best_move": {
+          "symmetry_index": 0,
+          "hash": "2BD96665895A4E2A6F85386681364D52",
+          "move": "B5"
+        },
+        "winrate": -0.932706,
+        "score_lead": -5.7267,
+        "policy": [1.90131e-05, 2.88785e-05, 3.63635e-05, 8.65527e-05, 0.192487, 0.000289393, 1.21803e-05, 2.10456e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.53858e-05, 0.00088273, 0.00283561, 0.0739933, -1, -1, -1, 1.36412e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.33865e-05, 0.0166803, -1, 2.58865e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.40348e-05, 0.558069, -1, -1, -1, -1, -1, 3.06212e-05],
+        "ownership": [0.442505, 0.478468, 0.438964, 0.354735, 0.0342883, -0.10695, -0.687018, -0.676301, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.461157, 0.495969, 0.620958, 0.442898, 0.867829, -0.842148, -0.879385, -0.800709, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.394393, 0.439555, 0.804876, 0.699693, 0.903008, 0.908445, -0.856297, -0.856297, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.167356, 0.0371838, -0.0275504, 0.876475, 0.902103, -0.802455, -0.849647],
+        "children": [
+          {
+            "move": "B5",
+            "child_sym_hash": "2BD96665895A4E2A6F85386681364D52",
+            "value": -0.935538,
+            "prior": 0.558069,
+            "visits": 4740
+          },
+          {
+            "move": "E8",
+            "child_sym_hash": "28C52FFD936A8A73DEAF428251CF0A7A",
+            "value": -0.0455452,
+            "prior": 0.192487,
+            "visits": 15
+          },
+          {
+            "move": "F2",
+            "child_sym_hash": "23D5292D8583F423BD2D617BBFAAF20D",
+            "value": -0.559785,
+            "prior": 0.142765,
+            "visits": 36
+          },
+          {
+            "move": "D7",
+            "child_sym_hash": "381B79BF1C99A23047AB13B85FC0E166",
+            "value": 0.271891,
+            "prior": 0.0739933,
+            "visits": 4
+          },
+          {
+            "move": "B6",
+            "child_sym_hash": "3D269806ADCBF4BD03A86D0CD6CB440A",
+            "value": 0.732239,
+            "prior": 0.0166803,
+            "visits": 1
+          },
+          {
+            "move": "E2",
+            "child_sym_hash": "15CEF157F3A05C1505B4303EED3345F4",
+            "value": 0.613762,
+            "prior": 0.00621778,
+            "visits": 1
+          },
+          {
+            "move": "E3",
+            "child_sym_hash": "07AB581872CF8B9613EAFC8855535F9F",
+            "value": -0.138689,
+            "prior": 0.00499612,
+            "visits": 1
+          },
+          {
+            "move": "C7",
+            "child_sym_hash": "24017EF2E27744E803974C272B14897B",
+            "value": 0.819627,
+            "prior": 0.00283561,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [1.90131e-05, 2.88785e-05, 3.63635e-05, 8.65527e-05, 0.192487, 0.000289393, 1.21803e-05, 2.10456e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.53858e-05, 0.00088273, 0.00283561, 0.0739933, -1, -1, -1, 1.36412e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.33865e-05, 0.0166803, -1, 2.58865e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.40348e-05, 0.558069, -1, -1, -1, -1, -1, 3.06212e-05],
+      "ownership": [0.442505, 0.478468, 0.438964, 0.354735, 0.0342883, -0.10695, -0.687018, -0.676301, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.461157, 0.495969, 0.620958, 0.442898, 0.867829, -0.842148, -0.879385, -0.800709, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.394393, 0.439555, 0.804876, 0.699693, 0.903008, 0.908445, -0.856297, -0.856297, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.167356, 0.0371838, -0.0275504, 0.876475, 0.902103, -0.802455, -0.849647],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.2728,
+        "value_variance": 0.183599,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "B5",
+          "child_sym_hash": "3561E8DCF5C237B21DBFBAB330D77570",
+          "value": -0.669981,
+          "prior": 0.558069,
+          "visits": 174
+        },
+        {
+          "move": "E8",
+          "child_sym_hash": "5704788CAD1065C68782A669ECCC834D",
+          "value": -0.0321874,
+          "prior": 0.192487,
+          "visits": 3
+        },
+        {
+          "move": "F2",
+          "child_sym_hash": "9389F1D83BABFD8CDE4E2BCBE35F5307",
+          "value": -0.56762,
+          "prior": 0.142765,
+          "visits": 36
+        },
+        {
+          "move": "D7",
+          "child_sym_hash": "D0A250F3D248622B339FDFEB0BA33EDA",
+          "value": 0.393028,
+          "prior": 0.0739933,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "5E781F4B1A1C98FA2913FA40C53343D3",
+      "state_hash": "DEF4DA81628D7DE5DD83E87404C07F86",
+      "player_to_move": "B",
+      "symmetry_index": 4,
+      "winrate": -0.799739,
+      "score_lead": -14.5283,
+      "move_number": 34,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_34",
+      "stone_count": {
+        "black": 15,
+        "white": 15,
+        "total": 30
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, -1, 1, 1, 0, 0, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 0, -1, -1, 1, 1, -1, -1, 0, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 34,
+        "num_consec_valid_turns": 34,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 0,
+        "hash": "80F5177C9609CAEDA0499600F4903DDC",
+        "move": "B7"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 202.707,
+        "sym_hash": "5E781F4B1A1C98FA2913FA40C53343D3",
+        "state_hash": "DEF4DA81628D7DE5DD83E87404C07F86",
+        "player_to_move": "B",
+        "symmetry_index": 4,
+        "move_number": 34,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 15,
+          "white": 15,
+          "total": 30
+        },
+        "best_move": {
+          "symmetry_index": 7,
+          "hash": "2D5010CB9CD1DE593E5C478389EE45D3",
+          "move": "H4"
+        },
+        "winrate": -0.963657,
+        "score_lead": -6.81981,
+        "policy": [2.04179e-05, 3.36634e-05, 8.29929e-05, 0.0243883, 0.000588596, 0.282538, 1.21921e-05, 2.24247e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.46287e-05, 0.210375, -1, 0.0397994, -1, -1, -1, 1.02668e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.71266e-05, -1, -1, 1.87365e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.74643e-05, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [-0.00162411, 0.168898, 0.156539, 0.259549, 0.196976, -0.331473, -0.661463, -0.539547, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.153799, 0.0511029, 0.675771, 0.50657, 0.77047, -0.771658, -0.812312, -0.678415, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.203538, -0.542999, 0.693662, 0.595429, 0.771263, 0.696941, -0.812312, -0.766472, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.521301, -0.605111, -0.611876, 0.735644, 0.714821, -0.727933, -0.777518],
+        "children": [
+          {
+            "move": "H4",
+            "child_sym_hash": "2D5010CB9CD1DE593E5C478389EE45D3",
+            "value": -0.970069,
+            "prior": 0.439316,
+            "visits": 4100
+          },
+          {
+            "move": "F8",
+            "child_sym_hash": "239B1744E41BC9C4865D3AFDBF8A2DF3",
+            "value": -0.271666,
+            "prior": 0.282538,
+            "visits": 26
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "07CDFEEEDC175EF43AC82E5F2637A522",
+            "value": -0.931908,
+            "prior": 0.210375,
+            "visits": 669
+          },
+          {
+            "move": "D7",
+            "child_sym_hash": "2E08F62561803E7623019FCE19E161FB",
+            "value": -0.180249,
+            "prior": 0.0397994,
+            "visits": 3
+          },
+          {
+            "move": "D8",
+            "child_sym_hash": "05DD0D0325277E56CF4A9D1F5107BF35",
+            "value": 0.321504,
+            "prior": 0.0243883,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [2.04179e-05, 3.36634e-05, 8.29929e-05, 0.0243883, 0.000588596, 0.282538, 1.21921e-05, 2.24247e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.46287e-05, 0.210375, -1, 0.0397994, -1, -1, -1, 1.02668e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.71266e-05, -1, -1, 1.87365e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.74643e-05, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [-0.00162411, 0.168898, 0.156539, 0.259549, 0.196976, -0.331473, -0.661463, -0.539547, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.153799, 0.0511029, 0.675771, 0.50657, 0.77047, -0.771658, -0.812312, -0.678415, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.203538, -0.542999, 0.693662, 0.595429, 0.771263, 0.696941, -0.812312, -0.766472, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.521301, -0.605111, -0.611876, 0.735644, 0.714821, -0.727933, -0.777518],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.29069,
+        "value_variance": 0.137451,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "H4",
+          "child_sym_hash": "AAB2BB37629E3FEE2DA9D8795F6D858F",
+          "value": -0.473529,
+          "prior": 0.439316,
+          "visits": 16
+        },
+        {
+          "move": "F8",
+          "child_sym_hash": "4695413E326D0B957D17E6A192E5EC19",
+          "value": -0.389152,
+          "prior": 0.282538,
+          "visits": 4
+        },
+        {
+          "move": "B7",
+          "child_sym_hash": "80F5177C9609CAEDA0499600F4903DDC",
+          "value": -0.840432,
+          "prior": 0.210375,
+          "visits": 91
+        },
+        {
+          "move": "D7",
+          "child_sym_hash": "5CAE9AE29567D07F2189092BBC3BFBBB",
+          "value": 0.193586,
+          "prior": 0.0397994,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "15DA98C237A30D3EF7B567BE79F726B0",
+      "state_hash": "B27C96913EBC1BAB8C760F249A3B36AB",
+      "player_to_move": "B",
+      "symmetry_index": 4,
+      "winrate": -0.93425,
+      "score_lead": -7.21037,
+      "move_number": 38,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_38",
+      "stone_count": {
+        "black": 17,
+        "white": 17,
+        "total": 34
+      },
+      "board_state": [0, -1, 0, 0, 0, -1, 1, 0, 0, 1, -1, 0, -1, 1, 1, 0, 0, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 0, -1, -1, 1, 1, -1, -1, 0, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 38,
+        "num_consec_valid_turns": 38,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 3,
+        "hash": "C4301A99413A4FF1A1BBF1D2E9B0CAA5",
+        "move": "H4"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 101.002,
+        "sym_hash": "15DA98C237A30D3EF7B567BE79F726B0",
+        "state_hash": "B27C96913EBC1BAB8C760F249A3B36AB",
+        "player_to_move": "B",
+        "symmetry_index": 4,
+        "move_number": 38,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 17,
+          "white": 17,
+          "total": 34
+        },
+        "best_move": {
+          "symmetry_index": 3,
+          "hash": "112D456855A0BAC33C2CA9AD3FED7B4B",
+          "move": "H4"
+        },
+        "winrate": -0.969582,
+        "score_lead": -5.36268,
+        "policy": [0.000316737, -1, 0.000140551, 0.363304, 0.0453398, -1, -1, 1.13583e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.00465669, -1, -1, 0.133652, -1, -1, -1, 1.33833e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.06477e-05, -1, -1, 3.79769e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.49302e-05, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [-0.773234, -0.511274, -0.540238, -0.563995, -0.687533, -0.658984, -0.888354, -0.767678, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.79895, -0.941818, -0.277445, -0.296487, -0.254533, -0.870929, -0.90655, -0.779824, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.849647, -0.915192, -0.228441, -0.263643, -0.0840299, 0.029258, -0.939913, -0.917075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.896117, -0.918766, -0.950686, -0.0737793, -0.0671595, -0.894176, -0.926737],
+        "children": [
+          {
+            "move": "H4",
+            "child_sym_hash": "112D456855A0BAC33C2CA9AD3FED7B4B",
+            "value": -0.971726,
+            "prior": 0.451256,
+            "visits": 2633
+          },
+          {
+            "move": "D8",
+            "child_sym_hash": "2184E3C72DFAD94564544B526C60D64D",
+            "value": -0.970835,
+            "prior": 0.363304,
+            "visits": 2143
+          },
+          {
+            "move": "D7",
+            "child_sym_hash": "38B4879C58B7C4D5B08B4ABED7915E5B",
+            "value": -0.259814,
+            "prior": 0.133652,
+            "visits": 17
+          },
+          {
+            "move": "E8",
+            "child_sym_hash": "12533D3FE5DBB758CFEFF12BCE7F9216",
+            "value": -0.107424,
+            "prior": 0.0453398,
+            "visits": 5
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "17C82ADB39BBF705AD533D3572CFA3F9",
+            "value": 0.0476616,
+            "prior": 0.00465669,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [0.000316737, -1, 0.000140551, 0.363304, 0.0453398, -1, -1, 1.13583e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.00465669, -1, -1, 0.133652, -1, -1, -1, 1.33833e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.06477e-05, -1, -1, 3.79769e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.49302e-05, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [-0.773234, -0.511274, -0.540238, -0.563995, -0.687533, -0.658984, -0.888354, -0.767678, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.79895, -0.941818, -0.277445, -0.296487, -0.254533, -0.870929, -0.90655, -0.779824, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.849647, -0.915192, -0.228441, -0.263643, -0.0840299, 0.029258, -0.939913, -0.917075, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.896117, -0.918766, -0.950686, -0.0737793, -0.0671595, -0.894176, -0.926737],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.17643,
+        "value_variance": 0.214751,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "H4",
+          "child_sym_hash": "C4301A99413A4FF1A1BBF1D2E9B0CAA5",
+          "value": -0.927139,
+          "prior": 0.451256,
+          "visits": 55
+        },
+        {
+          "move": "D8",
+          "child_sym_hash": "F09CAB76250B48B6BC330F9639842FEE",
+          "value": -0.966915,
+          "prior": 0.363304,
+          "visits": 42
+        },
+        {
+          "move": "D7",
+          "child_sym_hash": "0FA80608DC50B079DEC08BE6ABF14F4C",
+          "value": -0.264351,
+          "prior": 0.133652,
+          "visits": 1
+        },
+        {
+          "move": "E8",
+          "child_sym_hash": "47159E3655213217B3BEEDDA5B7A21FD",
+          "value": 0.134944,
+          "prior": 0.0453398,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "2B708E9BFA67B61D198BD0B6CC6116D2",
+      "state_hash": "2B708E9BFA67B61D198BD0B6CC6116D2",
+      "player_to_move": "B",
+      "symmetry_index": 0,
+      "winrate": -0.966253,
+      "score_lead": -3.92132,
+      "move_number": 42,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_42",
+      "stone_count": {
+        "black": 18,
+        "white": 18,
+        "total": 36
+      },
+      "board_state": [0, -1, 0, 1, 0, -1, 1, 0, 0, 1, -1, -1, -1, 1, 1, 0, 0, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, 0, 0, -1, -1, 1, 1, -1, -1, 1, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 42,
+        "num_consec_valid_turns": 42,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 4,
+        "hash": "A37EE09F4797A2AAB92A82CA7F0B8F7E",
+        "move": "E8"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 58.6073,
+        "sym_hash": "2B708E9BFA67B61D198BD0B6CC6116D2",
+        "state_hash": "2B708E9BFA67B61D198BD0B6CC6116D2",
+        "player_to_move": "B",
+        "symmetry_index": 0,
+        "move_number": 42,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 18,
+          "white": 18,
+          "total": 36
+        },
+        "best_move": {
+          "symmetry_index": 4,
+          "hash": "0DB0A2E89B2D10FBFAEAAEFA9CCF646C",
+          "move": "E8"
+        },
+        "winrate": -0.979009,
+        "score_lead": -5.64313,
+        "policy": [0.00111004, -1, 0.00247237, -1, 0.966737, -1, -1, 1.38646e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0284471, -1, -1, -1, -1, -1, -1, 1.51679e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.00159e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.64646e-05, -1, -1, -1, -1, -1, -1, 1.21878e-05],
+        "ownership": [-0.702919, 0.494863, 0.545404, -0.414405, -0.649771, -0.450325, -0.97475, -0.76445, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.646657, -0.993753, 0.855514, 0.889379, 0.937476, -0.980583, -0.992585, -0.827045, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.961971, -0.98845, 0.836081, 0.741854, 0.88897, 0.925626, -0.992017, -0.985308, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.982442, -0.996902, -0.996408, 0.88897, 0.895538, -0.947489, -0.980658],
+        "children": [
+          {
+            "move": "E8",
+            "child_sym_hash": "0DB0A2E89B2D10FBFAEAAEFA9CCF646C",
+            "value": -0.979111,
+            "prior": 0.966737,
+            "visits": 4798
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "1463B6369B95BBE65AF49E38B43E05D6",
+            "value": 0.989646,
+            "prior": 0.0284471,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [0.00111004, -1, 0.00247237, -1, 0.966737, -1, -1, 1.38646e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0284471, -1, -1, -1, -1, -1, -1, 1.51679e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.00159e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.64646e-05, -1, -1, -1, -1, -1, -1, 1.21878e-05],
+      "ownership": [-0.702919, 0.494863, 0.545404, -0.414405, -0.649771, -0.450325, -0.97475, -0.76445, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.646657, -0.993753, 0.855514, 0.889379, 0.937476, -0.980583, -0.992585, -0.827045, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.961971, -0.98845, 0.836081, 0.741854, 0.88897, 0.925626, -0.992017, -0.985308, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.982442, -0.996902, -0.996408, 0.88897, 0.895538, -0.947489, -0.980658],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.167515,
+        "value_variance": 0.961254,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E8",
+          "child_sym_hash": "A37EE09F4797A2AAB92A82CA7F0B8F7E",
+          "value": -0.971225,
+          "prior": 0.966737,
+          "visits": 98
+        },
+        {
+          "move": "A7",
+          "child_sym_hash": "9CC7A2093BC2C86647DB5C4BE97FFD6B",
+          "value": 0.989646,
+          "prior": 0.0284471,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "010A72D8BB0A5BB2E16688E7F635F43D",
+      "state_hash": "5B6A6F4A1C1A3A7CEEF7D03FF30DCD3E",
+      "player_to_move": "W",
+      "symmetry_index": 4,
+      "winrate": -0.975201,
+      "score_lead": -4.7491,
+      "move_number": 45,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_45",
+      "stone_count": {
+        "black": 20,
+        "white": 18,
+        "total": 38
+      },
+      "board_state": [0, -1, 0, 1, 1, 0, 1, 0, -1, 1, -1, -1, -1, 1, 1, 0, 0, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, 0, 0, -1, -1, 1, 1, -1, -1, 1, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 45,
+        "num_consec_valid_turns": 45,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":1082607125826021,"maxTime":1e+20,"maxVisits":10,"rootPolicyTemperature":1.1,"rootPolicyTemperatureEarly":1.25,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 3,
+        "hash": "33B53958EED88A329898F9A247F179E4",
+        "move": "C8"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 125.819,
+        "sym_hash": "010A72D8BB0A5BB2E16688E7F635F43D",
+        "state_hash": "5B6A6F4A1C1A3A7CEEF7D03FF30DCD3E",
+        "player_to_move": "W",
+        "symmetry_index": 4,
+        "move_number": 45,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 20,
+          "white": 18,
+          "total": 38
+        },
+        "best_move": {
+          "symmetry_index": 4,
+          "hash": "2C09C20DF01679756DBAE2C2312BC50D",
+          "move": "H5"
+        },
+        "winrate": -0.982043,
+        "score_lead": -6.03311,
+        "policy": [0.000640591, -1, 0.193027, -1, -1, -1, -1, 0.156298, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.117227, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0815444, -1, -1, 0.000361297, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.00129569, -1, -1, -1, -1, -1, -1, 0.214646],
+        "ownership": [-0.911758, 0.655839, 0.819562, 0.0136934, -0.605766, -0.569303, -0.891859, -0.419327, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.815067, -0.998435, 0.930345, 0.903289, 0.975923, -0.919286, -0.933182, -0.503878, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.996332, -0.996147, 0.935186, 0.733534, 0.965863, 0.941876, -0.931002, -0.932404, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.994879, -0.993987, -0.995079, 0.897295, 0.945184, -0.890806, -0.942113],
+        "children": [
+          {
+            "move": "C8",
+            "child_sym_hash": "3FBEFD001240D4ADF54D04ACFB5B046F",
+            "value": -0.983517,
+            "prior": 0.193027,
+            "visits": 966
+          },
+          {
+            "move": "H5",
+            "child_sym_hash": "2C09C20DF01679756DBAE2C2312BC50D",
+            "value": -0.986739,
+            "prior": 0.214646,
+            "visits": 1133
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "1F422F3307A8D41190E1FA014C03184B",
+            "value": -0.986257,
+            "prior": 0.156298,
+            "visits": 475
+          },
+          {
+            "move": "F2",
+            "child_sym_hash": "1871132A28580694C2A978D946EE0F0A",
+            "value": -0.98535,
+            "prior": 0.137895,
+            "visits": 865
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "0CD5E99A800F1714D579EFECB56DDC8E",
+            "value": -0.985196,
+            "prior": 0.117227,
+            "visits": 582
+          },
+          {
+            "move": "A6",
+            "child_sym_hash": "253050A3B6386F4F03DC377E0FE50825",
+            "value": -0.985705,
+            "prior": 0.0815444,
+            "visits": 66
+          },
+          {
+            "move": "A4",
+            "child_sym_hash": "0D2780F0072724852BAFF2781F3CC49F",
+            "value": -0.958357,
+            "prior": 0.0560812,
+            "visits": 541
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "0D7EA4ACEFAE28AEB7F97953CF393991",
+            "value": -0.991264,
+            "prior": 0.00120151,
+            "visits": 21
+          },
+          {
+            "move": "E3",
+            "child_sym_hash": "1F4AC37EC7DF711ECC6B9FA42C6FEF50",
+            "value": -0.971625,
+            "prior": 0.00393738,
+            "visits": 19
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "1CA0B26626D08CF0FD0EDC9DCECEB4F1",
+            "value": -0.989177,
+            "prior": 0.00138048,
+            "visits": 15
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "17F449ED0D1FE96A6E5C29A7A86D91A0",
+            "value": -0.988823,
+            "prior": 0.00111108,
+            "visits": 13
+          },
+          {
+            "move": "F1",
+            "child_sym_hash": "3673D99F775161BA0C7ABB155B77B5B9",
+            "value": -0.968222,
+            "prior": 0.0153599,
+            "visits": 24
+          },
+          {
+            "move": "E1",
+            "child_sym_hash": "27A6C3285A9DAF459C03AF46728382FD",
+            "value": -0.947875,
+            "prior": 0.00567064,
+            "visits": 13
+          },
+          {
+            "move": "D6",
+            "child_sym_hash": "028184570E635DA112E26CA5EB180E3B",
+            "value": -0.998834,
+            "prior": 0.000361297,
+            "visits": 8
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "028184570E635DA112E26CA5EB180E3B",
+            "value": -0.998924,
+            "prior": 0.000665554,
+            "visits": 8
+          },
+          {
+            "move": "D1",
+            "child_sym_hash": "22B1DE80278D5965CA0F040B16211C11",
+            "value": -0.991004,
+            "prior": 0.00130064,
+            "visits": 7
+          },
+          {
+            "move": "D2",
+            "child_sym_hash": "1C36EA49D14EB3A0C427102DDF777C74",
+            "value": -0.984672,
+            "prior": 0.00190677,
+            "visits": 7
+          },
+          {
+            "move": "G1",
+            "child_sym_hash": "1A55C0043EA2B193773A7530557D308F",
+            "value": -0.992711,
+            "prior": 0.00164485,
+            "visits": 5
+          },
+          {
+            "move": "pass",
+            "child_sym_hash": "028184570E635DA112E26CA5EB180E3B",
+            "value": -0.994136,
+            "prior": 0.00162304,
+            "visits": 5
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "0EEF3D0F958BB163478A3F04FB503106",
+            "value": -0.987755,
+            "prior": 0.00110252,
+            "visits": 4
+          },
+          {
+            "move": "A5",
+            "child_sym_hash": "0043B4C75AE5878EEDBDB9777728A612",
+            "value": -0.97995,
+            "prior": 0.00129569,
+            "visits": 4
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "04E84C8E3998D20FB9D021A05FE35E20",
+            "value": -0.989513,
+            "prior": 0.00117175,
+            "visits": 4
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "177F8A27BE3F110AFC48344DA68D9AE5",
+            "value": -0.990264,
+            "prior": 0.00108662,
+            "visits": 4
+          },
+          {
+            "move": "A3",
+            "child_sym_hash": "17864038B81575368AFB6DA9D5467D1B",
+            "value": -0.981553,
+            "prior": 0.00105584,
+            "visits": 4
+          },
+          {
+            "move": "G3",
+            "child_sym_hash": "028184570E635DA112E26CA5EB180E3B",
+            "value": -0.995766,
+            "prior": 0.000765515,
+            "visits": 3
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "028184570E635DA112E26CA5EB180E3B",
+            "value": -0.998844,
+            "prior": 0.000640591,
+            "visits": 3
+          }
+        ]
+      },
+      "policy": [0.000642538, -1, 0.183794, -1, -1, -1, -1, 0.153824, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.117761, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0717738, -1, -1, 0.000348517, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.00121637, -1, -1, -1, -1, -1, -1, 0.225519],
+      "ownership": [-0.903776, 0.621069, 0.774178, -0.0403159, -0.642105, -0.587982, -0.904201, -0.456293, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.776087, -0.998481, 0.917734, 0.895596, 0.962732, -0.920134, -0.946347, -0.530532, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.995352, -0.996163, 0.914856, 0.681863, 0.95708, 0.928695, -0.940217, -0.940892, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.994974, -0.992041, -0.994382, 0.883779, 0.941658, -0.90145, -0.958844],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 2.41659,
+        "value_variance": 0.000106893,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "C8",
+          "child_sym_hash": "33B53958EED88A329898F9A247F179E4",
+          "value": -0.983919,
+          "prior": 0.183794,
+          "visits": 2
+        },
+        {
+          "move": "H5",
+          "child_sym_hash": "C8505F2EC3943FAC6E5BD760292B8652",
+          "value": -0.968538,
+          "prior": 0.225519,
+          "visits": 2
+        },
+        {
+          "move": "F2",
+          "child_sym_hash": "9EC42503246F23600039E4776186850C",
+          "value": -0.991346,
+          "prior": 0.160691,
+          "visits": 2
+        },
+        {
+          "move": "H8",
+          "child_sym_hash": "B8774F83A8EF04AB4A0329FB9452F4C4",
+          "value": -0.96698,
+          "prior": 0.153824,
+          "visits": 2
+        },
+        {
+          "move": "H7",
+          "child_sym_hash": "781AD4302FD4ED9019C2229AC4F03C71",
+          "value": -0.965931,
+          "prior": 0.117761,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "080A9F27B4097DAD4ADE7912731C74BB",
+      "state_hash": "1B0861CA639F3D74C01E8A2E976E1C7B",
+      "player_to_move": "B",
+      "symmetry_index": 5,
+      "winrate": -0.993105,
+      "score_lead": -4.99431,
+      "move_number": 48,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_48",
+      "stone_count": {
+        "black": 20,
+        "white": 18,
+        "total": 38
+      },
+      "board_state": [0, -1, 0, 1, 1, 0, 1, 0, -1, 1, -1, -1, -1, 1, 1, 0, 0, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 1, 0, 0, 1, 1, -1, -1, -1, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 48,
+        "num_consec_valid_turns": 48,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 2,
+        "hash": "5C62653636FCBBCCD7411C6AD96BA0C1",
+        "move": "A6"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 213.383,
+        "sym_hash": "080A9F27B4097DAD4ADE7912731C74BB",
+        "state_hash": "1B0861CA639F3D74C01E8A2E976E1C7B",
+        "player_to_move": "B",
+        "symmetry_index": 5,
+        "move_number": 48,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 20,
+          "white": 18,
+          "total": 38
+        },
+        "best_move": {
+          "symmetry_index": 2,
+          "hash": "03D98507D2C3DF77B050F6E8F94CD861",
+          "move": "A6"
+        },
+        "winrate": -0.992502,
+        "score_lead": -5.50019,
+        "policy": [-1, -1, 0.000569386, -1, -1, 0.00591, -1, 2.82927e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.08317e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.984251, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.56259e-05, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [-0.799303, 0.927012, 0.91343, -0.165813, -0.788103, -0.601696, -0.964575, -0.510913, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.822675, -0.999775, 0.982778, 0.980955, 0.980583, -0.976895, -0.982977, -0.642375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.997661, -0.999641, 0.963959, 0.85811, 0.98028, 0.984308, -0.983433, -0.975799, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.997577, -0.99985, -0.999817, 0.980955, 0.983304, -0.966941, -0.976984],
+        "children": [
+          {
+            "move": "A6",
+            "child_sym_hash": "03D98507D2C3DF77B050F6E8F94CD861",
+            "value": -0.992712,
+            "prior": 0.984251,
+            "visits": 4797
+          },
+          {
+            "move": "F8",
+            "child_sym_hash": "42E38AD771E65AA93C0B36B48F7BDF7E",
+            "value": 0.987179,
+            "prior": 0.00591,
+            "visits": 1
+          },
+          {
+            "move": "F1",
+            "child_sym_hash": "05F9BBADD7085EDA3DDA8AEED498737B",
+            "value": 0.32759,
+            "prior": 0.00586401,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [-1, -1, 0.000569386, -1, -1, 0.00591, -1, 2.82927e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.08317e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.984251, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.56259e-05, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [-0.799303, 0.927012, 0.91343, -0.165813, -0.788103, -0.601696, -0.964575, -0.510913, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.822675, -0.999775, 0.982778, 0.980955, 0.980583, -0.976895, -0.982977, -0.642375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.997661, -0.999641, 0.963959, 0.85811, 0.98028, 0.984308, -0.983433, -0.975799, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.997577, -0.99985, -0.999817, 0.980955, 0.983304, -0.966941, -0.976984],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"],
+        ["W", "H5"],
+        ["B", "A4"],
+        ["W", "H4"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.106964,
+        "value_variance": 0,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "A6",
+          "child_sym_hash": "5C62653636FCBBCCD7411C6AD96BA0C1",
+          "value": -0.993376,
+          "prior": 0.984251,
+          "visits": 99
+        }
+      ]
+    },
+    {
+      "sym_hash": "0279BD92218AC3D8B6D194B80980EB56",
+      "state_hash": "0279BD92218AC3D8B6D194B80980EB56",
+      "player_to_move": "B",
+      "symmetry_index": 0,
+      "winrate": -0.949398,
+      "score_lead": -4.88661,
+      "move_number": 50,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_50",
+      "stone_count": {
+        "black": 21,
+        "white": 19,
+        "total": 40
+      },
+      "board_state": [0, -1, -1, 1, 1, 0, 1, 0, -1, 1, -1, -1, -1, 1, 1, 0, 1, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 1, 0, 0, 1, 1, -1, -1, -1, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 50,
+        "num_consec_valid_turns": 50,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":490518531746814,"maxTime":1e+20,"maxVisits":187,"rootPolicyTemperature":1.1,"rootPolicyTemperatureEarly":1.25,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 0,
+        "hash": "01882EBE7F8596417CA9029304E7EB80",
+        "move": "A8"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 54.4677,
+        "sym_hash": "0279BD92218AC3D8B6D194B80980EB56",
+        "state_hash": "0279BD92218AC3D8B6D194B80980EB56",
+        "player_to_move": "B",
+        "symmetry_index": 0,
+        "move_number": 50,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 21,
+          "white": 19,
+          "total": 40
+        },
+        "best_move": {
+          "symmetry_index": 0,
+          "hash": "0E0DF329D048CF153E33A027C8DEECB7",
+          "move": "A8"
+        },
+        "winrate": -0.986085,
+        "score_lead": -5.43602,
+        "policy": [0.985089, -1, -1, -1, -1, 0.0024968, -1, 2.79807e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.07011e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.24754e-05, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [-0.957758, 0.910205, 0.990233, -0.133935, -0.722362, -0.630042, -0.974694, -0.597614, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.913809, -0.999926, 0.986588, 0.989658, 0.979699, -0.981983, -0.988366, -0.691473, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999864, -0.999849, 0.977949, 0.85287, 0.97976, 0.970978, -0.989574, -0.982729, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.998797, -0.99986, -0.999865, 0.979488, 0.981606, -0.976833, -0.98423],
+        "children": [
+          {
+            "move": "A8",
+            "child_sym_hash": "0E0DF329D048CF153E33A027C8DEECB7",
+            "value": -0.992534,
+            "prior": 0.985089,
+            "visits": 4637
+          },
+          {
+            "move": "E1",
+            "child_sym_hash": "820B644D20BAB685BE7BEEAE09A5EEF3",
+            "value": 0.930161,
+            "prior": 0.00379987,
+            "visits": 37
+          },
+          {
+            "move": "F2",
+            "child_sym_hash": "2062E19C3CA5211F5BA9B5276C2E3D8F",
+            "value": 0.833896,
+            "prior": 0.00101598,
+            "visits": 21
+          },
+          {
+            "move": "pass",
+            "child_sym_hash": "161F3F43C732057050D0D3EFC5457451",
+            "value": 0.911508,
+            "prior": 0.000611286,
+            "visits": 16
+          },
+          {
+            "move": "D2",
+            "child_sym_hash": "1AA8A45D42114C6CC3702462DABEED5A",
+            "value": 0.833476,
+            "prior": 0.000718568,
+            "visits": 11
+          },
+          {
+            "move": "F1",
+            "child_sym_hash": "014A6363DAE0062115103DF836C8D53D",
+            "value": 0.778529,
+            "prior": 0.00442128,
+            "visits": 10
+          },
+          {
+            "move": "C4",
+            "child_sym_hash": "1210040B403E028242B3B6B9095E36C2",
+            "value": 0.910533,
+            "prior": 4.39345e-05,
+            "visits": 10
+          },
+          {
+            "move": "E3",
+            "child_sym_hash": "12612360223596E1C5496993CD468727",
+            "value": 0.81926,
+            "prior": 0.000502276,
+            "visits": 9
+          },
+          {
+            "move": "F8",
+            "child_sym_hash": "05F3910F41BC86C1086F3B17950DCB10",
+            "value": 0.997834,
+            "prior": 0.0024968,
+            "visits": 8
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "0DBA8F3DE6936625D374617CB6C341C8",
+            "value": 0.848621,
+            "prior": 4.58913e-05,
+            "visits": 7
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "0C2CA370FC8EBB36BD0E0B98AD4F3C9A",
+            "value": 0.802446,
+            "prior": 3.55684e-05,
+            "visits": 6
+          },
+          {
+            "move": "G1",
+            "child_sym_hash": "4AFDF0ED87A4E570D042DC5286177CAA",
+            "value": 0.794161,
+            "prior": 0.000364321,
+            "visits": 5
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "0CFFF0231B483DDC242DB80CE063F592",
+            "value": 0.752659,
+            "prior": 7.82977e-05,
+            "visits": 5
+          },
+          {
+            "move": "D1",
+            "child_sym_hash": "305B011AA5310B172E12FC70A5E4D85F",
+            "value": 0.716831,
+            "prior": 0.000480879,
+            "visits": 5
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "00E1E3197E7FA5589EA9656C0F716419",
+            "value": 0.86791,
+            "prior": 3.3915e-05,
+            "visits": 4
+          },
+          {
+            "move": "A5",
+            "child_sym_hash": "161F3F43C732057050D0D3EFC5457451",
+            "value": 0.750177,
+            "prior": 3.24754e-05,
+            "visits": 4
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "4D6C8AD58ABE042D84BD9EA1DBA1381B",
+            "value": 0.994535,
+            "prior": 2.79807e-05,
+            "visits": 2
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "04F9B533C5B9A61EC4A3333CCDF036C1",
+            "value": 0.99589,
+            "prior": 3.07011e-05,
+            "visits": 2
+          }
+        ]
+      },
+      "policy": [0.986321, -1, -1, -1, -1, 0.00122528, -1, 2.792e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.08621e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.35638e-05, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [-0.960781, 0.895521, 0.989552, -0.138102, -0.720336, -0.611293, -0.974764, -0.597991, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.918026, -0.999917, 0.985634, 0.989473, 0.975466, -0.982316, -0.988494, -0.68762, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.99987, -0.99984, 0.977057, 0.841215, 0.978352, 0.969531, -0.989691, -0.98262, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.998846, -0.999866, -0.999861, 0.978505, 0.979474, -0.975278, -0.985017],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"],
+        ["W", "H5"],
+        ["B", "A4"],
+        ["W", "H4"],
+        ["B", "A6"],
+        ["W", "C8"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.952972,
+        "value_variance": 0.331817,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "A8",
+          "child_sym_hash": "01882EBE7F8596417CA9029304E7EB80",
+          "value": -0.994403,
+          "prior": 0.986321,
+          "visits": 161
+        },
+        {
+          "move": "F1",
+          "child_sym_hash": "B906694B45FAEDF51E06425CAA30C857",
+          "value": 0.567429,
+          "prior": 0.00455893,
+          "visits": 5
+        },
+        {
+          "move": "pass",
+          "child_sym_hash": "BA331D33F47F519BBD904E395563B5F1",
+          "value": 0.750622,
+          "prior": 0.000541373,
+          "visits": 5
+        },
+        {
+          "move": "F8",
+          "child_sym_hash": "9A18262D716AB5A816459A6D9FA578C9",
+          "value": 0.996009,
+          "prior": 0.00122528,
+          "visits": 4
+        },
+        {
+          "move": "A2",
+          "child_sym_hash": "8A6D7DD1D7B52E4C3E32A91CE40610B6",
+          "value": 0.644372,
+          "prior": 3.58903e-05,
+          "visits": 3
+        },
+        {
+          "move": "G1",
+          "child_sym_hash": "9F4F5E98485591A507902E5699962E95",
+          "value": 0.751655,
+          "prior": 0.00034709,
+          "visits": 3
+        },
+        {
+          "move": "D2",
+          "child_sym_hash": "CEE0293560199B455301D95CD434B70C",
+          "value": 0.635881,
+          "prior": 0.000688966,
+          "visits": 3
+        },
+        {
+          "move": "E1",
+          "child_sym_hash": "AAB4842B469ACE843BE545EE2D157922",
+          "value": 0.380661,
+          "prior": 0.0038458,
+          "visits": 2
+        }
+      ]
+    },
+    {
+      "sym_hash": "0ABA1280CF67159183CDACB1DAAA5A01",
+      "state_hash": "4E986B4FF747AFCF973E58EA566F3695",
+      "player_to_move": "W",
+      "symmetry_index": 3,
+      "winrate": -0.99311,
+      "score_lead": -4.56704,
+      "move_number": 53,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_53",
+      "stone_count": {
+        "black": 21,
+        "white": 18,
+        "total": 39
+      },
+      "board_state": [1, -1, -1, 0, 1, 0, 1, 0, 0, 1, -1, -1, -1, 1, 1, 0, 1, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 1, 0, 0, 1, 1, -1, -1, -1, 0, 1, 1, 1, 0, -1, 0, -1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 53,
+        "num_consec_valid_turns": 53,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":851163011892988,"maxTime":1e+20,"maxVisits":10,"rootPolicyTemperature":1.1,"rootPolicyTemperatureEarly":1.25,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 7,
+        "hash": "CBB4070BB7C45596A531AEB43E29DC30",
+        "move": "A7"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 55.132,
+        "sym_hash": "0ABA1280CF67159183CDACB1DAAA5A01",
+        "state_hash": "4E986B4FF747AFCF973E58EA566F3695",
+        "player_to_move": "W",
+        "symmetry_index": 3,
+        "move_number": 53,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 21,
+          "white": 18,
+          "total": 39
+        },
+        "best_move": {
+          "symmetry_index": 7,
+          "hash": "19E39FC922B4CBB09DBB804EB645C632",
+          "move": "A7"
+        },
+        "winrate": -0.992056,
+        "score_lead": -5.65662,
+        "policy": [-1, -1, -1, 0.000463372, -1, -1, -1, 0.0065119, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.678535, -1, -1, -1, -1, -1, -1, 0.00499585, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000652658, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [-0.899121, 0.992466, 0.996268, 0.241158, -0.868315, -0.808407, -0.899822, -0.492052, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.904642, -0.999422, 0.998405, 0.997985, 0.998789, -0.914005, -0.914403, -0.630296, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999937, -0.999863, 0.996761, 0.939172, 0.997694, 0.998646, -0.947091, -0.932953, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999511, -0.999934, -0.999802, 0.987445, 0.99638, -0.927867, -0.947597],
+        "children": [
+          {
+            "move": "A7",
+            "child_sym_hash": "19E39FC922B4CBB09DBB804EB645C632",
+            "value": -0.992108,
+            "prior": 0.678535,
+            "visits": 1747
+          },
+          {
+            "move": "E1",
+            "child_sym_hash": "372B5E6EBEF72E3BECC6E7D31DDB21A6",
+            "value": -0.995712,
+            "prior": 0.0843847,
+            "visits": 234
+          },
+          {
+            "move": "F1",
+            "child_sym_hash": "1F906FF666806179CDB34B387FD061F4",
+            "value": -0.990304,
+            "prior": 0.0784756,
+            "visits": 1363
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "214E599DE1EC0BF6EC904BD29B373542",
+            "value": -0.983875,
+            "prior": 0.0065119,
+            "visits": 68
+          },
+          {
+            "move": "F2",
+            "child_sym_hash": "1058E324AC94A0C2DF605E7DD2D8A93B",
+            "value": -0.9986,
+            "prior": 0.0541293,
+            "visits": 311
+          },
+          {
+            "move": "D1",
+            "child_sym_hash": "00E73D1256F9E06569D6CB4A6A254970",
+            "value": -0.98972,
+            "prior": 0.0160127,
+            "visits": 68
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "4ABC2CCB7B6A62D42E1316A39F90AD29",
+            "value": -0.99195,
+            "prior": 0.00451852,
+            "visits": 48
+          },
+          {
+            "move": "E3",
+            "child_sym_hash": "2931FD5760023906F62C035B86ABFC35",
+            "value": -0.990792,
+            "prior": 0.0259919,
+            "visits": 752
+          },
+          {
+            "move": "D2",
+            "child_sym_hash": "07DFA56DEB5FA33DEA2A19CE998809FB",
+            "value": -0.997742,
+            "prior": 0.0240999,
+            "visits": 95
+          },
+          {
+            "move": "A3",
+            "child_sym_hash": "1FAFB0363CD9D36097324B0D4170DB2A",
+            "value": -0.998043,
+            "prior": 0.00134913,
+            "visits": 16
+          },
+          {
+            "move": "pass",
+            "child_sym_hash": "17738052E53EC8126B2BE4704E7AF590",
+            "value": -0.998646,
+            "prior": 0.00351232,
+            "visits": 15
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "0A24E1A85A273AC0598A768A0E8C7972",
+            "value": -0.99909,
+            "prior": 0.00499585,
+            "visits": 10
+          },
+          {
+            "move": "G1",
+            "child_sym_hash": "0CA860A3AA3DE4FC2B82E7FC11C9027C",
+            "value": -0.998558,
+            "prior": 0.00589184,
+            "visits": 15
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "08381BED98A2B12A1E2818C65D78875B",
+            "value": -0.99775,
+            "prior": 0.00131759,
+            "visits": 9
+          },
+          {
+            "move": "B4",
+            "child_sym_hash": "1D02BAE053A20D30EAF9CEC4FB71F60E",
+            "value": -0.997551,
+            "prior": 0.00129977,
+            "visits": 7
+          },
+          {
+            "move": "D6",
+            "child_sym_hash": "17738052E53EC8126B2BE4704E7AF590",
+            "value": -0.999846,
+            "prior": 0.000652658,
+            "visits": 6
+          },
+          {
+            "move": "C4",
+            "child_sym_hash": "126BB6EB726E6F9A9AAEADC0D89E9326",
+            "value": -0.99765,
+            "prior": 0.00133851,
+            "visits": 5
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "1B1D390A7ED624D03E43B7D15E32CAAD",
+            "value": -0.997156,
+            "prior": 0.00140156,
+            "visits": 5
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "17738052E53EC8126B2BE4704E7AF590",
+            "value": -0.998577,
+            "prior": 0.000550463,
+            "visits": 5
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "0CC1BC80BD547459A4190704CBD5F811",
+            "value": -0.996758,
+            "prior": 0.00127008,
+            "visits": 4
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "1F567A293AF3B75CE18112E932BB3CD4",
+            "value": -0.997884,
+            "prior": 0.00122126,
+            "visits": 4
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "21A1A230C4266153A98372ED87FDF9F6",
+            "value": -0.993037,
+            "prior": 0.00118412,
+            "visits": 4
+          },
+          {
+            "move": "G3",
+            "child_sym_hash": "17738052E53EC8126B2BE4704E7AF590",
+            "value": -0.999217,
+            "prior": 0.000892073,
+            "visits": 4
+          },
+          {
+            "move": "D8",
+            "child_sym_hash": "86EABD2CE879B7102FBFB31FA43BF6F2",
+            "value": -0.9979,
+            "prior": 0.000463372,
+            "visits": 4
+          }
+        ]
+      },
+      "policy": [-1, -1, -1, 0.000479358, -1, -1, -1, 0.00765216, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.662965, -1, -1, -1, -1, -1, -1, 0.00606534, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000618232, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [-0.89479, 0.991947, 0.996369, 0.23312, -0.883784, -0.828652, -0.909391, -0.466183, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.906962, -0.999421, 0.998139, 0.997831, 0.998722, -0.924213, -0.926886, -0.584647, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999933, -0.999827, 0.996062, 0.939878, 0.997309, 0.998555, -0.94968, -0.92914, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.99944, -0.999925, -0.999769, 0.985707, 0.99596, -0.919602, -0.944747],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"],
+        ["W", "H5"],
+        ["B", "A4"],
+        ["W", "H4"],
+        ["B", "A6"],
+        ["W", "C8"],
+        ["B", "A8"],
+        ["W", "F8"],
+        ["B", "E8"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 2.00456,
+        "value_variance": 3.29409e-06,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "A7",
+          "child_sym_hash": "CBB4070BB7C45596A531AEB43E29DC30",
+          "value": -0.995584,
+          "prior": 0.662965,
+          "visits": 3
+        },
+        {
+          "move": "E1",
+          "child_sym_hash": "382426480CC16D22DF757A25DC31DD3D",
+          "value": -0.994254,
+          "prior": 0.0771414,
+          "visits": 2
+        },
+        {
+          "move": "F1",
+          "child_sym_hash": "644A75BE87DA2DABBE07329EE47D577E",
+          "value": -0.998184,
+          "prior": 0.0904207,
+          "visits": 2
+        },
+        {
+          "move": "F2",
+          "child_sym_hash": "8B362106CF32B6D379F06CA2C4E47EA7",
+          "value": -0.998636,
+          "prior": 0.0597045,
+          "visits": 2
+        }
+      ]
+    },
+    {
+      "sym_hash": "056BCD4F2F23B8BBDA164646F963FACC",
+      "state_hash": "056BCD4F2F23B8BBDA164646F963FACC",
+      "player_to_move": "B",
+      "symmetry_index": 0,
+      "winrate": -0.997503,
+      "score_lead": -5.62997,
+      "move_number": 56,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_56",
+      "stone_count": {
+        "black": 21,
+        "white": 20,
+        "total": 41
+      },
+      "board_state": [0, -1, -1, 0, 1, 0, 1, 0, -1, 1, -1, -1, -1, 1, 1, 0, 1, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 1, 0, 0, 1, 1, -1, -1, -1, 0, 1, 1, 1, -1, -1, 0, -1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 56,
+        "num_consec_valid_turns": 56,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 4,
+        "hash": "C9F259E86EB0E0263FC60BA224D7A696",
+        "move": "D2"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 164.43,
+        "sym_hash": "056BCD4F2F23B8BBDA164646F963FACC",
+        "state_hash": "056BCD4F2F23B8BBDA164646F963FACC",
+        "player_to_move": "B",
+        "symmetry_index": 0,
+        "move_number": 56,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 21,
+          "white": 20,
+          "total": 41
+        },
+        "best_move": {
+          "symmetry_index": 4,
+          "hash": "23158B7BB218A7306EF81FBF8CF6339E",
+          "move": "D2"
+        },
+        "winrate": -0.996515,
+        "score_lead": -4.94573,
+        "policy": [0.413301, -1, -1, 7.43575e-05, -1, 0.00700783, -1, 7.58241e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6.58771e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000221125, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [-0.983938, 0.95775, 0.982305, -0.416223, -0.986192, -0.950119, -0.997067, -0.721441, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.986139, -0.999991, 0.990151, 0.987899, 0.992643, -0.999786, -0.998619, -0.758708, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999947, -0.999925, 0.991537, 0.931799, 0.993505, 0.987371, -0.998199, -0.994485, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999478, -0.999935, -0.999946, 0.989437, 0.992643, -0.996436, -0.997688],
+        "children": [
+          {
+            "move": "D2",
+            "child_sym_hash": "23158B7BB218A7306EF81FBF8CF6339E",
+            "value": -0.998859,
+            "prior": 0.505399,
+            "visits": 2424
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "091F83F4DEE1B47652F472D9383DFD2D",
+            "value": -0.995374,
+            "prior": 0.413301,
+            "visits": 2266
+          },
+          {
+            "move": "D1",
+            "child_sym_hash": "11520219EB4DACCA9CCA0B67181064C9",
+            "value": -0.982673,
+            "prior": 0.0196539,
+            "visits": 22
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "022E63D65C4C32889F2CC2D570E2969B",
+            "value": -0.971163,
+            "prior": 0.0164496,
+            "visits": 12
+          },
+          {
+            "move": "F1",
+            "child_sym_hash": "287BAD424C2C8470DBEF1E4D088C2599",
+            "value": -0.967862,
+            "prior": 0.0162778,
+            "visits": 58
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "1897692B9AA65C17CAFC544D40E3ED20",
+            "value": -0.970059,
+            "prior": 0.0123654,
+            "visits": 11
+          },
+          {
+            "move": "F8",
+            "child_sym_hash": "2A6E472411CAD028FC0DA6C888E39070",
+            "value": -0.984776,
+            "prior": 0.00700783,
+            "visits": 5
+          },
+          {
+            "move": "F2",
+            "child_sym_hash": "1D10A4007EA16FF5B471A3F152E9358A",
+            "value": 0.595747,
+            "prior": 0.00387766,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [0.413301, -1, -1, 7.43575e-05, -1, 0.00700783, -1, 7.58241e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6.58771e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000221125, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [-0.983938, 0.95775, 0.982305, -0.416223, -0.986192, -0.950119, -0.997067, -0.721441, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.986139, -0.999991, 0.990151, 0.987899, 0.992643, -0.999786, -0.998619, -0.758708, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999947, -0.999925, 0.991537, 0.931799, 0.993505, 0.987371, -0.998199, -0.994485, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999478, -0.999935, -0.999946, 0.989437, 0.992643, -0.996436, -0.997688],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"],
+        ["W", "H5"],
+        ["B", "A4"],
+        ["W", "H4"],
+        ["B", "A6"],
+        ["W", "C8"],
+        ["B", "A8"],
+        ["W", "F8"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E1"],
+        ["W", "E3"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.07301,
+        "value_variance": 7.3699e-07,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "D2",
+          "child_sym_hash": "C9F259E86EB0E0263FC60BA224D7A696",
+          "value": -0.996917,
+          "prior": 0.505399,
+          "visits": 65
+        },
+        {
+          "move": "A8",
+          "child_sym_hash": "9ED782556212605FE7390D1D7FEB1B40",
+          "value": -0.998634,
+          "prior": 0.413301,
+          "visits": 34
+        }
+      ]
+    },
+    {
+      "sym_hash": "2C1EB66E5F293DA41FB31368F9EB8530",
+      "state_hash": "5DE78CECCF929A9B17B031E873AC32E8",
+      "player_to_move": "W",
+      "symmetry_index": 4,
+      "winrate": -0.999728,
+      "score_lead": -4.55538,
+      "move_number": 59,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_59",
+      "stone_count": {
+        "black": 23,
+        "white": 21,
+        "total": 44
+      },
+      "board_state": [-1, -1, -1, 0, 1, 1, 1, 0, -1, 1, -1, -1, -1, 1, 1, 0, 1, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 1, 0, 0, 1, 1, -1, -1, -1, 0, 1, 1, 1, -1, -1, 0, -1, 0, 0, 0, 1, 1, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 59,
+        "num_consec_valid_turns": 59,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 5,
+        "hash": "FB19AC08D56DBD871F37DC343827BFFD",
+        "move": "H8"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 220.906,
+        "sym_hash": "2C1EB66E5F293DA41FB31368F9EB8530",
+        "state_hash": "5DE78CECCF929A9B17B031E873AC32E8",
+        "player_to_move": "W",
+        "symmetry_index": 4,
+        "move_number": 59,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 23,
+          "white": 21,
+          "total": 44
+        },
+        "best_move": {
+          "symmetry_index": 5,
+          "hash": "13170FF8F2084A2E183CF35F2818A26F",
+          "move": "H8"
+        },
+        "winrate": -0.999523,
+        "score_lead": -4.44989,
+        "policy": [-1, -1, -1, 0.000470731, -1, -1, -1, 0.569175, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.412371, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000501091, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [0.999243, 0.999122, 0.999461, 0.164863, -0.997715, -0.998411, -0.999272, -0.774018, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.997895, -0.999649, 0.9992, 0.99924, 0.99796, -0.996055, -0.995962, -0.899897, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999915, -0.999797, 0.999593, 0.931928, 0.998941, 0.997329, -0.995244, -0.99863, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.99969, -0.999909, -0.999539, 0.999165, 0.998697, -0.995583, -0.997944],
+        "children": [
+          {
+            "move": "H8",
+            "child_sym_hash": "13170FF8F2084A2E183CF35F2818A26F",
+            "value": -0.99952,
+            "prior": 0.569175,
+            "visits": 2903
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "03AF5AF50369C7B5F07C73C235BE30EF",
+            "value": -0.99953,
+            "prior": 0.412371,
+            "visits": 1895
+          },
+          {
+            "move": "pass",
+            "child_sym_hash": "040C67F1DDEBFD46EBA58D726BB9F1ED",
+            "value": -0.997623,
+            "prior": 0.00290051,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [-1, -1, -1, 0.000470731, -1, -1, -1, 0.569175, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.412371, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000501091, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [0.999243, 0.999122, 0.999461, 0.164863, -0.997715, -0.998411, -0.999272, -0.774018, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.997895, -0.999649, 0.9992, 0.99924, 0.99796, -0.996055, -0.995962, -0.899897, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999915, -0.999797, 0.999593, 0.931928, 0.998941, 0.997329, -0.995244, -0.99863, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.99969, -0.999909, -0.999539, 0.999165, 0.998697, -0.995583, -0.997944],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"],
+        ["W", "H5"],
+        ["B", "A4"],
+        ["W", "H4"],
+        ["B", "A6"],
+        ["W", "C8"],
+        ["B", "A8"],
+        ["W", "F8"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E1"],
+        ["W", "E3"],
+        ["B", "D2"],
+        ["W", "A8"],
+        ["B", "F8"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.810639,
+        "value_variance": 2.83903e-11,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "H8",
+          "child_sym_hash": "FB19AC08D56DBD871F37DC343827BFFD",
+          "value": -0.999763,
+          "prior": 0.569175,
+          "visits": 56
+        },
+        {
+          "move": "H7",
+          "child_sym_hash": "BBD636BC5E43A6A24E7913546982780E",
+          "value": -0.999752,
+          "prior": 0.412371,
+          "visits": 43
+        }
+      ]
+    },
+    {
+      "sym_hash": "79F20AC22905C4AA21EAF9AFFC876399",
+      "state_hash": "D75D3141810CFE4CDB0B9B04B2B8BAE2",
+      "player_to_move": "B",
+      "symmetry_index": 4,
+      "winrate": -0.999549,
+      "score_lead": -4.28885,
+      "move_number": 62,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_62",
+      "stone_count": {
+        "black": 24,
+        "white": 23,
+        "total": 47
+      },
+      "board_state": [-1, -1, -1, 0, 1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 0, 1, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 1, 0, 0, 1, 1, -1, -1, -1, 0, 1, 1, 1, -1, -1, 0, -1, 0, 0, 0, 1, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, -1, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 62,
+        "num_consec_valid_turns": 62,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 5,
+        "hash": "162CD0099F05CC71CAD08E7BE2BF5302",
+        "move": "F2"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 262.161,
+        "sym_hash": "79F20AC22905C4AA21EAF9AFFC876399",
+        "state_hash": "D75D3141810CFE4CDB0B9B04B2B8BAE2",
+        "player_to_move": "B",
+        "symmetry_index": 4,
+        "move_number": 62,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 24,
+          "white": 23,
+          "total": 47
+        },
+        "best_move": {
+          "symmetry_index": 5,
+          "hash": "19CE9DEDA6844C355AC911698E48D86A",
+          "move": "F2"
+        },
+        "winrate": -0.999307,
+        "score_lead": -4.49465,
+        "policy": [-1, -1, -1, 3.76966e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.31887, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0154351, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [0.999735, 0.999705, 0.999802, 0.00682057, -0.999833, -0.999681, -0.99989, -0.996422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.999635, -0.999966, 0.999885, 0.999763, 0.999698, -0.99992, -0.999574, -0.983876, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999896, -0.999903, 0.999593, 0.999453, 0.999118, 0.999319, -0.999448, -0.999532, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999444, -0.999868, -0.999939, 0.999146, 0.999375, -0.999524, -0.999399],
+        "children": [
+          {
+            "move": "F2",
+            "child_sym_hash": "19CE9DEDA6844C355AC911698E48D86A",
+            "value": -0.99924,
+            "prior": 0.508558,
+            "visits": 2435
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "0DF11EC62F01B3E343FE9992DF59100E",
+            "value": -0.999366,
+            "prior": 0.31887,
+            "visits": 2126
+          },
+          {
+            "move": "pass",
+            "child_sym_hash": "2019E1DF3B7CA377DDFF4535E492A09C",
+            "value": -0.999527,
+            "prior": 0.0842576,
+            "visits": 170
+          },
+          {
+            "move": "B4",
+            "child_sym_hash": "2CAE7AC1BE5FEA6B4E5FB2B8FB693997",
+            "value": -0.999319,
+            "prior": 0.0162223,
+            "visits": 14
+          },
+          {
+            "move": "A3",
+            "child_sym_hash": "253D59EA632819AFFA8EB82911363C79",
+            "value": -0.999262,
+            "prior": 0.0156734,
+            "visits": 14
+          },
+          {
+            "move": "A5",
+            "child_sym_hash": "2019E1DF3B7CA377DDFF4535E492A09C",
+            "value": -0.999424,
+            "prior": 0.0154351,
+            "visits": 15
+          },
+          {
+            "move": "C4",
+            "child_sym_hash": "08F1FB1D73B16A65E8988B1ACDF7DEF6",
+            "value": -0.999326,
+            "prior": 0.0137602,
+            "visits": 13
+          },
+          {
+            "move": "D1",
+            "child_sym_hash": "0B0F65FA10CCAABC1A2E6909F9B4066E",
+            "value": -0.999288,
+            "prior": 0.00592938,
+            "visits": 3
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "47A07172E86D58413B887A92A3B0EDB1",
+            "value": -0.999102,
+            "prior": 0.00541989,
+            "visits": 3
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "013F25658CB0393121C05A095E5F922A",
+            "value": -0.999128,
+            "prior": 0.00477137,
+            "visits": 3
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "02ACEFD25AF3B0221183AA41E403B350",
+            "value": -0.999292,
+            "prior": 0.00305069,
+            "visits": 2
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "1685F4EDEBFD4B97B31B7D0B3EAE2D07",
+            "value": -0.998507,
+            "prior": 0.00281043,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [-1, -1, -1, 3.76966e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.31887, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0154351, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [0.999735, 0.999705, 0.999802, 0.00682057, -0.999833, -0.999681, -0.99989, -0.996422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.999635, -0.999966, 0.999885, 0.999763, 0.999698, -0.99992, -0.999574, -0.983876, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999896, -0.999903, 0.999593, 0.999453, 0.999118, 0.999319, -0.999448, -0.999532, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999444, -0.999868, -0.999939, 0.999146, 0.999375, -0.999524, -0.999399],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"],
+        ["W", "H5"],
+        ["B", "A4"],
+        ["W", "H4"],
+        ["B", "A6"],
+        ["W", "C8"],
+        ["B", "A8"],
+        ["W", "F8"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E1"],
+        ["W", "E3"],
+        ["B", "D2"],
+        ["W", "A8"],
+        ["B", "F8"],
+        ["W", "H8"],
+        ["B", "F1"],
+        ["W", "G1"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.32185,
+        "value_variance": 2.07679e-08,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "F2",
+          "child_sym_hash": "162CD0099F05CC71CAD08E7BE2BF5302",
+          "value": -0.999443,
+          "prior": 0.508558,
+          "visits": 53
+        },
+        {
+          "move": "H7",
+          "child_sym_hash": "00C8941DF38250455DA8F1601417D31D",
+          "value": -0.999639,
+          "prior": 0.31887,
+          "visits": 38
+        },
+        {
+          "move": "pass",
+          "child_sym_hash": "4ABD40259854AD79B17256EE0C60B0C7",
+          "value": -0.999795,
+          "prior": 0.0842576,
+          "visits": 8
+        }
+      ]
+    },
+    {
+      "sym_hash": "22A54432D02088C8A856FA506C05BC86",
+      "state_hash": "C1B97555ED8B62784C73E41F44103AFD",
+      "player_to_move": "B",
+      "symmetry_index": 4,
+      "winrate": -0.999309,
+      "score_lead": -4.11821,
+      "move_number": 66,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_66",
+      "stone_count": {
+        "black": 26,
+        "white": 22,
+        "total": 48
+      },
+      "board_state": [-1, -1, -1, 0, 1, 1, 1, 0, -1, 1, -1, -1, -1, 1, 1, 1, 1, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 1, 0, 0, 1, 1, -1, -1, -1, 0, 1, 1, 1, -1, -1, 0, -1, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, 1, 1, -1, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 66,
+        "num_consec_valid_turns": 66,
+        "consecutive_ending_passes": 1,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 2,
+        "hash": "EAF1F57C4933983EA74FF60193E93F19",
+        "move": "pass"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 263.353,
+        "sym_hash": "22A54432D02088C8A856FA506C05BC86",
+        "state_hash": "C1B97555ED8B62784C73E41F44103AFD",
+        "player_to_move": "B",
+        "symmetry_index": 4,
+        "move_number": 66,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 26,
+          "white": 22,
+          "total": 48
+        },
+        "best_move": {
+          "symmetry_index": 2,
+          "hash": "0BAE301373B251B9410D56B07C80A17B",
+          "move": "pass"
+        },
+        "winrate": -0.999143,
+        "score_lead": -4.3983,
+        "policy": [-1, -1, -1, 0.000267386, -1, -1, -1, 6.47624e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0574581, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [0.999768, 0.999885, 0.999902, 0.0168136, -0.99986, -0.999686, -0.99988, -0.994485, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.999786, -0.999951, 0.999926, 0.999917, 0.999894, -0.999928, -0.999532, -0.999765, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999942, -0.999909, 0.999856, 0.999413, 0.9997, 0.999618, -0.999557, -0.999587, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999743, -0.999924, -0.999947, 0.999693, 0.999676, -0.999711, -0.999513],
+        "children": [
+          {
+            "move": "pass",
+            "child_sym_hash": "0BAE301373B251B9410D56B07C80A17B",
+            "value": -0.999153,
+            "prior": 0.598723,
+            "visits": 4394
+          },
+          {
+            "move": "C4",
+            "child_sym_hash": "302D642568064D37372E73F8DF389CF7",
+            "value": -0.999001,
+            "prior": 0.0598053,
+            "visits": 72
+          },
+          {
+            "move": "A3",
+            "child_sym_hash": "056B794465AA271C037417A750C293B9",
+            "value": -0.998869,
+            "prior": 0.0593979,
+            "visits": 72
+          },
+          {
+            "move": "A5",
+            "child_sym_hash": "0BAE301373B251B9410D56B07C80A17B",
+            "value": -0.998792,
+            "prior": 0.0574581,
+            "visits": 56
+          },
+          {
+            "move": "B4",
+            "child_sym_hash": "08DAC92D590D1F06364B1B854920806D",
+            "value": -0.998996,
+            "prior": 0.057374,
+            "visits": 69
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "0A0745DD8EC3922BF8A588880EA6AEB2",
+            "value": -0.99917,
+            "prior": 0.0278698,
+            "visits": 23
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "2368E2B3C1EA0DF6CFA0B5E568672A94",
+            "value": -0.999091,
+            "prior": 0.0251307,
+            "visits": 21
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "86BC27987AEA026AA878F3668DD4F26A",
+            "value": -0.999226,
+            "prior": 0.0247721,
+            "visits": 20
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "14A268D48CBB0C4B4331E3B57AC63B44",
+            "value": -0.999398,
+            "prior": 0.022812,
+            "visits": 19
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "07605089D8D038770200A2A44E58D442",
+            "value": -0.999256,
+            "prior": 0.0224625,
+            "visits": 18
+          },
+          {
+            "move": "D1",
+            "child_sym_hash": "2B448A7E01783C2EC5DF5518EDF0CCAE",
+            "value": -0.999085,
+            "prior": 0.0219462,
+            "visits": 17
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "16A9411931C11320424556B6645C7CBF",
+            "value": -0.99922,
+            "prior": 0.0219167,
+            "visits": 18
+          }
+        ]
+      },
+      "policy": [-1, -1, -1, 0.000267386, -1, -1, -1, 6.47624e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0574581, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [0.999768, 0.999885, 0.999902, 0.0168136, -0.99986, -0.999686, -0.99988, -0.994485, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.999786, -0.999951, 0.999926, 0.999917, 0.999894, -0.999928, -0.999532, -0.999765, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999942, -0.999909, 0.999856, 0.999413, 0.9997, 0.999618, -0.999557, -0.999587, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999743, -0.999924, -0.999947, 0.999693, 0.999676, -0.999711, -0.999513],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"],
+        ["W", "H5"],
+        ["B", "A4"],
+        ["W", "H4"],
+        ["B", "A6"],
+        ["W", "C8"],
+        ["B", "A8"],
+        ["W", "F8"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E1"],
+        ["W", "E3"],
+        ["B", "D2"],
+        ["W", "A8"],
+        ["B", "F8"],
+        ["W", "H8"],
+        ["B", "F1"],
+        ["W", "G1"],
+        ["B", "F2"],
+        ["W", "pass"],
+        ["B", "H7"],
+        ["W", "pass"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.59724,
+        "value_variance": 1.19046e-07,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "pass",
+          "child_sym_hash": "EAF1F57C4933983EA74FF60193E93F19",
+          "value": -0.999395,
+          "prior": 0.598723,
+          "visits": 80
+        },
+        {
+          "move": "C4",
+          "child_sym_hash": "480414B723591B06BBF749323BE3A712",
+          "value": -0.998847,
+          "prior": 0.0598053,
+          "visits": 4
+        },
+        {
+          "move": "A3",
+          "child_sym_hash": "5CB879761C0EED716686B1E8C0E77BB7",
+          "value": -0.998811,
+          "prior": 0.0593979,
+          "visits": 4
+        },
+        {
+          "move": "A5",
+          "child_sym_hash": "0527BC54A51CC0F4F7B4DC5E45B40658",
+          "value": -0.999236,
+          "prior": 0.0574581,
+          "visits": 4
+        },
+        {
+          "move": "B4",
+          "child_sym_hash": "F12575D00E078F7BA954DA02C8614FB4",
+          "value": -0.998986,
+          "prior": 0.057374,
+          "visits": 4
+        },
+        {
+          "move": "B2",
+          "child_sym_hash": "F73AF63A2373A69B7DEEA3176D227317",
+          "value": -0.998277,
+          "prior": 0.0278698,
+          "visits": 1
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "DEE7F834AFBD2094E57BFAAF2757AB0B",
+          "value": -0.998457,
+          "prior": 0.0251307,
+          "visits": 1
+        },
+        {
+          "move": "A1",
+          "child_sym_hash": "AB839B601B7DD896590CA05BF98E3132",
+          "value": -0.998793,
+          "prior": 0.0247721,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "22A54432D02088C8A856FA506C05BC86",
+      "state_hash": "C1B97555ED8B62784C73E41F44103AFD",
+      "player_to_move": "B",
+      "symmetry_index": 4,
+      "winrate": -0.999827,
+      "score_lead": -4.50388,
+      "move_number": 70,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_70",
+      "stone_count": {
+        "black": 26,
+        "white": 22,
+        "total": 48
+      },
+      "board_state": [-1, -1, -1, 0, 1, 1, 1, 0, -1, 1, -1, -1, -1, 1, 1, 1, 1, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, -1, -1, 1, 1, -1, 1, 0, 0, 1, 1, -1, -1, -1, 0, 1, 1, 1, -1, -1, 0, -1, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, 1, 1, -1, -1],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 2,
+        "num_turns_this_phase": 1,
+        "num_consec_valid_turns": 70,
+        "consecutive_ending_passes": 1,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 2,
+        "hash": "529E022DAAC4B80F174490BE7D610850",
+        "move": "pass"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 292.387,
+        "sym_hash": "22A54432D02088C8A856FA506C05BC86",
+        "state_hash": "C1B97555ED8B62784C73E41F44103AFD",
+        "player_to_move": "B",
+        "symmetry_index": 4,
+        "move_number": 70,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 26,
+          "white": 22,
+          "total": 48
+        },
+        "best_move": {
+          "symmetry_index": 2,
+          "hash": "0BAE301373B251B9410D56B07C80A17B",
+          "move": "pass"
+        },
+        "winrate": -0.999531,
+        "score_lead": -4.52148,
+        "policy": [-1, -1, -1, 0.000232842, -1, -1, -1, 9.27992e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.287089, -1, -1, -1, -1, -1, -1, -1],
+        "ownership": [0.999668, 0.999587, 0.999743, -0.0578881, -0.999821, -0.999702, -0.999916, -0.9663, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.999517, -0.999978, 0.999791, 0.999453, 0.999657, -0.999887, -0.999649, -0.999791, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999916, -0.999928, 0.999824, 0.999883, 0.999408, 0.999649, -0.999539, -0.999444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999938, -0.999815, -0.999953, 0.999695, 0.999829, -0.999859, -0.999741],
+        "children": [
+          {
+            "move": "pass",
+            "child_sym_hash": "0BAE301373B251B9410D56B07C80A17B",
+            "value": -1,
+            "prior": 0.332692,
+            "visits": 1738
+          },
+          {
+            "move": "A5",
+            "child_sym_hash": "0BAE301373B251B9410D56B07C80A17B",
+            "value": -0.998658,
+            "prior": 0.287089,
+            "visits": 1353
+          },
+          {
+            "move": "C4",
+            "child_sym_hash": "302D642568064D37372E73F8DF389CF7",
+            "value": -0.999765,
+            "prior": 0.213764,
+            "visits": 1121
+          },
+          {
+            "move": "A3",
+            "child_sym_hash": "056B794465AA271C037417A750C293B9",
+            "value": -0.999773,
+            "prior": 0.0537322,
+            "visits": 271
+          },
+          {
+            "move": "B4",
+            "child_sym_hash": "08DAC92D590D1F06364B1B854920806D",
+            "value": -0.999655,
+            "prior": 0.0385886,
+            "visits": 189
+          },
+          {
+            "move": "D1",
+            "child_sym_hash": "2B448A7E01783C2EC5DF5518EDF0CCAE",
+            "value": -0.999657,
+            "prior": 0.0121443,
+            "visits": 19
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "14A268D48CBB0C4B4331E3B57AC63B44",
+            "value": -0.999581,
+            "prior": 0.0116438,
+            "visits": 21
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "0A0745DD8EC3922BF8A588880EA6AEB2",
+            "value": -0.99971,
+            "prior": 0.0108698,
+            "visits": 21
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "2368E2B3C1EA0DF6CFA0B5E568672A94",
+            "value": -0.999624,
+            "prior": 0.0108552,
+            "visits": 18
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "16A9411931C11320424556B6645C7CBF",
+            "value": -0.999532,
+            "prior": 0.0107419,
+            "visits": 18
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "86BC27987AEA026AA878F3668DD4F26A",
+            "value": -0.999607,
+            "prior": 0.00970446,
+            "visits": 16
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "07605089D8D038770200A2A44E58D442",
+            "value": -0.999658,
+            "prior": 0.00784932,
+            "visits": 14
+          }
+        ]
+      },
+      "policy": [-1, -1, -1, 0.000232842, -1, -1, -1, 9.27992e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.287089, -1, -1, -1, -1, -1, -1, -1],
+      "ownership": [0.999668, 0.999587, 0.999743, -0.0578881, -0.999821, -0.999702, -0.999916, -0.9663, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.999517, -0.999978, 0.999791, 0.999453, 0.999657, -0.999887, -0.999649, -0.999791, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999916, -0.999928, 0.999824, 0.999883, 0.999408, 0.999649, -0.999539, -0.999444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999938, -0.999815, -0.999953, 0.999695, 0.999829, -0.999859, -0.999741],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"],
+        ["W", "C4"],
+        ["B", "C3"],
+        ["W", "B4"],
+        ["B", "D3"],
+        ["W", "C6"],
+        ["B", "B3"],
+        ["W", "G4"],
+        ["B", "H2"],
+        ["W", "G2"],
+        ["B", "H4"],
+        ["W", "H3"],
+        ["B", "G3"],
+        ["W", "H5"],
+        ["B", "H6"],
+        ["W", "H3"],
+        ["B", "B5"],
+        ["W", "H5"],
+        ["B", "B6"],
+        ["W", "C7"],
+        ["B", "B7"],
+        ["W", "F8"],
+        ["B", "G8"],
+        ["W", "B8"],
+        ["B", "H4"],
+        ["W", "H1"],
+        ["B", "D8"],
+        ["W", "D7"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E2"],
+        ["W", "H5"],
+        ["B", "A4"],
+        ["W", "H4"],
+        ["B", "A6"],
+        ["W", "C8"],
+        ["B", "A8"],
+        ["W", "F8"],
+        ["B", "E8"],
+        ["W", "A7"],
+        ["B", "E1"],
+        ["W", "E3"],
+        ["B", "D2"],
+        ["W", "A8"],
+        ["B", "F8"],
+        ["W", "H8"],
+        ["B", "F1"],
+        ["W", "G1"],
+        ["B", "F2"],
+        ["W", "pass"],
+        ["B", "H7"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "pass"],
+        ["B", "pass"],
+        ["W", "pass"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.67513,
+        "value_variance": 1.77386e-08,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "pass",
+          "child_sym_hash": "529E022DAAC4B80F174490BE7D610850",
+          "value": -1,
+          "prior": 0.332692,
+          "visits": 36
+        },
+        {
+          "move": "A5",
+          "child_sym_hash": "589913E44C22347BC6E102356B30CEE9",
+          "value": -0.999597,
+          "prior": 0.287089,
+          "visits": 31
+        },
+        {
+          "move": "C4",
+          "child_sym_hash": "15BABB07CA67EF898AA2975915676FA3",
+          "value": -0.999889,
+          "prior": 0.213764,
+          "visits": 23
+        },
+        {
+          "move": "A3",
+          "child_sym_hash": "0106D6C6F53019FE57D36F83EE63B306",
+          "value": -0.99982,
+          "prior": 0.0537322,
+          "visits": 5
+        },
+        {
+          "move": "B4",
+          "child_sym_hash": "AC9BDA60E7397BF498010469E6E58705",
+          "value": -0.999776,
+          "prior": 0.0385886,
+          "visits": 4
+        }
+      ]
+    },
+    {
+      "sym_hash": "1727A5CF7CD84DE313983E899D46C623",
+      "state_hash": "296FFC1B7CD57E21C36EBA7C2C1E4594",
+      "player_to_move": "W",
+      "symmetry_index": 7,
+      "winrate": 0.155217,
+      "score_lead": 0.691322,
+      "move_number": 15,
+      "komi": 6.5,
+      "query_id": "game_3A0AC033694DE56E68C85B29DB09DD43_15",
+      "stone_count": {
+        "black": 8,
+        "white": 7,
+        "total": 15
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 0, -1, -1, 1, 0, 0, 0, 1, -1, -1, 1, 1, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 15,
+        "num_consec_valid_turns": 15,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.8798317504969915,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":6,"maxTime":1e+20,"maxVisits":6,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 5,
+        "hash": "63E2A5C29770B81D54890563C732AF00",
+        "move": "C4"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 347.488,
+        "sym_hash": "1727A5CF7CD84DE313983E899D46C623",
+        "state_hash": "296FFC1B7CD57E21C36EBA7C2C1E4594",
+        "player_to_move": "W",
+        "symmetry_index": 7,
+        "move_number": 15,
+        "komi": 6.5,
+        "stone_count": {
+          "black": 8,
+          "white": 7,
+          "total": 15
+        },
+        "best_move": {
+          "symmetry_index": 5,
+          "hash": "275763BF7D6C84D2325AEFAB8EFEBB60",
+          "move": "C4"
+        },
+        "winrate": -0.409388,
+        "score_lead": -3.57107,
+        "policy": [3.21286e-05, 3.47393e-05, 3.28905e-05, 4.06144e-05, 4.0456e-05, 5.68297e-05, 3.38023e-05, 2.97141e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.93648e-05, 4.56639e-05, 0.000222147, 5.07432e-05, -1, -1, -1, 3.47393e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.25635e-05, 0.000186337, 0.00293194, 3.52864e-05, -1, -1, -1, 3.26346e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.37434e-05, 0.000314504, -1, -1, -1, -1, -1, 3.6692e-05],
+        "ownership": [0.731585, 0.766875, 0.713625, 0.565325, 0.153322, -0.26137, -0.759742, -0.827968, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.807949, 0.783245, 0.811313, 0.792503, 0.87373, -0.94638, -0.951061, -0.852607, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.779058, 0.81031, 0.862925, 0.810645, 0.867588, 0.82456, -0.94302, -0.865152, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.698945, 0.796821, 0.582998, 0.910638, 0.858368, -0.937476, -0.946278],
+        "children": [
+          {
+            "move": "C4",
+            "child_sym_hash": "275763BF7D6C84D2325AEFAB8EFEBB60",
+            "value": -0.409463,
+            "prior": 0.994097,
+            "visits": 4798
+          },
+          {
+            "move": "C6",
+            "child_sym_hash": "6314BCEDA7959DD62D601BA5B90F99F9",
+            "value": -0.940511,
+            "prior": 0.00293194,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [3.21286e-05, 3.47393e-05, 3.28905e-05, 4.06144e-05, 4.0456e-05, 5.68297e-05, 3.38023e-05, 2.97141e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.93648e-05, 4.56639e-05, 0.000222147, 5.07432e-05, -1, -1, -1, 3.47393e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.25635e-05, 0.000186337, 0.00293194, 3.52864e-05, -1, -1, -1, 3.26346e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.37434e-05, 0.000314504, -1, -1, -1, -1, -1, 3.6692e-05],
+      "ownership": [0.731585, 0.766875, 0.713625, 0.565325, 0.153322, -0.26137, -0.759742, -0.827968, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.807949, 0.783245, 0.811313, 0.792503, 0.87373, -0.94638, -0.951061, -0.852607, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.779058, 0.81031, 0.862925, 0.810645, 0.867588, 0.82456, -0.94302, -0.865152, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.698945, 0.796821, 0.582998, 0.910638, 0.858368, -0.937476, -0.946278],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "E5"],
+        ["B", "E4"],
+        ["W", "D5"],
+        ["B", "F5"],
+        ["W", "F6"],
+        ["B", "C5"],
+        ["W", "F4"],
+        ["B", "G5"],
+        ["W", "F3"],
+        ["B", "G6"],
+        ["W", "E6"],
+        ["B", "F7"],
+        ["W", "E7"],
+        ["B", "G7"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.0509227,
+        "value_variance": 0,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "C4",
+          "child_sym_hash": "63E2A5C29770B81D54890563C732AF00",
+          "value": 0.120883,
+          "prior": 0.994097,
+          "visits": 5
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_moves": 71,
+    "flagged_count": 21,
+    "flagging_rate": 0.295775
+  }
+}

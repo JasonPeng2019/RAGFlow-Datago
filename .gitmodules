@@ -1,3 +1,9 @@
 [submodule "datago"]
 	path = datago
 	url = https://github.com/JasonPeng2019/RAG-MCTS-AlphaGo.git
+[submodule "katago_base/katago_repo"]
+	path = katago_base/katago_repo
+	url = https://github.com/lightvector/KataGo.git
+[submodule "katago_base/KataGo"]
+	path = katago_base/KataGo
+	url = https://github.com/lightvector/KataGo.git

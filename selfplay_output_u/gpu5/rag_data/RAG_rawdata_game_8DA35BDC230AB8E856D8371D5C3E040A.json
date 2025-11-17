@@ -1,0 +1,3694 @@
+{
+  "game_id": "game_8DA35BDC230AB8E856D8371D5C3E040A",
+  "settings": {
+    "komi": 9.5,
+    "rules": "koSITUATIONALscoreAREAtaxNONEsui1",
+    "board_size": 8,
+    "uncertainty_threshold": 0.9,
+    "w1_policy_entropy": 0,
+    "w2_value_variance": 0
+  },
+  "flagged_positions": [
+    {
+      "sym_hash": "DDB6DA25007350F56E51611150E09DEC",
+      "state_hash": "DDB6DA25007350F56E51611150E09DEC",
+      "player_to_move": "B",
+      "symmetry_index": 0,
+      "winrate": 0.795924,
+      "score_lead": 0.790409,
+      "move_number": 0,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_0",
+      "stone_count": {
+        "black": 0,
+        "white": 0,
+        "total": 0
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 0,
+        "num_consec_valid_turns": 0,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":20,"maxTime":1e+20,"maxVisits":20,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 3,
+        "hash": "C437F61995A208D7259DF3BE49CBF62F",
+        "move": "E4"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 232.049,
+        "sym_hash": "DDB6DA25007350F56E51611150E09DEC",
+        "state_hash": "DDB6DA25007350F56E51611150E09DEC",
+        "player_to_move": "B",
+        "symmetry_index": 0,
+        "move_number": 0,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 0,
+          "white": 0,
+          "total": 0
+        },
+        "best_move": {
+          "symmetry_index": 0,
+          "hash": "0E444C726558BA6C68DC0BA9CB37EDC7",
+          "move": "D5"
+        },
+        "winrate": 0.719233,
+        "score_lead": 0.614602,
+        "policy": [4.72297e-05, 5.20747e-05, 5.12673e-05, 5.67478e-05, 5.60866e-05, 5.04725e-05, 5.16694e-05, 4.63162e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5.4361e-05, 6.92578e-05, 8.16056e-05, 9.28332e-05, 9.44794e-05, 8.35408e-05, 6.68652e-05, 5.16694e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5.28947e-05, 7.90948e-05, 0.000469608, 0.000951417, 0.000960754, 0.000474216, 8.25675e-05, 5.06701e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5.80935e-05, 8.48564e-05, 0.000975883, 0.207668, 0.249032, 0.00102072, 8.92768e-05, 5.69699e-05],
+        "ownership": [-0.149386, -0.11858, -0.100188, -0.185805, -0.198619, -0.135394, -0.145685, -0.160823, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.0977702, -0.0706827, -0.107976, -0.166763, -0.162963, -0.113462, -0.0669772, -0.146043, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.056641, -0.117557, -0.0159136, -0.25202, -0.203772, 0.0140524, -0.105321, -0.122971, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.132037, -0.159158, -0.211365, -0.26046, -0.247441, -0.175413, -0.155705],
+        "children": [
+          {
+            "move": "E4",
+            "child_sym_hash": "0E444C726558BA6C68DC0BA9CB37EDC7",
+            "value": 0.72226,
+            "prior": 0.275115,
+            "visits": 1121
+          },
+          {
+            "move": "D4",
+            "child_sym_hash": "0E444C726558BA6C68DC0BA9CB37EDC7",
+            "value": 0.716171,
+            "prior": 0.254937,
+            "visits": 1361
+          },
+          {
+            "move": "E5",
+            "child_sym_hash": "0E444C726558BA6C68DC0BA9CB37EDC7",
+            "value": 0.724499,
+            "prior": 0.249032,
+            "visits": 924
+          },
+          {
+            "move": "D5",
+            "child_sym_hash": "0E444C726558BA6C68DC0BA9CB37EDC7",
+            "value": 0.716349,
+            "prior": 0.207668,
+            "visits": 1393
+          }
+        ]
+      },
+      "policy": [4.72297e-05, 5.20747e-05, 5.12673e-05, 5.67478e-05, 5.60866e-05, 5.04725e-05, 5.16694e-05, 4.63162e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5.4361e-05, 6.92578e-05, 8.16056e-05, 9.28332e-05, 9.44794e-05, 8.35408e-05, 6.68652e-05, 5.16694e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5.28947e-05, 7.90948e-05, 0.000469608, 0.000951417, 0.000960754, 0.000474216, 8.25675e-05, 5.06701e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5.80935e-05, 8.48564e-05, 0.000975883, 0.207668, 0.249032, 0.00102072, 8.92768e-05, 5.69699e-05],
+      "ownership": [-0.149386, -0.11858, -0.100188, -0.185805, -0.198619, -0.135394, -0.145685, -0.160823, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.0977702, -0.0706827, -0.107976, -0.166763, -0.162963, -0.113462, -0.0669772, -0.146043, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.056641, -0.117557, -0.0159136, -0.25202, -0.203772, 0.0140524, -0.105321, -0.122971, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.132037, -0.159158, -0.211365, -0.26046, -0.247441, -0.175413, -0.155705],
+      "moves_history": [
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.47807,
+        "value_variance": 4.06801e-05,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E4",
+          "child_sym_hash": "C437F61995A208D7259DF3BE49CBF62F",
+          "value": 0.805458,
+          "prior": 0.275115,
+          "visits": 5
+        },
+        {
+          "move": "D4",
+          "child_sym_hash": "EDC8B07B30749C2BF6DD4FDA2CE0FED1",
+          "value": 0.797701,
+          "prior": 0.254937,
+          "visits": 5
+        },
+        {
+          "move": "E5",
+          "child_sym_hash": "B1E8217F6D83E92542C40EF9BA98C66C",
+          "value": 0.788495,
+          "prior": 0.249032,
+          "visits": 5
+        },
+        {
+          "move": "D5",
+          "child_sym_hash": "6CAB673728EE3D8DCD392F2085235B2F",
+          "value": 0.79225,
+          "prior": 0.207668,
+          "visits": 4
+        }
+      ]
+    },
+    {
+      "sym_hash": "16C171C6407DA3165BF379FFE4438808",
+      "state_hash": "86654EF5545865B3C95BFA635B82E055",
+      "player_to_move": "B",
+      "symmetry_index": 2,
+      "winrate": -0.834384,
+      "score_lead": -1.25456,
+      "move_number": 4,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_4",
+      "stone_count": {
+        "black": 2,
+        "white": 2,
+        "total": 4
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 4,
+        "num_consec_valid_turns": 4,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":1125899906842624,"maxTime":1e+20,"maxVisits":300,"rootPolicyTemperature":1.1,"rootPolicyTemperatureEarly":1.25,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 3,
+        "hash": "7BF04B9ACBD9CCE63287E13EFADCDC0E",
+        "move": "E5"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 388.808,
+        "sym_hash": "16C171C6407DA3165BF379FFE4438808",
+        "state_hash": "86654EF5545865B3C95BFA635B82E055",
+        "player_to_move": "B",
+        "symmetry_index": 2,
+        "move_number": 4,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 2,
+          "white": 2,
+          "total": 4
+        },
+        "best_move": {
+          "symmetry_index": 3,
+          "hash": "2E7A8B8D27D53962EA5F94EFFF44EA6F",
+          "move": "E5"
+        },
+        "winrate": -0.876392,
+        "score_lead": -1.54872,
+        "policy": [2.83127e-06, 2.01578e-06, 2.685e-06, 3.18187e-06, 4.61585e-06, 3.22519e-06, 2.51139e-06, 2.11053e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.05088e-06, 2.21108e-06, 2.7019e-06, 0.000376404, 0.00325363, 0.00201757, 4.06009e-06, 2.12985e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.77957e-06, 1.82288e-06, 1.01122e-05, 0.000110932, -1, -1, 2.34702e-06, 1.82947e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.46393e-06, 2.57325e-06, 6.23742e-06, 0.00014408, 0.988771, -1, 4.08171e-06, 2.19464e-06],
+        "ownership": [-0.27209, -0.29211, -0.306731, -0.168269, -0.212188, 0.0290398, 0.203991, 0.242553, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.300982, -0.354703, -0.369241, -0.660312, 0.0298952, -0.237395, 0.297922, 0.311808, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.296672, -0.349439, -0.414971, -0.537049, -0.971345, 0.545522, 0.397401, 0.302621, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.335528, -0.40344, -0.524036, -0.727197, -0.955967, 0.583933, 0.412643],
+        "children": [
+          {
+            "move": "E5",
+            "child_sym_hash": "2E7A8B8D27D53962EA5F94EFFF44EA6F",
+            "value": -0.886096,
+            "prior": 0.988771,
+            "visits": 4605
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "3D987D276506B2A4D41B177D2E208AA2",
+            "value": 0.996887,
+            "prior": 2.19362e-06,
+            "visits": 20
+          },
+          {
+            "move": "E3",
+            "child_sym_hash": "0054CB8B0D3B5A8C90D6B0024E5140D7",
+            "value": -0.334208,
+            "prior": 0.00258737,
+            "visits": 19
+          },
+          {
+            "move": "D6",
+            "child_sym_hash": "0D08793A86EBF1A1A00D93E5255ACF60",
+            "value": 0.97699,
+            "prior": 0.000110932,
+            "visits": 18
+          },
+          {
+            "move": "D5",
+            "child_sym_hash": "19DE3988E2A84FCC090C898A96F3D7C8",
+            "value": 0.981586,
+            "prior": 0.00014408,
+            "visits": 15
+          },
+          {
+            "move": "F1",
+            "child_sym_hash": "03C63C5564545B118D6F4888A1C8C68A",
+            "value": 0.995377,
+            "prior": 2.8149e-06,
+            "visits": 14
+          },
+          {
+            "move": "E4",
+            "child_sym_hash": "000126F63A012B3393322FC5F611BB44",
+            "value": 0.0817024,
+            "prior": 0.00089642,
+            "visits": 12
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "06A8E676AA05824BE224B7FE841E8312",
+            "value": 0.995788,
+            "prior": 2.12985e-06,
+            "visits": 11
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "21EC54F82C4066CEBEB3E983FA81A457",
+            "value": 0.996363,
+            "prior": 2.11034e-06,
+            "visits": 9
+          },
+          {
+            "move": "F7",
+            "child_sym_hash": "178896ABEFA61C5F6BA1C0D02633E39A",
+            "value": 0.114585,
+            "prior": 0.00201757,
+            "visits": 9
+          },
+          {
+            "move": "G6",
+            "child_sym_hash": "29EA11E8F2B1FD0C5E3D62B3D7126704",
+            "value": 0.988168,
+            "prior": 2.34702e-06,
+            "visits": 9
+          },
+          {
+            "move": "E7",
+            "child_sym_hash": "052033C4B932AC666C346BF343923C78",
+            "value": -0.381596,
+            "prior": 0.00325363,
+            "visits": 9
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "0619B82F6E799A42236AC32E1BA8F572",
+            "value": 0.995778,
+            "prior": 2.21108e-06,
+            "visits": 7
+          },
+          {
+            "move": "F3",
+            "child_sym_hash": "45221F7A02843DE168DF2BABE519582B",
+            "value": -0.450994,
+            "prior": 0.00144076,
+            "visits": 6
+          },
+          {
+            "move": "G5",
+            "child_sym_hash": "013F14D44071599A7C78477C3CE5BDD8",
+            "value": 0.993097,
+            "prior": 4.08171e-06,
+            "visits": 6
+          },
+          {
+            "move": "D8",
+            "child_sym_hash": "05C066065A65BCCF3A459CE05617647D",
+            "value": 0.995907,
+            "prior": 3.18187e-06,
+            "visits": 5
+          },
+          {
+            "move": "F4",
+            "child_sym_hash": "00A528B9DD20EA9B2349C0F09976278D",
+            "value": 0.823202,
+            "prior": 0.000135645,
+            "visits": 5
+          },
+          {
+            "move": "D7",
+            "child_sym_hash": "1893F7FC19E6AA66D85B4A57A3905EA7",
+            "value": 0.56351,
+            "prior": 0.000376404,
+            "visits": 4
+          },
+          {
+            "move": "G3",
+            "child_sym_hash": "37347804CE647C31817055B45C53D8E2",
+            "value": 0.916783,
+            "prior": 1.17696e-05,
+            "visits": 4
+          },
+          {
+            "move": "A6",
+            "child_sym_hash": "3D809DD6EBB0A20EF53E4108615B2B27",
+            "value": 0.99786,
+            "prior": 2.77957e-06,
+            "visits": 3
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "1AB53F7DB1BFAFDBD3114D60251D8FE9",
+            "value": 0.997534,
+            "prior": 2.11053e-06,
+            "visits": 3
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "1FACEFA046BE9B954AD47F64EEEB11EA",
+            "value": 0.995672,
+            "prior": 2.05088e-06,
+            "visits": 3
+          },
+          {
+            "move": "D3",
+            "child_sym_hash": "1BFD91ECFB30278C1DBED3B784AF119E",
+            "value": 0.960264,
+            "prior": 3.02435e-05,
+            "visits": 3
+          }
+        ]
+      },
+      "policy": [2.77075e-06, 1.95632e-06, 2.63072e-06, 2.99459e-06, 4.57077e-06, 3.20416e-06, 2.51642e-06, 2.04684e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.96824e-06, 2.20319e-06, 2.77431e-06, 0.00036077, 0.0034148, 0.00199724, 3.99871e-06, 2.06987e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.71138e-06, 1.74039e-06, 1.06737e-05, 0.000110797, -1, -1, 2.24117e-06, 1.75424e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.38173e-06, 2.52342e-06, 6.57584e-06, 0.000134804, 0.988278, -1, 3.76526e-06, 2.1423e-06],
+      "ownership": [-0.237736, -0.274003, -0.287051, -0.149902, -0.199471, 0.048218, 0.21552, 0.24417, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.282065, -0.344036, -0.347596, -0.659721, 0.0645489, -0.186787, 0.310233, 0.314134, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.287902, -0.340421, -0.404722, -0.51883, -0.967538, 0.534083, 0.400685, 0.298262, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.335611, -0.399132, -0.510828, -0.701296, -0.952737, 0.56294, 0.400607],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.24008,
+        "value_variance": 0.539534,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E5",
+          "child_sym_hash": "7BF04B9ACBD9CCE63287E13EFADCDC0E",
+          "value": -0.883525,
+          "prior": 0.988278,
+          "visits": 255
+        },
+        {
+          "move": "A3",
+          "child_sym_hash": "0E2953EB15B8D04630360F9EED099B3B",
+          "value": 0.996552,
+          "prior": 2.66788e-06,
+          "visits": 7
+        },
+        {
+          "move": "A8",
+          "child_sym_hash": "64196AD46E765B5C8B44F30424C9E691",
+          "value": 0.997878,
+          "prior": 2.77075e-06,
+          "visits": 4
+        },
+        {
+          "move": "F3",
+          "child_sym_hash": "27976D122CEAB4881B28651355E86232",
+          "value": -0.47148,
+          "prior": 0.00182025,
+          "visits": 4
+        },
+        {
+          "move": "D5",
+          "child_sym_hash": "A6B30DD28EB4184EBD7AC0E7C567414D",
+          "value": 0.969374,
+          "prior": 0.000134804,
+          "visits": 3
+        },
+        {
+          "move": "E3",
+          "child_sym_hash": "CE39E9C862D80BC8FCF1817306A2A323",
+          "value": -0.72487,
+          "prior": 0.00268442,
+          "visits": 3
+        },
+        {
+          "move": "F7",
+          "child_sym_hash": "CCEFE18B57C2216E692A67FA96FD21EA",
+          "value": 0.508761,
+          "prior": 0.00199724,
+          "visits": 3
+        },
+        {
+          "move": "F8",
+          "child_sym_hash": "7C292FDB09D63C45C1ACB18EC5F7571C",
+          "value": 0.995509,
+          "prior": 3.20416e-06,
+          "visits": 3
+        },
+        {
+          "move": "E7",
+          "child_sym_hash": "04B90AA69C2D1F06D07A8CEF7C31D628",
+          "value": -0.664259,
+          "prior": 0.0034148,
+          "visits": 3
+        },
+        {
+          "move": "D6",
+          "child_sym_hash": "26231F005EB62484989546F66BE15E17",
+          "value": 0.938878,
+          "prior": 0.000110797,
+          "visits": 3
+        },
+        {
+          "move": "C1",
+          "child_sym_hash": "7F3278912E840098DAF0CEF634F11C58",
+          "value": 0.995691,
+          "prior": 2.58124e-06,
+          "visits": 3
+        },
+        {
+          "move": "C6",
+          "child_sym_hash": "BA55CE147814F3446C2D5383DD80B3CE",
+          "value": 0.988431,
+          "prior": 1.06737e-05,
+          "visits": 2
+        },
+        {
+          "move": "F1",
+          "child_sym_hash": "5F3760BD3D466418C9EF69BFF062E782",
+          "value": 0.996902,
+          "prior": 2.63912e-06,
+          "visits": 2
+        },
+        {
+          "move": "A2",
+          "child_sym_hash": "6C5C7427AF09A7A1E9DB82FFBE543F63",
+          "value": 0.997835,
+          "prior": 2.07453e-06,
+          "visits": 2
+        },
+        {
+          "move": "A1",
+          "child_sym_hash": "7FCBB28E28AE64A4AC439712473AFBA6",
+          "value": 0.998598,
+          "prior": 2.94688e-06,
+          "visits": 2
+        }
+      ]
+    },
+    {
+      "sym_hash": "064C7CD72DEAFA6973A0D9953DBC5F5E",
+      "state_hash": "41BA8BD931B9E34DEE82E4311EB61FB1",
+      "player_to_move": "B",
+      "symmetry_index": 6,
+      "winrate": -0.840687,
+      "score_lead": -1.38892,
+      "move_number": 8,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_8",
+      "stone_count": {
+        "black": 4,
+        "white": 4,
+        "total": 8
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 8,
+        "num_consec_valid_turns": 8,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 7,
+        "hash": "E9B28BB46B114475729A03C963640925",
+        "move": "E2"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 307.921,
+        "sym_hash": "064C7CD72DEAFA6973A0D9953DBC5F5E",
+        "state_hash": "41BA8BD931B9E34DEE82E4311EB61FB1",
+        "player_to_move": "B",
+        "symmetry_index": 6,
+        "move_number": 8,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 4,
+          "white": 4,
+          "total": 8
+        },
+        "best_move": {
+          "symmetry_index": 7,
+          "hash": "176240EF0766C8C52F4EFC47692AF024",
+          "move": "E2"
+        },
+        "winrate": -0.902362,
+        "score_lead": -1.65881,
+        "policy": [6.73082e-06, 6.89043e-06, 6.42259e-06, 1.03843e-05, 9.16407e-06, 8.98682e-06, 8.27905e-06, 6.15246e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7.33483e-06, 7.99304e-06, 6.75716e-06, 3.96517e-05, 0.000133617, 0.0566024, 1.38648e-05, 8.31145e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.18259e-06, 8.98682e-06, 7.68683e-06, 7.77744e-06, -1, -1, 1.53469e-05, 7.93084e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 9.60386e-06, 1.10109e-05, 1.19056e-05, 9.38139e-06, -1, -1, 2.56011e-05, 8.37664e-06],
+        "ownership": [-0.75348, -0.779441, -0.757046, -0.606348, 0.078755, 0.502567, 0.611876, 0.614314, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.7748, -0.800359, -0.788473, -0.862175, 0.287779, 0.654541, 0.665563, 0.737654, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.714821, -0.754533, -0.796821, -0.831316, -0.9906, 0.890192, 0.795032, 0.73317, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.663654, -0.715059, -0.782867, -0.834309, -0.990035, 0.859392, 0.796821],
+        "children": [
+          {
+            "move": "E2",
+            "child_sym_hash": "176240EF0766C8C52F4EFC47692AF024",
+            "value": -0.902881,
+            "prior": 0.922481,
+            "visits": 4791
+          },
+          {
+            "move": "F7",
+            "child_sym_hash": "062627F54444A8AD2D6706F9B8AF1813",
+            "value": -0.423683,
+            "prior": 0.0566024,
+            "visits": 7
+          },
+          {
+            "move": "D2",
+            "child_sym_hash": "07888687C94990EB2B12709A8309FDB3",
+            "value": 0.134095,
+            "prior": 0.0183896,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [6.73082e-06, 6.89043e-06, 6.42259e-06, 1.03843e-05, 9.16407e-06, 8.98682e-06, 8.27905e-06, 6.15246e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7.33483e-06, 7.99304e-06, 6.75716e-06, 3.96517e-05, 0.000133617, 0.0566024, 1.38648e-05, 8.31145e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 8.18259e-06, 8.98682e-06, 7.68683e-06, 7.77744e-06, -1, -1, 1.53469e-05, 7.93084e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 9.60386e-06, 1.10109e-05, 1.19056e-05, 9.38139e-06, -1, -1, 2.56011e-05, 8.37664e-06],
+      "ownership": [-0.75348, -0.779441, -0.757046, -0.606348, 0.078755, 0.502567, 0.611876, 0.614314, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.7748, -0.800359, -0.788473, -0.862175, 0.287779, 0.654541, 0.665563, 0.737654, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.714821, -0.754533, -0.796821, -0.831316, -0.9906, 0.890192, 0.795032, 0.73317, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.663654, -0.715059, -0.782867, -0.834309, -0.990035, 0.859392, 0.796821],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.331608,
+        "value_variance": 0.161263,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E2",
+          "child_sym_hash": "E9B28BB46B114475729A03C963640925",
+          "value": -0.8446,
+          "prior": 0.922481,
+          "visits": 189
+        },
+        {
+          "move": "F7",
+          "child_sym_hash": "0B3024A73223A7904EF379A8D3C9DE0E",
+          "value": -0.440708,
+          "prior": 0.0566024,
+          "visits": 1
+        },
+        {
+          "move": "D2",
+          "child_sym_hash": "EF0EE5EF7D449456A331ECEDCB52673D",
+          "value": 0.134095,
+          "prior": 0.0183896,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "1E1DFC4415521D838E91F95CC2F0BA8B",
+      "state_hash": "A2EA6E9981410B26886B3E4AC60668A0",
+      "player_to_move": "B",
+      "symmetry_index": 3,
+      "winrate": -0.780115,
+      "score_lead": -1.34602,
+      "move_number": 12,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_12",
+      "stone_count": {
+        "black": 6,
+        "white": 6,
+        "total": 12
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1, 0, 1, -1, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 12,
+        "num_consec_valid_turns": 12,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 5,
+        "hash": "A75E6C445C4FDCA3F222FF754DD983E1",
+        "move": "B5"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 248.344,
+        "sym_hash": "1E1DFC4415521D838E91F95CC2F0BA8B",
+        "state_hash": "A2EA6E9981410B26886B3E4AC60668A0",
+        "player_to_move": "B",
+        "symmetry_index": 3,
+        "move_number": 12,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 6,
+          "white": 6,
+          "total": 12
+        },
+        "best_move": {
+          "symmetry_index": 5,
+          "hash": "18D70ACDF76E5E420650FEB07C460F2F",
+          "move": "B5"
+        },
+        "winrate": -0.934997,
+        "score_lead": -1.52174,
+        "policy": [7.11238e-06, 2.89098e-05, 8.41323e-06, 9.16822e-06, 7.25266e-06, 7.25266e-06, 9.57075e-06, 7.00211e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.05114e-05, 0.0706124, 0.0459933, -1, 7.22438e-06, 0.0575759, 1.36028e-05, 1.16351e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.02279e-05, 0.000278064, -1, 1.05526e-05, -1, -1, 1.29293e-05, 9.57075e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.44801e-05, 0.71316, 0.000836658, 1.11457e-05, -1, -1, 1.55957e-05, 1.20044e-05],
+        "ownership": [-0.834605, -0.841294, -0.863423, -0.692139, -0.254076, 0.190985, 0.389848, 0.464418, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.764044, -0.809638, -0.811313, -0.979103, -0.231562, 0.217304, 0.511274, 0.569958, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.699942, -0.538854, -0.522367, -0.78097, -0.984609, 0.737431, 0.544374, 0.610346, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.577166, -0.621258, -0.360271, -0.832519, -0.981959, 0.719092, 0.680256],
+        "children": [
+          {
+            "move": "B5",
+            "child_sym_hash": "18D70ACDF76E5E420650FEB07C460F2F",
+            "value": -0.937144,
+            "prior": 0.71316,
+            "visits": 4757
+          },
+          {
+            "move": "B3",
+            "child_sym_hash": "0D909CA614BB64091B6444E61DC46085",
+            "value": -0.00328149,
+            "prior": 0.110009,
+            "visits": 8
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "0DD5A80DD39C4FF85025CA45A589847C",
+            "value": -0.499321,
+            "prior": 0.0706124,
+            "visits": 11
+          },
+          {
+            "move": "F7",
+            "child_sym_hash": "0FEF08D08B63ACB282C483F321F630BE",
+            "value": -0.339368,
+            "prior": 0.0575759,
+            "visits": 8
+          },
+          {
+            "move": "C7",
+            "child_sym_hash": "10D1CF06A98EF1CFA999E2D703FD93AF",
+            "value": -0.696998,
+            "prior": 0.0459933,
+            "visits": 15
+          }
+        ]
+      },
+      "policy": [7.11238e-06, 2.89098e-05, 8.41323e-06, 9.16822e-06, 7.25266e-06, 7.25266e-06, 9.57075e-06, 7.00211e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.05114e-05, 0.0706124, 0.0459933, -1, 7.22438e-06, 0.0575759, 1.36028e-05, 1.16351e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.02279e-05, 0.000278064, -1, 1.05526e-05, -1, -1, 1.29293e-05, 9.57075e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.44801e-05, 0.71316, 0.000836658, 1.11457e-05, -1, -1, 1.55957e-05, 1.20044e-05],
+      "ownership": [-0.834605, -0.841294, -0.863423, -0.692139, -0.254076, 0.190985, 0.389848, 0.464418, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.764044, -0.809638, -0.811313, -0.979103, -0.231562, 0.217304, 0.511274, 0.569958, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.699942, -0.538854, -0.522367, -0.78097, -0.984609, 0.737431, 0.544374, 0.610346, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.577166, -0.621258, -0.360271, -0.832519, -0.981959, 0.719092, 0.680256],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 0.999432,
+        "value_variance": 0.0598543,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "B5",
+          "child_sym_hash": "A75E6C445C4FDCA3F222FF754DD983E1",
+          "value": -0.802949,
+          "prior": 0.71316,
+          "visits": 101
+        },
+        {
+          "move": "B3",
+          "child_sym_hash": "A4A710E356A1767E50820949C789ED73",
+          "value": -0.452437,
+          "prior": 0.110009,
+          "visits": 4
+        },
+        {
+          "move": "B7",
+          "child_sym_hash": "9EC659F578AB93A85DC205063E060E2C",
+          "value": -0.64038,
+          "prior": 0.0706124,
+          "visits": 2
+        },
+        {
+          "move": "F7",
+          "child_sym_hash": "E860C1E782DB4FFB281AA3D30B79A91F",
+          "value": -0.101814,
+          "prior": 0.0575759,
+          "visits": 1
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "02E887889937F932C523859AB051227A",
+          "value": -0.683019,
+          "prior": 0.0459933,
+          "visits": 11
+        }
+      ]
+    },
+    {
+      "sym_hash": "0AC481343D6C803C2282B935838BC0C9",
+      "state_hash": "AA7D4689A0AEDE050200D317508C3163",
+      "player_to_move": "B",
+      "symmetry_index": 7,
+      "winrate": -0.870374,
+      "score_lead": -2.48611,
+      "move_number": 16,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_16",
+      "stone_count": {
+        "black": 8,
+        "white": 8,
+        "total": 16
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, -1, -1, 0, 1, -1, 0, 0, 0, 1, -1, 0, 1, -1, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 16,
+        "num_consec_valid_turns": 16,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 5,
+        "hash": "368D3656DE199D87261CDE301D0396A8",
+        "move": "C4"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 205.074,
+        "sym_hash": "0AC481343D6C803C2282B935838BC0C9",
+        "state_hash": "AA7D4689A0AEDE050200D317508C3163",
+        "player_to_move": "B",
+        "symmetry_index": 7,
+        "move_number": 16,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 8,
+          "white": 8,
+          "total": 16
+        },
+        "best_move": {
+          "symmetry_index": 5,
+          "hash": "163F3CCC2248EA023712EA84F586170C",
+          "move": "C4"
+        },
+        "winrate": -0.960733,
+        "score_lead": -1.37541,
+        "policy": [1.19777e-05, 0.156617, 0.000460118, 1.73595e-05, 1.09058e-05, 8.20004e-06, 1.82638e-05, 1.13402e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.90677e-05, 0.0503521, 0.0140233, -1, 1.23097e-05, 0.193775, 3.11894e-05, 2.12693e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.19445e-05, -1, -1, 1.17002e-05, -1, -1, 5.82694e-05, 1.73595e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0846539, -1, -1, 1.55003e-05, -1, -1, 0.000351409, 2.11864e-05],
+        "ownership": [-0.5546, -0.626328, -0.702424, -0.615225, -0.284416, 0.0723829, 0.219629, 0.266367, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.494863, -0.582998, -0.655378, -0.958152, -0.243656, 0.04815, 0.29359, 0.364724, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.53816, -0.539547, -0.471283, -0.783622, -0.981392, 0.697944, 0.357506, 0.437189, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.528729, -0.541965, -0.444662, -0.774409, -0.974059, 0.714821, 0.61401],
+        "children": [
+          {
+            "move": "C4",
+            "child_sym_hash": "163F3CCC2248EA023712EA84F586170C",
+            "value": -0.967339,
+            "prior": 0.48715,
+            "visits": 4589
+          },
+          {
+            "move": "F7",
+            "child_sym_hash": "3CA58BFE3EF0FFBE37D3E827261CBD08",
+            "value": -0.833476,
+            "prior": 0.193775,
+            "visits": 164
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "1393BC67A23C06D33F11DD7F74CFBDEA",
+            "value": -0.523847,
+            "prior": 0.156617,
+            "visits": 30
+          },
+          {
+            "move": "A5",
+            "child_sym_hash": "10964C1E82CCC81DBAE06340E6A9D4CC",
+            "value": -0.262621,
+            "prior": 0.0846539,
+            "visits": 9
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "1714E629344D00D79143B0278B39D017",
+            "value": -0.305628,
+            "prior": 0.0503521,
+            "visits": 5
+          },
+          {
+            "move": "C7",
+            "child_sym_hash": "239B4C281C1DA2C31C8E890304171E19",
+            "value": 0.764802,
+            "prior": 0.0140233,
+            "visits": 1
+          },
+          {
+            "move": "A3",
+            "child_sym_hash": "2312420D09F79209DE92B22A71B4B2FF",
+            "value": 0.838686,
+            "prior": 0.00853781,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [1.19777e-05, 0.156617, 0.000460118, 1.73595e-05, 1.09058e-05, 8.20004e-06, 1.82638e-05, 1.13402e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4.90677e-05, 0.0503521, 0.0140233, -1, 1.23097e-05, 0.193775, 3.11894e-05, 2.12693e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.19445e-05, -1, -1, 1.17002e-05, -1, -1, 5.82694e-05, 1.73595e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0846539, -1, -1, 1.55003e-05, -1, -1, 0.000351409, 2.11864e-05],
+      "ownership": [-0.5546, -0.626328, -0.702424, -0.615225, -0.284416, 0.0723829, 0.219629, 0.266367, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.494863, -0.582998, -0.655378, -0.958152, -0.243656, 0.04815, 0.29359, 0.364724, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.53816, -0.539547, -0.471283, -0.783622, -0.981392, 0.697944, 0.357506, 0.437189, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.528729, -0.541965, -0.444662, -0.774409, -0.974059, 0.714821, 0.61401],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.45469,
+        "value_variance": 0.070872,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "C4",
+          "child_sym_hash": "368D3656DE199D87261CDE301D0396A8",
+          "value": -0.900121,
+          "prior": 0.48715,
+          "visits": 84
+        },
+        {
+          "move": "F7",
+          "child_sym_hash": "E0F7E9F7A3349AD8A2714E8E9DF3F0DC",
+          "value": -0.735684,
+          "prior": 0.193775,
+          "visits": 12
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "56C455C5E552BA9080C33157554A0254",
+          "value": -0.105405,
+          "prior": 0.156617,
+          "visits": 1
+        },
+        {
+          "move": "A5",
+          "child_sym_hash": "7BAE9EB5585C46756A5F4B5C635437E2",
+          "value": -0.528296,
+          "prior": 0.0846539,
+          "visits": 1
+        },
+        {
+          "move": "B7",
+          "child_sym_hash": "965171E55944468BD7A9E85BA88C57EF",
+          "value": -0.588851,
+          "prior": 0.0503521,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "07D708001507EBDCF51F370B7C6647D2",
+      "state_hash": "4AEFCA15A142D29A885B68012791126C",
+      "player_to_move": "B",
+      "symmetry_index": 1,
+      "winrate": -0.884828,
+      "score_lead": -2.05734,
+      "move_number": 20,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_20",
+      "stone_count": {
+        "black": 9,
+        "white": 10,
+        "total": 19
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, -1, 0, 0, -1, -1, 0, 1, -1, 0, 0, -1, 0, -1, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 20,
+        "num_consec_valid_turns": 20,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 6,
+        "hash": "C2A3D70BE0A2676F71369DFC911A6902",
+        "move": "A3"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 209.33,
+        "sym_hash": "07D708001507EBDCF51F370B7C6647D2",
+        "state_hash": "4AEFCA15A142D29A885B68012791126C",
+        "player_to_move": "B",
+        "symmetry_index": 1,
+        "move_number": 20,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 9,
+          "white": 10,
+          "total": 19
+        },
+        "best_move": {
+          "symmetry_index": 6,
+          "hash": "20D6F66C112CBFD7D09F93821E17E932",
+          "move": "A3"
+        },
+        "winrate": -0.939711,
+        "score_lead": -1.42271,
+        "policy": [7.97437e-06, 0.0500297, 3.67293e-05, 1.17853e-05, 1.04412e-05, 6.01937e-06, 0.22864, 9.50686e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0319877, 0.0232093, 2.10919e-05, -1, 7.72902e-06, -1, -1, 2.31649e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.44962e-05, -1, -1, 8.13165e-06, -1, -1, 0.00266186, 1.46099e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 9.92426e-06, -1, -1, 0.000983075, 1.23028e-05],
+        "ownership": [-0.703906, -0.725167, -0.771263, -0.757254, -0.649771, 0.0959563, 0.155348, 0.410759, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.609426, -0.704398, -0.73542, -0.975517, -0.851537, -0.814953, 0.582998, 0.461157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.607581, -0.698945, -0.666649, -0.873961, -0.993377, 0.849919, 0.515947, 0.633982, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.646088, -0.602007, -0.693155, -0.887941, -0.988178, 0.915192, 0.801409],
+        "children": [
+          {
+            "move": "A3",
+            "child_sym_hash": "20D6F66C112CBFD7D09F93821E17E932",
+            "value": -0.941997,
+            "prior": 0.655162,
+            "visits": 4759
+          },
+          {
+            "move": "G8",
+            "child_sym_hash": "1678BDC2DD8845DED979C64003E2C446",
+            "value": -0.267109,
+            "prior": 0.22864,
+            "visits": 24
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "0AA1C00AE8F96445A77589A3F9E836C9",
+            "value": -0.184149,
+            "prior": 0.0500297,
+            "visits": 4
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "253828896C62FA2182519502250D482E",
+            "value": -0.681803,
+            "prior": 0.0319877,
+            "visits": 10
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "0B37EC47F2E4B956C90FE347E2644B9B",
+            "value": 0.252301,
+            "prior": 0.0232093,
+            "visits": 1
+          },
+          {
+            "move": "G2",
+            "child_sym_hash": "08D7BA96DFCBF0872DE09F4E4DD729B4",
+            "value": 0.33323,
+            "prior": 0.00448178,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [7.97437e-06, 0.0500297, 3.67293e-05, 1.17853e-05, 1.04412e-05, 6.01937e-06, 0.22864, 9.50686e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0319877, 0.0232093, 2.10919e-05, -1, 7.72902e-06, -1, -1, 2.31649e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.44962e-05, -1, -1, 8.13165e-06, -1, -1, 0.00266186, 1.46099e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 9.92426e-06, -1, -1, 0.000983075, 1.23028e-05],
+      "ownership": [-0.703906, -0.725167, -0.771263, -0.757254, -0.649771, 0.0959563, 0.155348, 0.410759, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.609426, -0.704398, -0.73542, -0.975517, -0.851537, -0.814953, 0.582998, 0.461157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.607581, -0.698945, -0.666649, -0.873961, -0.993377, 0.849919, 0.515947, 0.633982, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.646088, -0.602007, -0.693155, -0.887941, -0.988178, 0.915192, 0.801409],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"],
+        ["B", "C4"],
+        ["W", "A5"],
+        ["B", "F7"],
+        ["W", "G7"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.02975,
+        "value_variance": 0.0287866,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "A3",
+          "child_sym_hash": "C2A3D70BE0A2676F71369DFC911A6902",
+          "value": -0.912484,
+          "prior": 0.655162,
+          "visits": 86
+        },
+        {
+          "move": "G8",
+          "child_sym_hash": "2A5A3137E05B15424C19C1786ADAF807",
+          "value": -0.675066,
+          "prior": 0.22864,
+          "visits": 11
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "B656D959E4BEB60F0A988A412257215B",
+          "value": -0.434173,
+          "prior": 0.0500297,
+          "visits": 1
+        },
+        {
+          "move": "A7",
+          "child_sym_hash": "9F751C166D8983677E68A1C40ADFDD03",
+          "value": -0.705601,
+          "prior": 0.0319877,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "03F2F040BBE7EA0975C951946830F40A",
+      "state_hash": "4829832844E31C81B1FE978FA8F64A74",
+      "player_to_move": "B",
+      "symmetry_index": 6,
+      "winrate": -0.990606,
+      "score_lead": -1.26018,
+      "move_number": 24,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_24",
+      "stone_count": {
+        "black": 11,
+        "white": 12,
+        "total": 23
+      },
+      "board_state": [0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 0, 1, -1, 0, 0, -1, -1, 0, 1, -1, 0, 0, -1, 0, -1, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 24,
+        "num_consec_valid_turns": 24,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":1106968499374868,"maxTime":1e+20,"maxVisits":10,"rootPolicyTemperature":1.1,"rootPolicyTemperatureEarly":1.25,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 6,
+        "hash": "346C70120E841D69006896F64D1F2001",
+        "move": "D1"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 201.607,
+        "sym_hash": "03F2F040BBE7EA0975C951946830F40A",
+        "state_hash": "4829832844E31C81B1FE978FA8F64A74",
+        "player_to_move": "B",
+        "symmetry_index": 6,
+        "move_number": 24,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 11,
+          "white": 12,
+          "total": 23
+        },
+        "best_move": {
+          "symmetry_index": 6,
+          "hash": "43E92FC11527428AF370EBE5A5B32FC1",
+          "move": "D1"
+        },
+        "winrate": -0.979627,
+        "score_lead": -0.618017,
+        "policy": [1.03334e-05, 1.51586e-05, 1.11059e-05, -1, 5.00613e-05, -1, 1.20791e-05, 1.077e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.43906e-05, 1.83162e-05, 1.53071e-05, -1, 0.0171304, -1, -1, 1.1e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.18033e-05, -1, -1, 1.33381e-05, -1, -1, 1.70519e-05, 1.13095e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.1581e-05, -1, -1, 2.86069e-05, 1.1691e-05],
+        "ownership": [-0.938798, -0.958817, -0.963734, -0.991597, 0.0637141, 0.935104, 0.959601, 0.974102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.953375, -0.949529, -0.945158, -0.990727, 0.860144, 0.886643, 0.981079, 0.978129, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.954385, -0.961865, -0.943131, -0.986942, -0.996466, 0.993076, 0.98531, 0.985825, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.959999, -0.955928, -0.969961, -0.976081, -0.997142, 0.994966, 0.976646],
+        "children": [
+          {
+            "move": "D1",
+            "child_sym_hash": "43E92FC11527428AF370EBE5A5B32FC1",
+            "value": -0.989228,
+            "prior": 0.975333,
+            "visits": 4596
+          },
+          {
+            "move": "F4",
+            "child_sym_hash": "2D0F45C01962CADA4F0FD6277C38D8FA",
+            "value": 0.859282,
+            "prior": 0.000949972,
+            "visits": 26
+          },
+          {
+            "move": "E7",
+            "child_sym_hash": "0D19BB3125E231B8B1BB30E58B356744",
+            "value": 0.980548,
+            "prior": 0.0171304,
+            "visits": 23
+          },
+          {
+            "move": "H1",
+            "child_sym_hash": "1DC6A2A13CE322EB2BC6EDA4708E7156",
+            "value": 0.996184,
+            "prior": 1.0048e-05,
+            "visits": 19
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "0D603A8EFF0D76B39E0DEFF8E1F2C01A",
+            "value": 0.908976,
+            "prior": 0.00391818,
+            "visits": 16
+          },
+          {
+            "move": "D2",
+            "child_sym_hash": "02360A105F44808B2D7BF89BD68556E7",
+            "value": 0.910038,
+            "prior": 0.00164803,
+            "visits": 14
+          },
+          {
+            "move": "G2",
+            "child_sym_hash": "279F8604D9058488722AF638A58371E9",
+            "value": 0.994157,
+            "prior": 1.94598e-05,
+            "visits": 10
+          },
+          {
+            "move": "A6",
+            "child_sym_hash": "0DE934ABEAE746795C11D4D194516CFC",
+            "value": 0.997277,
+            "prior": 1.18033e-05,
+            "visits": 9
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "016AAECBE4128C895DB1A0406EC17B45",
+            "value": 0.997832,
+            "prior": 1.03334e-05,
+            "visits": 8
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "00278537850EC87A7CE221A0EC89050E",
+            "value": 0.99593,
+            "prior": 1.077e-05,
+            "visits": 8
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "02B086210DE033CFFE1C5208C9869BDD",
+            "value": 0.989069,
+            "prior": 1.79343e-05,
+            "visits": 7
+          },
+          {
+            "move": "C7",
+            "child_sym_hash": "0D7948681C1A1C004246FA31A64B777D",
+            "value": 0.99536,
+            "prior": 1.53071e-05,
+            "visits": 7
+          },
+          {
+            "move": "C8",
+            "child_sym_hash": "044CB2CA74CEE6C003CCE0ABF734999D",
+            "value": 0.994361,
+            "prior": 1.11059e-05,
+            "visits": 7
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "1BB48FF7E15B2A1156EC9A92A3730925",
+            "value": 0.993785,
+            "prior": 1.51586e-05,
+            "visits": 6
+          },
+          {
+            "move": "H3",
+            "child_sym_hash": "21F80CEC23EF81978AE65A33E18633DC",
+            "value": 0.995922,
+            "prior": 1.20274e-05,
+            "visits": 6
+          },
+          {
+            "move": "E8",
+            "child_sym_hash": "0944A9AF3D10E181961522D5089F44B0",
+            "value": 0.917649,
+            "prior": 5.00613e-05,
+            "visits": 6
+          },
+          {
+            "move": "E4",
+            "child_sym_hash": "13889C79D9EFF3C2D1B75F0795CE4001",
+            "value": 0.910917,
+            "prior": 0.000213655,
+            "visits": 5
+          },
+          {
+            "move": "D5",
+            "child_sym_hash": "60B5CE496CE5F329ACC2F469BA07BFCB",
+            "value": 0.996094,
+            "prior": 1.1581e-05,
+            "visits": 5
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "06479B07C9B4F9AB02B855A8E9AEDE66",
+            "value": 0.994499,
+            "prior": 1.43906e-05,
+            "visits": 5
+          },
+          {
+            "move": "G6",
+            "child_sym_hash": "0E5ADC1AAEEA58C1868B516B3F354834",
+            "value": 0.984904,
+            "prior": 1.70519e-05,
+            "visits": 5
+          },
+          {
+            "move": "pass",
+            "child_sym_hash": "11C26835569A7B5C4DEB2B15B0E38971",
+            "value": 0.994895,
+            "prior": 4.17085e-06,
+            "visits": 4
+          },
+          {
+            "move": "F1",
+            "child_sym_hash": "50282ED490EF2C0F4908B4E9F264A02C",
+            "value": 0.964328,
+            "prior": 0.000248614,
+            "visits": 3
+          },
+          {
+            "move": "G3",
+            "child_sym_hash": "2379B6E904AB8F441924AEA609B5962F",
+            "value": 0.962824,
+            "prior": 2.05351e-05,
+            "visits": 2
+          },
+          {
+            "move": "D6",
+            "child_sym_hash": "1596A93F26BAA3840D73E89B15055B8F",
+            "value": 0.990048,
+            "prior": 1.33381e-05,
+            "visits": 2
+          }
+        ]
+      },
+      "policy": [1.03462e-05, 1.52062e-05, 1.14326e-05, -1, 4.4527e-05, -1, 1.19256e-05, 1.06212e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.4688e-05, 1.79258e-05, 1.60197e-05, -1, 0.0150362, -1, -1, 1.12582e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.15442e-05, -1, -1, 1.30333e-05, -1, -1, 1.68533e-05, 1.12997e-05, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1.20134e-05, -1, -1, 2.85503e-05, 1.1937e-05],
+      "ownership": [-0.939166, -0.957479, -0.966461, -0.992033, 0.0556161, 0.936099, 0.959392, 0.974408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.954266, -0.950262, -0.946966, -0.990986, 0.866306, 0.888535, 0.980819, 0.978129, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.95567, -0.964495, -0.94362, -0.986577, -0.996392, 0.993391, 0.984564, 0.985551, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.960043, -0.957445, -0.969672, -0.975464, -0.997078, 0.995139, 0.976416],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"],
+        ["B", "C4"],
+        ["W", "A5"],
+        ["B", "F7"],
+        ["W", "G7"],
+        ["B", "A3"],
+        ["W", "F8"],
+        ["B", "D8"],
+        ["W", "E1"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.20175,
+        "value_variance": 0,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "D1",
+          "child_sym_hash": "346C70120E841D69006896F64D1F2001",
+          "value": -0.993584,
+          "prior": 0.977405,
+          "visits": 9
+        }
+      ]
+    },
+    {
+      "sym_hash": "02239D6140178460F8B293921C465F1B",
+      "state_hash": "2384F0D95CC79CB78EA6FCBC8574ED0D",
+      "player_to_move": "W",
+      "symmetry_index": 3,
+      "winrate": -0.987889,
+      "score_lead": -0.833355,
+      "move_number": 27,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_27",
+      "stone_count": {
+        "black": 13,
+        "white": 13,
+        "total": 26
+      },
+      "board_state": [0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 0, 1, -1, 0, 0, -1, -1, 0, 1, -1, 0, 0, -1, 0, -1, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 1, -1, -1, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 27,
+        "num_consec_valid_turns": 27,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 4,
+        "hash": "5CB69B308DA24DA12EDA9CC2D05914E7",
+        "move": "E7"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 243.132,
+        "sym_hash": "02239D6140178460F8B293921C465F1B",
+        "state_hash": "2384F0D95CC79CB78EA6FCBC8574ED0D",
+        "player_to_move": "W",
+        "symmetry_index": 3,
+        "move_number": 27,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 13,
+          "white": 13,
+          "total": 26
+        },
+        "best_move": {
+          "symmetry_index": 4,
+          "hash": "406C036438E175EA55078395FC8D9DA2",
+          "move": "E7"
+        },
+        "winrate": -0.989975,
+        "score_lead": -0.44607,
+        "policy": [0.00793968, 0.0390996, 0.0245756, -1, 0.000879141, -1, 0.000694101, 0.000649505, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.055247, 0.0335745, 0.0799143, -1, 0.503105, -1, -1, 0.000649505, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000768299, -1, -1, 0.000583351, -1, -1, 0.000713342, 0.000623404, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000634459, -1, 0.000794237, -1, -1, 0.000676699, 0.000650775],
+        "ownership": [-0.993555, -0.995898, -0.998053, -0.999204, 0.769676, 0.990636, 0.996176, 0.994757, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.989879, -0.996351, -0.996463, -0.999457, 0.975799, 0.984308, 0.993897, 0.99751, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.992979, -0.997999, -0.993728, -0.998832, -0.999765, 0.998501, 0.993849, 0.996585, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.995566, -0.995719, -0.996939, -0.995244, -0.999799, 0.998513, 0.994898],
+        "children": [
+          {
+            "move": "E7",
+            "child_sym_hash": "406C036438E175EA55078395FC8D9DA2",
+            "value": -0.989771,
+            "prior": 0.503105,
+            "visits": 4230
+          },
+          {
+            "move": "C7",
+            "child_sym_hash": "035234D703559E8EEE5EF28E0553CDB0",
+            "value": -0.995393,
+            "prior": 0.0799143,
+            "visits": 96
+          },
+          {
+            "move": "A4",
+            "child_sym_hash": "01D683B771B5D921A16C33BFD0B9C99D",
+            "value": -0.996202,
+            "prior": 0.0768529,
+            "visits": 99
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "170440E95C2FDCAD86AC6B9F8D328F26",
+            "value": -0.988083,
+            "prior": 0.055247,
+            "visits": 89
+          },
+          {
+            "move": "C3",
+            "child_sym_hash": "0DE9D0AD66C9CC79412192520EF4B549",
+            "value": -0.978279,
+            "prior": 0.0462509,
+            "visits": 80
+          },
+          {
+            "move": "F4",
+            "child_sym_hash": "2DE1B5E15D88CC6E561266921FA091B9",
+            "value": -0.997648,
+            "prior": 0.0393293,
+            "visits": 13
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "210F7A4DE09A39E9A4BBDF4D19AAA009",
+            "value": -0.993928,
+            "prior": 0.0390996,
+            "visits": 46
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "04A45154A88E00734B9FC441A5AB4C06",
+            "value": -0.995787,
+            "prior": 0.0350486,
+            "visits": 41
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "1D37AF33CC7449FE197A03C04F638C39",
+            "value": -0.994067,
+            "prior": 0.0348099,
+            "visits": 39
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "20351AC9ADD793EF77A5CA81E1164910",
+            "value": -0.994279,
+            "prior": 0.0335745,
+            "visits": 38
+          },
+          {
+            "move": "C8",
+            "child_sym_hash": "09AB00E7D37D8F750F0884870392555C",
+            "value": -0.994919,
+            "prior": 0.0245756,
+            "visits": 23
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "3298BCE4673DFAECE123CAA0E0C464CC",
+            "value": -0.996707,
+            "prior": 0.00793968,
+            "visits": 2
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "14DDA654F60236B8778832D2421E3A86",
+            "value": -0.966761,
+            "prior": 0.00621673,
+            "visits": 3
+          }
+        ]
+      },
+      "policy": [0.00793968, 0.0390996, 0.0245756, -1, 0.000879141, -1, 0.000694101, 0.000649505, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.055247, 0.0335745, 0.0799143, -1, 0.503105, -1, -1, 0.000649505, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000768299, -1, -1, 0.000583351, -1, -1, 0.000713342, 0.000623404, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.000634459, -1, 0.000794237, -1, -1, 0.000676699, 0.000650775],
+      "ownership": [-0.993555, -0.995898, -0.998053, -0.999204, 0.769676, 0.990636, 0.996176, 0.994757, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.989879, -0.996351, -0.996463, -0.999457, 0.975799, 0.984308, 0.993897, 0.99751, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.992979, -0.997999, -0.993728, -0.998832, -0.999765, 0.998501, 0.993849, 0.996585, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.995566, -0.995719, -0.996939, -0.995244, -0.999799, 0.998513, 0.994898],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"],
+        ["B", "C4"],
+        ["W", "A5"],
+        ["B", "F7"],
+        ["W", "G7"],
+        ["B", "A3"],
+        ["W", "F8"],
+        ["B", "D8"],
+        ["W", "E1"],
+        ["B", "D1"],
+        ["W", "F1"],
+        ["B", "D2"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.94112,
+        "value_variance": 5.89468e-06,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E7",
+          "child_sym_hash": "5CB69B308DA24DA12EDA9CC2D05914E7",
+          "value": -0.98583,
+          "prior": 0.503105,
+          "visits": 70
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "4D6EAC51DD795DF045D444F66438424B",
+          "value": -0.992567,
+          "prior": 0.0799143,
+          "visits": 6
+        },
+        {
+          "move": "A4",
+          "child_sym_hash": "EACDF10C70015CB9E3F958D6081A05D6",
+          "value": -0.995149,
+          "prior": 0.0768529,
+          "visits": 6
+        },
+        {
+          "move": "F4",
+          "child_sym_hash": "B4E0F0BAA8E88126B6AE2E81ED29FD89",
+          "value": -0.994663,
+          "prior": 0.0393293,
+          "visits": 2
+        },
+        {
+          "move": "A7",
+          "child_sym_hash": "1417ADD6222F1DE7DC7717A5936099E7",
+          "value": -0.99198,
+          "prior": 0.055247,
+          "visits": 4
+        },
+        {
+          "move": "C3",
+          "child_sym_hash": "FDA6D759997B1ABDAB3E8AFDB1F4F209",
+          "value": -0.99078,
+          "prior": 0.0462509,
+          "visits": 3
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "EDF59FCF896F41F835DA538668A1308D",
+          "value": -0.992815,
+          "prior": 0.0350486,
+          "visits": 2
+        },
+        {
+          "move": "B2",
+          "child_sym_hash": "EA17CF35441D3744CCE49B13C49394D3",
+          "value": -0.990819,
+          "prior": 0.0348099,
+          "visits": 2
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "E62E95C7DCC0AD92F172888074AD4C9E",
+          "value": -0.992014,
+          "prior": 0.0390996,
+          "visits": 2
+        },
+        {
+          "move": "B7",
+          "child_sym_hash": "BD7B1B3FD92BBCCBFC3176E0C3823BFC",
+          "value": -0.992341,
+          "prior": 0.0335745,
+          "visits": 2
+        }
+      ]
+    },
+    {
+      "sym_hash": "0222DE09E627CFCBF59519A6F2F96EA7",
+      "state_hash": "EB5C48B88F65F31A96905A542AD194C4",
+      "player_to_move": "W",
+      "symmetry_index": 1,
+      "winrate": -0.998098,
+      "score_lead": -0.441059,
+      "move_number": 31,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_31",
+      "stone_count": {
+        "black": 14,
+        "white": 15,
+        "total": 29
+      },
+      "board_state": [0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, -1, 0, -1, 0, 0, -1, -1, 1, 1, -1, 0, 0, -1, 0, -1, 0, 1, -1, 0, 0, 0, -1, 1, 1, 1, -1, 0, 0, 1, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 1, -1, -1, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 31,
+        "num_consec_valid_turns": 31,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 2,
+        "hash": "004033F13313F48BCD52D494198311AA",
+        "move": "E8"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 164.773,
+        "sym_hash": "0222DE09E627CFCBF59519A6F2F96EA7",
+        "state_hash": "EB5C48B88F65F31A96905A542AD194C4",
+        "player_to_move": "W",
+        "symmetry_index": 1,
+        "move_number": 31,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 14,
+          "white": 15,
+          "total": 29
+        },
+        "best_move": {
+          "symmetry_index": 2,
+          "hash": "20A738C777B1A67014B16EF0A228CFF2",
+          "move": "E8"
+        },
+        "winrate": -0.99852,
+        "score_lead": -0.263178,
+        "policy": [0.0170741, 0.0346933, 0.026822, -1, 0.559648, -1, 0.00270812, 0.00110384, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0462087, 0.0312358, 0.0410187, -1, -1, 0.0065698, -1, 0.00104918, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.00457081, -1, -1, -1, -1, -1, 0.00284919, 0.001106, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.00163137, -1, 0.0012981, -1, -1, 0.00122184, 0.00108885],
+        "ownership": [-0.999118, -0.999857, -0.999638, -0.999967, 0.996779, 0.999204, 0.999668, 0.999355, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999329, -0.999789, -0.999846, -0.999931, 0.999385, 0.999278, 0.999731, 0.999859, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.99938, -0.999896, -0.999465, -0.999977, -0.999941, 0.999914, 0.999725, 0.999759, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999457, -0.99985, -0.999644, -0.998965, -0.999923, 0.999867, 0.999718],
+        "children": [
+          {
+            "move": "E8",
+            "child_sym_hash": "20A738C777B1A67014B16EF0A228CFF2",
+            "value": -0.99895,
+            "prior": 0.559648,
+            "visits": 4092
+          },
+          {
+            "move": "C3",
+            "child_sym_hash": "2D181AD3A09DA509891B5A321C4A2FD4",
+            "value": -0.995859,
+            "prior": 0.0473507,
+            "visits": 81
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "0C34C26FF82564941756193566E657FE",
+            "value": -0.996472,
+            "prior": 0.0462087,
+            "visits": 87
+          },
+          {
+            "move": "A4",
+            "child_sym_hash": "180BA6329A0E6A3A87BC37CA0ECE63F7",
+            "value": -0.998236,
+            "prior": 0.045715,
+            "visits": 68
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "07BAE198422E093D92D202470B3463C6",
+            "value": -0.997183,
+            "prior": 0.0431976,
+            "visits": 75
+          },
+          {
+            "move": "C7",
+            "child_sym_hash": "337D4CF679972794841C0FA7E42D5B0A",
+            "value": -0.998139,
+            "prior": 0.0410187,
+            "visits": 65
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "30D90366EFC4CC4B124BDBB3A4D7562C",
+            "value": -0.9984,
+            "prior": 0.0362696,
+            "visits": 64
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "1047FF835FCD60E029D6E78735B81A79",
+            "value": -0.997393,
+            "prior": 0.0346933,
+            "visits": 66
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "371BBD276A456FF810062AA9F3C291FB",
+            "value": -0.998851,
+            "prior": 0.0312358,
+            "visits": 63
+          },
+          {
+            "move": "C8",
+            "child_sym_hash": "02E0C0619F75BF28A6732D60B3BC616F",
+            "value": -0.986401,
+            "prior": 0.026822,
+            "visits": 76
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "1EF6313C32C3A1C86469A9101856AFA2",
+            "value": -0.993499,
+            "prior": 0.0255064,
+            "visits": 46
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "27A10DA1A9280FF29DFA272567BDD3D2",
+            "value": -0.998642,
+            "prior": 0.0170741,
+            "visits": 8
+          },
+          {
+            "move": "F7",
+            "child_sym_hash": "19345616DD51A3CE7DCF5813AE5E9F0C",
+            "value": -0.999438,
+            "prior": 0.0065698,
+            "visits": 4
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "366B04E1583C0624CCDAF14FFEAA7FF1",
+            "value": -0.996385,
+            "prior": 0.00533079,
+            "visits": 2
+          },
+          {
+            "move": "A6",
+            "child_sym_hash": "2E71B106A7E69F760A4606D89EBAD7EB",
+            "value": -0.997539,
+            "prior": 0.00457081,
+            "visits": 1
+          },
+          {
+            "move": "G6",
+            "child_sym_hash": "174D4DD1BCE3CABA26B277237CCBC0AB",
+            "value": -0.998317,
+            "prior": 0.00284919,
+            "visits": 1
+          }
+        ]
+      },
+      "policy": [0.0170741, 0.0346933, 0.026822, -1, 0.559648, -1, 0.00270812, 0.00110384, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0462087, 0.0312358, 0.0410187, -1, -1, 0.0065698, -1, 0.00104918, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.00457081, -1, -1, -1, -1, -1, 0.00284919, 0.001106, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.00163137, -1, 0.0012981, -1, -1, 0.00122184, 0.00108885],
+      "ownership": [-0.999118, -0.999857, -0.999638, -0.999967, 0.996779, 0.999204, 0.999668, 0.999355, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999329, -0.999789, -0.999846, -0.999931, 0.999385, 0.999278, 0.999731, 0.999859, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.99938, -0.999896, -0.999465, -0.999977, -0.999941, 0.999914, 0.999725, 0.999759, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999457, -0.99985, -0.999644, -0.998965, -0.999923, 0.999867, 0.999718],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"],
+        ["B", "C4"],
+        ["W", "A5"],
+        ["B", "F7"],
+        ["W", "G7"],
+        ["B", "A3"],
+        ["W", "F8"],
+        ["B", "D8"],
+        ["W", "E1"],
+        ["B", "D1"],
+        ["W", "F1"],
+        ["B", "D2"],
+        ["W", "E7"],
+        ["B", "D6"],
+        ["W", "F4"],
+        ["B", "E4"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.89775,
+        "value_variance": 7.65807e-06,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E8",
+          "child_sym_hash": "004033F13313F48BCD52D494198311AA",
+          "value": -0.999281,
+          "prior": 0.559648,
+          "visits": 73
+        },
+        {
+          "move": "C3",
+          "child_sym_hash": "ECAC807E9AA8767D2D70D95C388841D8",
+          "value": -0.991844,
+          "prior": 0.0473507,
+          "visits": 4
+        },
+        {
+          "move": "A7",
+          "child_sym_hash": "71FC26FA215C73AF3EB65CB2D6F999B6",
+          "value": -0.994851,
+          "prior": 0.0462087,
+          "visits": 4
+        },
+        {
+          "move": "A4",
+          "child_sym_hash": "D9435AAFD3EA3481363399A481B335A3",
+          "value": -0.997782,
+          "prior": 0.045715,
+          "visits": 4
+        },
+        {
+          "move": "B2",
+          "child_sym_hash": "D7FC0896C80659F64F5AE9724566A6B2",
+          "value": -0.996437,
+          "prior": 0.0431976,
+          "visits": 3
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "85B614300EDB325D5DE2E21ECB9D3B82",
+          "value": -0.995234,
+          "prior": 0.0410187,
+          "visits": 3
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "DC5A38F46A9C4FC2A854A0D3A13BFEEC",
+          "value": -0.996247,
+          "prior": 0.0362696,
+          "visits": 2
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "C4233F2C5EA9C38473CC89DDF53FEAFB",
+          "value": -0.992348,
+          "prior": 0.0346933,
+          "visits": 3
+        },
+        {
+          "move": "B7",
+          "child_sym_hash": "75A3A35E0A89D366E407D0086C274235",
+          "value": -0.994769,
+          "prior": 0.0312358,
+          "visits": 2
+        },
+        {
+          "move": "C8",
+          "child_sym_hash": "1F75642486ADFD9A1EC4C5CBEF020376",
+          "value": -0.989518,
+          "prior": 0.026822,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "5EB8EE34258A6EF338ED03416072713B",
+      "state_hash": "7D347076271D25BEE88489D2D9F9876B",
+      "player_to_move": "W",
+      "symmetry_index": 5,
+      "winrate": -0.999291,
+      "score_lead": -0.175077,
+      "move_number": 35,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_35",
+      "stone_count": {
+        "black": 16,
+        "white": 16,
+        "total": 32
+      },
+      "board_state": [0, 0, 0, 1, -1, -1, 0, 0, 0, 0, 0, 1, -1, -1, -1, 0, 0, -1, -1, 1, 1, -1, 0, 0, -1, 1, -1, 0, 1, -1, 0, 0, 1, 0, 1, 1, 1, -1, 0, 0, 1, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 1, -1, -1, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 35,
+        "num_consec_valid_turns": 35,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 6,
+        "hash": "DE773A21C72798E7C468B0943A6313A9",
+        "move": "pass"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 299.859,
+        "sym_hash": "5EB8EE34258A6EF338ED03416072713B",
+        "state_hash": "7D347076271D25BEE88489D2D9F9876B",
+        "player_to_move": "W",
+        "symmetry_index": 5,
+        "move_number": 35,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 16,
+          "white": 16,
+          "total": 32
+        },
+        "best_move": {
+          "symmetry_index": 6,
+          "hash": "11491F352F883CA10114A1A817592694",
+          "move": "pass"
+        },
+        "winrate": -0.998908,
+        "score_lead": -0.22773,
+        "policy": [0.0203578, 0.0294186, 0.0208813, -1, -1, -1, 0.0225891, 0.0262807, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0451877, 0.0179262, 0.0247971, -1, -1, -1, -1, 0.0216919, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0172311, -1, -1, -1, -1, -1, 0.0191384, 0.0211584, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0186585, -1, -1, 0.0198474, 0.0207492],
+        "ownership": [-0.999505, -0.999731, -0.999805, -0.999979, 0.999951, 0.999912, 0.999739, 0.999243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999394, -0.999971, -0.999952, -0.999983, 0.999986, 0.999901, 0.999923, 0.999593, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999872, -0.999826, -0.999615, -0.999989, -0.999985, 0.999934, 0.99949, 0.999635, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.998677, -0.999828, -0.998973, -0.999747, -0.999953, 0.999951, 0.99955],
+        "children": [
+          {
+            "move": "pass",
+            "child_sym_hash": "11491F352F883CA10114A1A817592694",
+            "value": -0.999402,
+            "prior": 0.282763,
+            "visits": 1260
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "19E327E1FF619771FFD50BF018E97740",
+            "value": -0.994566,
+            "prior": 0.0451877,
+            "visits": 543
+          },
+          {
+            "move": "C3",
+            "child_sym_hash": "0645DA3ED54972FDA2F18B45993EC462",
+            "value": -0.999371,
+            "prior": 0.0318557,
+            "visits": 166
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "1C280B5F2C26C2D9463639E91058AC59",
+            "value": -0.999416,
+            "prior": 0.0317005,
+            "visits": 190
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "2C8CC905221C0DC12FFF062C8536E6F7",
+            "value": -0.999383,
+            "prior": 0.0294186,
+            "visits": 134
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "06596DB300EF7C84D22E19E9E73CF175",
+            "value": -0.999305,
+            "prior": 0.0292753,
+            "visits": 161
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "0F630E7F41CC31F65D96912CF8F99B41",
+            "value": -0.999342,
+            "prior": 0.0291896,
+            "visits": 147
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "1C7951A591E0A5032E370C2778DFDBE3",
+            "value": -0.999657,
+            "prior": 0.0262807,
+            "visits": 90
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "7FDB5F6FF1AA6174101D2EC0A20EA415",
+            "value": -0.999407,
+            "prior": 0.0259618,
+            "visits": 132
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "09CCCD15BE0EC80A34448BD5ACB9A3F9",
+            "value": -0.999403,
+            "prior": 0.0251999,
+            "visits": 106
+          },
+          {
+            "move": "C7",
+            "child_sym_hash": "06B39D59609F8EC44BCC32CC0502CD23",
+            "value": -0.999404,
+            "prior": 0.0247971,
+            "visits": 93
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "177718E8B5A9D013A7675A4042FA4EFF",
+            "value": -0.999441,
+            "prior": 0.0240577,
+            "visits": 147
+          },
+          {
+            "move": "H1",
+            "child_sym_hash": "2774C6FA2B5AFF4586AF0E0AC214E646",
+            "value": -0.999708,
+            "prior": 0.0234431,
+            "visits": 82
+          },
+          {
+            "move": "G8",
+            "child_sym_hash": "0CC104A860812898C6778CBA65794963",
+            "value": -0.999636,
+            "prior": 0.0225891,
+            "visits": 78
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "245C31750A7E8F746EC4D4E583859930",
+            "value": -0.999586,
+            "prior": 0.0216919,
+            "visits": 80
+          },
+          {
+            "move": "H6",
+            "child_sym_hash": "628D0416B24B48BE7CAF650989AA5DC0",
+            "value": -0.999632,
+            "prior": 0.0211584,
+            "visits": 79
+          },
+          {
+            "move": "C8",
+            "child_sym_hash": "0A8D2B577EEC3048CCFE47F9924C547B",
+            "value": -0.999564,
+            "prior": 0.0208813,
+            "visits": 99
+          },
+          {
+            "move": "H5",
+            "child_sym_hash": "25DAB41234FFBD82312CC2FC61CB62C0",
+            "value": -0.9996,
+            "prior": 0.0207492,
+            "visits": 88
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "0A74E14878C65474BA4D1E1DE187B385",
+            "value": -0.999432,
+            "prior": 0.0203578,
+            "visits": 79
+          },
+          {
+            "move": "H4",
+            "child_sym_hash": "30635528685581DAFE2EFA1AEBADAD39",
+            "value": -0.999636,
+            "prior": 0.0198765,
+            "visits": 81
+          },
+          {
+            "move": "G5",
+            "child_sym_hash": "349F56616FDF02D1973E822A800335E0",
+            "value": -0.999605,
+            "prior": 0.0198474,
+            "visits": 82
+          },
+          {
+            "move": "G2",
+            "child_sym_hash": "08C1AF21321A7A7B28207A649CC05B83",
+            "value": -0.999623,
+            "prior": 0.0191711,
+            "visits": 68
+          },
+          {
+            "move": "G6",
+            "child_sym_hash": "0F5838257D9EA701A67D721E7D94E3C2",
+            "value": -0.999605,
+            "prior": 0.0191384,
+            "visits": 72
+          },
+          {
+            "move": "H3",
+            "child_sym_hash": "2CD09CFAE200C095B0A7D0DC665B5DEF",
+            "value": -0.999701,
+            "prior": 0.0188095,
+            "visits": 73
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "5E5CCF1D8BE4E9A4723BBC725114800C",
+            "value": -0.999719,
+            "prior": 0.0187636,
+            "visits": 70
+          },
+          {
+            "move": "D3",
+            "child_sym_hash": "0465951A5585A462DE17D445955D4FEA",
+            "value": -0.999607,
+            "prior": 0.0187545,
+            "visits": 100
+          },
+          {
+            "move": "G3",
+            "child_sym_hash": "3066C6830B569C1A7D179C1F4E073C2B",
+            "value": -0.999613,
+            "prior": 0.018695,
+            "visits": 73
+          },
+          {
+            "move": "D5",
+            "child_sym_hash": "4D34B48D03BBF26062E2D19346EF3285",
+            "value": -0.999547,
+            "prior": 0.0186585,
+            "visits": 67
+          },
+          {
+            "move": "G1",
+            "child_sym_hash": "39CF130720FDE75C158CDF9F2C570B40",
+            "value": -0.999584,
+            "prior": 0.0184142,
+            "visits": 72
+          },
+          {
+            "move": "G4",
+            "child_sym_hash": "15E53D0D82A7CEB67EDB51EBF92DC499",
+            "value": -0.999611,
+            "prior": 0.0181553,
+            "visits": 69
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "1D27A66DB460D063547CF209071119A9",
+            "value": -0.999451,
+            "prior": 0.0179262,
+            "visits": 98
+          },
+          {
+            "move": "A6",
+            "child_sym_hash": "3508642C31F2DEDD3D7B1765CE0F6A8E",
+            "value": -0.99949,
+            "prior": 0.0172311,
+            "visits": 120
+          }
+        ]
+      },
+      "policy": [0.0203578, 0.0294186, 0.0208813, -1, -1, -1, 0.0225891, 0.0262807, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0451877, 0.0179262, 0.0247971, -1, -1, -1, -1, 0.0216919, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0172311, -1, -1, -1, -1, -1, 0.0191384, 0.0211584, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0186585, -1, -1, 0.0198474, 0.0207492],
+      "ownership": [-0.999505, -0.999731, -0.999805, -0.999979, 0.999951, 0.999912, 0.999739, 0.999243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999394, -0.999971, -0.999952, -0.999983, 0.999986, 0.999901, 0.999923, 0.999593, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999872, -0.999826, -0.999615, -0.999989, -0.999985, 0.999934, 0.99949, 0.999635, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.998677, -0.999828, -0.998973, -0.999747, -0.999953, 0.999951, 0.99955],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"],
+        ["B", "C4"],
+        ["W", "A5"],
+        ["B", "F7"],
+        ["W", "G7"],
+        ["B", "A3"],
+        ["W", "F8"],
+        ["B", "D8"],
+        ["W", "E1"],
+        ["B", "D1"],
+        ["W", "F1"],
+        ["B", "D2"],
+        ["W", "E7"],
+        ["B", "D6"],
+        ["W", "F4"],
+        ["B", "E4"],
+        ["W", "E8"],
+        ["B", "A4"],
+        ["W", "F7"],
+        ["B", "B5"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 3.03806,
+        "value_variance": 1.84706e-07,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "pass",
+          "child_sym_hash": "DE773A21C72798E7C468B0943A6313A9",
+          "value": -0.999728,
+          "prior": 0.282763,
+          "visits": 41
+        },
+        {
+          "move": "A7",
+          "child_sym_hash": "FF2E3C951E69C8DCADCEB948CFA340B3",
+          "value": -0.999038,
+          "prior": 0.0451877,
+          "visits": 7
+        },
+        {
+          "move": "C3",
+          "child_sym_hash": "987EE220999DC9AE1E8C45A16E32D891",
+          "value": -0.999127,
+          "prior": 0.0318557,
+          "visits": 5
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "A8D42A8EA9A9B4E9A52FFD2A196696DD",
+          "value": -0.998837,
+          "prior": 0.0317005,
+          "visits": 4
+        },
+        {
+          "move": "B8",
+          "child_sym_hash": "B0F724C65E1B18B7E0D8081FAD7A92EE",
+          "value": -0.999284,
+          "prior": 0.0294186,
+          "visits": 4
+        },
+        {
+          "move": "B2",
+          "child_sym_hash": "A52E5A3C053FAE25BE2235937D903D97",
+          "value": -0.998642,
+          "prior": 0.0292753,
+          "visits": 4
+        },
+        {
+          "move": "B1",
+          "child_sym_hash": "83373BC01EA870C81D87663C3F9DD7BA",
+          "value": -0.999232,
+          "prior": 0.0291896,
+          "visits": 4
+        },
+        {
+          "move": "H8",
+          "child_sym_hash": "B71A6BDC92B4D682B947F60B29FAFF35",
+          "value": -0.999365,
+          "prior": 0.0262807,
+          "visits": 3
+        },
+        {
+          "move": "C1",
+          "child_sym_hash": "05F59E5C9C6347A72F2C3BB7465C3AC5",
+          "value": -0.998134,
+          "prior": 0.0259618,
+          "visits": 3
+        },
+        {
+          "move": "A1",
+          "child_sym_hash": "2A6DC8AB91349701CB80C57BCC0895A8",
+          "value": -0.9984,
+          "prior": 0.0251999,
+          "visits": 3
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "40B98D21F641336B822AC2524C74A964",
+          "value": -0.99892,
+          "prior": 0.0247971,
+          "visits": 3
+        },
+        {
+          "move": "A2",
+          "child_sym_hash": "F0DCDA6E62703D39870BB6108D51A0DB",
+          "value": -0.998222,
+          "prior": 0.0240577,
+          "visits": 3
+        },
+        {
+          "move": "H1",
+          "child_sym_hash": "FE003B7CE2E8FA66DC08193D127B3387",
+          "value": -0.999259,
+          "prior": 0.0234431,
+          "visits": 3
+        },
+        {
+          "move": "G8",
+          "child_sym_hash": "E239FD47B59C9E7225B11AF66EF938B0",
+          "value": -0.999414,
+          "prior": 0.0225891,
+          "visits": 3
+        },
+        {
+          "move": "H7",
+          "child_sym_hash": "77C6F0881BDEC1676986CF6BDE5FB742",
+          "value": -0.999421,
+          "prior": 0.0216919,
+          "visits": 3
+        },
+        {
+          "move": "H6",
+          "child_sym_hash": "DC67BC35B4CE77C77CC54503E1117498",
+          "value": -0.99919,
+          "prior": 0.0211584,
+          "visits": 3
+        },
+        {
+          "move": "C8",
+          "child_sym_hash": "4BA9FFBEC61762C10DE05431A7BC9A73",
+          "value": -0.998996,
+          "prior": 0.0208813,
+          "visits": 3
+        }
+      ]
+    },
+    {
+      "sym_hash": "3508642C31F2DEDD3D7B1765CE0F6A8E",
+      "state_hash": "B3315E1B0EF82557AE992FD472F06CBC",
+      "player_to_move": "B",
+      "symmetry_index": 5,
+      "winrate": -0.999884,
+      "score_lead": -0.320035,
+      "move_number": 38,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_38",
+      "stone_count": {
+        "black": 17,
+        "white": 15,
+        "total": 32
+      },
+      "board_state": [0, 0, 0, 1, -1, -1, 0, 0, 0, 0, 0, 1, -1, -1, -1, 0, 1, -1, -1, 1, 1, -1, 0, 0, 0, 1, -1, 0, 1, -1, 0, 0, 1, 0, 1, 1, 1, -1, 0, 0, 1, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 1, -1, -1, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 38,
+        "num_consec_valid_turns": 38,
+        "consecutive_ending_passes": 1,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "B"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 3,
+        "hash": "62E28627F60ABD27C6C6B79F41286A3D",
+        "move": "A5"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 211.699,
+        "sym_hash": "3508642C31F2DEDD3D7B1765CE0F6A8E",
+        "state_hash": "B3315E1B0EF82557AE992FD472F06CBC",
+        "player_to_move": "B",
+        "symmetry_index": 5,
+        "move_number": 38,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 17,
+          "white": 15,
+          "total": 32
+        },
+        "best_move": {
+          "symmetry_index": 3,
+          "hash": "11788B01CA3EFEB8244F116E01203A61",
+          "move": "A5"
+        },
+        "winrate": -0.999638,
+        "score_lead": -0.352153,
+        "policy": [0.0104273, 0.0107911, 0.0105347, -1, -1, -1, 0.00819845, 0.00619154, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0132286, 0.150154, 0.149861, -1, -1, -1, -1, 0.00784597, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0068167, 0.00902404, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.26456, -1, -1, 0.0678119, -1, -1, 0.00881715, 0.00793458],
+        "ownership": [-0.999681, -0.999729, -0.999624, -0.999986, 0.999981, 0.999984, 0.999899, 0.999122, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999676, -0.996741, -0.997887, -0.99996, 0.999982, 0.999958, 0.99998, 0.999747, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999896, -0.996572, -0.998586, -0.999981, -0.999934, 0.99997, 0.999949, 0.999695, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999836, -0.999892, -0.998477, -0.998076, -0.999957, 0.999953, 0.9999],
+        "children": [
+          {
+            "move": "A5",
+            "child_sym_hash": "11788B01CA3EFEB8244F116E01203A61",
+            "value": -0.999699,
+            "prior": 0.26456,
+            "visits": 1669
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "1DAA65C36F11C43E6D8865BDACAC78BA",
+            "value": -0.999726,
+            "prior": 0.150154,
+            "visits": 881
+          },
+          {
+            "move": "C7",
+            "child_sym_hash": "1F25AA77763A092A34BDD7F1634EA712",
+            "value": -0.999718,
+            "prior": 0.149861,
+            "visits": 888
+          },
+          {
+            "move": "B4",
+            "child_sym_hash": "11788B01CA3EFEB8244F116E01203A61",
+            "value": -0.999739,
+            "prior": 0.0704444,
+            "visits": 367
+          },
+          {
+            "move": "D5",
+            "child_sym_hash": "15B32F64635FD68C609FCCFA2E53B0FA",
+            "value": -0.999603,
+            "prior": 0.0678119,
+            "visits": 345
+          },
+          {
+            "move": "C3",
+            "child_sym_hash": "057AB45BFD776CD2727566049797576B",
+            "value": -0.999692,
+            "prior": 0.0675476,
+            "visits": 327
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "289E297C3DC53CE323678515B7EAD106",
+            "value": -0.999854,
+            "prior": 0.0132286,
+            "visits": 23
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "044FD9DAC0BD0469D93FD5058B6E7585",
+            "value": -0.999775,
+            "prior": 0.0107911,
+            "visits": 15
+          },
+          {
+            "move": "C8",
+            "child_sym_hash": "33E6A619865C822549E61BA7457C1448",
+            "value": -0.99978,
+            "prior": 0.0105347,
+            "visits": 16
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "516C4F41E7954C9945C939F8CC6DB200",
+            "value": -0.9998,
+            "prior": 0.0104273,
+            "visits": 15
+          },
+          {
+            "move": "D3",
+            "child_sym_hash": "2E6204819AFBE424519582E97DA512C3",
+            "value": -0.999831,
+            "prior": 0.0103159,
+            "visits": 16
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "1E1B55CA5E2AA6F64932A286348EED33",
+            "value": -0.999896,
+            "prior": 0.0100107,
+            "visits": 16
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "36E69E60A5366A33B43E4E2886993BE2",
+            "value": -0.999911,
+            "prior": 0.00972165,
+            "visits": 15
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "1723EF67A8CB92E8D4335CC14EDD6441",
+            "value": -0.997348,
+            "prior": 0.00969321,
+            "visits": 13
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "4B8859199BB81572213E4EF381AA0CAC",
+            "value": -0.999857,
+            "prior": 0.00968848,
+            "visits": 15
+          },
+          {
+            "move": "G2",
+            "child_sym_hash": "3A9EB03D760190ED54C5F9E3A4C2B650",
+            "value": -0.997503,
+            "prior": 0.00934466,
+            "visits": 11
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "2448B1AC88C5C30181A6615966E43C38",
+            "value": -0.999863,
+            "prior": 0.00932415,
+            "visits": 15
+          },
+          {
+            "move": "H6",
+            "child_sym_hash": "01FC0F8ADFE4A456088CDBC170569679",
+            "value": -0.997043,
+            "prior": 0.00902404,
+            "visits": 12
+          },
+          {
+            "move": "G5",
+            "child_sym_hash": "233713E8441F4A21BAA06C31C4FC48A3",
+            "value": -0.99696,
+            "prior": 0.00881715,
+            "visits": 11
+          },
+          {
+            "move": "G3",
+            "child_sym_hash": "0C499CCA1E4C9FAB39B15E35A6FDB6D6",
+            "value": -0.997141,
+            "prior": 0.00865929,
+            "visits": 10
+          },
+          {
+            "move": "G8",
+            "child_sym_hash": "03F72647629EBB3D09F86EC26ECCD182",
+            "value": -0.999409,
+            "prior": 0.00819845,
+            "visits": 13
+          },
+          {
+            "move": "G4",
+            "child_sym_hash": "04E27C576A0DA00913E74AFFCFAB43CF",
+            "value": -0.996869,
+            "prior": 0.00803988,
+            "visits": 9
+          },
+          {
+            "move": "H4",
+            "child_sym_hash": "0228677E9BD0073D5D59630F2A0A732E",
+            "value": -0.997231,
+            "prior": 0.00797342,
+            "visits": 10
+          },
+          {
+            "move": "H3",
+            "child_sym_hash": "208A90A4EE2A14A444EA926380CF058C",
+            "value": -0.996904,
+            "prior": 0.00794233,
+            "visits": 9
+          },
+          {
+            "move": "H5",
+            "child_sym_hash": "27B6A99AD1536CC035467E4AF7514049",
+            "value": -0.997402,
+            "prior": 0.00793458,
+            "visits": 9
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "109B10FA0AE82DBC04F4E706AB7FC046",
+            "value": -0.997363,
+            "prior": 0.00784597,
+            "visits": 11
+          },
+          {
+            "move": "G1",
+            "child_sym_hash": "19BC81771E654C5BDF1FDA25C18E48EF",
+            "value": -0.998284,
+            "prior": 0.00775456,
+            "visits": 10
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "0B1A295CFFBFF6FC2D8A5F0A325F6F76",
+            "value": -0.999826,
+            "prior": 0.00762689,
+            "visits": 11
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "0F62235DDA7CD8B886D8C75D0738A837",
+            "value": -0.999827,
+            "prior": 0.00691729,
+            "visits": 10
+          },
+          {
+            "move": "G6",
+            "child_sym_hash": "4079373C4B60FBB7A0E6B23F645412AF",
+            "value": -0.997682,
+            "prior": 0.0068167,
+            "visits": 9
+          },
+          {
+            "move": "H1",
+            "child_sym_hash": "115E9D53F93D26C1BAF699B0CF934F05",
+            "value": -0.997308,
+            "prior": 0.00673728,
+            "visits": 9
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "061C362A3FBEED34CDCAB25D5714F5F5",
+            "value": -0.997799,
+            "prior": 0.00619154,
+            "visits": 9
+          }
+        ]
+      },
+      "policy": [0.0104273, 0.0107911, 0.0105347, -1, -1, -1, 0.00819845, 0.00619154, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0132286, 0.150154, 0.149861, -1, -1, -1, -1, 0.00784597, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0068167, 0.00902404, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.26456, -1, -1, 0.0678119, -1, -1, 0.00881715, 0.00793458],
+      "ownership": [-0.999681, -0.999729, -0.999624, -0.999986, 0.999981, 0.999984, 0.999899, 0.999122, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999676, -0.996741, -0.997887, -0.99996, 0.999982, 0.999958, 0.99998, 0.999747, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999896, -0.996572, -0.998586, -0.999981, -0.999934, 0.99997, 0.999949, 0.999695, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999836, -0.999892, -0.998477, -0.998076, -0.999957, 0.999953, 0.9999],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"],
+        ["B", "C4"],
+        ["W", "A5"],
+        ["B", "F7"],
+        ["W", "G7"],
+        ["B", "A3"],
+        ["W", "F8"],
+        ["B", "D8"],
+        ["W", "E1"],
+        ["B", "D1"],
+        ["W", "F1"],
+        ["B", "D2"],
+        ["W", "E7"],
+        ["B", "D6"],
+        ["W", "F4"],
+        ["B", "E4"],
+        ["W", "E8"],
+        ["B", "A4"],
+        ["W", "F7"],
+        ["B", "B5"],
+        ["W", "pass"],
+        ["B", "A6"],
+        ["W", "pass"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 2.5553,
+        "value_variance": 6.88867e-10,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "A5",
+          "child_sym_hash": "62E28627F60ABD27C6C6B79F41286A3D",
+          "value": -0.999904,
+          "prior": 0.26456,
+          "visits": 36
+        },
+        {
+          "move": "B7",
+          "child_sym_hash": "8C2041CAC9A8BF656E2DD6A826049490",
+          "value": -0.999886,
+          "prior": 0.150154,
+          "visits": 19
+        },
+        {
+          "move": "C7",
+          "child_sym_hash": "1333B70A168ED743E3D1940404A72666",
+          "value": -0.999878,
+          "prior": 0.149861,
+          "visits": 20
+        },
+        {
+          "move": "B4",
+          "child_sym_hash": "96E04FA35D11F2A89826B1C3CCFD23D1",
+          "value": -0.999893,
+          "prior": 0.0704444,
+          "visits": 9
+        },
+        {
+          "move": "D5",
+          "child_sym_hash": "93E71D3CD41458AADAB81550EC15CDA4",
+          "value": -0.999837,
+          "prior": 0.0678119,
+          "visits": 8
+        },
+        {
+          "move": "C3",
+          "child_sym_hash": "EB17BE78C3FA00992A664903EA63BB0E",
+          "value": -0.999837,
+          "prior": 0.0675476,
+          "visits": 7
+        }
+      ]
+    },
+    {
+      "sym_hash": "3976B0CE580F4B8E53118D2D08EA0446",
+      "state_hash": "9B0B842BFC0528EE779BB0D52F6AE3E2",
+      "player_to_move": "W",
+      "symmetry_index": 7,
+      "winrate": -0.999758,
+      "score_lead": -0.446776,
+      "move_number": 41,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_41",
+      "stone_count": {
+        "black": 19,
+        "white": 15,
+        "total": 34
+      },
+      "board_state": [0, 0, 0, 1, -1, -1, 0, 0, 0, 0, 1, 1, -1, -1, -1, 0, 1, -1, -1, 1, 1, -1, 0, 0, 1, 1, -1, 0, 1, -1, 0, 0, 1, 0, 1, 1, 1, -1, 0, 0, 1, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 1, -1, -1, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 41,
+        "num_consec_valid_turns": 41,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 1,
+        "hash": "784621ADCA2ACDF54791B3F818812009",
+        "move": "pass"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 270.267,
+        "sym_hash": "3976B0CE580F4B8E53118D2D08EA0446",
+        "state_hash": "9B0B842BFC0528EE779BB0D52F6AE3E2",
+        "player_to_move": "W",
+        "symmetry_index": 7,
+        "move_number": 41,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 19,
+          "white": 15,
+          "total": 34
+        },
+        "best_move": {
+          "symmetry_index": 1,
+          "hash": "035F90449715CB86B439C177750AA8C7",
+          "move": "pass"
+        },
+        "winrate": -0.999537,
+        "score_lead": -0.445696,
+        "policy": [0.014963, 0.0189217, 0.0145683, -1, -1, -1, 0.0172958, 0.0202011, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0173656, 0.0200684, -1, -1, -1, -1, -1, 0.0187882, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0150011, 0.018042, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0156536, -1, -1, 0.0159575, 0.0184383],
+        "ownership": [-0.999532, -0.999627, -0.999841, -0.999976, 0.999965, 0.999913, 0.999913, 0.999743, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999737, -0.999976, -0.999999, -0.999952, 0.99999, 0.999922, 0.999957, 0.999814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999996, -0.999646, -0.999505, -0.999979, -0.999992, 0.999946, 0.999751, 0.999809, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999991, -0.999992, -0.999603, -0.999811, -0.999971, 0.999962, 0.99977],
+        "children": [
+          {
+            "move": "pass",
+            "child_sym_hash": "035F90449715CB86B439C177750AA8C7",
+            "value": -0.999484,
+            "prior": 0.469774,
+            "visits": 3786
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "0C56E3E088B1173F2054AF5B2F020A6F",
+            "value": -0.999712,
+            "prior": 0.0245463,
+            "visits": 54
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "10D38C228B8A41D5D6FD4E98860C82B8",
+            "value": -0.999637,
+            "prior": 0.0227516,
+            "visits": 53
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "07C634B675B2A741CE838A2DAE905865",
+            "value": -0.999642,
+            "prior": 0.0226961,
+            "visits": 53
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "1417725871D538C52F488C79530A9019",
+            "value": -0.999691,
+            "prior": 0.0217044,
+            "visits": 44
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "07797EEEF0589FFC1C63C070D9AFB322",
+            "value": -0.999747,
+            "prior": 0.0216726,
+            "visits": 46
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "14EEB84777FF5CF959FBD59D20C177E7",
+            "value": -0.999774,
+            "prior": 0.0208017,
+            "visits": 41
+          },
+          {
+            "move": "C3",
+            "child_sym_hash": "10CF3BAF5E2C4FACA622DC34F80EB7AF",
+            "value": -0.999606,
+            "prior": 0.0205092,
+            "visits": 43
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "143AFE0D69D80DF02C9E3B5D89167C7B",
+            "value": -0.999718,
+            "prior": 0.0202011,
+            "visits": 35
+          },
+          {
+            "move": "B7",
+            "child_sym_hash": "0F31291C0CFD2744E15192D6654297FA",
+            "value": -0.999791,
+            "prior": 0.0200684,
+            "visits": 38
+          },
+          {
+            "move": "H1",
+            "child_sym_hash": "02374EE080FEFC87B8E42967104E141D",
+            "value": -0.999761,
+            "prior": 0.0190213,
+            "visits": 32
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "11F957704EF5397BBE205AAC39BF5F23",
+            "value": -0.999682,
+            "prior": 0.0189217,
+            "visits": 38
+          },
+          {
+            "move": "D3",
+            "child_sym_hash": "45B63C08341FD2B0A4719B7DD66D33E6",
+            "value": -0.999769,
+            "prior": 0.0188295,
+            "visits": 35
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "253F1094C3C099A817AED7AEE4568DBC",
+            "value": -0.999742,
+            "prior": 0.0187882,
+            "visits": 37
+          },
+          {
+            "move": "H5",
+            "child_sym_hash": "1A9ADFC6A73CB76BF83F30E47380BA6C",
+            "value": -0.999755,
+            "prior": 0.0184383,
+            "visits": 33
+          },
+          {
+            "move": "H6",
+            "child_sym_hash": "14C334126FF269CC5A2D62B9FADD9B85",
+            "value": -0.999732,
+            "prior": 0.018042,
+            "visits": 29
+          },
+          {
+            "move": "H4",
+            "child_sym_hash": "1ED5F27AC063C3CA5F7137793258540B",
+            "value": -0.999786,
+            "prior": 0.0175361,
+            "visits": 30
+          },
+          {
+            "move": "A7",
+            "child_sym_hash": "07E2CFD0C11BEA7E9352C49C20F6CB30",
+            "value": -0.999749,
+            "prior": 0.0173656,
+            "visits": 32
+          },
+          {
+            "move": "G8",
+            "child_sym_hash": "07AD38A4EE7FCEF569062EB07078B8BE",
+            "value": -0.999734,
+            "prior": 0.0172958,
+            "visits": 31
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "128F1BED719F711C50A4A9FA0DE8869D",
+            "value": -0.999796,
+            "prior": 0.0172095,
+            "visits": 30
+          },
+          {
+            "move": "H3",
+            "child_sym_hash": "135940F0D7B5584CD2BFF5168E0CBC17",
+            "value": -0.999798,
+            "prior": 0.0168807,
+            "visits": 30
+          },
+          {
+            "move": "G5",
+            "child_sym_hash": "1911F50E9267FE27ECDD87D0FCBEAE7A",
+            "value": -0.999798,
+            "prior": 0.0159575,
+            "visits": 32
+          },
+          {
+            "move": "G1",
+            "child_sym_hash": "125B5DA76FB8201525C1473AA43F8D01",
+            "value": -0.999754,
+            "prior": 0.0157697,
+            "visits": 28
+          },
+          {
+            "move": "D5",
+            "child_sym_hash": "474CF84F5F31131DABAB4928538D5E92",
+            "value": -0.999678,
+            "prior": 0.0156536,
+            "visits": 27
+          },
+          {
+            "move": "G2",
+            "child_sym_hash": "013D51788900DD9CFF47C2397E3090CB",
+            "value": -0.999817,
+            "prior": 0.015414,
+            "visits": 29
+          },
+          {
+            "move": "G6",
+            "child_sym_hash": "05B7DFA7AC997A53B818188DD6864A0F",
+            "value": -0.999782,
+            "prior": 0.0150011,
+            "visits": 28
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "0517E2030B21306B3258DBE7442F5929",
+            "value": -0.99965,
+            "prior": 0.014963,
+            "visits": 24
+          },
+          {
+            "move": "G3",
+            "child_sym_hash": "15D08E7807C1197DA04C59906668E08C",
+            "value": -0.99985,
+            "prior": 0.0148094,
+            "visits": 28
+          },
+          {
+            "move": "G4",
+            "child_sym_hash": "395B017EB96F36AD34315EF124699A65",
+            "value": -0.999798,
+            "prior": 0.0148091,
+            "visits": 27
+          },
+          {
+            "move": "C8",
+            "child_sym_hash": "0E0F1B8994547186BE0DBEDFA5A845C2",
+            "value": -0.999781,
+            "prior": 0.0145683,
+            "visits": 26
+          }
+        ]
+      },
+      "policy": [0.014963, 0.0189217, 0.0145683, -1, -1, -1, 0.0172958, 0.0202011, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0173656, 0.0200684, -1, -1, -1, -1, -1, 0.0187882, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0150011, 0.018042, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0156536, -1, -1, 0.0159575, 0.0184383],
+      "ownership": [-0.999532, -0.999627, -0.999841, -0.999976, 0.999965, 0.999913, 0.999913, 0.999743, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999737, -0.999976, -0.999999, -0.999952, 0.99999, 0.999922, 0.999957, 0.999814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999996, -0.999646, -0.999505, -0.999979, -0.999992, 0.999946, 0.999751, 0.999809, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999991, -0.999992, -0.999603, -0.999811, -0.999971, 0.999962, 0.99977],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"],
+        ["B", "C4"],
+        ["W", "A5"],
+        ["B", "F7"],
+        ["W", "G7"],
+        ["B", "A3"],
+        ["W", "F8"],
+        ["B", "D8"],
+        ["W", "E1"],
+        ["B", "D1"],
+        ["W", "F1"],
+        ["B", "D2"],
+        ["W", "E7"],
+        ["B", "D6"],
+        ["W", "F4"],
+        ["B", "E4"],
+        ["W", "E8"],
+        ["B", "A4"],
+        ["W", "F7"],
+        ["B", "B5"],
+        ["W", "pass"],
+        ["B", "A6"],
+        ["W", "pass"],
+        ["B", "A5"],
+        ["W", "pass"],
+        ["B", "C7"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 2.47099,
+        "value_variance": 1.03908e-07,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "pass",
+          "child_sym_hash": "784621ADCA2ACDF54791B3F818812009",
+          "value": -0.99989,
+          "prior": 0.469774,
+          "visits": 80
+        },
+        {
+          "move": "B1",
+          "child_sym_hash": "1D064533A19325729C6FE88314FCF91A",
+          "value": -0.999107,
+          "prior": 0.0245463,
+          "visits": 2
+        },
+        {
+          "move": "B2",
+          "child_sym_hash": "3EBD26C8043DDF157D4AD92BDAF293F9",
+          "value": -0.998931,
+          "prior": 0.0227516,
+          "visits": 3
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "439F56234893E9591859018D2F243A3F",
+          "value": -0.99913,
+          "prior": 0.0226961,
+          "visits": 3
+        },
+        {
+          "move": "C1",
+          "child_sym_hash": "A0806AD51BD9FC93EE54C2FFDC3E9617",
+          "value": -0.999058,
+          "prior": 0.0217044,
+          "visits": 2
+        },
+        {
+          "move": "A2",
+          "child_sym_hash": "8B66A60365CB120935F458A6AB31303D",
+          "value": -0.999261,
+          "prior": 0.0216726,
+          "visits": 2
+        },
+        {
+          "move": "A1",
+          "child_sym_hash": "C3F7B0183006C7314EA94943698A3C08",
+          "value": -0.999344,
+          "prior": 0.0208017,
+          "visits": 2
+        },
+        {
+          "move": "C3",
+          "child_sym_hash": "334D0E91189F7A9C9D74C915C44FF8E3",
+          "value": -0.99898,
+          "prior": 0.0205092,
+          "visits": 2
+        },
+        {
+          "move": "H8",
+          "child_sym_hash": "37B8D84A40EA04F19367A5F0CD8900BC",
+          "value": -0.999768,
+          "prior": 0.0202011,
+          "visits": 1
+        },
+        {
+          "move": "B7",
+          "child_sym_hash": "EB970ABC116982C089767656858C1023",
+          "value": -0.999627,
+          "prior": 0.0200684,
+          "visits": 2
+        }
+      ]
+    },
+    {
+      "sym_hash": "2AC4FA5BA090E70EFCF2E6EE7B321210",
+      "state_hash": "72BD6544C924E19D5401425CFA244A01",
+      "player_to_move": "W",
+      "symmetry_index": 7,
+      "winrate": -0.999766,
+      "score_lead": -0.510745,
+      "move_number": 45,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_45",
+      "stone_count": {
+        "black": 21,
+        "white": 15,
+        "total": 36
+      },
+      "board_state": [0, 0, 0, 1, -1, -1, 0, 0, 1, 1, 1, 1, -1, -1, -1, 0, 1, -1, -1, 1, 1, -1, 0, 0, 1, 1, -1, 0, 1, -1, 0, 0, 1, 0, 1, 1, 1, -1, 0, 0, 1, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 1, 1, -1, 0, 0, 0, 0, 0, 1, -1, -1, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 45,
+        "num_consec_valid_turns": 45,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":100,"maxTime":1e+20,"maxVisits":100,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 4,
+        "hash": "CB883DECE8D6F5E0AC104C3C2CA7C56A",
+        "move": "pass"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 299.511,
+        "sym_hash": "2AC4FA5BA090E70EFCF2E6EE7B321210",
+        "state_hash": "72BD6544C924E19D5401425CFA244A01",
+        "player_to_move": "W",
+        "symmetry_index": 7,
+        "move_number": 45,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 21,
+          "white": 15,
+          "total": 36
+        },
+        "best_move": {
+          "symmetry_index": 4,
+          "hash": "02A10D5C4C4DE221A9813B83636E7EC0",
+          "move": "pass"
+        },
+        "winrate": -0.999665,
+        "score_lead": -0.52732,
+        "policy": [0.0190998, 0.0178465, 0.0185325, -1, -1, -1, 0.0191091, 0.0198388, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0211518, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0187968, 0.0188289, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.013486, -1, -1, 0.0173248, 0.0206871],
+        "ownership": [-0.999838, -0.999919, -0.999903, -0.999983, 0.999979, 0.999938, 0.99996, 0.999869, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999989, -0.99999, -0.999993, -0.999992, 0.999987, 0.999945, 0.999977, 0.999947, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999974, -0.999965, -0.999878, -0.999994, -0.999998, 0.999957, 0.99994, 0.999946, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999983, -0.999993, -0.99997, -0.999986, -0.999991, 0.999978, 0.999934],
+        "children": [
+          {
+            "move": "pass",
+            "child_sym_hash": "02A10D5C4C4DE221A9813B83636E7EC0",
+            "value": -0.999623,
+            "prior": 0.450613,
+            "visits": 3805
+          },
+          {
+            "move": "C2",
+            "child_sym_hash": "0EE5390FCC7BEC8D65E9F4DFB80C6E25",
+            "value": -0.999841,
+            "prior": 0.0300848,
+            "visits": 54
+          },
+          {
+            "move": "B2",
+            "child_sym_hash": "2738370140B56A82FD7CAD67F279B639",
+            "value": -0.999805,
+            "prior": 0.0289182,
+            "visits": 51
+          },
+          {
+            "move": "B1",
+            "child_sym_hash": "19B10082B25081C34312080A85527BFB",
+            "value": -0.999887,
+            "prior": 0.0265368,
+            "visits": 45
+          },
+          {
+            "move": "A2",
+            "child_sym_hash": "10221409BA8D45DB24FF1100C7BE8017",
+            "value": -0.999852,
+            "prior": 0.0251184,
+            "visits": 44
+          },
+          {
+            "move": "C3",
+            "child_sym_hash": "04A9DA2F9A9EB7C033758800F0B24A54",
+            "value": -0.999795,
+            "prior": 0.0250083,
+            "visits": 44
+          },
+          {
+            "move": "C1",
+            "child_sym_hash": "0E653420F77F09203889D7430AD123C6",
+            "value": -0.99979,
+            "prior": 0.02366,
+            "visits": 39
+          },
+          {
+            "move": "D3",
+            "child_sym_hash": "3C6C4AEDF61A0E115A66A4E0BDD7B578",
+            "value": -0.999653,
+            "prior": 0.0222211,
+            "visits": 42
+          },
+          {
+            "move": "A1",
+            "child_sym_hash": "077437EFCD82DBB983CEE32DFFDF4E08",
+            "value": -0.999864,
+            "prior": 0.0213594,
+            "visits": 36
+          },
+          {
+            "move": "H7",
+            "child_sym_hash": "03D0826BD4285DBDBC8C80F1D93FA4D0",
+            "value": -0.999953,
+            "prior": 0.0211518,
+            "visits": 40
+          },
+          {
+            "move": "H5",
+            "child_sym_hash": "1677E0734C3107BCFD312EC28ADCB7D0",
+            "value": -0.999914,
+            "prior": 0.0206871,
+            "visits": 37
+          },
+          {
+            "move": "H1",
+            "child_sym_hash": "1655712F90DF6E39726195C9EBEF924B",
+            "value": -0.999911,
+            "prior": 0.0201389,
+            "visits": 36
+          },
+          {
+            "move": "H8",
+            "child_sym_hash": "0AAB5F58627C153630B3950105743B59",
+            "value": -0.999735,
+            "prior": 0.0198388,
+            "visits": 35
+          },
+          {
+            "move": "G8",
+            "child_sym_hash": "1A130A55931D98ADD8F3159C18D2A9D9",
+            "value": -0.999727,
+            "prior": 0.0191091,
+            "visits": 36
+          },
+          {
+            "move": "A8",
+            "child_sym_hash": "1B8A19983F21A0B6C11CE3E51144E71A",
+            "value": -0.999815,
+            "prior": 0.0190998,
+            "visits": 36
+          },
+          {
+            "move": "H6",
+            "child_sym_hash": "74C201E66B4C86A042C0E23C1E7C7D88",
+            "value": -0.999855,
+            "prior": 0.0188289,
+            "visits": 33
+          },
+          {
+            "move": "G6",
+            "child_sym_hash": "0022FD6E13A90CB09333A2EF3127697D",
+            "value": -0.999795,
+            "prior": 0.0187968,
+            "visits": 35
+          },
+          {
+            "move": "C8",
+            "child_sym_hash": "1C5F25AA8D70807DD27ADEDFEFE7B4C1",
+            "value": -0.999784,
+            "prior": 0.0185325,
+            "visits": 35
+          },
+          {
+            "move": "H4",
+            "child_sym_hash": "0F9FDFDA28EC5924FED8AC47A2D3EFDC",
+            "value": -0.999929,
+            "prior": 0.0185031,
+            "visits": 33
+          },
+          {
+            "move": "H2",
+            "child_sym_hash": "21B3830D663A012BC64D556BB9EA5BE0",
+            "value": -0.999908,
+            "prior": 0.0181519,
+            "visits": 32
+          },
+          {
+            "move": "H3",
+            "child_sym_hash": "00EB0A652F2AF4CC7D5C9ED5FDD4AA41",
+            "value": -0.999921,
+            "prior": 0.018004,
+            "visits": 32
+          },
+          {
+            "move": "B8",
+            "child_sym_hash": "0B324C95CE402D2D295C63780CE2759A",
+            "value": -0.999647,
+            "prior": 0.0178465,
+            "visits": 35
+          },
+          {
+            "move": "G5",
+            "child_sym_hash": "0B76E6DA5A66B633B693155014A2B2DF",
+            "value": -0.999752,
+            "prior": 0.0173248,
+            "visits": 34
+          },
+          {
+            "move": "G1",
+            "child_sym_hash": "08904642EF0D3443B2BD7EEE9162A7B8",
+            "value": -0.999726,
+            "prior": 0.0170012,
+            "visits": 32
+          },
+          {
+            "move": "G4",
+            "child_sym_hash": "0DCA88814C3366106738FA74BC94DCC7",
+            "value": -0.999851,
+            "prior": 0.0168483,
+            "visits": 31
+          },
+          {
+            "move": "G2",
+            "child_sym_hash": "39001C7F43E952E8F5C456B193FC4DB2",
+            "value": -0.999896,
+            "prior": 0.0168031,
+            "visits": 32
+          },
+          {
+            "move": "G3",
+            "child_sym_hash": "028930784060465F6B87BD4B687F1A93",
+            "value": -0.999803,
+            "prior": 0.0163279,
+            "visits": 30
+          },
+          {
+            "move": "D5",
+            "child_sym_hash": "2539B987CB0B42B27EE2EA392C461A91",
+            "value": -0.999936,
+            "prior": 0.013486,
+            "visits": 25
+          }
+        ]
+      },
+      "policy": [0.0190998, 0.0178465, 0.0185325, -1, -1, -1, 0.0191091, 0.0198388, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0211518, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.0187968, 0.0188289, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.013486, -1, -1, 0.0173248, 0.0206871],
+      "ownership": [-0.999838, -0.999919, -0.999903, -0.999983, 0.999979, 0.999938, 0.99996, 0.999869, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999989, -0.99999, -0.999993, -0.999992, 0.999987, 0.999945, 0.999977, 0.999947, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999974, -0.999965, -0.999878, -0.999994, -0.999998, 0.999957, 0.99994, 0.999946, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.999983, -0.999993, -0.99997, -0.999986, -0.999991, 0.999978, 0.999934],
+      "moves_history": [
+        ["B", "D4"],
+        ["W", "F5"],
+        ["B", "E6"],
+        ["W", "F6"],
+        ["B", "E5"],
+        ["W", "F3"],
+        ["B", "E3"],
+        ["W", "F2"],
+        ["B", "E2"],
+        ["W", "C6"],
+        ["B", "D7"],
+        ["W", "B4"],
+        ["B", "B5"],
+        ["W", "C5"],
+        ["B", "B3"],
+        ["W", "B6"],
+        ["B", "C4"],
+        ["W", "A5"],
+        ["B", "F7"],
+        ["W", "G7"],
+        ["B", "A3"],
+        ["W", "F8"],
+        ["B", "D8"],
+        ["W", "E1"],
+        ["B", "D1"],
+        ["W", "F1"],
+        ["B", "D2"],
+        ["W", "E7"],
+        ["B", "D6"],
+        ["W", "F4"],
+        ["B", "E4"],
+        ["W", "E8"],
+        ["B", "A4"],
+        ["W", "F7"],
+        ["B", "B5"],
+        ["W", "pass"],
+        ["B", "A6"],
+        ["W", "pass"],
+        ["B", "A5"],
+        ["W", "pass"],
+        ["B", "C7"],
+        ["W", "pass"],
+        ["B", "B7"],
+        ["W", "pass"],
+        ["B", "A7"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 2.48936,
+        "value_variance": 1.15246e-08,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "pass",
+          "child_sym_hash": "CB883DECE8D6F5E0AC104C3C2CA7C56A",
+          "value": -0.999788,
+          "prior": 0.450613,
+          "visits": 80
+        },
+        {
+          "move": "C2",
+          "child_sym_hash": "C3DD329A073F0FE27BD298D1C9C3D11A",
+          "value": -0.999518,
+          "prior": 0.0300848,
+          "visits": 3
+        },
+        {
+          "move": "B2",
+          "child_sym_hash": "C03F42F4DCA9171EA6D8D15F6D94EB58",
+          "value": -0.99952,
+          "prior": 0.0289182,
+          "visits": 3
+        },
+        {
+          "move": "B1",
+          "child_sym_hash": "EE682368C23FCBC106FDBFC42F8C9237",
+          "value": -0.999729,
+          "prior": 0.0265368,
+          "visits": 3
+        },
+        {
+          "move": "A2",
+          "child_sym_hash": "5C05C2BA7E77C8325D6F4FD85D58D71C",
+          "value": -0.999734,
+          "prior": 0.0251184,
+          "visits": 2
+        },
+        {
+          "move": "C3",
+          "child_sym_hash": "B3AF6B0C374B32A705EEE14980778E7E",
+          "value": -0.999721,
+          "prior": 0.0250083,
+          "visits": 2
+        },
+        {
+          "move": "C1",
+          "child_sym_hash": "62FE06C83484B4A015CED7431848ED32",
+          "value": -0.999639,
+          "prior": 0.02366,
+          "visits": 2
+        },
+        {
+          "move": "D3",
+          "child_sym_hash": "6E69551FBE4A9E26442764599506FC92",
+          "value": -0.999789,
+          "prior": 0.0222211,
+          "visits": 1
+        },
+        {
+          "move": "A1",
+          "child_sym_hash": "4776CC8530B3EDFAB50461879C1DA369",
+          "value": -0.999871,
+          "prior": 0.0213594,
+          "visits": 1
+        },
+        {
+          "move": "H7",
+          "child_sym_hash": "1ED2A271FCA1DA67603C6E19EF62E128",
+          "value": -0.999739,
+          "prior": 0.0211518,
+          "visits": 1
+        },
+        {
+          "move": "H5",
+          "child_sym_hash": "4786C5F5CB9B8CE6FA199E8D9B1623A3",
+          "value": -0.999803,
+          "prior": 0.0206871,
+          "visits": 1
+        }
+      ]
+    },
+    {
+      "sym_hash": "0A488E593509F9AE6AEC335674D516FC",
+      "state_hash": "0A488E593509F9AE6AEC335674D516FC",
+      "player_to_move": "W",
+      "symmetry_index": 0,
+      "winrate": 0.792309,
+      "score_lead": 0.704551,
+      "move_number": 1,
+      "komi": 9.5,
+      "query_id": "game_8DA35BDC230AB8E856D8371D5C3E040A_1",
+      "stone_count": {
+        "black": 1,
+        "white": 0,
+        "total": 1
+      },
+      "board_state": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "superko_bans": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "history_context": {
+        "board_x_size": 8,
+        "board_y_size": 8,
+        "encore_phase": 0,
+        "num_turns_this_phase": 1,
+        "num_consec_valid_turns": 1,
+        "consecutive_ending_passes": 0,
+        "assume_multiple_handicap": false,
+        "is_past_normal_phase_end": false,
+        "is_game_finished": false,
+        "presumed_next_move": "W"
+      },
+      "search_params": {"chosenMoveTemperature":0.15,"chosenMoveTemperatureEarly":0.75,"cpuctExploration":1.1,"cpuctExplorationLog":0.0,"drawEquivalentWinsForWhite":0.7943035109119715,"dynamicScoreUtilityFactor":0.4,"maxPlayouts":6,"maxTime":1e+20,"maxVisits":6,"rootPolicyTemperature":1.0,"rootPolicyTemperatureEarly":1.0,"staticScoreUtilityFactor":0.0,"winLossUtilityFactor":1.0},
+      "best_move": {
+        "symmetry_index": 1,
+        "hash": "1CF8EAE752766084430F5247D40BC803",
+        "move": "E5"
+      },
+      "deep_result": {
+        "available": true,
+        "status": "ok",
+        "visits": 4800,
+        "elapsed_seconds": 198.173,
+        "sym_hash": "0A488E593509F9AE6AEC335674D516FC",
+        "state_hash": "0A488E593509F9AE6AEC335674D516FC",
+        "player_to_move": "W",
+        "symmetry_index": 0,
+        "move_number": 1,
+        "komi": 9.5,
+        "stone_count": {
+          "black": 1,
+          "white": 0,
+          "total": 1
+        },
+        "best_move": {
+          "symmetry_index": 4,
+          "hash": "18B930F457C0632CD09294C9A55ED138",
+          "move": "F5"
+        },
+        "winrate": 0.735804,
+        "score_lead": 0.756108,
+        "policy": [1.75688e-06, 2.69993e-06, 2.45832e-06, 3.13198e-06, 3.36012e-06, 3.01199e-06, 3.38647e-06, 2.10271e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.13198e-06, 4.39957e-06, 8.61395e-06, 1.67995e-05, 5.68321e-05, 7.25367e-06, 4.90808e-06, 3.54899e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.91932e-06, 9.20539e-06, 0.000167039, 0.0197553, 0.15822, 0.0354073, 8.85274e-06, 3.25674e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.33397e-06, 2.2169e-05, 4.84216e-05, 0.00113705, 0.573121, 0.176163, 8.87137e-05, 3.97468e-06],
+        "ownership": [-0.372109, -0.241243, -0.0413278, 0.184036, 0.299824, 0.415618, 0.487081, 0.43045, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.438373, -0.237215, 0.027093, 0.158682, 0.345524, 0.482974, 0.563328, 0.498174, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.535031, -0.324283, -0.0615979, -0.184626, 0.232833, 0.544374, 0.472422, 0.409743, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.593851, -0.545747, -0.494863, -0.398303, 0.336246, 0.235948, 0.333428],
+        "children": [
+          {
+            "move": "E5",
+            "child_sym_hash": "752A4B0BBD3F65AF86F5BD8F9C0830EC",
+            "value": 0.713506,
+            "prior": 0.573121,
+            "visits": 781
+          },
+          {
+            "move": "F5",
+            "child_sym_hash": "18B930F457C0632CD09294C9A55ED138",
+            "value": 0.743439,
+            "prior": 0.176163,
+            "visits": 3635
+          },
+          {
+            "move": "E6",
+            "child_sym_hash": "18B930F457C0632CD09294C9A55ED138",
+            "value": 0.710495,
+            "prior": 0.15822,
+            "visits": 335
+          },
+          {
+            "move": "F6",
+            "child_sym_hash": "443F3D3A41C238C0FF4EAA93639A1232",
+            "value": 0.586373,
+            "prior": 0.0354073,
+            "visits": 15
+          },
+          {
+            "move": "F4",
+            "child_sym_hash": "687F7877A97297DBA027015CAC9EE2C1",
+            "value": 0.623191,
+            "prior": 0.0321758,
+            "visits": 19
+          },
+          {
+            "move": "D6",
+            "child_sym_hash": "687F7877A97297DBA027015CAC9EE2C1",
+            "value": 0.640284,
+            "prior": 0.0197553,
+            "visits": 14
+          }
+        ]
+      },
+      "policy": [1.75688e-06, 2.69993e-06, 2.45832e-06, 3.13198e-06, 3.36012e-06, 3.01199e-06, 3.38647e-06, 2.10271e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.13198e-06, 4.39957e-06, 8.61395e-06, 1.67995e-05, 5.68321e-05, 7.25367e-06, 4.90808e-06, 3.54899e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2.91932e-06, 9.20539e-06, 0.000167039, 0.0197553, 0.15822, 0.0354073, 8.85274e-06, 3.25674e-06, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3.33397e-06, 2.2169e-05, 4.84216e-05, 0.00113705, 0.573121, 0.176163, 8.87137e-05, 3.97468e-06],
+      "ownership": [-0.372109, -0.241243, -0.0413278, 0.184036, 0.299824, 0.415618, 0.487081, 0.43045, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.438373, -0.237215, 0.027093, 0.158682, 0.345524, 0.482974, 0.563328, 0.498174, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.535031, -0.324283, -0.0615979, -0.184626, 0.232833, 0.544374, 0.472422, 0.409743, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.593851, -0.545747, -0.494863, -0.398303, 0.336246, 0.235948, 0.333428],
+      "moves_history": [
+        ["B", "D4"]
+      ],
+      "uncertainty_metrics": {
+        "policy_entropy": 1.26093,
+        "value_variance": 0.000296783,
+        "combined_score": 0
+      },
+      "children": [
+        {
+          "move": "E5",
+          "child_sym_hash": "1CF8EAE752766084430F5247D40BC803",
+          "value": 0.796143,
+          "prior": 0.573121,
+          "visits": 4
+        },
+        {
+          "move": "F5",
+          "child_sym_hash": "83E1B284D92D386E6936E826EBE8D0E9",
+          "value": 0.761688,
+          "prior": 0.176163,
+          "visits": 1
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_moves": 47,
+    "flagged_count": 14,
+    "flagging_rate": 0.297872
+  }
+}
