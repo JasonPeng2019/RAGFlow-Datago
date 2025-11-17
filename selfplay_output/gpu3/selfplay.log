@@ -1,0 +1,294 @@
+========================================
+KataGo Self-Play on GPU 3
+========================================
+Started at: Sun Nov 16 06:29:28 PM EST 2025
+Config: 
+Output directory: /scratch2/f003x5w/RAGFlow-Datago/selfplay_output/gpu3
+Model: 
+
+2025-11-16 18:29:28-0500: Running with following config:
+allowRectangleProb = 0.10
+bSizeRelProbs = 1,4,3,10,7,9,35, 1,2,4,6,8,10
+bSizes = 7,9,11,13,15,17,19,  8,10,12,14,16,18
+cheapSearchProb = 0.75
+cheapSearchTargetWeight = 0.0
+cheapSearchVisits = 100
+chosenMovePrune = 1
+chosenMoveSubtract = 0
+chosenMoveTemperature = 0.15
+chosenMoveTemperatureEarly = 0.75
+chosenMoveTemperatureHalflife = 19
+compensateAfterPolicyInitProb = 0.2
+cpuctExploration = 1.1
+cpuctExplorationLog = 0.0
+cudaUseFP16 = auto
+cudaUseNHWC = auto
+dataBoardLen = 19
+drawEquivalentWinsForWhite = 0.5
+drawRandRadius = 0.5
+dynamicScoreCenterScale = 0.50
+dynamicScoreCenterZeroWeight = 0.25
+dynamicScoreUtilityFactor = 0.40
+earlyForkGameExpectedMoveProp = 0.025
+earlyForkGameMaxChoices = 12
+earlyForkGameProb = 0.04
+estimateLeadProb = 0.05
+fancyKomiVarying = true
+firstFileRandMinProp = 0.15
+forkCompensateKomiProb = 0.80
+forkGameMaxChoices = 36
+forkGameMinChoices = 3
+forkGameProb = 0.01
+fpuParentWeightByVisitedPolicy = true
+fpuParentWeightByVisitedPolicyPow = 2.0
+fpuReductionMax = 0.2
+handicapAsymmetricPlayoutProb = 0.5
+handicapCompensateKomiProb = 0.50
+handicapProb = 0.10
+hasButtons = false,false,true
+initGamesWithPolicy = true
+koRules = SIMPLE,POSITIONAL,SITUATIONAL
+komiAuto = True
+komiBigStdev = 12.0
+komiBigStdevProb = 0.06
+komiStdev = 1.0
+lcbStdevs = 5.0
+logGamesEvery = 10
+logMoves = false
+logSearchInfo = false
+logToStdout = true
+maxAsymmetricRatio = 8.0
+maxDataQueueSize = 2000
+maxMovesPerGame = 1600
+maxRowsPerTrainFile = 10000
+maxVisits = 300
+minAsymmetricCompensateKomiProb = 0.4
+minVisitPropForLCB = 0.15
+multiStoneSuicideLegals = false,true
+nnCacheSizePowerOfTwo = 21
+nnMaxBatchSize = 128
+nnMutexPoolSizePowerOfTwo = 15
+nnRandomize = true
+noResultStdev = 0.166666666
+noResultUtilityForWhite = 0.0
+normalAsymmetricPlayoutProb = 0.01
+numGameThreads = 128
+numNNServerThreadsPerModel = 1
+numSearchThreads = 1
+numVirtualLossesPerThread = 1
+openclDeviceToUse = 3
+policyInitAreaProp = 0.04
+policySurpriseDataWeight = 0.5
+reduceVisits = true
+reduceVisitsThreshold = 0.9
+reduceVisitsThresholdLookback = 3
+reducedVisitsMin = 100
+reducedVisitsWeight = 0.1
+rootDesiredPerChildVisitsCoeff = 2
+rootDirichletNoiseTotalConcentration = 10.83
+rootDirichletNoiseWeight = 0.25
+rootEndingBonusPoints = 0.5
+rootFpuReductionMax = 0.0
+rootNoiseEnabled = true
+rootNumSymmetriesToSample = 4
+rootPolicyTemperature = 1.1
+rootPolicyTemperatureEarly = 1.25
+rootPruneUselessMoves = true
+scoringRules = AREA,TERRITORY
+sekiForkHackProb = 0.02
+sgfCompensateKomiProb = 0.90
+sidePositionProb = 0.020
+staticScoreUtilityFactor = 0.00
+subtreeValueBiasFactor = 0.30
+subtreeValueBiasWeightExponent = 0.8
+switchNetsMidGame = true
+taxRules = NONE,NONE,SEKI,SEKI,ALL
+useGraphSearch = true
+useLcbForSelection = true
+useNonBuggyLcb = true
+valueSurpriseDataWeight = 0.1
+valueWeightExponent = 0.5
+winLossUtilityFactor = 1.0
+
+2025-11-16 18:29:28-0500: Self Play Engine starting...
+2025-11-16 18:29:28-0500: Git revision: 09a850cd867dbf6ced83d489cef4b8db140a6edf-dirty
+2025-11-16 18:29:28-0500: Loaded all config stuff, starting self play
+2025-11-16 18:29:28-0500: Found new neural net kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:28-0500: nnRandSeed0 = 11673063625529929445
+2025-11-16 18:29:28-0500: After dedups: nnModelFile0 = /scratch2/f003x5w/RAGFlow-Datago/katago_repo/run/kata1-b28c512nbt-s11653980416-d5514111622.bin.gz useFP16 auto useNHWC auto
+2025-11-16 18:29:28-0500: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-11-16 18:29:32-0500: Found OpenCL Platform 0: NVIDIA CUDA (NVIDIA Corporation) (OpenCL 3.0 CUDA 12.8.98)
+2025-11-16 18:29:32-0500: Found 8 device(s) on platform 0 with type CPU or GPU or Accelerator
+2025-11-16 18:29:32-0500: Found OpenCL Device 0: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:32-0500: Found OpenCL Device 1: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:32-0500: Found OpenCL Device 2: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:32-0500: Found OpenCL Device 3: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:32-0500: Found OpenCL Device 4: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:32-0500: Found OpenCL Device 5: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:32-0500: Found OpenCL Device 6: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:32-0500: Found OpenCL Device 7: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:32-0500: Creating context for OpenCL Platform: NVIDIA CUDA (NVIDIA Corporation) (OpenCL 3.0 CUDA 12.8.98)
+2025-11-16 18:29:32-0500: Using OpenCL Device 3: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) OpenCL 3.0 CUDA (Extensions: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_copy_opts cl_khr_gl_event cl_nv_create_buffer cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_nv_kernel_attribute cl_khr_device_uuid cl_khr_pci_bus_info cl_khr_external_semaphore cl_khr_external_memory cl_khr_external_semaphore_opaque_fd cl_khr_external_memory_opaque_fd cl_khr_semaphore)
+2025-11-16 18:29:32-0500: Loaded tuning parameters from: /thayerfs/home/f003x5w/.katago/opencltuning/tune11_gpuNVIDIARTX6000AdaGeneration_x19_y19_c512_mv15.txt
+2025-11-16 18:29:32-0500: OpenCL backend thread 0: Device 3 Model version 15
+2025-11-16 18:29:32-0500: OpenCL backend thread 0: Device 3 Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 18:29:35-0500: OpenCL backend thread 0: Device 3 FP16Storage true FP16Compute false FP16TensorCores true FP16TensorCoresFor1x1 false
+2025-11-16 18:29:35-0500: Loaded latest neural net kata1-b28c512nbt-s11653980416-d5514111622.bin.gz from: /scratch2/f003x5w/RAGFlow-Datago/katago_repo/run/kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Model loading loop thread loaded new neural net kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Data write loop starting for neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 0 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 2 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 1 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 3 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 4 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 5 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 6 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 7 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 8 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 9 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 10 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 10 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 12 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 11 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 14 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 15 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 13 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 16 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 17 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 18 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 19 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 20 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 20 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 21 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 22 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 23 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 24 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 26 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 27 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 25 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 28 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 29 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 30 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 34 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 36 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 33 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 31 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 30 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 32 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 35 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 37 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 39 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 38 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 40 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 41 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 40 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 42 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 44 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 43 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 45 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 46 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 47 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 48 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 49 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 50 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 50 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 51 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 55 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 54 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 53 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 52 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 56 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 57 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 58 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 59 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 60 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 60 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 61 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 63 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 65 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 67 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 68 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 64 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 62 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 74 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 70 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 70 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 71 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 73 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 72 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 66 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 69 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 75 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 76 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 77 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 78 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 79 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 81 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 80 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 80 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 82 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 83 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 86 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 85 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 84 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 88 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 89 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 87 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 90 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 90 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 91 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 92 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 93 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 94 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 95 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 96 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 97 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 98 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 100 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 100 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 99 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 101 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 102 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 103 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 105 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 106 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 104 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 108 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 107 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 110 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 110 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 109 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 111 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 112 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 113 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 114 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 115 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 117 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 116 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 119 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 118 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Started 120 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 120 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 121 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 122 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 123 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 124 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 125 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 126 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Game loop thread 127 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:35-0500: Model loading loop thread starting
+2025-11-16 19:27:31-0500: [DATAGO] Inline deep summary: game= flagged=15 deep=15 success=15
+2025-11-16 19:37:30-0500: Started 130 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 19:37:30-0500: [DATAGO] Inline deep summary: game= flagged=16 deep=16 success=16
+2025-11-16 20:03:41-0500: [DATAGO] Inline deep summary: game= flagged=22 deep=22 success=22
+2025-11-16 20:12:07-0500: [DATAGO] Inline deep summary: game= flagged=27 deep=27 success=27
+2025-11-16 20:15:16-0500: [DATAGO] Inline deep summary: game= flagged=23 deep=23 success=23
+2025-11-16 20:25:28-0500: [DATAGO] Inline deep summary: game= flagged=24 deep=24 success=24
+2025-11-16 20:26:50-0500: [DATAGO] Inline deep summary: game= flagged=26 deep=26 success=26
+2025-11-16 20:42:26-0500: [DATAGO] Inline deep summary: game= flagged=32 deep=32 success=32
+2025-11-16 20:42:39-0500: [DATAGO] Inline deep summary: game= flagged=28 deep=27 success=27
+2025-11-16 20:45:52-0500: [DATAGO] Inline deep summary: game= flagged=29 deep=29 success=29
+2025-11-16 21:04:58-0500: [DATAGO] Inline deep summary: game= flagged=32 deep=32 success=32
+2025-11-16 21:08:05-0500: Started 140 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 21:08:05-0500: [DATAGO] Inline deep summary: game= flagged=35 deep=35 success=35
+2025-11-16 21:15:49-0500: [DATAGO] Inline deep summary: game= flagged=32 deep=32 success=32

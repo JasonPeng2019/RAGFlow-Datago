@@ -1,0 +1,164 @@
+2025-11-16 21:11:43-0500: Running with following config:
+allowResignation = true
+lagBuffer = 1.0
+logAllGTPCommunication = true
+logDir = gtp_logs
+logSearchInfo = true
+logSearchInfoForChosenMove = false
+logToStderr = false
+maxTimePondering = 60.0
+maxVisits = 500
+numSearchThreads = 24
+ponderingEnabled = false
+resignConsecTurns = 3
+resignThreshold = -0.90
+rules = tromp-taylor
+searchFactorAfterOnePass = 0.50
+searchFactorAfterTwoPass = 0.25
+searchFactorWhenWinning = 0.40
+searchFactorWhenWinningThreshold = 0.95
+
+2025-11-16 21:11:43-0500: GTP Engine starting...
+2025-11-16 21:11:43-0500: KataGo v1.16.4
+2025-11-16 21:11:43-0500: Using TrompTaylor rules initially, unless GTP/GUI overrides this
+2025-11-16 21:11:43-0500: Using 24 CPU thread(s) for search
+2025-11-16 21:11:43-0500: nnRandSeed0 = 4237375462275114608
+2025-11-16 21:11:43-0500: After dedups: nnModelFile0 = /scratch2/f003x5w/RAGFlow-Datago/katago_repo/run/default_model.bin.gz useFP16 auto useNHWC auto
+2025-11-16 21:11:43-0500: Initializing neural net buffer to be size 19 * 19 exactly
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 0: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 0: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 3: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 3: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 2: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 2: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 1: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 1: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 4: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 4: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 5: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 5: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 6: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 6: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 7: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 7: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 8: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 8: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 9: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 9: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 11: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 11: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 12: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 12: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 10: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 10: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 13: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 13: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 14: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 14: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 15: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 15: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 16: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 16: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 17: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 17: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 18: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 18: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 19: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 19: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 20: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 20: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 21: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 21: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 22: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 22: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 23: Model version 15
+2025-11-16 21:11:47-0500: Eigen (CPU) backend thread 23: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:49-0500: Loaded neural net with nnXLen 19 nnYLen 19
+2025-11-16 21:11:49-0500: Initializing board with boardXSize 19 boardYSize 19
+2025-11-16 21:11:49-0500: Loaded config /scratch2/f003x5w/RAGFlow-Datago/katago_repo/run/default_gtp.cfg
+2025-11-16 21:11:49-0500: Loaded model /scratch2/f003x5w/RAGFlow-Datago/katago_repo/run/default_model.bin.gz
+2025-11-16 21:11:49-0500: Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 21:11:49-0500: GTP ready, beginning main protocol loop
+2025-11-16 21:11:49-0500: Controller: boardsize 19
+2025-11-16 21:11:49-0500: = 
+2025-11-16 21:11:49-0500: Controller: clear_board
+2025-11-16 21:11:49-0500: = 
+2025-11-16 21:11:49-0500: Controller: komi 7.5
+2025-11-16 21:11:49-0500: = 
+2025-11-16 21:11:49-0500: Controller: kata-set-param maxVisits 100
+2025-11-16 21:11:49-0500: = 
+2025-11-16 21:11:49-0500: Controller: kata-genmove_analyze b
+2025-11-16 21:11:49-0500: =
+2025-11-16 21:11:59-0500: MoveNum: 0 HASH: CDCBC1F514D7E680FACD226074256633
+   A B C D E F G H J K L M N O P Q R S T
+19 . . . . . . . . . . . . . . . . . . .
+18 . . . . . . . . . . . . . . . . . . .
+17 . . . . . . . . . . . . . . . . . . .
+16 . . . . . . . . . . . . . . . . @ . .
+15 . . . . . . . . . . . . . . . . . . .
+14 . . . . . . . . . . . . . . . . . . .
+13 . . . . . . . . . . . . . . . . . . .
+12 . . . . . . . . . . . . . . . . . . .
+11 . . . . . . . . . . . . . . . . . . .
+10 . . . . . . . . . . . . . . . . . . .
+ 9 . . . . . . . . . . . . . . . . . . .
+ 8 . . . . . . . . . . . . . . . . . . .
+ 7 . . . . . . . . . . . . . . . . . . .
+ 6 . . . . . . . . . . . . . . . . . . .
+ 5 . . . . . . . . . . . . . . . . . . .
+ 4 . . . . . . . . . . . . . . . . . . .
+ 3 . . . . . . . . . . . . . . . . . . .
+ 2 . . . . . . . . . . . . . . . . . . .
+ 1 . . . . . . . . . . . . . . . . . . .
+
+koPOSITIONALscoreAREAtaxNONEsui1komi7.5
+Time taken: 9.25136
+Root visits: 111
+New playouts: 111
+NN rows: 108
+NN batches: 108
+NN avg batch size: 1
+PV: R16 D16 D3 R4
+Tree:
+: T -37.79c W -36.61c S  -1.22c ( -2.0 L  -1.1) N     111  --  R16 D16 D3 R4
+---Black(^)---
+R16 : T -32.76c W -32.10c S  -0.72c ( -1.6 L  -0.8) LCB  -36.24c P  9.02% WF  53.2 PSV      53 N      17  --  R16 D16 D3 R4
+Q16 : T -31.62c W -31.46c S  -0.76c ( -1.6 L  -0.9) LCB  -37.23c P  2.58% WF  41.3 PSV      41 N      13  --  Q16 Q4 C16 D4 R14
+Q15 : T -35.60c W -34.10c S  -1.02c ( -1.8 L  -1.0) LCB  -39.61c P  1.35% WF  40.0 PSV       2 N      14  --  Q15 D16 Q17 Q4 D3
+R17 : T -36.94c W -35.88c S  -1.17c ( -2.0 L  -1.0) LCB  -46.99c P  0.53% WF  24.6 PSV       0 N       9  --  R17 D4 C16 R4
+R15 : T -37.78c W -36.61c S  -1.09c ( -1.9 L  -1.1) LCB  -57.30c P  0.44% WF  16.1 PSV       0 N       6  --  R15 D16 Q3 D3
+R14 : T -46.48c W -44.45c S  -2.04c ( -2.8 L  -1.6) LCB -396.48c P  0.02% WF   1.6 PSV       0 N       1  --  R14
+Q10 : T -47.07c W -45.06c S  -2.01c ( -2.7 L  -1.6) LCB -397.07c P  0.02% WF   1.5 PSV       0 N       1  --  Q10
+Q11 : T -47.37c W -45.23c S  -2.14c ( -2.9 L  -1.7) LCB -397.37c P  0.02% WF   1.5 PSV       0 N       1  --  Q11
+K10 : T -47.34c W -45.22c S  -2.12c ( -2.9 L  -1.7) LCB -397.34c P  0.02% WF   1.6 PSV       0 N       1  --  K10
+R12 : T -47.05c W -44.83c S  -2.22c ( -3.0 L  -1.7) LCB -397.05c P  0.02% WF   1.5 PSV       0 N       1  --  R12
+
+2025-11-16 21:11:59-0500: play R16
+2025-11-16 21:11:59-0500: Controller: quit
+2025-11-16 21:11:59-0500: Quit requested by controller
+2025-11-16 21:11:59-0500: = 
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 6 rows 6 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 4 rows 4 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 1 rows 1 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 6 rows 6 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 4 rows 4 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 3 rows 3 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 3 rows 3 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 2 rows 2 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 4 rows 4 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 4 rows 4 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 6 rows 6 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: GPU -1 finishing, processed 5 rows 5 batches
+2025-11-16 21:11:59-0500: All cleaned up, quitting

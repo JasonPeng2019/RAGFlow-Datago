@@ -22,7 +22,6 @@ KataGo/cpp/build-*/katago
 
 # Logs and temporary files
 logs/
-*.log
 *.tmp
 *.bak
 

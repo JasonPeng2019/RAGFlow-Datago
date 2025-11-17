@@ -1,0 +1,5 @@
+-still needs to implement writing to the JSON rag_databas
+-give me a instruction manual on how to run and which paths to put json folders in
+-implement deep recursive search on complex positions, and keep recursing the MCTS in the C++ code
+- implement the relevance/threshold function
+- implement actual complexity function
