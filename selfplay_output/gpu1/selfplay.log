@@ -1,0 +1,577 @@
+========================================
+KataGo Self-Play on GPU 1
+========================================
+Started at: Sun Nov 16 06:29:23 PM EST 2025
+Config: 
+Output directory: /scratch2/f003x5w/RAGFlow-Datago/selfplay_output/gpu1
+Model: 
+
+2025-11-16 18:29:24-0500: Running with following config:
+allowRectangleProb = 0.10
+bSizeRelProbs = 1,4,3,10,7,9,35, 1,2,4,6,8,10
+bSizes = 7,9,11,13,15,17,19,  8,10,12,14,16,18
+cheapSearchProb = 0.75
+cheapSearchTargetWeight = 0.0
+cheapSearchVisits = 100
+chosenMovePrune = 1
+chosenMoveSubtract = 0
+chosenMoveTemperature = 0.15
+chosenMoveTemperatureEarly = 0.75
+chosenMoveTemperatureHalflife = 19
+compensateAfterPolicyInitProb = 0.2
+cpuctExploration = 1.1
+cpuctExplorationLog = 0.0
+cudaUseFP16 = auto
+cudaUseNHWC = auto
+dataBoardLen = 19
+drawEquivalentWinsForWhite = 0.5
+drawRandRadius = 0.5
+dynamicScoreCenterScale = 0.50
+dynamicScoreCenterZeroWeight = 0.25
+dynamicScoreUtilityFactor = 0.40
+earlyForkGameExpectedMoveProp = 0.025
+earlyForkGameMaxChoices = 12
+earlyForkGameProb = 0.04
+estimateLeadProb = 0.05
+fancyKomiVarying = true
+firstFileRandMinProp = 0.15
+forkCompensateKomiProb = 0.80
+forkGameMaxChoices = 36
+forkGameMinChoices = 3
+forkGameProb = 0.01
+fpuParentWeightByVisitedPolicy = true
+fpuParentWeightByVisitedPolicyPow = 2.0
+fpuReductionMax = 0.2
+handicapAsymmetricPlayoutProb = 0.5
+handicapCompensateKomiProb = 0.50
+handicapProb = 0.10
+hasButtons = false,false,true
+initGamesWithPolicy = true
+koRules = SIMPLE,POSITIONAL,SITUATIONAL
+komiAuto = True
+komiBigStdev = 12.0
+komiBigStdevProb = 0.06
+komiStdev = 1.0
+lcbStdevs = 5.0
+logGamesEvery = 10
+logMoves = false
+logSearchInfo = false
+logToStdout = true
+maxAsymmetricRatio = 8.0
+maxDataQueueSize = 2000
+maxMovesPerGame = 1600
+maxRowsPerTrainFile = 10000
+maxVisits = 300
+minAsymmetricCompensateKomiProb = 0.4
+minVisitPropForLCB = 0.15
+multiStoneSuicideLegals = false,true
+nnCacheSizePowerOfTwo = 21
+nnMaxBatchSize = 128
+nnMutexPoolSizePowerOfTwo = 15
+nnRandomize = true
+noResultStdev = 0.166666666
+noResultUtilityForWhite = 0.0
+normalAsymmetricPlayoutProb = 0.01
+numGameThreads = 128
+numNNServerThreadsPerModel = 1
+numSearchThreads = 1
+numVirtualLossesPerThread = 1
+openclDeviceToUse = 1
+policyInitAreaProp = 0.04
+policySurpriseDataWeight = 0.5
+reduceVisits = true
+reduceVisitsThreshold = 0.9
+reduceVisitsThresholdLookback = 3
+reducedVisitsMin = 100
+reducedVisitsWeight = 0.1
+rootDesiredPerChildVisitsCoeff = 2
+rootDirichletNoiseTotalConcentration = 10.83
+rootDirichletNoiseWeight = 0.25
+rootEndingBonusPoints = 0.5
+rootFpuReductionMax = 0.0
+rootNoiseEnabled = true
+rootNumSymmetriesToSample = 4
+rootPolicyTemperature = 1.1
+rootPolicyTemperatureEarly = 1.25
+rootPruneUselessMoves = true
+scoringRules = AREA,TERRITORY
+sekiForkHackProb = 0.02
+sgfCompensateKomiProb = 0.90
+sidePositionProb = 0.020
+staticScoreUtilityFactor = 0.00
+subtreeValueBiasFactor = 0.30
+subtreeValueBiasWeightExponent = 0.8
+switchNetsMidGame = true
+taxRules = NONE,NONE,SEKI,SEKI,ALL
+useGraphSearch = true
+useLcbForSelection = true
+useNonBuggyLcb = true
+valueSurpriseDataWeight = 0.1
+valueWeightExponent = 0.5
+winLossUtilityFactor = 1.0
+
+2025-11-16 18:29:24-0500: Self Play Engine starting...
+2025-11-16 18:29:24-0500: Git revision: 09a850cd867dbf6ced83d489cef4b8db140a6edf-dirty
+2025-11-16 18:29:24-0500: Loaded all config stuff, starting self play
+2025-11-16 18:29:24-0500: Found new neural net kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:24-0500: nnRandSeed0 = 13018454142444869569
+2025-11-16 18:29:24-0500: After dedups: nnModelFile0 = /scratch2/f003x5w/RAGFlow-Datago/katago_repo/run/kata1-b28c512nbt-s11653980416-d5514111622.bin.gz useFP16 auto useNHWC auto
+2025-11-16 18:29:24-0500: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2025-11-16 18:29:27-0500: Found OpenCL Platform 0: NVIDIA CUDA (NVIDIA Corporation) (OpenCL 3.0 CUDA 12.8.98)
+2025-11-16 18:29:27-0500: Found 8 device(s) on platform 0 with type CPU or GPU or Accelerator
+2025-11-16 18:29:27-0500: Found OpenCL Device 0: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:27-0500: Found OpenCL Device 1: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:27-0500: Found OpenCL Device 2: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:27-0500: Found OpenCL Device 3: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:27-0500: Found OpenCL Device 4: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:27-0500: Found OpenCL Device 5: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:27-0500: Found OpenCL Device 6: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:27-0500: Found OpenCL Device 7: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) (score 11000300)
+2025-11-16 18:29:27-0500: Creating context for OpenCL Platform: NVIDIA CUDA (NVIDIA Corporation) (OpenCL 3.0 CUDA 12.8.98)
+2025-11-16 18:29:27-0500: Using OpenCL Device 1: NVIDIA RTX 6000 Ada Generation (NVIDIA Corporation) OpenCL 3.0 CUDA (Extensions: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_copy_opts cl_khr_gl_event cl_nv_create_buffer cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_nv_kernel_attribute cl_khr_device_uuid cl_khr_pci_bus_info cl_khr_external_semaphore cl_khr_external_memory cl_khr_external_semaphore_opaque_fd cl_khr_external_memory_opaque_fd cl_khr_semaphore)
+2025-11-16 18:29:27-0500: Loaded tuning parameters from: /thayerfs/home/f003x5w/.katago/opencltuning/tune11_gpuNVIDIARTX6000AdaGeneration_x19_y19_c512_mv15.txt
+2025-11-16 18:29:27-0500: OpenCL backend thread 0: Device 1 Model version 15
+2025-11-16 18:29:27-0500: OpenCL backend thread 0: Device 1 Model name: kata1-b28c512nbt-s11653980416-d5514111622
+2025-11-16 18:29:30-0500: OpenCL backend thread 0: Device 1 FP16Storage true FP16Compute false FP16TensorCores true FP16TensorCoresFor1x1 false
+2025-11-16 18:29:30-0500: Loaded latest neural net kata1-b28c512nbt-s11653980416-d5514111622.bin.gz from: /scratch2/f003x5w/RAGFlow-Datago/katago_repo/run/kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Model loading loop thread loaded new neural net kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 1 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Data write loop starting for neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 0 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 2 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 3 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 4 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 5 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 7 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 6 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 8 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 9 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 10 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 11 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 12 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 10 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 15 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 14 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 13 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 17 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 18 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 16 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 19 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 20 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 20 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 21 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 22 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 23 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 24 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 25 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 26 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 27 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 29 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 28 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 30 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 30 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 31 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 32 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 33 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 34 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 35 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 36 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 37 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 39 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 38 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 40 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 40 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 41 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 42 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 43 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 44 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 45 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 46 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 47 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 48 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 49 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 50 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 50 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 51 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 52 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 54 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 53 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 55 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 57 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 62 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 56 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 61 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 60 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 63 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 64 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 68 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 58 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 59 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 60 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 66 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 67 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 65 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 69 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 70 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 88 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 83 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 79 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 86 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 77 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 90 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 80 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 74 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 82 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 84 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 80 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 76 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 85 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 89 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 78 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 70 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 71 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 75 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 73 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 92 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 87 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 90 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 91 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 93 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 72 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 81 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 96 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 94 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 95 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 97 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 99 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 98 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 100 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 100 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 101 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 102 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 104 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 103 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 107 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 105 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 106 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 109 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 110 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 110 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 108 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 112 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 111 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 113 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 114 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 115 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 116 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 117 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 120 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 118 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Started 120 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 119 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 121 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 124 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 123 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 122 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 125 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 126 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Game loop thread 127 starting game on new neural net: kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 18:29:30-0500: Model loading loop thread starting
+2025-11-16 19:01:31-0500: [DATAGO] Inline deep summary: game= flagged=10 deep=10 success=10
+2025-11-16 19:15:52-0500: Started 130 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 19:15:52-0500: [DATAGO] Inline deep summary: game= flagged=16 deep=16 success=16
+2025-11-16 19:33:02-0500: [DATAGO] Inline deep summary: game= flagged=21 deep=21 success=21
+2025-11-16 19:43:33-0500: [DATAGO] Inline deep summary: game= flagged=20 deep=19 success=19
+2025-11-16 19:46:00-0500: [DATAGO] Inline deep summary: game= flagged=16 deep=16 success=16
+2025-11-16 19:50:44-0500: [DATAGO] Inline deep summary: game= flagged=20 deep=20 success=20
+2025-11-16 19:56:54-0500: [DATAGO] Inline deep summary: game= flagged=20 deep=20 success=20
+2025-11-16 19:59:29-0500: [DATAGO] Inline deep summary: game= flagged=20 deep=20 success=20
+2025-11-16 20:03:27-0500: [DATAGO] Inline deep summary: game= flagged=26 deep=26 success=26
+2025-11-16 20:14:20-0500: [DATAGO] Inline deep summary: game= flagged=24 deep=24 success=24
+2025-11-16 20:27:35-0500: [DATAGO] Inline deep summary: game= flagged=26 deep=26 success=26
+2025-11-16 20:34:26-0500: Started 140 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 20:34:26-0500: [DATAGO] Inline deep summary: game= flagged=27 deep=27 success=27
+2025-11-16 20:44:42-0500: [DATAGO] Inline deep summary: game= flagged=32 deep=32 success=32
+2025-11-16 21:01:42-0500: [DATAGO] Inline deep summary: game= flagged=35 deep=35 success=35
+2025-11-16 21:02:39-0500: [DATAGO] Inline deep summary: game= flagged=27 deep=27 success=27
+2025-11-16 21:07:41-0500: [DATAGO] Inline deep summary: game= flagged=36 deep=35 success=35
+2025-11-16 21:12:56-0500: [DATAGO] Inline deep summary: game= flagged=31 deep=31 success=31
+2025-11-16 21:13:35-0500: [DATAGO] Inline deep summary: game= flagged=39 deep=39 success=39
+2025-11-16 21:24:46-0500: [DATAGO] Inline deep summary: game= flagged=35 deep=35 success=35
+2025-11-16 21:26:04-0500: [DATAGO] Inline deep summary: game= flagged=47 deep=47 success=47
+2025-11-16 21:27:32-0500: [DATAGO] Inline deep summary: game= flagged=39 deep=38 success=38
+2025-11-16 21:29:23-0500: Started 150 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 21:29:23-0500: [DATAGO] Inline deep summary: game= flagged=40 deep=40 success=40
+2025-11-16 21:29:57-0500: [DATAGO] Inline deep summary: game= flagged=38 deep=38 success=38
+2025-11-16 21:37:19-0500: [DATAGO] Inline deep summary: game= flagged=46 deep=45 success=45
+2025-11-16 21:50:00-0500: [DATAGO] Inline deep summary: game= flagged=39 deep=39 success=39
+2025-11-16 21:50:57-0500: [DATAGO] Inline deep summary: game= flagged=52 deep=51 success=51
+2025-11-16 21:51:20-0500: [DATAGO] Inline deep summary: game= flagged=41 deep=40 success=40
+2025-11-16 21:55:30-0500: [DATAGO] Inline deep summary: game= flagged=44 deep=44 success=44
+2025-11-16 21:58:34-0500: [DATAGO] Inline deep summary: game= flagged=39 deep=39 success=39
+2025-11-16 22:01:28-0500: [DATAGO] Inline deep summary: game= flagged=39 deep=38 success=38
+2025-11-16 22:03:15-0500: [DATAGO] Inline deep summary: game= flagged=45 deep=45 success=45
+2025-11-16 22:04:41-0500: Started 160 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 22:04:41-0500: [DATAGO] Inline deep summary: game= flagged=40 deep=40 success=40
+2025-11-16 22:05:00-0500: [DATAGO] Inline deep summary: game= flagged=39 deep=39 success=39
+2025-11-16 22:06:14-0500: [DATAGO] Inline deep summary: game= flagged=42 deep=42 success=42
+2025-11-16 22:14:12-0500: [DATAGO] Inline deep summary: game= flagged=49 deep=49 success=49
+2025-11-16 22:15:54-0500: [DATAGO] Inline deep summary: game= flagged=44 deep=44 success=44
+2025-11-16 22:20:45-0500: [DATAGO] Inline deep summary: game= flagged=45 deep=44 success=44
+2025-11-16 22:34:32-0500: [DATAGO] Inline deep summary: game= flagged=50 deep=49 success=49
+2025-11-16 22:34:46-0500: [DATAGO] Inline deep summary: game= flagged=51 deep=51 success=51
+2025-11-16 22:42:55-0500: [DATAGO] Inline deep summary: game= flagged=51 deep=51 success=51
+2025-11-16 22:45:28-0500: [DATAGO] Inline deep summary: game= flagged=52 deep=51 success=51
+2025-11-16 22:51:32-0500: Started 170 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 22:51:32-0500: [DATAGO] Inline deep summary: game= flagged=67 deep=66 success=66
+2025-11-16 23:03:19-0500: [DATAGO] Inline deep summary: game= flagged=48 deep=48 success=48
+2025-11-16 23:04:18-0500: [DATAGO] Inline deep summary: game= flagged=47 deep=46 success=46
+2025-11-16 23:13:17-0500: [DATAGO] Inline deep summary: game= flagged=60 deep=59 success=59
+2025-11-16 23:14:55-0500: [DATAGO] Inline deep summary: game= flagged=55 deep=55 success=55
+2025-11-16 23:23:01-0500: [DATAGO] Inline deep summary: game= flagged=54 deep=54 success=54
+2025-11-16 23:25:02-0500: [DATAGO] Inline deep summary: game= flagged=68 deep=68 success=68
+2025-11-16 23:27:49-0500: [DATAGO] Inline deep summary: game= flagged=53 deep=53 success=53
+2025-11-16 23:35:27-0500: [DATAGO] Inline deep summary: game= flagged=70 deep=68 success=68
+2025-11-16 23:42:59-0500: [DATAGO] Inline deep summary: game= flagged=63 deep=63 success=63
+2025-11-16 23:46:24-0500: Started 180 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-16 23:46:24-0500: [DATAGO] Inline deep summary: game= flagged=60 deep=59 success=59
+2025-11-16 23:50:59-0500: [DATAGO] Inline deep summary: game= flagged=58 deep=58 success=58
+2025-11-16 23:58:01-0500: [DATAGO] Inline deep summary: game= flagged=60 deep=60 success=60
+2025-11-16 23:58:04-0500: [DATAGO] Inline deep summary: game= flagged=69 deep=69 success=69
+2025-11-16 23:58:36-0500: [DATAGO] Inline deep summary: game= flagged=62 deep=62 success=62
+2025-11-16 23:59:43-0500: [DATAGO] Inline deep summary: game= flagged=62 deep=62 success=62
+2025-11-17 00:05:59-0500: [DATAGO] Inline deep summary: game= flagged=60 deep=58 success=58
+2025-11-17 00:10:36-0500: [DATAGO] Inline deep summary: game= flagged=64 deep=64 success=64
+2025-11-17 00:10:45-0500: [DATAGO] Inline deep summary: game= flagged=60 deep=60 success=60
+2025-11-17 00:13:14-0500: [DATAGO] Inline deep summary: game= flagged=67 deep=67 success=67
+2025-11-17 00:17:34-0500: Started 190 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 00:17:34-0500: [DATAGO] Inline deep summary: game= flagged=61 deep=61 success=61
+2025-11-17 00:22:46-0500: [DATAGO] Inline deep summary: game= flagged=69 deep=69 success=69
+2025-11-17 00:26:21-0500: [DATAGO] Inline deep summary: game= flagged=70 deep=70 success=70
+2025-11-17 00:26:29-0500: [DATAGO] Inline deep summary: game= flagged=77 deep=77 success=77
+2025-11-17 00:32:16-0500: [DATAGO] Inline deep summary: game= flagged=87 deep=86 success=86
+2025-11-17 00:32:26-0500: [DATAGO] Inline deep summary: game= flagged=77 deep=77 success=77
+2025-11-17 00:32:44-0500: [DATAGO] Inline deep summary: game= flagged=66 deep=66 success=66
+2025-11-17 00:36:40-0500: [DATAGO] Inline deep summary: game= flagged=64 deep=64 success=64
+2025-11-17 00:37:04-0500: [DATAGO] Inline deep summary: game= flagged=72 deep=71 success=71
+2025-11-17 00:42:38-0500: [DATAGO] Inline deep summary: game= flagged=70 deep=70 success=70
+2025-11-17 00:45:34-0500: Started 200 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 00:45:34-0500: [DATAGO] Inline deep summary: game= flagged=79 deep=78 success=78
+2025-11-17 00:45:35-0500: [DATAGO] Inline deep summary: game= flagged=63 deep=63 success=63
+2025-11-17 00:49:51-0500: [DATAGO] Inline deep summary: game= flagged=88 deep=88 success=88
+2025-11-17 00:50:22-0500: [DATAGO] Inline deep summary: game= flagged=69 deep=69 success=69
+2025-11-17 00:54:49-0500: [DATAGO] Inline deep summary: game= flagged=74 deep=74 success=74
+2025-11-17 00:54:57-0500: [DATAGO] Inline deep summary: game= flagged=73 deep=73 success=73
+2025-11-17 00:56:53-0500: [DATAGO] Inline deep summary: game= flagged=73 deep=72 success=72
+2025-11-17 00:57:38-0500: [DATAGO] Inline deep summary: game= flagged=77 deep=76 success=76
+2025-11-17 01:00:15-0500: [DATAGO] Inline deep summary: game= flagged=85 deep=84 success=84
+2025-11-17 01:00:22-0500: [DATAGO] Inline deep summary: game= flagged=80 deep=80 success=80
+2025-11-17 01:14:42-0500: Started 210 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 01:14:42-0500: [DATAGO] Inline deep summary: game= flagged=73 deep=73 success=73
+2025-11-17 01:14:55-0500: [DATAGO] Inline deep summary: game= flagged=76 deep=76 success=76
+2025-11-17 01:20:39-0500: [DATAGO] Inline deep summary: game= flagged=74 deep=74 success=74
+2025-11-17 01:22:54-0500: [DATAGO] Inline deep summary: game= flagged=70 deep=70 success=70
+2025-11-17 01:25:41-0500: [DATAGO] Inline deep summary: game= flagged=74 deep=74 success=74
+2025-11-17 01:25:53-0500: [DATAGO] Inline deep summary: game= flagged=79 deep=78 success=78
+2025-11-17 01:26:24-0500: [DATAGO] Inline deep summary: game= flagged=90 deep=90 success=90
+2025-11-17 01:27:25-0500: [DATAGO] Inline deep summary: game= flagged=70 deep=70 success=70
+2025-11-17 01:31:53-0500: [DATAGO] Inline deep summary: game= flagged=75 deep=75 success=75
+2025-11-17 01:33:59-0500: [DATAGO] Inline deep summary: game= flagged=83 deep=83 success=83
+2025-11-17 01:35:20-0500: Started 220 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 01:35:20-0500: [DATAGO] Inline deep summary: game= flagged=77 deep=77 success=77
+2025-11-17 01:39:49-0500: [DATAGO] Inline deep summary: game= flagged=81 deep=80 success=80
+2025-11-17 01:45:19-0500: [DATAGO] Inline deep summary: game= flagged=69 deep=68 success=68
+2025-11-17 01:47:39-0500: [DATAGO] Inline deep summary: game= flagged=108 deep=107 success=107
+2025-11-17 01:49:49-0500: [DATAGO] Inline deep summary: game= flagged=94 deep=93 success=93
+2025-11-17 01:50:28-0500: [DATAGO] Inline deep summary: game= flagged=78 deep=77 success=77
+2025-11-17 01:53:41-0500: [DATAGO] Inline deep summary: game= flagged=76 deep=76 success=76
+2025-11-17 01:54:13-0500: [DATAGO] Inline deep summary: game= flagged=83 deep=83 success=83
+2025-11-17 01:56:08-0500: [DATAGO] Inline deep summary: game= flagged=74 deep=73 success=73
+2025-11-17 02:04:08-0500: [DATAGO] Inline deep summary: game= flagged=73 deep=73 success=73
+2025-11-17 02:04:54-0500: Started 230 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 02:04:54-0500: [DATAGO] Inline deep summary: game= flagged=87 deep=86 success=86
+2025-11-17 02:05:13-0500: [DATAGO] Inline deep summary: game= flagged=72 deep=71 success=71
+2025-11-17 02:09:18-0500: [DATAGO] Inline deep summary: game= flagged=91 deep=90 success=90
+2025-11-17 02:11:14-0500: [DATAGO] Inline deep summary: game= flagged=96 deep=95 success=95
+2025-11-17 02:13:02-0500: [DATAGO] Inline deep summary: game= flagged=84 deep=84 success=84
+2025-11-17 02:17:38-0500: [DATAGO] Inline deep summary: game= flagged=82 deep=81 success=81
+2025-11-17 02:21:02-0500: [DATAGO] Inline deep summary: game= flagged=81 deep=81 success=81
+2025-11-17 02:23:57-0500: [DATAGO] Inline deep summary: game= flagged=92 deep=92 success=92
+2025-11-17 02:26:00-0500: [DATAGO] Inline deep summary: game= flagged=76 deep=76 success=76
+2025-11-17 02:26:38-0500: [DATAGO] Inline deep summary: game= flagged=103 deep=103 success=103
+2025-11-17 02:28:32-0500: Started 240 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 02:28:32-0500: [DATAGO] Inline deep summary: game= flagged=79 deep=78 success=78
+2025-11-17 02:29:17-0500: [DATAGO] Inline deep summary: game= flagged=102 deep=101 success=101
+2025-11-17 02:29:20-0500: [DATAGO] Inline deep summary: game= flagged=89 deep=87 success=87
+2025-11-17 02:38:08-0500: [DATAGO] Inline deep summary: game= flagged=87 deep=87 success=87
+2025-11-17 02:40:17-0500: [DATAGO] Inline deep summary: game= flagged=94 deep=94 success=94
+2025-11-17 02:40:30-0500: [DATAGO] Inline deep summary: game= flagged=87 deep=86 success=86
+2025-11-17 02:42:04-0500: [DATAGO] Inline deep summary: game= flagged=101 deep=100 success=100
+2025-11-17 02:43:27-0500: [DATAGO] Inline deep summary: game= flagged=86 deep=86 success=86
+2025-11-17 02:48:12-0500: [DATAGO] Inline deep summary: game= flagged=86 deep=85 success=85
+2025-11-17 02:50:42-0500: [DATAGO] Inline deep summary: game= flagged=88 deep=88 success=88
+2025-11-17 02:53:34-0500: Started 250 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 02:53:34-0500: [DATAGO] Inline deep summary: game= flagged=103 deep=102 success=102
+2025-11-17 02:54:13-0500: [DATAGO] Inline deep summary: game= flagged=89 deep=89 success=89
+2025-11-17 02:57:18-0500: [DATAGO] Inline deep summary: game= flagged=91 deep=91 success=91
+2025-11-17 02:58:43-0500: [DATAGO] Inline deep summary: game= flagged=119 deep=119 success=119
+2025-11-17 03:07:21-0500: [DATAGO] Inline deep summary: game= flagged=86 deep=85 success=85
+2025-11-17 03:08:43-0500: [DATAGO] Inline deep summary: game= flagged=91 deep=90 success=90
+2025-11-17 03:08:50-0500: [DATAGO] Inline deep summary: game= flagged=85 deep=84 success=84
+2025-11-17 03:10:39-0500: [DATAGO] Inline deep summary: game= flagged=93 deep=93 success=93
+2025-11-17 03:13:54-0500: [DATAGO] Inline deep summary: game= flagged=83 deep=83 success=83
+2025-11-17 03:19:35-0500: [DATAGO] Inline deep summary: game= flagged=97 deep=97 success=97
+2025-11-17 03:21:23-0500: Started 260 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 03:21:23-0500: [DATAGO] Inline deep summary: game= flagged=85 deep=85 success=85
+2025-11-17 03:25:37-0500: [DATAGO] Inline deep summary: game= flagged=88 deep=87 success=87
+2025-11-17 03:27:51-0500: [DATAGO] Inline deep summary: game= flagged=78 deep=78 success=78
+2025-11-17 03:30:31-0500: [DATAGO] Inline deep summary: game= flagged=92 deep=91 success=91
+2025-11-17 03:31:34-0500: [DATAGO] Inline deep summary: game= flagged=94 deep=94 success=94
+2025-11-17 03:33:09-0500: [DATAGO] Inline deep summary: game= flagged=117 deep=117 success=117
+2025-11-17 03:34:24-0500: [DATAGO] Inline deep summary: game= flagged=101 deep=101 success=101
+2025-11-17 03:35:57-0500: [DATAGO] Inline deep summary: game= flagged=81 deep=80 success=80
+2025-11-17 03:38:03-0500: [DATAGO] Inline deep summary: game= flagged=104 deep=103 success=103
+2025-11-17 03:38:13-0500: [DATAGO] Inline deep summary: game= flagged=103 deep=102 success=102
+2025-11-17 03:38:43-0500: Started 270 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 03:38:43-0500: [DATAGO] Inline deep summary: game= flagged=101 deep=101 success=101
+2025-11-17 03:40:34-0500: [DATAGO] Inline deep summary: game= flagged=96 deep=95 success=95
+2025-11-17 03:43:57-0500: [DATAGO] Inline deep summary: game= flagged=101 deep=100 success=100
+2025-11-17 03:47:48-0500: [DATAGO] Inline deep summary: game= flagged=92 deep=92 success=92
+2025-11-17 03:48:09-0500: [DATAGO] Inline deep summary: game= flagged=102 deep=102 success=102
+2025-11-17 03:55:18-0500: [DATAGO] Inline deep summary: game= flagged=125 deep=124 success=124
+2025-11-17 03:55:27-0500: [DATAGO] Inline deep summary: game= flagged=97 deep=97 success=97
+2025-11-17 03:56:05-0500: [DATAGO] Inline deep summary: game= flagged=129 deep=127 success=127
+2025-11-17 03:59:30-0500: [DATAGO] Inline deep summary: game= flagged=97 deep=97 success=97
+2025-11-17 04:01:43-0500: [DATAGO] Inline deep summary: game= flagged=86 deep=86 success=86
+2025-11-17 04:02:27-0500: Started 280 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 04:02:27-0500: [DATAGO] Inline deep summary: game= flagged=102 deep=102 success=102
+2025-11-17 04:02:32-0500: [DATAGO] Inline deep summary: game= flagged=103 deep=102 success=102
+2025-11-17 04:15:17-0500: [DATAGO] Inline deep summary: game= flagged=88 deep=88 success=88
+2025-11-17 04:15:47-0500: [DATAGO] Inline deep summary: game= flagged=105 deep=104 success=104
+2025-11-17 04:15:52-0500: [DATAGO] Inline deep summary: game= flagged=97 deep=97 success=97
+2025-11-17 04:16:09-0500: [DATAGO] Inline deep summary: game= flagged=102 deep=101 success=101
+2025-11-17 04:21:31-0500: [DATAGO] Inline deep summary: game= flagged=136 deep=135 success=135
+2025-11-17 04:22:37-0500: [DATAGO] Inline deep summary: game= flagged=116 deep=115 success=115
+2025-11-17 04:32:16-0500: [DATAGO] Inline deep summary: game= flagged=95 deep=94 success=94
+2025-11-17 04:33:33-0500: [DATAGO] Inline deep summary: game= flagged=111 deep=110 success=110
+2025-11-17 04:37:08-0500: Started 290 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 04:37:08-0500: [DATAGO] Inline deep summary: game= flagged=104 deep=104 success=104
+2025-11-17 04:39:22-0500: [DATAGO] Inline deep summary: game= flagged=96 deep=96 success=96
+2025-11-17 04:40:15-0500: [DATAGO] Inline deep summary: game= flagged=112 deep=111 success=111
+2025-11-17 04:40:33-0500: [DATAGO] Inline deep summary: game= flagged=112 deep=111 success=111
+2025-11-17 04:42:24-0500: [DATAGO] Inline deep summary: game= flagged=112 deep=112 success=112
+2025-11-17 04:48:08-0500: [DATAGO] Inline deep summary: game= flagged=117 deep=117 success=117
+2025-11-17 04:48:12-0500: [DATAGO] Inline deep summary: game= flagged=120 deep=120 success=120
+2025-11-17 04:48:53-0500: [DATAGO] Inline deep summary: game= flagged=129 deep=128 success=128
+2025-11-17 04:49:28-0500: [DATAGO] Inline deep summary: game= flagged=115 deep=115 success=115
+2025-11-17 04:49:29-0500: [DATAGO] Inline deep summary: game= flagged=115 deep=115 success=115
+2025-11-17 04:57:27-0500: Started 300 games with kata1-b28c512nbt-s11653980416-d5514111622.bin.gz
+2025-11-17 04:57:27-0500: [DATAGO] Inline deep summary: game= flagged=114 deep=112 success=112
+2025-11-17 04:58:06-0500: Game loop thread 67 terminating
+2025-11-17 04:58:06-0500: [DATAGO] Inline deep summary: game= flagged=122 deep=121 success=121
+2025-11-17 04:58:47-0500: Game loop thread 65 terminating
+2025-11-17 04:58:47-0500: [DATAGO] Inline deep summary: game= flagged=135 deep=134 success=134
+2025-11-17 05:01:27-0500: Game loop thread 70 terminating
+2025-11-17 05:01:27-0500: [DATAGO] Inline deep summary: game= flagged=115 deep=115 success=115
+2025-11-17 05:08:02-0500: Game loop thread 18 terminating
+2025-11-17 05:08:02-0500: [DATAGO] Inline deep summary: game= flagged=100 deep=100 success=100
+2025-11-17 05:10:09-0500: Game loop thread 20 terminating
+2025-11-17 05:10:09-0500: [DATAGO] Inline deep summary: game= flagged=123 deep=123 success=123
+2025-11-17 05:17:44-0500: Game loop thread 10 terminating
+2025-11-17 05:17:44-0500: [DATAGO] Inline deep summary: game= flagged=135 deep=135 success=135
+2025-11-17 05:22:32-0500: Game loop thread 47 terminating
+2025-11-17 05:22:32-0500: [DATAGO] Inline deep summary: game= flagged=122 deep=122 success=122
+2025-11-17 05:23:20-0500: Game loop thread 44 terminating
+2025-11-17 05:23:20-0500: [DATAGO] Inline deep summary: game= flagged=133 deep=133 success=133
+2025-11-17 05:24:24-0500: Game loop thread 33 terminating
+2025-11-17 05:24:24-0500: [DATAGO] Inline deep summary: game= flagged=123 deep=123 success=123
+2025-11-17 05:24:54-0500: Game loop thread 118 terminating
+2025-11-17 05:24:54-0500: [DATAGO] Inline deep summary: game= flagged=142 deep=141 success=141
+2025-11-17 05:28:36-0500: Game loop thread 43 terminating
+2025-11-17 05:28:36-0500: [DATAGO] Inline deep summary: game= flagged=103 deep=101 success=101
+2025-11-17 05:30:02-0500: Game loop thread 104 terminating
+2025-11-17 05:30:02-0500: [DATAGO] Inline deep summary: game= flagged=124 deep=124 success=124
+2025-11-17 05:30:49-0500: Game loop thread 80 terminating
+2025-11-17 05:30:49-0500: [DATAGO] Inline deep summary: game= flagged=118 deep=118 success=118
+2025-11-17 05:35:20-0500: Game loop thread 17 terminating
+2025-11-17 05:35:20-0500: [DATAGO] Inline deep summary: game= flagged=124 deep=124 success=124
+2025-11-17 05:38:02-0500: Game loop thread 40 terminating
+2025-11-17 05:38:02-0500: [DATAGO] Inline deep summary: game= flagged=130 deep=130 success=130
+2025-11-17 05:40:53-0500: Game loop thread 38 terminating
+2025-11-17 05:40:54-0500: [DATAGO] Inline deep summary: game= flagged=103 deep=103 success=103
+2025-11-17 05:43:12-0500: Game loop thread 79 terminating
+2025-11-17 05:43:12-0500: [DATAGO] Inline deep summary: game= flagged=104 deep=103 success=103
+2025-11-17 05:45:58-0500: Game loop thread 103 terminating
+2025-11-17 05:45:58-0500: [DATAGO] Inline deep summary: game= flagged=102 deep=101 success=101
+2025-11-17 05:49:23-0500: Game loop thread 12 terminating
+2025-11-17 05:49:23-0500: [DATAGO] Inline deep summary: game= flagged=126 deep=125 success=125
+2025-11-17 05:50:49-0500: Game loop thread 76 terminating
+2025-11-17 05:50:49-0500: [DATAGO] Inline deep summary: game= flagged=104 deep=103 success=103
+2025-11-17 05:53:31-0500: Game loop thread 115 terminating
+2025-11-17 05:53:31-0500: [DATAGO] Inline deep summary: game= flagged=101 deep=101 success=101
+2025-11-17 05:53:43-0500: Game loop thread 114 terminating
+2025-11-17 05:53:43-0500: [DATAGO] Inline deep summary: game= flagged=132 deep=131 success=131
+2025-11-17 05:56:07-0500: Game loop thread 101 terminating
+2025-11-17 05:56:07-0500: [DATAGO] Inline deep summary: game= flagged=102 deep=102 success=102
+2025-11-17 06:01:12-0500: Game loop thread 111 terminating
+2025-11-17 06:01:12-0500: [DATAGO] Inline deep summary: game= flagged=136 deep=135 success=135
+2025-11-17 06:03:22-0500: Game loop thread 29 terminating
+2025-11-17 06:03:22-0500: [DATAGO] Inline deep summary: game= flagged=133 deep=132 success=132
+2025-11-17 06:05:44-0500: Game loop thread 9 terminating
+2025-11-17 06:05:44-0500: [DATAGO] Inline deep summary: game= flagged=130 deep=130 success=130
+2025-11-17 06:20:37-0500: Game loop thread 55 terminating
+2025-11-17 06:20:37-0500: [DATAGO] Inline deep summary: game= flagged=138 deep=137 success=137
+2025-11-17 06:21:07-0500: Game loop thread 125 terminating
+2025-11-17 06:21:07-0500: [DATAGO] Inline deep summary: game= flagged=130 deep=128 success=128
+2025-11-17 06:28:15-0500: Game loop thread 0 terminating
+2025-11-17 06:28:15-0500: [DATAGO] Inline deep summary: game= flagged=132 deep=131 success=131
+2025-11-17 06:30:27-0500: Game loop thread 26 terminating
+2025-11-17 06:30:27-0500: [DATAGO] Inline deep summary: game= flagged=133 deep=131 success=131
+2025-11-17 06:30:29-0500: Game loop thread 109 terminating
+2025-11-17 06:30:29-0500: [DATAGO] Inline deep summary: game= flagged=111 deep=111 success=111
+2025-11-17 06:32:01-0500: Game loop thread 56 terminating
+2025-11-17 06:32:01-0500: [DATAGO] Inline deep summary: game= flagged=179 deep=178 success=178
+2025-11-17 06:32:54-0500: Game loop thread 96 terminating
+2025-11-17 06:32:54-0500: [DATAGO] Inline deep summary: game= flagged=131 deep=130 success=130
+2025-11-17 06:37:17-0500: Game loop thread 106 terminating
+2025-11-17 06:37:17-0500: [DATAGO] Inline deep summary: game= flagged=153 deep=152 success=152
+2025-11-17 06:38:55-0500: Game loop thread 112 terminating
+2025-11-17 06:38:55-0500: [DATAGO] Inline deep summary: game= flagged=137 deep=136 success=136
+2025-11-17 06:40:55-0500: Game loop thread 31 terminating
+2025-11-17 06:40:55-0500: [DATAGO] Inline deep summary: game= flagged=141 deep=141 success=141
+2025-11-17 06:41:02-0500: Game loop thread 14 terminating
+2025-11-17 06:41:02-0500: [DATAGO] Inline deep summary: game= flagged=149 deep=148 success=148
+2025-11-17 06:42:38-0500: Game loop thread 90 terminating
+2025-11-17 06:42:38-0500: [DATAGO] Inline deep summary: game= flagged=146 deep=146 success=146
+2025-11-17 06:45:45-0500: Game loop thread 5 terminating
+2025-11-17 06:45:45-0500: [DATAGO] Inline deep summary: game= flagged=159 deep=159 success=159
+2025-11-17 06:48:52-0500: Game loop thread 126 terminating
+2025-11-17 06:48:52-0500: [DATAGO] Inline deep summary: game= flagged=139 deep=137 success=137
+2025-11-17 06:50:30-0500: Game loop thread 120 terminating
+2025-11-17 06:50:30-0500: [DATAGO] Inline deep summary: game= flagged=150 deep=148 success=148
+2025-11-17 06:51:35-0500: Game loop thread 58 terminating
+2025-11-17 06:51:35-0500: [DATAGO] Inline deep summary: game= flagged=137 deep=136 success=136
+2025-11-17 06:51:50-0500: Game loop thread 123 terminating
+2025-11-17 06:51:50-0500: [DATAGO] Inline deep summary: game= flagged=148 deep=147 success=147
+2025-11-17 06:56:03-0500: Game loop thread 62 terminating
+2025-11-17 06:56:03-0500: [DATAGO] Inline deep summary: game= flagged=138 deep=136 success=136
+2025-11-17 06:56:54-0500: Game loop thread 63 terminating
+2025-11-17 06:56:54-0500: [DATAGO] Inline deep summary: game= flagged=157 deep=157 success=157
+2025-11-17 06:57:20-0500: Game loop thread 121 terminating
+2025-11-17 06:57:20-0500: [DATAGO] Inline deep summary: game= flagged=152 deep=151 success=151
+2025-11-17 06:57:33-0500: Game loop thread 41 terminating
+2025-11-17 06:57:33-0500: [DATAGO] Inline deep summary: game= flagged=135 deep=133 success=133
+2025-11-17 06:59:33-0500: Game loop thread 88 terminating
+2025-11-17 06:59:33-0500: [DATAGO] Inline deep summary: game= flagged=146 deep=145 success=145
+2025-11-17 07:02:48-0500: Game loop thread 86 terminating
+2025-11-17 07:02:48-0500: [DATAGO] Inline deep summary: game= flagged=142 deep=142 success=142
+2025-11-17 07:06:11-0500: Game loop thread 54 terminating
+2025-11-17 07:06:11-0500: [DATAGO] Inline deep summary: game= flagged=142 deep=141 success=141
+2025-11-17 07:07:06-0500: Game loop thread 57 terminating
+2025-11-17 07:07:06-0500: ERROR: data write loop loop thread failed: KataGo was built without libzip library, unable to create zip file or write training data
+terminate called after throwing an instance of 'StringError'
+  what():  KataGo was built without libzip library, unable to create zip file or write training data
+
+Completed at: Mon Nov 17 07:07:14 AM EST 2025
+KataGo on GPU 1 completed.
+
