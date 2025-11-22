@@ -12,3 +12,4 @@
 *.sgf.gz filter=lfs diff=lfs merge=lfs -text
 *.sgf.tar.gz filter=lfs diff=lfs merge=lfs -text
 selfplay_output/added_entries.json filter=lfs diff=lfs merge=lfs -text
+rag_store/rag_output_*_done/*.json filter=lfs diff=lfs merge=lfs -text
